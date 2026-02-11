@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { useState } from "react";
 import { Form, Select, Button, Space } from "antd";
 
@@ -81,12 +81,31 @@ export default function Home() {
   // =========================
   const [isNight, setIsNight] = useState(false);
 
-  // hovuz
-  const [hovuzTipi, setHovuzTipi] =
-    useState<keyof typeof hovuzlar>("klassikCam");
+  // =========================
+  // HOVUZ TYPES
+  // =========================
+  type KlassikCamModels =
+    | "a151"
+    | "a155"
+    | "a158"
+    | "a159"
+    | "a161"
+    | "a161l"
+    | "a218"
+    | "a231"
+    | "a236"
+    | "a276";
+  type KareModels = "bali" | "floralblue" | "floralgreen" | "judiGrey";
 
-  const [hovuzModeli, setHovuzModeli] =
-    useState<keyof typeof hovuzlar.klassikCam>("a151");
+  type HovuzTipi = "klassikCam" | "kare";
+  type HovuzModeli = KlassikCamModels | KareModels;
+
+  // =========================
+  // STATES
+  // =========================
+  const [hovuzTipi, setHovuzTipi] = useState<HovuzTipi>("klassikCam");
+  const [hovuzModeli, setHovuzModeli] = useState<HovuzModeli>("a151");
+
   const { Option, OptGroup } = Select;
 
   // kafellər
@@ -214,7 +233,12 @@ export default function Home() {
   // =========================
   // HANDLERS
   // =========================
-  const hovuzSrc = hovuzlar[hovuzTipi][hovuzModeli][mode];
+let hovuzSrc: StaticImageData;
+if (hovuzTipi === "klassikCam") {
+  hovuzSrc = hovuzlar.klassikCam[hovuzModeli as KlassikCamModels][mode];
+} else {
+  hovuzSrc = hovuzlar.kare[hovuzModeli as KareModels][mode];
+}
   const kenarSrc = kenarKafelleri[kenar][mode];
   const ortaSrc = ortaKafeller[orta][mode];
   const terasSrc = teras[terasTipi][mode];
