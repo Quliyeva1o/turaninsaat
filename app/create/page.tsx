@@ -110,8 +110,8 @@ export default function Home() {
 
   // kafellər
   const [kenar, setKenar] = useState<keyof typeof kenarKafelleri>("superstone");
-  const [orta, setOrta] = useState<keyof typeof ortaKafeller>("light");
-  const [terasTipi, setTerasTipi] = useState<keyof typeof teras>("light");
+  const [orta, setOrta] = useState<keyof typeof ortaKafeller>("superstone");
+  const [terasTipi, setTerasTipi] = useState<keyof typeof teras>("luca");
 
   const mode = isNight ? "gece" : "gunduz";
 
