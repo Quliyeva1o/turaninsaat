@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-import AOSProvider from "./providers/AOSProvider";
+import Header from "@/components/layout/Header";
+import AOSProvider from "../providers/AOSProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -84,9 +84,25 @@ export default function RootLayout({
 }) {
   return (
     <html lang="az">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+     <div className="headercontainer rounded-[40px] overflow-hidden">
+        <Header />   
         <AOSProvider />
-        {children}
+    <video
+        className="hero-video"
+        autoPlay
+        muted
+        loop
+        playsInline
+        aria-hidden="true"
+      >
+        <source src="https://demo.awaikenthemes.com/assets/videos/builtup-video.mp4" type="video/mp4" />
+      </video>
+
+      <div className="hero-overlayy" />
+        {children}</div>
       </body>
     </html>
   );

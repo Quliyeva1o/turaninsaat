@@ -1,0 +1,208 @@
+/* =========================
+   RESET & HELPERS
+========================= */
+
+.site-header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* =========================
+   PRELOADER
+========================= */
+
+.preloader {
+  position: fixed;
+  inset: 0;
+  /* background: #fff; */
+  z-index: 9999;
+}
+
+.loading-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* =========================
+   MAGIC CURSOR
+========================= */
+
+#magic-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 99999;
+}
+
+#magic-cursor #ball {
+  width: 12px;
+  height: 12px;
+  background: #111;
+  border-radius: 50%;
+}
+
+/* =========================
+   SKIP LINK (SEO)
+========================= */
+
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: auto;
+}
+
+.skip-link:focus {
+  left: 20px;
+  top: 20px;
+  background: #000;
+  color: #fff;
+  padding: 10px 15px;
+  z-index: 9999;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.site-header {
+  position: relative;
+  top: 0;
+  width: 100%;
+  /* background: #ffffff; */
+  z-index: 1000;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 150px;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.site-logo img {
+  display: block;
+  height: auto;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.main-nav {
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.menu > li {
+  position: relative;
+}
+
+.menu > li > a,
+.menu > li > span {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px 0;
+  cursor: pointer; 
+   color: #fff
+}
+
+.menu > li:hover > a {
+  color: #2A69AC;
+
+}
+
+/* =========================
+   DROPDOWN
+========================= */
+
+.has-dropdown > .dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  background: #fff;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.25s ease;
+  z-index: 99;
+}
+
+.has-dropdown:hover > .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown li a {
+  display: block;
+  padding: 12px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  transition: background 0.2s ease;
+}
+
+.dropdown li a:hover {
+  background: #f5f5f5;
+  color: #2A69AC;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+.mobile-only {
+  display: none;
+}
+
+.desktop-only {
+  display: block;
+}
+
+@media (max-width: 1024px) {
+  .menu {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-nav {
+    display: none; /* hamburger əlavə edəndə dəyişəcəyik */
+  }
+
+  .mobile-only {
+    display: block;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+}

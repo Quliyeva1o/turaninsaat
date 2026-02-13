@@ -11,69 +11,69 @@ import { Form, Select, Button, Space } from "antd";
 // hovuz içi
 
 //klassik cam
-import a151 from "../public/assets/hovuzlar/klassikcam/a151.png";
-import a151gece from "../public/assets/hovuzlar/klassikcam/a151gece.png";
-import a155 from "../public/assets/hovuzlar/klassikcam/a155.png";
-import a155gece from "../public/assets/hovuzlar/klassikcam/a155gece.png";
-import a158 from "../public/assets/hovuzlar/klassikcam/a158.png";
-import a158gece from "../public/assets/hovuzlar/klassikcam/a158gece.png";
-import a159 from "../public/assets/hovuzlar/klassikcam/a159.png";
-import a159gece from "../public/assets/hovuzlar/klassikcam/a159gece.png";
-import a161 from "../public/assets/hovuzlar/klassikcam/a161.png";
-import a161gece from "../public/assets/hovuzlar/klassikcam/a161gece.png";
-import a161l from "../public/assets/hovuzlar/klassikcam/a161l.png";
-import a161lgece from "../public/assets/hovuzlar/klassikcam/a161lgece.png";
-import a218 from "../public/assets/hovuzlar/klassikcam/a218.png";
-import a218gece from "../public/assets/hovuzlar/klassikcam/a218gece.png";
-import a231 from "../public/assets/hovuzlar/klassikcam/a231.png";
-import a231gece from "../public/assets/hovuzlar/klassikcam/a231gece.png";
-import a236 from "../public/assets/hovuzlar/klassikcam/a236.png";
-import a236gece from "../public/assets/hovuzlar/klassikcam/a236gece.png";
-import a276 from "../public/assets/hovuzlar/klassikcam/a276.png";
-import a276gece from "../public/assets/hovuzlar/klassikcam/a276gece.png";
+import a151 from "../../public/assets/hovuzlar/klassikcam/a151.png";
+import a151gece from "../../public/assets/hovuzlar/klassikcam/a151gece.png";
+import a155 from "../../public/assets/hovuzlar/klassikcam/a155.png";
+import a155gece from "../../public/assets/hovuzlar/klassikcam/a155gece.png";
+import a158 from "../../public/assets/hovuzlar/klassikcam/a158.png";
+import a158gece from "../../public/assets/hovuzlar/klassikcam/a158gece.png";
+import a159 from "../../public/assets/hovuzlar/klassikcam/a159.png";
+import a159gece from "../../public/assets/hovuzlar/klassikcam/a159gece.png";
+import a161 from "../../public/assets/hovuzlar/klassikcam/a161.png";
+import a161gece from "../../public/assets/hovuzlar/klassikcam/a161gece.png";
+import a161l from "../../public/assets/hovuzlar/klassikcam/a161l.png";
+import a161lgece from "../../public/assets/hovuzlar/klassikcam/a161lgece.png";
+import a218 from "../../public/assets/hovuzlar/klassikcam/a218.png";
+import a218gece from "../../public/assets/hovuzlar/klassikcam/a218gece.png";
+import a231 from "../../public/assets/hovuzlar/klassikcam/a231.png";
+import a231gece from "../../public/assets/hovuzlar/klassikcam/a231gece.png";
+import a236 from "../../public/assets/hovuzlar/klassikcam/a236.png";
+import a236gece from "../../public/assets/hovuzlar/klassikcam/a236gece.png";
+import a276 from "../../public/assets/hovuzlar/klassikcam/a276.png";
+import a276gece from "../../public/assets/hovuzlar/klassikcam/a276gece.png";
 
 //porselen kare
-import bali from "../public/assets/hovuzlar/kare/bali.png";
-import baligece from "../public/assets/hovuzlar/kare/baligece.png";
-import floralblue from "../public/assets/hovuzlar/kare/floralBlue.png";
-import floralblueGece from "../public/assets/hovuzlar/kare/floralBlueGece.png";
-import floralgreen from "../public/assets/hovuzlar/kare/floralGreen.png";
-import floralgreenGece from "../public/assets/hovuzlar/kare/floralGreenGece.png";
-import judiGreyKare from "../public/assets/hovuzlar/kare/judiGrey.png";
-import judiGreyKareGece from "../public/assets/hovuzlar/kare/judiGreyGece.png";
+import bali from "../../public/assets/hovuzlar/kare/bali.png";
+import baligece from "../../public/assets/hovuzlar/kare/baligece.png";
+import floralblue from "../../public/assets/hovuzlar/kare/floralBlue.png";
+import floralblueGece from "../../public/assets/hovuzlar/kare/floralBlueGece.png";
+import floralgreen from "../../public/assets/hovuzlar/kare/floralGreen.png";
+import floralgreenGece from "../../public/assets/hovuzlar/kare/floralGreenGece.png";
+import judiGreyKare from "../../public/assets/hovuzlar/kare/judiGrey.png";
+import judiGreyKareGece from "../../public/assets/hovuzlar/kare/judiGreyGece.png";
 
 // kənar kafellər
-import light from "../public/assets/kenarkafeller/light.png";
-import lightGece from "../public/assets/kenarkafeller/lightgece.png";
+import light from "../../public/assets/kenarkafeller/light.png";
+import lightGece from "../../public/assets/kenarkafeller/lightgece.png";
 
-import superstone from "../public/assets/kenarkafeller/superstone.png";
-import superstoneGece from "../public/assets/kenarkafeller/superstonegece.png";
+import superstone from "../../public/assets/kenarkafeller/superstone.png";
+import superstoneGece from "../../public/assets/kenarkafeller/superstonegece.png";
 
-import judiGrey from "../public/assets/kenarkafeller/judigrey.png";
-import judiGreyGece from "../public/assets/kenarkafeller/judigreygece.png";
+import judiGrey from "../../public/assets/kenarkafeller/judigrey.png";
+import judiGreyGece from "../../public/assets/kenarkafeller/judigreygece.png";
 
-import lucaGrey from "../public/assets/kenarkafeller/lucaGrey.png";
-import lucaGreyGece from "../public/assets/kenarkafeller/lucaGreyGece.png";
+import lucaGrey from "../../public/assets/kenarkafeller/lucaGrey.png";
+import lucaGreyGece from "../../public/assets/kenarkafeller/lucaGreyGece.png";
 
 // orta kafellər
-import lightorta from "../public/assets/ortakafeller/lightorta.png";
-import lightortaGece from "../public/assets/ortakafeller/lightortaGece.png";
+import lightorta from "../../public/assets/ortakafeller/lightorta.png";
+import lightortaGece from "../../public/assets/ortakafeller/lightortaGece.png";
 
-import judiGreyorta from "../public/assets/ortakafeller/judiGreyorta.png";
-import judiGreyortaGece from "../public/assets/ortakafeller/judiGreyortaGece.png";
+import judiGreyorta from "../../public/assets/ortakafeller/judiGreyorta.png";
+import judiGreyortaGece from "../../public/assets/ortakafeller/judiGreyortaGece.png";
 
-import lucaGreyOrta from "../public/assets/ortakafeller/lucaGreyOrta.png";
-import lucaGreyOrtaGece from "../public/assets/ortakafeller/lucaGreyOrtaGece.png";
+import lucaGreyOrta from "../../public/assets/ortakafeller/lucaGreyOrta.png";
+import lucaGreyOrtaGece from "../../public/assets/ortakafeller/lucaGreyOrtaGece.png";
 
 // teraslar
-import terasLight from "../public/assets/teraslar/terasLight.png";
-import terasLightGece from "../public/assets/teraslar/terasLightGece.png";
+import terasLight from "../../public/assets/teraslar/terasLight.png";
+import terasLightGece from "../../public/assets/teraslar/terasLightGece.png";
 
-import terasJudi from "../public/assets/teraslar/terasJudi.png";
-import terasJudiGece from "../public/assets/teraslar/terasJudiGece.png";
+import terasJudi from "../../public/assets/teraslar/terasJudi.png";
+import terasJudiGece from "../../public/assets/teraslar/terasJudiGece.png";
 
-import terasLuca from "../public/assets/teraslar/terasLuca.png";
-import terasLucaGece from "../public/assets/teraslar/teraslucaGece.png";
+import terasLuca from "../../public/assets/teraslar/terasLuca.png";
+import terasLucaGece from "../../public/assets/teraslar/teraslucaGece.png";
 
 export default function Home() {
   // =========================
