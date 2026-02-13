@@ -109,7 +109,7 @@ export default function Home() {
   const { Option, OptGroup } = Select;
 
   // kafellər
-  const [kenar, setKenar] = useState<keyof typeof kenarKafelleri>("light");
+  const [kenar, setKenar] = useState<keyof typeof kenarKafelleri>("superstone");
   const [orta, setOrta] = useState<keyof typeof ortaKafeller>("light");
   const [terasTipi, setTerasTipi] = useState<keyof typeof teras>("light");
 
