@@ -1,7 +1,10 @@
 .heroSubtitle{
-        letter-spacing: 2px;
     text-transform: uppercase;
     color: #2A69AC;
     margin-bottom: 20px;
     font-size: 16px;
+    font-weight: 800;
+    line-height: 1.1em;
+    letter-spacing: 0.13em;
+    font-family: var(--font-manrope)
 }

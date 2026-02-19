@@ -12,13 +12,13 @@ export default function Hero() {
         </h3>
 
         <h1 className="hero-title" data-aos="fade-up" data-aos-delay="200">
-          Building dreams with precision <br />
+          Building dreams with <br />precision 
           and excellence
         </h1>
 
         <p className="hero-text" data-aos="fade-up" data-aos-delay="350">
           We specialize in turning visions into reality with exceptional
-          craftsmanship and meticulous attention to detail. With years of
+          craftsmanship and meticulous <br /> attention to detail. With years of
           experience and a commitment to quality.
         </p>
 
