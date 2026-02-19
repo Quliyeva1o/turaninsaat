@@ -54,9 +54,32 @@ p, a, li, label, span{ font-family: var(--font-dm-sans);}
    position: relative;
    border-radius: 40px;
    margin: 40px;
+   height: 90vh;
+}
+
+#ball {
+  position: fixed;
+  background: #2a69ac;
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 1 !important;
+  left: -4px;
+  top: -4px;
 }
 
 
+#magic-cursor{
+        position: absolute;
+    width: 10px !important;
+    height: 10px !important;
+    pointer-events: none;
+    z-index: 1000000;
+
+    opacity: 0;
+    visibility: inherit;
+}
 .hero-video{
     object-fit: cover;
     z-index: 1;
@@ -68,125 +91,13 @@ p, a, li, label, span{ font-family: var(--font-dm-sans);}
 }
 .hero-overlayy{
       z-index: 2;
-    background: linear-gradient(#00000030, #0000008c);
+    background: linear-gradient(#00000066);
     position: absolute;
     inset: 0;
 }
 
-/* =========================
-   HERO SECTION
-========================= */
 
-.hero {
-    position: relative;
-    min-height: 90vh;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
-    color: #fff;
-}
 
-/* =========================
-   VIDEO
-========================= */
-
-.hero-video {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
-}
-
-/* =========================
-   OVERLAY
-========================= */
-
-.hero-overlay {
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.65),
-            rgba(0, 0, 0, 0.55));
-    z-index: 2;
-}
-
-/* =========================
-   CONTENT
-========================= */
-
-.hero-content {
-    position: relative;
-    z-index: 3;
-    text-align: center;
-    max-width: 900px;
-}
-
-.hero-subtitle {
-    font-size: 16px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: #c49b63;
-    margin-bottom: 20px;
-}
-
-.hero-title {
-    font-size: clamp(36px, 6vw, 64px);
-    font-weight: 800;
-    font-size: 70px;
-    line-height: 1.1em;
-    letter-spacing: -0.03em;
-    margin-bottom: 24px;
-    font-family: var(--font-manrope);
-}
-
-.hero-text {
-    font-size: 18px;
-    line-height: 1.6;
-    color: #ddd;
-    margin-bottom: 40px;
-}
-.hero-text{
-    font-family: var(--font-dm-sans);
-    font-size: 22px;
-}
-
-/* =========================
-   BUTTONS
-========================= */
-
-.hero-actions {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.btn {
-    padding: 14px 32px;
-    border-radius: 30px;
-    font-weight: 600;
-    transition: all 0.25s ease;
-}
-
-.btn-primary {
-    background: #c49b63;
-    color: #000;
-}
-
-.btn-primary:hover {
-    background: #fff;
-}
-
-.btn-outline {
-    border: 2px solid #fff;
-    color: #fff;
-}
-
-.btn-outline:hover {
-    background: #fff;
-    color: #000;
-}
 
 /* =========================
    RESPONSIVE

@@ -1,9 +1,50 @@
+'use client'
 import Link from "next/link";
 import Image from "next/image";
 import './header.css'
 import Button from "../common/Button";
 import logo from '../../public/assets/images/logo.png'
+import { useEffect } from "react";
 export default function Header() {
+
+  useEffect(() => {
+  const cursor = document.getElementById("magic-cursor");
+  const ball = document.getElementById("ball");
+
+  if (!cursor || !ball) return;
+
+  let mouseX = 0;
+  let mouseY = 0;
+  let ballX = 0;
+  let ballY = 0;
+
+  const speed = 0.15; // ↓ bunu dəyişərək gecikməni tənzimləyə bilərsən
+
+  const moveCursor = (e: MouseEvent) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
+
+    cursor.style.opacity = "1";
+    cursor.style.visibility = "visible";
+  };
+
+  const animate = () => {
+    ballX += (mouseX - ballX) * speed;
+    ballY += (mouseY - ballY) * speed;
+
+    ball.style.transform = `translate(${ballX}px, ${ballY}px)`;
+
+    requestAnimationFrame(animate);
+  };
+
+  window.addEventListener("mousemove", moveCursor);
+  animate();
+
+  return () => {
+    window.removeEventListener("mousemove", moveCursor);
+  };
+}, []);
+
   return (
     <>
       {/* Preloader */}
@@ -20,11 +61,6 @@ export default function Header() {
       <div id="magic-cursor" style={{ opacity: 0, visibility: "hidden" }}>
         <div id="ball" />
       </div>
-
-      {/* Skip link (SEO + accessibility) */}
-      <a href="#content" className="skip-link screen-reader-text">
-        Skip to content
-      </a>
 
       {/* Header */}
       <header className="site-header">

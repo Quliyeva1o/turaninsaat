@@ -37,24 +37,6 @@
   transform: translate(-50%, -50%);
 }
 
-/* =========================
-   MAGIC CURSOR
-========================= */
-
-#magic-cursor {
-  position: fixed;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  z-index: 99999;
-}
-
-#magic-cursor #ball {
-  width: 12px;
-  height: 12px;
-  background: #111;
-  border-radius: 50%;
-}
 
 /* =========================
    SKIP LINK (SEO)
