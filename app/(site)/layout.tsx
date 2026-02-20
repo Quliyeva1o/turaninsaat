@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Header from "@/components/layout/Header";
 import AOSProvider from "../providers/AOSProvider";
+import Hero from "@/components/home/hero";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -102,7 +103,10 @@ export default function RootLayout({
       </video>
 
       <div className="hero-overlayy" />
-        {children}</div>
+      <Hero/>
+       </div> 
+       
+       {children}
       </body>
     </html>
   );

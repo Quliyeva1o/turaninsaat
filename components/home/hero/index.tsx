@@ -1,5 +1,5 @@
 "use client"; // bunu faylın yuxarısına əlavə et
-import Button from "../common/Button";
+import Button from "../../common/Button";
 import styles from './index.module.css'
 export default function Hero() {
   return (
@@ -24,7 +24,7 @@ export default function Hero() {
 
         <div className={styles.heroActions} data-aos="zoom-in" data-aos-delay="500">
                <Button text={'Öz hovuzunu yarat'} link={"/create"} type={2}/>
-               <Button text={'Bizim layihələrimiz'} link={"/create"} type={3}/>
+               <Button text={'Bizim layihələrimiz'} link={"/create"} type={4}/>
 
           
          
