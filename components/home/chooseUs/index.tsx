@@ -1,35 +1,39 @@
-import { FaLightbulb, FaUserTie, FaBuilding } from 'react-icons/fa';
-import Button from '@/components/common/Button';
+import { FaLightbulb, FaUserTie, FaBuilding } from "react-icons/fa";
+import Button from "@/components/common/Button";
 
 export default function WhyChooseUs() {
   const projects = [
     {
-      title: "Aspen Heights",
+      title: "Novxanı Villa Hovuzu",
       description:
-        "Our post-construction services gives you peace of mind knowing that we are still here for you even after.",
-      image: "https://demo.awaikenthemes.com/builtup/wp-content/uploads/2024/06/our-project-1-1.jpg",
-      link: "https://demo.awaikenthemes.com/builtup/projects/aspen-heights/",
+        "Fərdi dizayn və müasir filtrasiya sistemləri ilə həyata keçirilmiş villa hovuz layihəsi.",
+      image:
+      "https://i.pinimg.com/736x/83/31/41/833141387254914189437991760c3432.jpg",
+      link: "/projects",
     },
     {
-      title: "Forest Hill Towers",
+      title: "Premium Türk Hamamı",
       description:
-        "Our post-construction services gives you peace of mind knowing that we are still here for you even after.",
-      image: "https://demo.awaikenthemes.com/builtup/wp-content/uploads/2024/06/our-project-2.jpg",
-      link: "https://demo.awaikenthemes.com/builtup/projects/forest-hill-towers/",
+        "Mərmər dekorasiya və peşəkar buxar sistemləri ilə qurulmuş müasir hamam layihəsi.",
+      image:
+        "https://i.pinimg.com/1200x/39/be/20/39be2079cb4742d9b2d16fa225b80464.jpg",
+      link: "/projects",
     },
     {
-      title: "Bayside Residences",
+      title: "Spa & Sauna Zonası",
       description:
-        "Our post-construction services gives you peace of mind knowing that we are still here for you even after.",
-      image: "https://demo.awaikenthemes.com/builtup/wp-content/uploads/2024/06/our-project-3.jpg",
-      link: "https://demo.awaikenthemes.com/builtup/projects/bayside-residences/",
+        "Villa üçün hazırlanmış sauna və relax spa zonası layihəsi.",
+      image:
+        "https://i.pinimg.com/736x/22/31/ec/2231ec16f22e1b76f1b3be82a057f785.jpg",
+      link: "/projects",
     },
     {
-      title: "Parkview Plaza",
+      title: "Duz Otağı Layihəsi",
       description:
-        "Our post-construction services gives you peace of mind knowing that we are still here for you even after.",
-      image: "https://demo.awaikenthemes.com/builtup/wp-content/uploads/2024/06/our-project-4.jpg",
-      link: "https://demo.awaikenthemes.com/builtup/projects/parkview-plaza/",
+        "Haloterapiya üçün xüsusi mikroiqlim sistemi ilə hazırlanmış duz otağı.",
+      image:
+        "https://i.pinimg.com/1200x/26/cc/5b/26cc5b9a58ef92af3266c7dfeaabceb0.jpg",
+      link: "/projects",
     },
   ];
 
@@ -40,94 +44,104 @@ export default function WhyChooseUs() {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto">
           <h3 className="uppercase tracking-[0.25em] text-sm font-extrabold text-[#FFB703]">
-            Why choose us?
+            Niyə bizi seçməlisiniz?
           </h3>
+
           <h2 className="mt-6 text-[clamp(36px,4vw,56px)] font-extrabold leading-tight font-[var(--font-manrope)]">
-            Why we’re your best choice
+            Turan İnşaat – keyfiyyət və peşəkarlıq
           </h2>
+
           <p className="mt-6 text-slate-400 font-[var(--font-dm-sans)]">
-            Developed in close collaboration with our partners and clients,
-            combines industry knowledge, decades of experience, ingenuity and
-            adaptability to deliver excellence to our clients.
+            Hovuz, sauna, türk hamamı və spa layihələrinin dizaynı və tikintisi
+            sahəsində uzun illərin təcrübəsi ilə müştərilərimizə yüksək
+            keyfiyyətli və etibarlı xidmət təqdim edirik.
           </p>
         </div>
 
         {/* Content Grid */}
         <div className="mt-20 grid grid-cols-1 lg:grid-cols-3 gap-14 items-center">
 
-          {/* Left Column */}
+          {/* Left */}
           <div className="space-y-12">
 
-            {/* Icon box */}
             <div className="flex gap-6 items-start">
-              <div className="shrink-0 flex items-center justify-center w-16 h-16 bg-[#102948] rounded-full text-[#FFB703] text-2xl transition-transform duration-300 group-hover:scale-110">
+              <div className="shrink-0 flex items-center justify-center w-16 h-16 bg-[#102948] rounded-full text-[#FFB703] text-2xl">
                 <FaLightbulb />
               </div>
+
               <div>
                 <h3 className="text-xl font-bold font-[var(--font-manrope)]">
-                  Innovation Solutions
+                  Müasir Həllər
                 </h3>
+
                 <p className="mt-3 text-sm text-slate-400 font-[var(--font-dm-sans)]">
-                  Simple actions make a difference. It starts and ends with each
-                  employee striving to work safer every single day.
+                  Hovuz və spa layihələrində ən son texnologiya və innovativ
+                  sistemlərdən istifadə edirik.
                 </p>
               </div>
             </div>
 
-            {/* Counter */}
-            <div className="bg-[#020617] rounded-3xl p-8 text-center shadow-lg hover:shadow-xl transition-shadow">
+            <div className="bg-[#020617] rounded-3xl p-8 text-center shadow-lg">
               <p className="text-sm uppercase tracking-wide text-slate-400 font-[var(--font-dm-sans)]">
-                Project Completed
+                Tamamlanmış Layihə
               </p>
+
               <div className="mt-4 text-5xl font-extrabold text-[#FFB703] font-[var(--font-manrope)]">
-                800<span className="text-3xl align-top">+</span>
+                120<span className="text-3xl align-top">+</span>
               </div>
             </div>
           </div>
 
-          {/* Middle Image */}
+          {/* Image */}
           <div className="flex justify-center">
             <img
               src={projects[0].image}
               alt={projects[0].title}
-              className="rounded-3xl max-h-[460px] object-cover shadow-lg hover:shadow-2xl transition-shadow"
+              className="rounded-3xl max-h-[460px] object-cover shadow-lg"
             />
           </div>
 
-          {/* Right Column */}
+          {/* Right */}
           <div className="space-y-12">
+
             <div className="flex gap-6 items-start">
-              <div className="shrink-0 flex items-center justify-center w-16 h-16 bg-[#102948] rounded-full text-[#FFB703] text-2xl transition-transform duration-300 group-hover:scale-110">
+              <div className="shrink-0 flex items-center justify-center w-16 h-16 bg-[#102948] rounded-full text-[#FFB703] text-2xl">
                 <FaUserTie />
               </div>
+
               <div>
                 <h3 className="text-xl font-bold font-[var(--font-manrope)]">
-                  Trusted Expertise
+                  Peşəkar Komanda
                 </h3>
+
                 <p className="mt-3 text-sm text-slate-400 font-[var(--font-dm-sans)]">
-                  Our experienced professionals deliver reliable construction
-                  solutions with uncompromised quality.
+                  Təcrübəli mühəndis və ustalarımız hər layihəni yüksək
+                  keyfiyyətlə həyata keçirir.
                 </p>
               </div>
             </div>
 
             <div className="flex gap-6 items-start">
-              <div className="shrink-0 flex items-center justify-center w-16 h-16 bg-[#102948] rounded-full text-[#FFB703] text-2xl transition-transform duration-300 group-hover:scale-110">
+              <div className="shrink-0 flex items-center justify-center w-16 h-16 bg-[#102948] rounded-full text-[#FFB703] text-2xl">
                 <FaBuilding />
               </div>
+
               <div>
                 <h3 className="text-xl font-bold font-[var(--font-manrope)]">
-                  Wide Range of Projects
+                  Fərdi Layihələr
                 </h3>
+
                 <p className="mt-3 text-sm text-slate-400 font-[var(--font-dm-sans)]">
-                  From residential to commercial buildings, we handle diverse projects.
+                  Hər layihə müştərinin istəyinə və məkanın xüsusiyyətlərinə
+                  uyğun şəkildə hazırlanır.
                 </p>
               </div>
             </div>
+
           </div>
         </div>
 
-        {/* Projects Grid Below */}
+        {/* Projects */}
         <div className="mt-24 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {projects.map((project) => (
             <a
@@ -141,24 +155,27 @@ export default function WhyChooseUs() {
                 className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-105"
                 loading="lazy"
               />
+
               <div className="p-4">
-                <h4 className="text-lg font-semibold font-[var(--font-manrope)] hover:text-[#FFB703] transition-colors">
+                <h4 className="text-lg font-semibold text-black font-[var(--font-manrope)] group-hover:text-[#FFB703] transition-colors">
                   {project.title}
                 </h4>
+
                 <p className="mt-2 text-gray-500 text-sm font-[var(--font-dm-sans)]">
                   {project.description}
                 </p>
+
                 <span className="mt-3 inline-block text-[#FFB703] font-semibold hover:underline">
-                  View More →
+                  Ətraflı →
                 </span>
               </div>
             </a>
           ))}
         </div>
 
-        {/* CTA Button */}
+        {/* CTA */}
         <div className="mt-16 text-center">
-          <Button text="View All Projects" link="https://demo.awaikenthemes.com/builtup/projects/" type={4} />
+          <Button text="Bütün layihələr" link="/projects" type={4} />
         </div>
       </div>
     </section>
