@@ -117,3 +117,12 @@
    background: transparent;
    border: 1px solid #fff;
  }
+
+ /* Mobile adjustments */
+@media (max-width: 640px) {
+  .btn {
+    padding: 14px 24px; /* əvvəl 20px 30px */
+    font-size: 16px;    /* əvvəl 18px */
+    gap: 6px;           /* əvvəl 8px */
+  }
+}
