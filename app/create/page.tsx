@@ -232,7 +232,7 @@ export default function Create() {
       gunduz: terasLuca,
       gece: terasLucaGece,
     },
-      mavivilla: {
+    mavivilla: {
       gunduz: mavivilla,
       gece: mavivillagece,
     },
@@ -240,15 +240,28 @@ export default function Create() {
   // =========================
   // HANDLERS
   // =========================
-let hovuzSrc: StaticImageData;
-if (hovuzTipi === "klassikCam") {
-  hovuzSrc = hovuzlar.klassikCam[hovuzModeli as KlassikCamModels][mode];
-} else {
-  hovuzSrc = hovuzlar.kare[hovuzModeli as KareModels][mode];
-}
-  const kenarSrc = kenarKafelleri[kenar][mode];
-  const ortaSrc = ortaKafeller[orta][mode];
-  const terasSrc = teras[terasTipi][mode];
+  let hovuzGunduz: StaticImageData;
+  let hovuzGece: StaticImageData;
+
+  if (hovuzTipi === "klassikCam") {
+    hovuzGunduz = hovuzlar.klassikCam[hovuzModeli as KlassikCamModels].gunduz;
+    hovuzGece = hovuzlar.klassikCam[hovuzModeli as KlassikCamModels].gece;
+  } else {
+    hovuzGunduz = hovuzlar.kare[hovuzModeli as KareModels].gunduz;
+    hovuzGece = hovuzlar.kare[hovuzModeli as KareModels].gece;
+  }
+
+  const kenarGece = kenarKafelleri[kenar].gece
+  const kenarGunduz = kenarKafelleri[kenar].gunduz;
+
+
+  const ortaGece = ortaKafeller[orta].gece;
+  const ortaGunduz = ortaKafeller[orta].gunduz;
+
+
+  const terasGunduz = teras[terasTipi].gunduz;
+  const terasGece = teras[terasTipi].gece;
+
 
   const toggleTheme = () => {
     setIsNight((prev) => !prev);
@@ -262,123 +275,118 @@ if (hovuzTipi === "klassikCam") {
     <div className="relative w-screen h-screen overflow-hidden">
       {/* HOVUZ */}
       {/* HOVUZ */}
-      <Image fill src={hovuzSrc} alt="hovuz" className="object-cover z-10" />
+      <Image
+        fill
+        src={hovuzGece}
+        alt="hovuz-gece"
+        className={`object-cover ${mode === "gece" ? "z-11" : "z-10"}`}
+      />
+
+      <Image
+        fill
+        src={hovuzGunduz}
+        alt="hovuz-gunduz"
+        className={`object-cover ${mode === "gece" ? "z-10" : "z-11"}`}
+      />
 
       {/* KAFELLƏR */}
-      <Image fill src={kenarSrc} alt="kenar" className="object-cover z-22" />
-      <Image fill src={ortaSrc} alt="orta" className="object-cover z-22" />
-      <Image fill src={terasSrc} alt="teras" className="object-cover z-20" />
+      <Image fill src={kenarGece} alt="kenar" className={`object-cover ${mode == 'gece' ? 'z-23' : 'z-22'}`} />
+      <Image fill src={kenarGunduz} alt="kenar" className={`object-cover ${mode == 'gece' ? 'z-22' : 'z-23'}`} />
+
+      <Image fill src={ortaGece} alt="orta" className={`object-cover ${mode == 'gece' ? 'z-23' : 'z-22'}`} />
+      <Image fill src={ortaGunduz} alt="orta" className={`object-cover ${mode == 'gece' ? 'z-22' : 'z-23'}`} />
+
+
+      <Image fill src={terasGunduz} alt="terasgunduz" className={`object-cover ${mode == 'gece' ? 'z-20' : 'z-21'}`} />
+      <Image fill src={terasGece} alt="terasgece" className={`object-cover ${mode == 'gece' ? 'z-21' : 'z-20'}`} />
+
 
       {/* =========================
           UI – TEST PANEL
       ========================= */}
-      <div className="absolute bottom-6 left-6 z-50 bg-black/60 p-4 rounded-xl text-white text-sm space-y-2">
-        {/* GECƏ / GÜNDÜZ */}
-        <button
-          onClick={() => setIsNight((p) => !p)}
-          className="px-3 py-1 rounded bg-white/20 w-full"
-        >
-          {isNight ? "🌙 Gece" : "☀️ Gunduz"}
-        </button>
+     <div className="absolute bottom-4 right-4 z-50 bg-black/50 backdrop-blur-md px-3 py-2 rounded-xl text-white">
+  <Space size="small" wrap>
+    {/* 🌙 MODE */}
+    <Button
+      size="small"
+      onClick={() => setIsNight((p) => !p)}
+      className="bg-white/20 text-white border-none"
+    >
+      {isNight ? "🌙" : "☀️"}
+    </Button>
 
-        <Form
-          layout="vertical"
-          className="absolute bottom-6 left-6 z-50 bg-black/60 p-4 rounded-xl text-white"
-        >
-          {/* GECƏ / GÜNDÜZ */}
-          <Form.Item label={<span className="text-white">Rejim</span>}>
-            <Button
-              block
-              onClick={() => setIsNight((p) => !p)}
-              className="bg-white/20 text-white border-none"
-            >
-              {isNight ? "🌙 Gecə" : "☀️ Gündüz"}
-            </Button>
-          </Form.Item>
+    {/* 🏊 HOVUZ */}
+    <Select
+      size="small"
+      value={`${hovuzTipi}.${hovuzModeli}`}
+      onChange={(val) => {
+        const [type, model] = val.split(".");
+        setHovuzTipi(type as keyof typeof hovuzlar);
+        setHovuzModeli(model as any);
+      }}
+      style={{ width: 140 }}
+    >
+      {Object.entries(hovuzlar).map(([type, models]) => (
+        <OptGroup key={type} label={type}>
+          {Object.keys(models).map((model) => (
+            <Option key={`${type}.${model}`} value={`${type}.${model}`}>
+              {model}
+            </Option>
+          ))}
+        </OptGroup>
+      ))}
+    </Select>
 
-          {/* HOVUZ (TİP + MODEL BİRLİKDƏ) */}
-          <Form.Item label={<span className="text-white">Hovuz modeli</span>}>
-            <Select
-              value={`${hovuzTipi}.${hovuzModeli}`}
-              onChange={(val) => {
-                const [type, model] = val.split(".");
-                setHovuzTipi(type as keyof typeof hovuzlar);
-                setHovuzModeli(model as any);
-              }}
-              className="w-full"
-            >
-              {Object.entries(hovuzlar).map(([type, models]) => (
-                <OptGroup key={type} label={type}>
-                  {Object.keys(models).map((model) => (
-                    <Option key={`${type}.${model}`} value={`${type}.${model}`}>
-                      {model}
-                    </Option>
-                  ))}
-                </OptGroup>
-              ))}
-            </Select>
-          </Form.Item>
+    {/* 🧱 KƏNAR */}
+    <Select
+      size="small"
+      value={kenar}
+      onChange={(val) => setKenar(val)}
+      style={{ width: 100 }}
+    >
+      {Object.keys(kenarKafelleri).map((k) => (
+        <Option key={k} value={k}>
+          K:{k}
+        </Option>
+      ))}
+    </Select>
 
-          <Form.Item label={<span className="text-white">Kafellər</span>}>
-            <Select
-              value={
-                kenar
-                  ? `kenar.${kenar}`
-                  : orta
-                    ? `orta.${orta}`
-                    : `teras.${terasTipi}`
-              }
-              onChange={(val) => {
-                const [group, key] = val.split(".");
+    {/* 🧱 ORTA */}
+    <Select
+      size="small"
+      value={orta}
+      onChange={(val) => setOrta(val)}
+      style={{ width: 100 }}
+    >
+      {Object.keys(ortaKafeller).map((k) => (
+        <Option key={k} value={k}>
+          O:{k}
+        </Option>
+      ))}
+    </Select>
 
-                if (group === "kenar") setKenar(key as any);
-                if (group === "orta") setOrta(key as any);
-                if (group === "teras") setTerasTipi(key as any);
-              }}
-            >
-              {/* KƏNAR */}
-              <OptGroup label="Kənar kafel">
-                {Object.keys(kenarKafelleri).map((k) => (
-                  <Option key={`kenar.${k}`} value={`kenar.${k}`}>
-                    {k}
-                  </Option>
-                ))}
-              </OptGroup>
+    {/* 🏡 TERAS */}
+    <Select
+      size="small"
+      value={terasTipi}
+      onChange={(val) => {
+        setTerasTipi(val);
 
-              {/* ORTA */}
-              <OptGroup label="Orta kafel">
-                {Object.keys(ortaKafeller).map((k) => (
-                  <Option key={`orta.${k}`} value={`orta.${k}`}>
-                    {k}
-                  </Option>
-                ))}
-              </OptGroup>
-
-      
-            </Select>
-          </Form.Item>
-<Form.Item label={<span className="text-white">Teras</span>}>
-  <Select
-    value={terasTipi}
-    onChange={(val) => {
-      setTerasTipi(val);
-
-      // 🔥 xüsusi qayda
-      if (val === "mavivilla") {
-        setHovuzTipi("kare");
-        setHovuzModeli("judiGrey");
-      }
-    }}
-  >
-    {Object.keys(teras).map((k) => (
-      <Option key={k} value={k}>
-        {k}
-      </Option>
-    ))}
-  </Select>
-</Form.Item>
-        </Form>
-      </div>
+        if (val === "mavivilla") {
+          setHovuzTipi("kare");
+          setHovuzModeli("judiGrey");
+        }
+      }}
+      style={{ width: 120 }}
+    >
+      {Object.keys(teras).map((k) => (
+        <Option key={k} value={k}>
+          T:{k}
+        </Option>
+      ))}
+    </Select>
+  </Space>
+</div>
     </div>
   );
 }
