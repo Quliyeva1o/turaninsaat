@@ -70,13 +70,16 @@ import terasLight from "../../public/assets/teraslar/villa3.png";
 import terasLightGece from "../../public/assets/teraslar/villa3gece.png";
 
 import terasJudi from "../../public/assets/teraslar/villa2.png";
-import terasJudiGece from "../../public/assets/teraslar/villa3gece.png";
+import terasJudiGece from "../../public/assets/teraslar/villa3gecee.png";
 
 import terasLuca from "../../public/assets/teraslar/hovuz.png";
 import terasLucaGece from "../../public/assets/teraslar/hovuzgece.png";
 
 import mavivilla from "../../public/assets/teraslar/mavivilla.png";
 import mavivillagece from "../../public/assets/teraslar/mavivillagece.png";
+import villa4 from "../../public/assets/teraslar/villa33.png";
+
+
 
 export default function Create() {
   // =========================
@@ -100,13 +103,11 @@ export default function Create() {
     | "a276";
   type KareModels = "bali" | "floralblue" | "floralgreen" | "judiGrey";
 
-  type HovuzTipi = "klassikCam" | "kare";
   type HovuzModeli = KlassikCamModels | KareModels;
 
   // =========================
   // STATES
   // =========================
-  const [hovuzTipi, setHovuzTipi] = useState<HovuzTipi>("kare");
   const [hovuzModeli, setHovuzModeli] = useState<HovuzModeli>("bali");
 
   const { Option, OptGroup } = Select;
@@ -114,12 +115,11 @@ export default function Create() {
   // kafellər
   const [kenar, setKenar] = useState<keyof typeof kenarKafelleri>("superstone");
   const [orta, setOrta] = useState<keyof typeof ortaKafeller>("superstone");
-  const [terasTipi, setTerasTipi] = useState<keyof typeof teras>("judi");
+  const [terasTipi, setTerasTipi] = useState<keyof typeof teras>("boz");
 
   const mode = isNight ? "gece" : "gunduz";
 
   const hovuzlar = {
-    klassikCam: {
       a151: {
         gunduz: a151,
         gece: a151gece,
@@ -160,9 +160,7 @@ export default function Create() {
         gunduz: a276,
         gece: a276gece,
       },
-    },
-
-    kare: {
+ 
       bali: {
         gunduz: bali,
         gece: baligece,
@@ -179,14 +177,11 @@ export default function Create() {
         gunduz: judiGreyKare,
         gece: judiGreyKareGece,
       },
-    },
+  
   } as const;
 
   const kenarKafelleri = {
-    superstone: {
-      gunduz: superstone,
-      gece: superstoneGece,
-    },
+
     light: {
       gunduz: light,
       gece: lightGece,
@@ -199,13 +194,14 @@ export default function Create() {
       gunduz: lucaGrey,
       gece: lucaGreyGece,
     },
-  } as const;
-
-  const ortaKafeller = {
-    superstone: {
+        superstone: {
       gunduz: superstone,
       gece: superstoneGece,
     },
+  } as const;
+
+  const ortaKafeller = {
+  
     light: {
       gunduz: lightorta,
       gece: lightortaGece,
@@ -218,15 +214,24 @@ export default function Create() {
       gunduz: lucaGreyOrta,
       gece: lucaGreyOrtaGece,
     },
+      superstone: {
+      gunduz: superstone,
+      gece: superstoneGece,
+    },
   } as const;
   const teras = {
-    light: {
-      gunduz: terasLight,
-      gece: terasLightGece,
-    },
+
     judi: {
       gunduz: terasJudi,
       gece: terasJudiGece,
+    },
+    boz: {
+      gunduz: villa4,
+      gece: terasJudiGece,
+    },
+    light: {
+      gunduz: terasLight,
+      gece: terasLightGece,
     },
     luca: {
       gunduz: terasLuca,
@@ -243,13 +248,9 @@ export default function Create() {
   let hovuzGunduz: StaticImageData;
   let hovuzGece: StaticImageData;
 
-  if (hovuzTipi === "klassikCam") {
-    hovuzGunduz = hovuzlar.klassikCam[hovuzModeli as KlassikCamModels].gunduz;
-    hovuzGece = hovuzlar.klassikCam[hovuzModeli as KlassikCamModels].gece;
-  } else {
-    hovuzGunduz = hovuzlar.kare[hovuzModeli as KareModels].gunduz;
-    hovuzGece = hovuzlar.kare[hovuzModeli as KareModels].gece;
-  }
+    hovuzGunduz = hovuzlar[hovuzModeli as KareModels].gunduz;
+    hovuzGece = hovuzlar[hovuzModeli as KareModels].gece;
+  
 
   const kenarGece = kenarKafelleri[kenar].gece
   const kenarGunduz = kenarKafelleri[kenar].gunduz;
@@ -263,10 +264,6 @@ export default function Create() {
   const terasGece = teras[terasTipi].gece;
 
 
-  const toggleTheme = () => {
-    setIsNight((prev) => !prev);
-  };
-
   // =========================
   // RENDER
   // =========================
@@ -274,119 +271,96 @@ export default function Create() {
   return (
     <div className="relative w-screen h-screen overflow-hidden">
       {/* HOVUZ */}
-      {/* HOVUZ */}
+         <Image
+        width={100000} height={100000} quality={100}
+        src={hovuzlar.bali.gunduz}
+        alt="hovuz-gunduz"
+        className={`absolute w-full h-full object-cover ${mode === "gece" ? "z-10" : "z-11"}`}
+      />
       <Image
-        fill
+        width={100000} height={100000} quality={100}
+
         src={hovuzGece}
         alt="hovuz-gece"
-        className={`object-cover ${mode === "gece" ? "z-11" : "z-10"}`}
+        className={`absolute object-cover w-full h-full ${mode === "gece" ? "z-11" : "z-10"}`}
       />
 
       <Image
-        fill
+        width={100000} height={100000} quality={100}
         src={hovuzGunduz}
         alt="hovuz-gunduz"
-        className={`object-cover ${mode === "gece" ? "z-10" : "z-11"}`}
+        className={`absolute w-full h-full object-cover ${mode === "gece" ? "z-10" : "z-11"}`}
       />
 
       {/* KAFELLƏR */}
-      <Image fill src={kenarGece} alt="kenar" className={`object-cover ${mode == 'gece' ? 'z-23' : 'z-22'}`} />
-      <Image fill src={kenarGunduz} alt="kenar" className={`object-cover ${mode == 'gece' ? 'z-22' : 'z-23'}`} />
+      <Image width={100000} height={100000} quality={100} src={kenarGece} alt="kenar" className={`absolute w-full h-full object-cover ${mode == 'gece' ? 'z-23' : 'z-22'}`} />
+      <Image width={100000} height={100000} quality={100} src={kenarGunduz} alt="kenar" className={`absolute w-full h-full object-cover ${mode == 'gece' ? 'z-22' : 'z-23'}`} />
 
-      <Image fill src={ortaGece} alt="orta" className={`object-cover ${mode == 'gece' ? 'z-23' : 'z-22'}`} />
-      <Image fill src={ortaGunduz} alt="orta" className={`object-cover ${mode == 'gece' ? 'z-22' : 'z-23'}`} />
+      <Image width={100000} height={100000} quality={100} src={ortaGece} alt="orta" className={`absolute w-full h-full object-cover ${mode == 'gece' ? 'z-23' : 'z-22'}`} />
+      <Image width={100000} height={100000} quality={100} src={ortaGunduz} alt="orta" className={`absolute w-full h-full object-cover ${mode == 'gece' ? 'z-22' : 'z-23'}`} />
 
 
-      <Image fill src={terasGunduz} alt="terasgunduz" className={`object-cover ${mode == 'gece' ? 'z-20' : 'z-21'}`} />
-      <Image fill src={terasGece} alt="terasgece" className={`object-cover ${mode == 'gece' ? 'z-21' : 'z-20'}`} />
+      <Image width={100000} height={100000} quality={100} src={terasGunduz} alt="terasgunduz" className={`absolute w-full h-full object-cover ${mode == 'gece' ? 'z-20' : 'z-21'}`} />
+      <Image width={100000} height={100000} quality={100} src={terasGece} alt="terasgece" className={`absolute w-full h-full object-cover ${mode == 'gece' ? 'z-21' : 'z-20'}`} />
 
 
       {/* =========================
           UI – TEST PANEL
       ========================= */}
-     <div className="absolute bottom-4 right-4 z-50 bg-black/50 backdrop-blur-md px-3 py-2 rounded-xl text-white">
-  <Space size="small" wrap>
-    {/* 🌙 MODE */}
-    <Button
-      size="small"
-      onClick={() => setIsNight((p) => !p)}
-      className="bg-white/20 text-white border-none"
-    >
-      {isNight ? "🌙" : "☀️"}
-    </Button>
+     <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-50 bg-black/60 backdrop-blur-lg p-4 rounded-2xl border border-white/10 w-fit">
+        <Space size="middle">
+          <Button 
+            type="primary" 
+            shape="circle" 
+            onClick={() => setIsNight(!isNight)}
+          >
+            {isNight ? "🌙" : "☀️"}
+          </Button>
 
-    {/* 🏊 HOVUZ */}
-    <Select
-      size="small"
-      value={`${hovuzTipi}.${hovuzModeli}`}
-      onChange={(val) => {
-        const [type, model] = val.split(".");
-        setHovuzTipi(type as keyof typeof hovuzlar);
-        setHovuzModeli(model as any);
-      }}
-      style={{ width: 140 }}
-    >
-      {Object.entries(hovuzlar).map(([type, models]) => (
-        <OptGroup key={type} label={type}>
-          {Object.keys(models).map((model) => (
-            <Option key={`${type}.${model}`} value={`${type}.${model}`}>
-              {model}
-            </Option>
-          ))}
-        </OptGroup>
-      ))}
-    </Select>
+          {/* HOVUZ SEÇİMİ */}
+          <Select
+            showSearch
+            style={{ width: 180 }}
+            value={hovuzModeli}
+            onChange={(val) => setHovuzModeli(val)}
+            options={Object.keys(hovuzlar).map((key) => ({
+              value: key,
+              label: (
+                <div className="flex items-center gap-2">
+                  <div className="w-6 h-6 rounded overflow-hidden relative">
+                    <Image src={hovuzlar[key as keyof typeof hovuzlar].gunduz} alt={key} fill className="object-cover" />
+                  </div>
+                  {key.toUpperCase()}
+                </div>
+              ),
+            }))}
+          />
 
-    {/* 🧱 KƏNAR */}
-    <Select
-      size="small"
-      value={kenar}
-      onChange={(val) => setKenar(val)}
-      style={{ width: 100 }}
-    >
-      {Object.keys(kenarKafelleri).map((k) => (
-        <Option key={k} value={k}>
-          K:{k}
-        </Option>
-      ))}
-    </Select>
+           <Select
+            style={{ width: 120 }}
+            value={orta}
+            onChange={setOrta}
+            options={Object.keys(ortaKafeller).map(k => ({ value: k, label: `Kenar  : ${k}` }))}
+          />
+          <Select
+            style={{ width: 120 }}
+            value={kenar}
+            onChange={setKenar}
+            options={Object.keys(kenarKafelleri).map(k => ({ value: k, label: `Orta: ${k}` }))}
+          />
 
-    {/* 🧱 ORTA */}
-    <Select
-      size="small"
-      value={orta}
-      onChange={(val) => setOrta(val)}
-      style={{ width: 100 }}
-    >
-      {Object.keys(ortaKafeller).map((k) => (
-        <Option key={k} value={k}>
-          O:{k}
-        </Option>
-      ))}
-    </Select>
-
-    {/* 🏡 TERAS */}
-    <Select
-      size="small"
-      value={terasTipi}
-      onChange={(val) => {
-        setTerasTipi(val);
-
-        if (val === "mavivilla") {
-          setHovuzTipi("kare");
-          setHovuzModeli("judiGrey");
-        }
-      }}
-      style={{ width: 120 }}
-    >
-      {Object.keys(teras).map((k) => (
-        <Option key={k} value={k}>
-          T:{k}
-        </Option>
-      ))}
-    </Select>
-  </Space>
-</div>
+          {/* TERAS */}
+          <Select
+            style={{ width: 120 }}
+            value={terasTipi}
+            onChange={(val) => {
+              setTerasTipi(val);
+              if (val === "mavivilla") setHovuzModeli("judiGrey");
+            }}
+            options={Object.keys(teras).map(t => ({ value: t, label: `Teras: ${t}` }))}
+          />
+        </Space>
+      </div>
     </div>
   );
 }
