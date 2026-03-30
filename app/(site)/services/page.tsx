@@ -26,7 +26,7 @@ export default function Services({ locale = "az" }: Props) {
             >
               {/* Şəkil */}
               <img
-                src={`https://via.placeholder.com/800x500?text=${encodeURIComponent(s.title)}`}
+                src={s.img}
                 alt={s.title}
                 className="w-full h-80 md:h-96 object-cover transition-transform duration-500 group-hover:scale-110"
               />
@@ -35,16 +35,16 @@ export default function Services({ locale = "az" }: Props) {
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black rounded-3xl" />
 
               {/* Content */}
-              <div className="absolute bottom-0 left-4 right-4 p-6 z-20 transform translate-y-[65%] group-hover:translate-y-0 transition-transform duration-500">
+              <div className="absolute bottom-0 left-4 right-4 p-6 z-20 transform translate-y-[30%] group-hover:translate-y-0 transition-transform duration-500">
                 <h3 className="text-2xl font-extrabold text-white">
                   {s.title}
                 </h3>
 
                 <p className="mt-2 text-sm lg:text-base text-slate-200">
-                  {/* {s.desc} */}
+                  {s.desc}
                 </p>
 
-                <span className="mt-3 inline-flex items-center gap-2 text-[#C49B63] font-semibold">
+                <span className="mt-7 inline-flex items-center gap-2 text-[#C49B63] font-semibold">
                   {locale === "az" ? "Ətraflı →" : "Learn More →"}
                 </span>
               </div>

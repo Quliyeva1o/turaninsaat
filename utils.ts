@@ -28,8 +28,7 @@ export const servicesContent = {
     {
       title: "Hovuz Filtrasiya Sistemləri",
       slug: "hovuz-filtrasiya-sistemleri",
-            img: "https://i.pinimg.com/736x/83/31/41/833141387254914189437991760c3432.jpg",
-
+img: '/assets/images/poolFilter.png',
       desc: "Hovuz suyun təmizliyi və dövriyyəsi üçün effektiv filtrasiya sistemləri.",
       sections: [
         {
@@ -44,10 +43,29 @@ export const servicesContent = {
       ]
     },
 
+  
+
     {
+      title: "Hovuz İsitmə və Soyutma Sistemləri",
+      slug: "hovuz-istitme-soyutma",
+img: '/assets/images/poolHeather.png',
+
+      desc: "Hovuz suyunu isitmək və soyutmaq üçün yüksək performanslı avadanlıqlar.",
+      sections: [
+        {
+          title: "Avadanlıqlar",
+          items: [
+            "İsitmə pompası – Qızdırma və soyutma.",
+            "Boru tipli eşenjor – Effektiv istilik ötürmə.",
+            "Plaka tipli eşenjor – Yüksək performanslı sistem."
+          ]
+        }
+      ]
+    },
+  {
       title: "Hovuz Təmizlik Texnologiyaları",
       slug: "hovuz-temizlik-texnologiyalari",
-            img: "https://i.pinimg.com/736x/83/31/41/833141387254914189437991760c3432.jpg",
+img: '/assets/images/poolCleaning.png',
 
       desc: "Hovuz suyunu avtomatik və ekoloji yollarla təmizləyən müasir texnologiyalar.",
       sections: [
@@ -63,29 +81,10 @@ export const servicesContent = {
         }
       ]
     },
-
-    {
-      title: "Hovuz İsitmə və Soyutma Sistemləri",
-      slug: "hovuz-istitme-soyutma",
-            img: "https://i.pinimg.com/736x/83/31/41/833141387254914189437991760c3432.jpg",
-
-      desc: "Hovuz suyunu isitmək və soyutmaq üçün yüksək performanslı avadanlıqlar.",
-      sections: [
-        {
-          title: "Avadanlıqlar",
-          items: [
-            "İsitmə pompası – Qızdırma və soyutma.",
-            "Boru tipli eşenjor – Effektiv istilik ötürmə.",
-            "Plaka tipli eşenjor – Yüksək performanslı sistem."
-          ]
-        }
-      ]
-    },
-
     {
       title: "Hovuz Əlavə Avadanlıqları",
       slug: "hovuz-elave-avadanliqlar",
-            img: "https://i.pinimg.com/736x/83/31/41/833141387254914189437991760c3432.jpg",
+img: '/assets/images/poolDetails.png',
 
       desc: "Hovuz təcrübəsini zənginləşdirən şəlalə, dalğa və aquapark sistemləri.",
       sections: [
@@ -100,30 +99,10 @@ export const servicesContent = {
         }
       ]
     },
-
-    {
-      title: "Hovuz Örtükləri",
-      slug: "hovuz-ortukleri",
-            img: "https://i.pinimg.com/736x/83/31/41/833141387254914189437991760c3432.jpg",
-
-      desc: "Hovuzun təhlükəsizliyini və istiliyini qoruyan avtomatik və mexaniki örtüklər.",
-      sections: [
-        {
-          title: "Örtük Növləri",
-          items: [
-            "Avtomatik örtüklər – Uzaqdan idarə olunur.",
-            "Mexaniki örtüklər – Əl ilə istifadə olunur.",
-            "Rulo tipi örtük – PVC və polikarbonat material.",
-            "Bank tipi (Prestige) örtük – Gizli sistem."
-          ]
-        }
-      ]
-    },
-
-    {
+{
       title: "Fontan və Şəlalə Sistemləri",
       slug: "fontan-selale-sistemleri",
-            img: "https://i.pinimg.com/736x/83/31/41/833141387254914189437991760c3432.jpg",
+img: '/assets/images/fountain.jpg',
 
       desc: "Hovuz və bağlara estetik və səsli su elementləri əlavə edən sistemlər.",
       sections: [
@@ -139,9 +118,29 @@ export const servicesContent = {
         }
       ]
     },
+    {
+      title: "Hovuz Örtükləri",
+      slug: "hovuz-ortukleri",
+img: '/assets/images/poolCover.jpg',
+
+      desc: "Hovuzun təhlükəsizliyini və istiliyini qoruyan avtomatik və mexaniki örtüklər.",
+      sections: [
+        {
+          title: "Örtük Növləri",
+          items: [
+            "Avtomatik örtüklər – Uzaqdan idarə olunur.",
+            "Mexaniki örtüklər – Əl ilə istifadə olunur.",
+            "Rulo tipi örtük – PVC və polikarbonat material.",
+            "Bank tipi (Prestige) örtük – Gizli sistem."
+          ]
+        }
+      ]
+    },
+
+    
 
     {
-      title: "Hovuz Ətrafı Avadanlıqlar",
+      title: "Hovuz Məkanınızı Tamamlayan Elementlər",
       slug: "hovuz-etrafi-avadanliqlar",
       img: "https://i.pinimg.com/736x/83/31/41/833141387254914189437991760c3432.jpg",
 
