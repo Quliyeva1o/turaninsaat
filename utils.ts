@@ -1,9 +1,10 @@
-
 export const servicesContent = {
   az: [
     {
       title: "Hovuzların Növləri",
       slug: "hovuz-novleri",
+      img: "https://i.pinimg.com/736x/83/31/41/833141387254914189437991760c3432.jpg",
+      desc: "Villa və ictimai məkanlar üçün müxtəlif hovuz növləri və dizaynları.",
       sections: [
         {
           title: "Əsas Növlər",
@@ -27,6 +28,9 @@ export const servicesContent = {
     {
       title: "Hovuz Filtrasiya Sistemləri",
       slug: "hovuz-filtrasiya-sistemleri",
+            img: "https://i.pinimg.com/736x/83/31/41/833141387254914189437991760c3432.jpg",
+
+      desc: "Hovuz suyun təmizliyi və dövriyyəsi üçün effektiv filtrasiya sistemləri.",
       sections: [
         {
           title: "Filtrasiya Növləri",
@@ -43,6 +47,9 @@ export const servicesContent = {
     {
       title: "Hovuz Təmizlik Texnologiyaları",
       slug: "hovuz-temizlik-texnologiyalari",
+            img: "https://i.pinimg.com/736x/83/31/41/833141387254914189437991760c3432.jpg",
+
+      desc: "Hovuz suyunu avtomatik və ekoloji yollarla təmizləyən müasir texnologiyalar.",
       sections: [
         {
           title: "Müasir Sistemlər",
@@ -60,6 +67,9 @@ export const servicesContent = {
     {
       title: "Hovuz İsitmə və Soyutma Sistemləri",
       slug: "hovuz-istitme-soyutma",
+            img: "https://i.pinimg.com/736x/83/31/41/833141387254914189437991760c3432.jpg",
+
+      desc: "Hovuz suyunu isitmək və soyutmaq üçün yüksək performanslı avadanlıqlar.",
       sections: [
         {
           title: "Avadanlıqlar",
@@ -75,6 +85,9 @@ export const servicesContent = {
     {
       title: "Hovuz Əlavə Avadanlıqları",
       slug: "hovuz-elave-avadanliqlar",
+            img: "https://i.pinimg.com/736x/83/31/41/833141387254914189437991760c3432.jpg",
+
+      desc: "Hovuz təcrübəsini zənginləşdirən şəlalə, dalğa və aquapark sistemləri.",
       sections: [
         {
           title: "Funksional Sistemlər",
@@ -91,6 +104,9 @@ export const servicesContent = {
     {
       title: "Hovuz Örtükləri",
       slug: "hovuz-ortukleri",
+            img: "https://i.pinimg.com/736x/83/31/41/833141387254914189437991760c3432.jpg",
+
+      desc: "Hovuzun təhlükəsizliyini və istiliyini qoruyan avtomatik və mexaniki örtüklər.",
       sections: [
         {
           title: "Örtük Növləri",
@@ -107,6 +123,9 @@ export const servicesContent = {
     {
       title: "Fontan və Şəlalə Sistemləri",
       slug: "fontan-selale-sistemleri",
+            img: "https://i.pinimg.com/736x/83/31/41/833141387254914189437991760c3432.jpg",
+
+      desc: "Hovuz və bağlara estetik və səsli su elementləri əlavə edən sistemlər.",
       sections: [
         {
           title: "Dekorativ Elementlər",
@@ -124,6 +143,9 @@ export const servicesContent = {
     {
       title: "Hovuz Ətrafı Avadanlıqlar",
       slug: "hovuz-etrafi-avadanliqlar",
+      img: "https://i.pinimg.com/736x/83/31/41/833141387254914189437991760c3432.jpg",
+
+      desc: "Şezlong, çətir və duş sistemləri ilə hovuz kənarında komfort və təhlükəsizlik.",
       sections: [
         {
           title: "Komfort",
@@ -140,6 +162,8 @@ export const servicesContent = {
     {
       title: "SPA və Sağlamlıq Xidmətləri",
       slug: "spa-wellness",
+      img: "https://i.pinimg.com/736x/f2/2b/5a/f22b5ad40f4a4196fd7a1d989846d5e3.jpg",
+      desc: "Rahatlıq, bədən və ruh üçün müasir SPA və sağlamlıq xidmətləri.",
       sections: [
         {
           title: "SPA Xidmətləri",
@@ -162,6 +186,7 @@ export const servicesContent = {
     {
       title: "Əlavə SPA Avadanlıqları",
       slug: "spa-avadanliqlari",
+      desc: "SPA təcrübəsini tamamlamaq üçün şok duş, buz və digər avadanlıqlar.",
       sections: [
         {
           title: "Xüsusi Sistemlər",
@@ -179,6 +204,7 @@ export const servicesContent = {
     {
       title: "Pool Types",
       slug: "pool-types",
+      desc: "Various types of private and public pools for villas, hotels, and spas.",
       sections: [
         {
           title: "Main Types",
@@ -202,6 +228,7 @@ export const servicesContent = {
     {
       title: "Pool Filtration Systems",
       slug: "pool-filtration",
+      desc: "Efficient pool filtration systems ensuring clean and circulating water.",
       sections: [
         {
           title: "Types",
@@ -218,6 +245,7 @@ export const servicesContent = {
     {
       title: "Pool Cleaning Technologies",
       slug: "pool-cleaning",
+      desc: "Modern technologies for automatic and eco-friendly pool cleaning.",
       sections: [
         {
           title: "Systems",
@@ -235,6 +263,7 @@ export const servicesContent = {
     {
       title: "Heating & Cooling",
       slug: "pool-heating-cooling",
+      desc: "High-performance equipment for heating and cooling pool water.",
       sections: [
         {
           title: "Equipment",
@@ -250,6 +279,7 @@ export const servicesContent = {
     {
       title: "Additional Pool Equipment",
       slug: "pool-equipment",
+      desc: "Enhance your pool experience with waterfalls, waves, and aquapark systems.",
       sections: [
         {
           title: "Systems",
@@ -266,6 +296,7 @@ export const servicesContent = {
     {
       title: "Pool Covers",
       slug: "pool-covers",
+      desc: "Automatic and manual covers ensuring safety and retaining heat.",
       sections: [
         {
           title: "Types",
@@ -282,6 +313,7 @@ export const servicesContent = {
     {
       title: "Fountains & Waterfalls",
       slug: "fountains-waterfalls",
+      desc: "Decorative water elements for aesthetics and ambient sound in pools.",
       sections: [
         {
           title: "Decor",
@@ -299,6 +331,7 @@ export const servicesContent = {
     {
       title: "Poolside Equipment",
       slug: "poolside-equipment",
+      desc: "Comfortable sunbeds, showers, and safety dividers for poolside relaxation.",
       sections: [
         {
           title: "Comfort",
@@ -315,6 +348,7 @@ export const servicesContent = {
     {
       title: "SPA & Wellness",
       slug: "spa-wellness",
+      desc: "Modern SPA and wellness services for ultimate body and mind relaxation.",
       sections: [
         {
           title: "Services",
@@ -336,6 +370,7 @@ export const servicesContent = {
     {
       title: "SPA Equipment",
       slug: "spa-equipment",
+      desc: "Complementary SPA equipment including shock showers and ice features.",
       sections: [
         {
           title: "Extras",
