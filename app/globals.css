@@ -71,6 +71,24 @@ span {
   }
 }
 
+.swipperwrapper {
+  padding-bottom: 50px !important;
+  overflow: hidden;
+}
+.swipperwrapper .swiper-pagination-bullet{
+  background: #fff!important;
+}
+.swipperwrapper .swiper-pagination-bullet.swiper-pagination-bullet-active{
+  background: #2a69ac!important ;
+}
+.swipperwrapper .swiper.swiper-initialized.swiper-horizontal {
+  overflow: visible !important;
+}
+
+.swipperwrapper .swiper-pagination {
+  bottom: -50px !important;
+}
+
 /* 📱 Small mobile */
 @media (max-width: 480px) {
   .headercontainer {
@@ -78,6 +96,7 @@ span {
     border-radius: 16px;
   }
 }
+
 #ball {
   position: fixed;
   background: #2a69ac;

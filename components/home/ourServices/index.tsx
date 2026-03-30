@@ -4,6 +4,7 @@ import 'swiper/css';
 import Button from '@/components/common/Button';
 import { useRouter } from 'next/navigation';
 import { servicesContent } from '@/utils';
+import { Autoplay, Pagination } from "swiper/modules";
 
 interface Props {
   locale?: 'az' | 'en';
@@ -36,17 +37,22 @@ export default function OurServices({ locale = 'az' }: Props) {
         </p>
 
         {/* Slider */}
-        <div className="mt-20">
+        <div className="mt-20 swipperwrapper">
           <Swiper
             spaceBetween={20}
             slidesPerView={1}
-            autoplay
             breakpoints={{
               640: { slidesPerView: 2 },
               1024: { slidesPerView: 4 },
             }}
+
+            modules={[Autoplay, Pagination]}
+            loop={true}
+            autoplay={{ delay: 3500, disableOnInteraction: false }}
+            pagination={{ clickable: true }}
+
           >
-            {services.map((s:any, i:any) => (
+            {services.map((s: any, i: any) => (
               <SwiperSlide key={i}>
                 <div
                   onClick={() => router.push(`/services/${s.slug}`)}
@@ -72,7 +78,7 @@ export default function OurServices({ locale = 'az' }: Props) {
         </div>
 
         {/* CTA */}
-        <div className="mt-20 w-full flex justify-center">
+        <div className="mt-15 w-full flex justify-center">
           <Button
             text={locale === 'az' ? "Bütün xidmətlər" : "All Services"}
             link="/services"
