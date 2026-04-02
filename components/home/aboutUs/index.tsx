@@ -42,7 +42,7 @@ export default function AboutUs({ locale = "az" }: AboutProps) {
       aria-label="About Turan İnşaat"
       className="bg-gray-50"
     >
-      <div className="max-w-[1200px] mx-auto px-6 sm:px-8 lg:px-8 py-20 sm:py-24 lg:py-28 flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+      <div className="max-w-[1300px] mx-auto px-6 sm:px-8 lg:px-8 py-20 sm:py-24 lg:py-28 flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
         
         {/* TEXT */}
         <div className="flex-1">

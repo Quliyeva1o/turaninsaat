@@ -71,7 +71,7 @@ export default function Hero({
       aria-label="Turan İnşaat Hero Section"
       className={` ${
         isHome
-          ? "h-[calc(90vh-180px)] md:h-[calc(90vh-150px)]"
+          ? "h-[calc(90vh-180px)] md:h-[calc(90vh)]"
           : "md:h-[250px]"
       }`}
     >
