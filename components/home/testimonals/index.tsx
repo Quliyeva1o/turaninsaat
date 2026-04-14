@@ -47,7 +47,7 @@ export const Products = () => {
           </span>
 
           <h2 data-aos="fade-up"
-            className="text-3xl md:text-4xl lg:text-[56px] font-extrabold mt-3">
+            className="text-3xl md:text-[56px] font-extrabold mt-3">
             Hovuz və SPA üçün texnoloji həllər
           </h2>
 

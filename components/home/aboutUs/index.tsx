@@ -52,7 +52,7 @@ export default function AboutUs({ locale = "az" }: AboutProps) {
           </span>
 
           {/* Title (SEO) */}
-          <h2 data-aos="fade-right" className="text-[#0F172A] font-extrabold text-3xl sm:text-4xl lg:text-[56px] leading-tight mb-6">
+          <h2 data-aos="fade-right" className="text-[#0F172A] font-extrabold text-3xl md:text-[56px] leading-tight mb-6">
             {t.title}
           </h2>
 

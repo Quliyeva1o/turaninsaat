@@ -14,7 +14,7 @@ export default function OurProjects() {
             Layihələrimiz
           </h3>
 
-          <h2 data-aos="fade-up" className="mt-4 text-[56px] font-extrabold leading-tight">
+          <h2 data-aos="fade-up" className="mt-4 text-3xl md:text-[56px] font-extrabold leading-tight">
             Real hovuz və SPA layihələrimiz
           </h2>
 

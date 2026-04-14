@@ -24,7 +24,7 @@ export default function OurServices({ locale = 'az' }: Props) {
           {locale === 'az' ? "Xidmətlərimiz" : "Our Services"}
         </span>
 
-        <h2 data-aos="fade-up" className="mt-6 text-[56px] font-extrabold leading-tight font-[var(--font-manrope)]">
+        <h2 data-aos="fade-up" className="mt-6 text-3xl md:text-[56px] font-extrabold leading-tight font-[var(--font-manrope)]">
           {locale === 'az'
             ? "Premium hovuz və spa layihələri"
             : "Premium Pools & Spa Solutions"}

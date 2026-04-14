@@ -113,7 +113,7 @@ export default function Hero({
           </h3>
 
           {/* TITLE */}
-          <h1 data-aos="fade-up" className="text-[28px] sm:text-[42px] md:text-[56px] lg:text-[70px] font-extrabold leading-[1.05] tracking-tight mb-6">
+          <h1 data-aos="fade-up" className="text-3xl md:text-[56px] lg:text-[70px] font-extrabold leading-[1.05] tracking-tight mb-6">
             {isHome ? content.title : text}
           </h1>
 

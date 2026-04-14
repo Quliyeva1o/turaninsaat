@@ -33,7 +33,7 @@ export const ContactSection = () => {
           <span data-aos="fade-right" className="text-yellow-500 font-semibold md:text-[16px] uppercase tracking-widest text-sm">
             Bizimlə Əlaqə
           </span>
-          <h2 data-aos="fade-right" className="text-4xl md:text-[56px] font-extrabold mt-3 leading-tight">
+          <h2 data-aos="fade-right" className="text-3xl md:text-[56px] font-extrabold mt-3 leading-tight">
             Suallarınız və sorğularınız üçün buradayıq
           </h2>
           <p data-aos="fade-right" className="text-slate-300 mt-4 max-w-md">
