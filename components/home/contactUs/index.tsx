@@ -20,7 +20,7 @@ const contactInfo = [
 
 export const ContactSection = () => {
   return (
-<section className="relative py-28 lg:py-36 bg-gradient-to-b from-[#0F172A] to-[#071421] text-white overflow-hidden">
+<section className="relative py-25  bg-gradient-to-b from-[#0F172A] to-[#071421] text-white overflow-hidden">
   <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
 
     <div className="flex flex-col lg:flex-row gap-16">

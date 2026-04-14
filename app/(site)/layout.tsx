@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Header from "@/components/layout/Header";
 import AOSProvider from "../providers/AOSProvider";
 import HeroWrapper from "@/components/home/heroWrapper";
+import Footer from "@/components/layout/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -86,8 +87,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Header />
           <AOSProvider />
           <HeroWrapper />
+          
         </div>
         {children}
+        <Footer/>
       </body>
     </html>
   );

@@ -36,7 +36,7 @@ const products: Product[] = [
 
 export const Products = () => {
   return (
-    <section className="py-20 px-4 bg-[#0E172A] text-white">
+    <section className="py-25 px-4 bg-[#0E172A] text-white">
       <div className="max-w-7xl mx-auto text-center">
 
         {/* Header */}

@@ -16,7 +16,7 @@ export default function OurServices({ locale = 'az' }: Props) {
   const services = servicesContent[locale];
 
   return (
-    <section className="bg-[#0F172A] py-32 text-white">
+    <section className="bg-[#0F172A] py-25 text-white">
       <div className="max-w-[1300px] mx-auto px-6 md:px-10 text-center">
 
         {/* Header */}
