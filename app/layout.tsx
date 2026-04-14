@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Manrope, DM_Sans} from "next/font/google";
 import "./globals.css";
-import AOSProvider from "./providers/AOSProvider";
+import 'aos/dist/aos.css'
 
 // Google Fonts
 const geistSans = Geist({
@@ -90,7 +90,6 @@ export default function RootLayout({
   return (
     <html lang="az" className={`${geistSans.variable} ${manrope.variable} ${dmSans.variable}`}>
       <body>
-        <AOSProvider />
         {children}
       </body>
     </html>

@@ -1,4 +1,4 @@
-import Hero from "@/components/home/hero";
+'use client'
 
 import AboutUs from "@/components/home/aboutUs";
 import OurServices from "@/components/home/ourServices";
@@ -14,7 +14,7 @@ export default function Home() {
       {/* <Hero /> */}
       <AboutUs />
       <OurServices />
-            <OurProjects />
+      <OurProjects />
 
       <Products />
       <WhyChooseUs />

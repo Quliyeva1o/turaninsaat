@@ -7,10 +7,10 @@ import AOS from "aos";
 export default function AOSProvider() {
   useEffect(() => {
     AOS.init({
-      duration: 1900,
+      duration: 600,
       easing: "ease-out-cubic",
       once: false,
-      offset: 80,
+      offset: 70,
     });
   }, []);
 

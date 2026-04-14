@@ -30,19 +30,19 @@ export const ContactSection = () => {
 
         {/* Heading */}
         <div className="mb-10 text-left">
-          <span className="text-yellow-500 font-semibold md:text-[16px] uppercase tracking-widest text-sm">
+          <span data-aos="fade-right" className="text-yellow-500 font-semibold md:text-[16px] uppercase tracking-widest text-sm">
             Bizimlə Əlaqə
           </span>
-          <h2 className="text-4xl md:text-[56px] font-extrabold mt-3 leading-tight">
+          <h2 data-aos="fade-right" className="text-4xl md:text-[56px] font-extrabold mt-3 leading-tight">
             Suallarınız və sorğularınız üçün buradayıq
           </h2>
-          <p className="text-slate-300 mt-4 max-w-md">
+          <p data-aos="fade-right" className="text-slate-300 mt-4 max-w-md">
             Suallarınız, qiymət sorğularınız və əməkdaşlıq imkanları üçün bizimlə əlaqə saxlayın.
           </p>
         </div>
 
         {/* Image */}
-        <div className="mt-6">
+        <div className="mt-6" data-aos="fade-right">
           <Image
             src={contactIllustration}
             alt="Turan İnşaat"
@@ -63,6 +63,7 @@ export const ContactSection = () => {
             <a
               key={idx}
               href={info.link}
+              data-aos="fade-left"
               className="flex items-center gap-4 bg-[#102948]/80 hover:bg-[#1B3450]/90 transition-all duration-300 rounded-2xl p-5 shadow-lg group"
             >
               <div className="w-14 h-14 flex items-center justify-center bg-[#0F172A] rounded-full">
@@ -81,7 +82,7 @@ export const ContactSection = () => {
         </div>
 
         {/* Form */}
-        <form className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-[#102948]/80 p-8 rounded-3xl shadow-2xl backdrop-blur-sm">
+        <form data-aos="fade-left" className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-[#102948]/80 p-8 rounded-3xl shadow-2xl backdrop-blur-sm">
           <input
             type="text"
             placeholder="Adınız"

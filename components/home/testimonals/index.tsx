@@ -41,15 +41,18 @@ export const Products = () => {
 
         {/* Header */}
         <div className="mb-12">
-          <span className="text-[#C49B63] font-semibold md:text-[16px] uppercase tracking-wider">
+          <span data-aos="fade-up"
+            className="text-[#C49B63] font-semibold md:text-[16px] uppercase tracking-wider">
             Məhsullarımız
           </span>
 
-          <h2 className="text-3xl md:text-4xl lg:text-[56px] font-extrabold mt-3">
+          <h2 data-aos="fade-up"
+            className="text-3xl md:text-4xl lg:text-[56px] font-extrabold mt-3">
             Hovuz və SPA üçün texnoloji həllər
           </h2>
 
-          <p className="text-gray-400 mt-4 max-w-2xl mx-auto text-sm md:text-base">
+          <p data-aos="fade-up"
+            className="text-gray-400 mt-4 max-w-2xl mx-auto text-sm md:text-base">
             Müasir hovuz sistemləri, filtrasiya və spa avadanlıqları ilə
             keyfiyyətli və uzunömürlü həllər təqdim edirik.
           </p>
@@ -70,8 +73,8 @@ export const Products = () => {
           >
             {products.map((p, i) => (
               <SwiperSlide key={i}>
-                <div className="relative overflow-hidden rounded-[24px] group cursor-pointer">
-
+                <div data-aos="fade-up"
+                  data-aos-delay={i+1 * 200} className="relative overflow-hidden rounded-[24px] group cursor-pointer">
                   <img
                     src={p.image}
                     alt={p.title}

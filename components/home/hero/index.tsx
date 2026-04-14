@@ -106,14 +106,14 @@ export default function Hero({
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/70" />
 
         {/* CONTENT */}
-        <div className="relative z-30 text-center container mx-auto px-4 sm:px-6 lg:px-8">
+        <div data-aos="fade-up" className="relative z-30 text-center container mx-auto px-4 sm:px-6 lg:px-8">
           {/* BADGE */}
-          <h3 className="uppercase text-[#2A69AC] mb-4 text-[13px] sm:text-[15px] font-extrabold tracking-[0.2em]">
+          <h3 data-aos="fade-up" className="uppercase text-[#2A69AC] mb-4 text-[13px] sm:text-[15px] font-extrabold tracking-[0.2em]">
             {content.badge}
           </h3>
 
           {/* TITLE */}
-          <h1 className="text-[28px] sm:text-[42px] md:text-[56px] lg:text-[70px] font-extrabold leading-[1.05] tracking-tight mb-6">
+          <h1 data-aos="fade-up" className="text-[28px] sm:text-[42px] md:text-[56px] lg:text-[70px] font-extrabold leading-[1.05] tracking-tight mb-6">
             {isHome ? content.title : text}
           </h1>
 

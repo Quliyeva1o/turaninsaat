@@ -20,17 +20,17 @@ export default function OurServices({ locale = 'az' }: Props) {
       <div className="max-w-[1300px] mx-auto px-6 md:px-10 text-center">
 
         {/* Header */}
-        <span className="uppercase tracking-[0.15em] text-sm font-extrabold text-[#2A69AC] md:text-[16px]">
+        <span data-aos="fade-up" className="uppercase tracking-[0.15em] text-sm font-extrabold text-[#2A69AC] md:text-[16px]">
           {locale === 'az' ? "Xidmətlərimiz" : "Our Services"}
         </span>
 
-        <h2 className="mt-6 text-[56px] font-extrabold leading-tight font-[var(--font-manrope)]">
+        <h2 data-aos="fade-up" className="mt-6 text-[56px] font-extrabold leading-tight font-[var(--font-manrope)]">
           {locale === 'az'
             ? "Premium hovuz və spa layihələri"
             : "Premium Pools & Spa Solutions"}
         </h2>
 
-        <p className="mt-6 max-w-2xl mx-auto text-slate-400 font-[var(--font-dm-sans)]">
+        <p data-aos="fade-up" className="mt-6 max-w-2xl mx-auto text-slate-400 font-[var(--font-dm-sans)]">
           {locale === 'az'
             ? "Turan İnşaat olaraq fərdi və ictimai hovuzlar, türk hamamı, sauna və spa layihələrinin dizaynı və tikintisində peşəkar xidmət göstəririk. Ideal həllərimiz villa, otel və spa mərkəzləri üçün nəzərdə tutulub."
             : "Turan Construction provides professional design and construction of private and public pools, Turkish baths, saunas, and spa projects. Our solutions are ideal for villas, hotels, and spa centers."}
@@ -55,6 +55,7 @@ export default function OurServices({ locale = 'az' }: Props) {
             {services.map((s: any, i: any) => (
               <SwiperSlide key={i}>
                 <div
+                data-aos="fade-up"
                   onClick={() => router.push(`/services/${s.slug}`)}
                   className="relative overflow-hidden rounded-[24px] cursor-pointer group"
                 >
@@ -78,7 +79,7 @@ export default function OurServices({ locale = 'az' }: Props) {
         </div>
 
         {/* CTA */}
-        <div className="mt-15 w-full flex justify-center">
+        <div data-aos="fade-up" className="mt-15 w-full flex justify-center">
           <Button
             text={locale === 'az' ? "Bütün xidmətlər" : "All Services"}
             link="/services"

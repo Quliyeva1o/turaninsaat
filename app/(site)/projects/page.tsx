@@ -59,6 +59,8 @@ export default function Projects() {
               key={project.slug}
               onClick={() => openModal(i)}
               className="cursor-pointer group"
+              data-aos="fade-up"
+              data-aos-offset={-300}
             >
               <div className="overflow-hidden rounded-2xl">
                 {project.images?.[0]?.endsWith(".mp4") ? (

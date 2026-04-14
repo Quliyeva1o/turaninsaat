@@ -21,6 +21,8 @@ export default function Services({ locale = "az" }: Props) {
           {services.map((s:any, i:any) => (
             <article
               key={i}
+              data-aos="fade-up"
+              data-aos-offset={-300}
               onClick={() => router.push(`/services/${s.slug}`)}
               className="relative overflow-hidden rounded-3xl cursor-pointer group shadow-lg transition-all duration-500 hover:shadow-2xl"
             >

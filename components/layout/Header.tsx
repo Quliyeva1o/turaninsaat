@@ -6,6 +6,7 @@ import Button from "../common/Button";
 import logo from '../../public/assets/images/logo.png'
 import { useEffect } from "react";
 import { servicesContent } from "@/utils";
+import { projects } from "../home/ourProjects/projes";
 export default function Header({ locale = "az" }: any) {
 
   useEffect(() => {
@@ -107,7 +108,7 @@ export default function Header({ locale = "az" }: any) {
                 <Link href="/services">Xidmətlər</Link>
 
                 <ul className="dropdown">
-                  {servicesContent[locale].map((s:any) => (
+                  {servicesContent[locale].map((s: any) => (
                     <li key={s.slug}>
                       <Link href={`/services/${s.slug}`}>
                         {s.title}
@@ -120,21 +121,24 @@ export default function Header({ locale = "az" }: any) {
               <li className="has-dropdown">
                 <Link href="/projects">Projects</Link>
                 <ul className="dropdown">
-                  <li><Link href="/projects/aspen-heights">Aspen Heights</Link></li>
-                  <li><Link href="/projects/forest-hill-towers">Forest Hill Towers</Link></li>
-                  <li><Link href="/projects/bayside-residences">Bayside Residences</Link></li>
-                  <li><Link href="/projects/parkview-plaza">Parkview Plaza</Link></li>
+                  {
+                    projects.map((proje) => (
+                      <li><Link href={`/projects?${proje.slug}`}>{proje.title}</Link></li>
+
+                    ))
+                  }
+
                 </ul>
               </li>
 
 
-              <li className="has-dropdown">
+              {/* <li className="has-dropdown">
                 <span>Pages</span>
                 <ul className="dropdown">
                   <li><Link href="/team">Our Team</Link></li>
                   <li><Link href="/faqs">FAQs</Link></li>
                 </ul>
-              </li>
+              </li> */}
 
               <li className="mobile-only">
                 <Link href="/contact">Bizimlə əlaqə</Link>

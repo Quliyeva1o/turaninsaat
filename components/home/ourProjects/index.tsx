@@ -7,27 +7,29 @@ export default function OurProjects() {
   return (
     <section className="py-32 bg-white text-gray-900">
       <div className="max-w-[1300px] mx-auto px-6 md:px-10">
-        
+
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h3 className="uppercase tracking-[0.15em] text-sm md:text-[16px] font-extrabold text-[#C49B63]">
+          <h3 data-aos="fade-up" className="uppercase tracking-[0.15em] text-sm md:text-[16px] font-extrabold text-[#C49B63]">
             Layihələrimiz
           </h3>
 
-          <h2 className="mt-4 text-[56px] font-extrabold leading-tight">
+          <h2 data-aos="fade-up" className="mt-4 text-[56px] font-extrabold leading-tight">
             Real hovuz və SPA layihələrimiz
           </h2>
 
-          <p className="mt-6 text-gray-500">
+          <p data-aos="fade-up" className="mt-6 text-gray-500">
             Tamamladığımız real layihələr ilə keyfiyyət, estetik və funksionallığı bir araya gətiririk.
           </p>
         </div>
 
         {/* Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.slice(3,6).map((project) => (
+          {projects.slice(3, 6).map((project, idx) => (
             <article
               key={project.title}
+              data-aos="fade-up"
+              data-aos-delay={idx * 100}   
               className="relative overflow-hidden rounded-[24px] cursor-pointer group"
             >
               <img
@@ -56,7 +58,7 @@ export default function OurProjects() {
         </div>
 
         {/* Button */}
-        <div className="mt-16 flex justify-center">
+        <div data-aos="fade-up" className="mt-16 flex justify-center">
           <Button text="Bütün Layihələr" link="/projects" type={2} />
         </div>
 

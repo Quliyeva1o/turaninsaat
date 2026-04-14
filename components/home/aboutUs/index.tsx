@@ -47,17 +47,17 @@ export default function AboutUs({ locale = "az" }: AboutProps) {
         {/* TEXT */}
         <div className="flex-1">
           {/* Badge */}
-          <span className="text-[#C49B63] uppercase font-extrabold text-sm md:text-[16px] tracking-[0.2em] mb-4 block">
+          <span data-aos="fade-right"  className="text-[#C49B63] uppercase font-extrabold text-sm md:text-[16px] tracking-[0.2em] mb-4 block">
             {t.badge}
           </span>
 
           {/* Title (SEO) */}
-          <h2 className="text-[#0F172A] font-extrabold text-3xl sm:text-4xl lg:text-[56px] leading-tight mb-6">
+          <h2 data-aos="fade-right" className="text-[#0F172A] font-extrabold text-3xl sm:text-4xl lg:text-[56px] leading-tight mb-6">
             {t.title}
           </h2>
 
           {/* Description */}
-          <p className="text-slate-600 text-base md:text-lg leading-relaxed mb-8">
+          <p data-aos="fade-right" className="text-slate-600 text-base md:text-lg leading-relaxed mb-8">
             {t.desc}
           </p>
 
@@ -66,6 +66,7 @@ export default function AboutUs({ locale = "az" }: AboutProps) {
             {t.features.map((item, i) => (
               <li
                 key={i}
+                 data-aos="fade-right" 
                 className="relative pl-6 font-semibold text-[#0F172A] before:absolute before:left-0 before:top-2 before:w-2.5 before:h-2.5 before:bg-[#C49B63] before:rounded-full"
               >
                 {item}
@@ -74,7 +75,7 @@ export default function AboutUs({ locale = "az" }: AboutProps) {
           </ul>
 
           {/* CTA */}
-          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+          <div data-aos="fade-right"  className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
             <Button text={t.cta} link="/contact" type={2} />
 
             <div>

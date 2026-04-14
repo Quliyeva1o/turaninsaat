@@ -25,15 +25,15 @@ export default function WhyChooseUs() {
 
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto">
-          <h3 className="text-sm font-semibold text-[#C49B63] md:text-[16px] uppercase tracking-widest">
+          <h3 data-aos="fade-down" className="text-sm font-semibold text-[#C49B63] md:text-[16px] uppercase tracking-widest">
             Niyə bizi seçməlisiniz?
           </h3>
 
-          <h2 className="mt-4 text-3xl md:text-[56px] font-extrabold text-gray-900">
+          <h2 data-aos="fade-down" className="mt-4 text-3xl md:text-[56px] font-extrabold text-gray-900">
             Keyfiyyət və Peşəkarlıq
           </h2>
 
-          <p className="mt-4 text-gray-600">
+          <p data-aos="fade-down" className="mt-4 text-gray-600">
             Hovuz, sauna və SPA layihələrində müasir yanaşma və uzunmüddətli keyfiyyət təqdim edirik.
           </p>
         </div>
@@ -43,6 +43,7 @@ export default function WhyChooseUs() {
           {features.map((f, i) => (
             <div
               key={i}
+              data-aos="fade-down"
               className="p-6 rounded-2xl border border-gray-200 hover:shadow-lg transition"
             >
               <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-[#F5F7FA] text-[#C49B63] text-xl">
@@ -61,7 +62,7 @@ export default function WhyChooseUs() {
         </div>
 
         {/* Mini stat */}
-        <div className="mt-16 text-center">
+        <div className="mt-16 text-center" data-aos="fade-down">
           <div className="text-4xl font-extrabold text-[#C49B63]">120+</div>
           <p className="text-gray-500 text-sm mt-2">
             Uğurla tamamlanmış layihə
