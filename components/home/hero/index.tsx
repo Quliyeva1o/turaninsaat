@@ -49,7 +49,7 @@ export default function Hero({
   const content = heroContent[locale];
   const [currentVideo, setCurrentVideo] = useState(1);
 
-  const totalVideos = 22;
+  const totalVideos = 14;
 
   const nextVideo = () => {
     setCurrentVideo((prev) => (prev >= totalVideos ? 1 : prev + 1));
@@ -62,7 +62,28 @@ export default function Hero({
   const videoSrc = `/assets/videos/${currentVideo}.mp4`;
 
   console.log(currentVideo, videoSrc, 'sllsskk');
+  useEffect(() => {
+    const totalVideos = 14;
+    let index = 1;
 
+    const preloadNext = () => {
+      if (index > totalVideos) return;
+
+      const video = document.createElement("video");
+      video.src = `/assets/videos/${index}.mp4`;
+      video.preload = "auto";
+      video.muted = true;
+
+      video.onloadeddata = () => {
+        index++;
+        preloadNext();
+      };
+
+      video.load();
+    };
+
+    preloadNext();
+  }, []);
   useEffect(() => {
     const videoEl = videoRef.current;
     if (!videoEl) return;
@@ -131,6 +152,7 @@ export default function Hero({
         {/* VIDEO */}
         {video && (
           <video
+            ref={videoRef}
             key={videoSrc}
             className="absolute inset-0 w-full h-full object-cover"
             src={videoSrc}
