@@ -75,7 +75,7 @@ export default function Hero({
           : "md:h-[250px]"
       }`}
     >
-      <div className=" flex items-center overflow-hidden text-white h-full">
+      <div className=" flex items-center text-white h-full">
         {/* VIDEO */}
         {video && (
           <video
@@ -98,7 +98,7 @@ export default function Hero({
             fill
             priority
             quality={100}
-            className="object-cover scale-105 brightness-75"
+            className="object-cover brightness-75"
           />
         )}
 
