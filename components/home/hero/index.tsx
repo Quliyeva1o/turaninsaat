@@ -79,11 +79,20 @@ export default function Hero({
     };
   }, []);
   useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.src = videoSrc;
-      videoRef.current.load();
-      videoRef.current.play().catch(() => { });
-    }
+    const video = videoRef.current;
+    if (!video) return;
+
+    const play = async () => {
+      try {
+        await video.play();
+      } catch (e) { }
+    };
+
+    video.addEventListener("loadeddata", play);
+
+    return () => {
+      video.removeEventListener("loadeddata", play);
+    };
   }, [videoSrc]);
   return (
     //   <section className={`${isHome ? 'h-[calc(90vh-180px)] md:h-[calc(90vh-150px)]' : 'md:h-[250px]'}`}>
@@ -91,46 +100,47 @@ export default function Hero({
     <section
       aria-label="Turan İnşaat Hero Section"
       className={` ${isHome
-          ? "h-[calc(90vh-180px)] md:h-[calc(90vh)]"
-          : "md:h-[250px]"
+        ? "h-[calc(90vh-180px)] md:h-[calc(90vh)]"
+        : "md:h-[250px]"
         }`}
     >
-         <div className="absolute z-40 top-40 right-30 flex gap-3">
-          {/* PREV */}
-          <button
-            onClick={prevVideo}
-            className="bg-black/50 hover:bg-black/70 text-white w-10 h-10 rounded-full flex items-center justify-center"
-          >
-            ◀
-          </button>
+      <div className="absolute z-40 top-40 right-30 flex gap-3">
+        {/* PREV */}
+        <button
+          onClick={prevVideo}
+          className="bg-black/50 hover:bg-black/70 text-white w-10 h-10 rounded-full flex items-center justify-center"
+        >
+          ◀
+        </button>
 
-            <button
-            className="bg-black/50 hover:bg-black/70 text-white w-10 h-10 rounded-full flex items-center justify-center"
-          >
-            {currentVideo}
-          </button>
+        <button
+          className="bg-black/50 hover:bg-black/70 text-white w-10 h-10 rounded-full flex items-center justify-center"
+        >
+          {currentVideo}
+        </button>
 
-          {/* NEXT */}
-          <button
-            onClick={nextVideo}
-            className="bg-black/50 hover:bg-black/70 text-white w-10 h-10 rounded-full flex items-center justify-center"
-          >
-            ▶
-          </button>
-        </div>
+        {/* NEXT */}
+        <button
+          onClick={nextVideo}
+          className="bg-black/50 hover:bg-black/70 text-white w-10 h-10 rounded-full flex items-center justify-center"
+        >
+          ▶
+        </button>
+      </div>
       <div className=" flex items-center text-white h-full">
         {/* VIDEO */}
         {video && (
           <video
-            ref={videoRef}
+            key={videoSrc}
             className="absolute inset-0 w-full h-full object-cover"
+            src={videoSrc}
             autoPlay
             muted
             loop
             playsInline
           />
         )}
-     
+
         {/* IMAGE */}
         {img && !video && (
           <Image
