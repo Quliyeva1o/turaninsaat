@@ -47,7 +47,7 @@ export default function Hero({
 }: HeroProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const content = heroContent[locale];
-  const [currentVideo, setCurrentVideo] = useState(2);
+  const [currentVideo, setCurrentVideo] = useState(1);
 
   const totalVideos = 22;
 
