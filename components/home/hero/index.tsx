@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Button from "../../common/Button";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 interface HeroProps {
   text?: string;
@@ -47,13 +47,28 @@ export default function Hero({
 }: HeroProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const content = heroContent[locale];
+  const [currentVideo, setCurrentVideo] = useState(2);
+
+  const totalVideos = 22;
+
+  const nextVideo = () => {
+    setCurrentVideo((prev) => (prev >= totalVideos ? 1 : prev + 1));
+  };
+
+  const prevVideo = () => {
+    setCurrentVideo((prev) => (prev <= 1 ? totalVideos : prev - 1));
+  };
+
+  const videoSrc = `/assets/videos/${currentVideo}.mp4`;
+
+  console.log(currentVideo, videoSrc, 'sllsskk');
 
   useEffect(() => {
     const videoEl = videoRef.current;
     if (!videoEl) return;
 
     const playVideo = () => {
-      videoEl.play().catch(() => {});
+      videoEl.play().catch(() => { });
     };
 
     playVideo();
@@ -63,18 +78,46 @@ export default function Hero({
       document.removeEventListener("touchstart", playVideo);
     };
   }, []);
-
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.src = videoSrc;
+      videoRef.current.load();
+      videoRef.current.play().catch(() => { });
+    }
+  }, [videoSrc]);
   return (
     //   <section className={`${isHome ? 'h-[calc(90vh-180px)] md:h-[calc(90vh-150px)]' : 'md:h-[250px]'}`}>
     // <div className={`flex items-center overflow-hidden text-white h-[calc(100%-100px)]`} id="content"></div>
     <section
       aria-label="Turan İnşaat Hero Section"
-      className={` ${
-        isHome
+      className={` ${isHome
           ? "h-[calc(90vh-180px)] md:h-[calc(90vh)]"
           : "md:h-[250px]"
-      }`}
+        }`}
     >
+         <div className="absolute z-40 top-40 right-30 flex gap-3">
+          {/* PREV */}
+          <button
+            onClick={prevVideo}
+            className="bg-black/50 hover:bg-black/70 text-white w-10 h-10 rounded-full flex items-center justify-center"
+          >
+            ◀
+          </button>
+
+            <button
+            className="bg-black/50 hover:bg-black/70 text-white w-10 h-10 rounded-full flex items-center justify-center"
+          >
+            {currentVideo}
+          </button>
+
+          {/* NEXT */}
+          <button
+            onClick={nextVideo}
+            className="bg-black/50 hover:bg-black/70 text-white w-10 h-10 rounded-full flex items-center justify-center"
+          >
+            ▶
+          </button>
+        </div>
       <div className=" flex items-center text-white h-full">
         {/* VIDEO */}
         {video && (
@@ -85,11 +128,9 @@ export default function Hero({
             muted
             loop
             playsInline
-          >
-            <source src={video} type="video/mp4" />
-          </video>
+          />
         )}
-
+     
         {/* IMAGE */}
         {img && !video && (
           <Image
@@ -118,7 +159,7 @@ export default function Hero({
           </h1>
 
           {/* DESCRIPTION */}
-          <p className={`text-[15px]  md:text-[20px] max-w-5xl mx-auto text-gray-200 ${isHome?'mb-20':'mb-10'} `}>
+          <p className={`text-[15px]  md:text-[20px] max-w-5xl mx-auto text-gray-200 ${isHome ? 'mb-20' : 'mb-10'} `}>
             {isHome ? content.desc : subTitle}
           </p>
 
