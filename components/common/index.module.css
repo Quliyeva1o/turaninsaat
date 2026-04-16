@@ -1,128 +1,105 @@
- .btn {
-   position: relative;
-   padding: 20px 30px;
-   border-radius: 30px;
-   font-weight: 600;
-   color: #fff;
-   overflow: hidden;
-   transition: all 0.4s ease-in-out;
-   z-index: 1;
-   border-radius: 12px;
-   font-size: 18px;
-   overflow: hidden;
-   display: flex;
-   gap: 8px;
-   align-items: center;
-   justify-content: center;
- }
+.btn {
+  position: relative;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  overflow: hidden;
+  transition: all 0.35s ease;
+  z-index: 1;
+  color: #fff;
 
- .btn::before {
-   content: "";
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 100%;
-   height: 100%;
-   z-index: -1;
-   border-radius: 12px;
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
 
- }
+/* Background layer */
+.btn::before,
+.btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  z-index: -1;
+  transition: all 0.4s ease-in-out;
+}
 
- .btn::after {
-   content: "";
-   position: absolute;
-   top: 0;
-   left: 0;
-   width: 0%;
-   height: 100%;
-   transition: all 0.4s ease-in-out;
-   z-index: -1;
-   border-radius: 12px;
+/* Hover layer animation */
+.btn::after {
+  width: 0%;
+}
 
- }
+.btn:hover::after {
+  width: 100%;
+}
 
- .maviag::before {
-   background: #2A69AC;
- }
+/* Link inside button */
+.btn a {
+  position: relative;
+  z-index: 2;
+  text-decoration: none;
+  color: inherit;
+  white-space: nowrap;
+}
 
- .maviag::after {
-   background: #fff;
+/* ── Primary ── */
+.primary::before {
+  background: #00A8B5;
+}
 
- }
+.primary::after {
+  background: #007A85;
+}
 
- .ag::before {
-   background: transparent;
-   border: 1px solid #fff;
+/* ── Solid ── */
+.solid::before {
+  background: #2A6AAB;
+}
 
- }
+.solid::after {
+  background: #0F2B48;
+}
 
- .ag {
-   color: #fff;
- }
+/* ── Outline ── */
+.outline::before {
+  background: transparent;
+  border: 1.5px solid rgba(200, 232, 234, 0.6);
+}
 
- .ag::after {
-   background: #2A69AC;
- }
+.outline::after {
+  background: #2A6AAB;
+}
 
+/* ── Ghost ── */
+.ghost::before {
+  background: transparent;
+  border: 1.5px solid rgba(255,255,255,0.4);
+}
 
- .goy::before {
-   background: #2A69AC;
+.ghost::after {
+  background: rgba(0, 168, 181, 0.2);
+}
 
- }
+/* Icon animation */
+.btn svg {
+  transition: transform 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
 
- .goy::after {
-   background: #102948;
-   ;
+.btn:hover svg {
+  transform: translateX(4px);
+}
 
- }
-
- .btn:hover::after {
-   width: 100%;
- }
-
-
-
- .btn:hover {
-   color: #fff;
- }
-
- .btn svg {
-   transition: 0.4s ease-in-out;
-
- }
-
- .btn:hover svg {
-   transform: translateX(5px);
- }
-
-
- .maviag:hover {
-   color: #2A69AC;
- }
-
- .xett::before {
-   background: #2A69AC;
- }
-
- .xett {
-   color: #fff;
-
- }
-
- .xett:hover::before {
-   background: transparent;
- }
-
- .xett::after {
-   background: transparent;
-   border: 1px solid #fff;
- }
-
- /* Mobile adjustments */
+/* Mobile */
 @media (max-width: 640px) {
   .btn {
-    padding: 14px 24px; /* əvvəl 20px 30px */
-    font-size: 16px;    /* əvvəl 18px */
-    gap: 6px;           /* əvvəl 8px */
+    padding: 12px 22px;
+    font-size: 14px;
+    gap: 6px;
   }
 }

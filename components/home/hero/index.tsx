@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Button from "../../common/Button";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 interface HeroProps {
   text?: string;
@@ -47,120 +47,38 @@ export default function Hero({
 }: HeroProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
   const content = heroContent[locale];
-  const [currentVideo, setCurrentVideo] = useState(1);
 
-  const totalVideos = 14;
-
-  const nextVideo = () => {
-    setCurrentVideo((prev) => (prev >= totalVideos ? 1 : prev + 1));
-  };
-
-  const prevVideo = () => {
-    setCurrentVideo((prev) => (prev <= 1 ? totalVideos : prev - 1));
-  };
-
-  const videoSrc = `/assets/videos/${currentVideo}.mp4`;
-
-  console.log(currentVideo, videoSrc, 'sllsskk');
-  useEffect(() => {
-    const totalVideos = 14;
-    let index = 1;
-
-    const preloadNext = () => {
-      if (index > totalVideos) return;
-
-      const video = document.createElement("video");
-      video.src = `/assets/videos/${index}.mp4`;
-      video.preload = "auto";
-      video.muted = true;
-
-      video.onloadeddata = () => {
-        index++;
-        preloadNext();
-      };
-
-      video.load();
-    };
-
-    preloadNext();
-  }, []);
   useEffect(() => {
     const videoEl = videoRef.current;
     if (!videoEl) return;
-
-    const playVideo = () => {
-      videoEl.play().catch(() => { });
-    };
-
+    const playVideo = () => { videoEl.play().catch(() => {}); };
     playVideo();
     document.addEventListener("touchstart", playVideo, { once: true });
-
-    return () => {
-      document.removeEventListener("touchstart", playVideo);
-    };
+    return () => { document.removeEventListener("touchstart", playVideo); };
   }, []);
-  useEffect(() => {
-    const video = videoRef.current;
-    if (!video) return;
 
-    const play = async () => {
-      try {
-        await video.play();
-      } catch (e) { }
-    };
-
-    video.addEventListener("loadeddata", play);
-
-    return () => {
-      video.removeEventListener("loadeddata", play);
-    };
-  }, [videoSrc]);
   return (
-    //   <section className={`${isHome ? 'h-[calc(90vh-180px)] md:h-[calc(90vh-150px)]' : 'md:h-[250px]'}`}>
-    // <div className={`flex items-center overflow-hidden text-white h-[calc(100%-100px)]`} id="content"></div>
     <section
       aria-label="Turan İnşaat Hero Section"
-      className={` ${isHome
-        ? "h-[calc(90vh-180px)] md:h-[calc(90vh)]"
-        : "md:h-[250px]"
-        }`}
+      className={`relative ${
+        isHome
+          ? "h-[calc(100vh+100px)]"
+          : "h-[280px] sm:h-[340px] md:h-[420px]"
+      }`}
     >
-      <div className="absolute z-40 top-40 right-30 flex gap-3">
-        {/* PREV */}
-        <button
-          onClick={prevVideo}
-          className="bg-black/50 hover:bg-black/70 text-white w-10 h-10 rounded-full flex items-center justify-center"
-        >
-          ◀
-        </button>
-
-        <button
-          className="bg-black/50 hover:bg-black/70 text-white w-10 h-10 rounded-full flex items-center justify-center"
-        >
-          {currentVideo}
-        </button>
-
-        {/* NEXT */}
-        <button
-          onClick={nextVideo}
-          className="bg-black/50 hover:bg-black/70 text-white w-10 h-10 rounded-full flex items-center justify-center"
-        >
-          ▶
-        </button>
-      </div>
-      <div className=" flex items-center text-white h-full">
+      <div className="flex items-center text-white h-full overflow-hidden">
         {/* VIDEO */}
         {video && (
           <video
             ref={videoRef}
-            key={videoSrc}
             className="absolute inset-0 w-full h-full object-cover"
-            src={videoSrc}
             autoPlay
             muted
             loop
             playsInline
-          />
+          >
+            <source src={video} type="video/mp4" />
+          </video>
         )}
 
         {/* IMAGE */}
@@ -171,38 +89,65 @@ export default function Hero({
             fill
             priority
             quality={100}
-            className="object-cover brightness-75"
+            className="object-cover"
           />
         )}
 
-        {/* OVERLAY */}
+        {/* OVERLAY — daha dərin, layered gradient */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/70" />
+        {/* subtle teal glow at bottom center */}
+        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[200px] bg-[#007A85]/10 blur-3xl rounded-full pointer-events-none" />
 
         {/* CONTENT */}
-        <div data-aos="fade-up" className="relative z-30 text-center container mx-auto px-4 sm:px-6 lg:px-8">
+        <div
+          data-aos="fade-up"
+          className={`relative z-30 text-center w-full px-4 sm:px-6 lg:px-8 ${
+            isHome ? "pt-0" : "pt-0"
+          }`}
+        >
           {/* BADGE */}
-          <h3 data-aos="fade-up" className="uppercase text-[#2A69AC] mb-4 text-[13px] sm:text-[15px] font-extrabold tracking-[0.2em]">
+          <p className="inline-flex items-center gap-2 uppercase text-[#00A8B5] mb-5 text-[11px] sm:text-[13px] font-bold tracking-[0.25em]">
+            <span className="w-6 h-[1px] bg-[#00A8B5] inline-block" />
             {content.badge}
-          </h3>
+            <span className="w-6 h-[1px] bg-[#00A8B5] inline-block" />
+          </p>
 
           {/* TITLE */}
-          <h1 data-aos="fade-up" className="text-3xl md:text-[56px] lg:text-[70px] font-extrabold leading-[1.05] tracking-tight mb-6">
+          <h1 className="text-[32px] sm:text-[44px] md:text-[58px] lg:text-[72px] font-extrabold leading-[1.05] tracking-tight mb-6 text-white drop-shadow-sm">
             {isHome ? content.title : text}
           </h1>
 
+          {/* DIVIDER */}
+          {isHome && (
+            <div className="flex justify-center mb-6">
+              <div className="w-16 h-[2px] bg-gradient-to-r from-transparent via-[#00A8B5] to-transparent" />
+            </div>
+          )}
+
           {/* DESCRIPTION */}
-          <p className={`text-[15px]  md:text-[20px] max-w-5xl mx-auto text-gray-200 ${isHome ? 'mb-20' : 'mb-10'} `}>
+          <p
+            className={`text-[15px] sm:text-[17px] md:text-[19px] max-w-3xl mx-auto text-[#C8E8EA]/90 leading-relaxed ${
+              isHome ? "mb-10 sm:mb-14" : "mb-6 sm:mb-8"
+            }`}
+          >
             {isHome ? content.desc : subTitle}
           </p>
 
           {/* CTA */}
           {isHome && (
-            <div className="flex justify-center gap-4 flex-wrap">
+            <div className="flex justify-center gap-3 sm:gap-4 flex-wrap">
               <Button text={content.cta1} link="/create" type={2} />
               <Button text={content.cta2} link="/projects" type={4} />
             </div>
           )}
         </div>
+
+        {/* scroll indicator — only on home */}
+        {isHome && (
+          <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex flex-col items-center gap-1 opacity-60">
+            <div className="w-[1px] h-10 bg-gradient-to-b from-transparent to-[#C8E8EA] animate-pulse" />
+          </div>
+        )}
       </div>
     </section>
   );
