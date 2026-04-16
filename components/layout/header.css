@@ -23,6 +23,7 @@
   inset: 0;
   z-index: 9999;
 }
+
 .loading-container {
   position: absolute;
   top: 50%;
@@ -36,6 +37,7 @@
   left: -9999px;
   top: auto;
 }
+
 .skip-link:focus {
   left: 20px;
   top: 20px;
@@ -58,10 +60,15 @@
 /* Optional: add this class with JS on scroll */
 .site-header.scrolled {
   position: fixed;
-  background: rgba(10, 30, 48, 0.92);
+  background: rgba(10, 30, 48, 0.757);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   box-shadow: 0 1px 0 rgba(0, 168, 181, 0.15);
+}
+
+
+.site-header.scrolled .header-inner {
+  height: 90px;
 }
 
 .header-inner {
@@ -88,12 +95,12 @@
   gap: 36px;
 }
 
-.menu > li {
+.menu>li {
   position: relative;
 }
 
-.menu > li > a,
-.menu > li > span {
+.menu>li>a,
+.menu>li>span {
   font-weight: 500;
   font-size: 15px;
   letter-spacing: 0.01em;
@@ -103,7 +110,7 @@
   transition: color 0.25s ease;
 }
 
-.menu > li > a::after {
+.menu>li>a::after {
   content: "";
   position: absolute;
   bottom: -2px;
@@ -114,16 +121,16 @@
   transition: width 0.3s ease;
 }
 
-.menu > li:hover > a::after {
+.menu>li:hover>a::after {
   width: 100%;
 }
 
-.menu > li:hover > a {
+.menu>li:hover>a {
   color: #C8E8EA;
 }
 
 /* ── Dropdown ── */
-.has-dropdown > .dropdown {
+.has-dropdown>.dropdown {
   position: absolute;
   top: calc(100% + 12px);
   left: -16px;
@@ -142,7 +149,7 @@
   padding: 8px 0;
 }
 
-.has-dropdown:hover > .dropdown {
+.has-dropdown:hover>.dropdown {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
@@ -159,11 +166,12 @@
 
 .dropdown li a:hover {
   background: rgba(0, 168, 181, 0.08);
-  color: rgba(200, 232, 234, 0.8);;
+  color: rgba(200, 232, 234, 0.8);
+  ;
 }
 
 /* dropdown top arrow */
-.has-dropdown > .dropdown::before {
+.has-dropdown>.dropdown::before {
   content: "";
   position: absolute;
   top: -5px;
@@ -185,8 +193,9 @@
   .menu {
     gap: 24px;
   }
-  .menu > li > a,
-  .menu > li > span {
+
+  .menu>li>a,
+  .menu>li>span {
     font-size: 14px;
   }
 }
@@ -195,9 +204,11 @@
   .main-nav {
     display: none;
   }
+
   .mobile-only {
     display: block;
   }
+
   .header-inner {
     height: 80px;
   }

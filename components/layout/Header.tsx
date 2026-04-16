@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import './header.css'
 import Button from "../common/Button";
-import logo from '../../public/assets/images/logo.png'
+import logo from '../../public/assets/images/logoag.png'
 import { useEffect, useRef } from "react";
 import { servicesContent } from "@/utils";
 import { projects } from "../home/ourProjects/projes";
@@ -72,12 +72,12 @@ export default function Header({ locale = "az" }: any) {
 
       <header ref={headerRef} className="site-header">
         <div className="container header-inner">
-          <div className="site-logo">
+          <div className="site-logo w-[160px]">
             <Link href="/">
               <Image
                 src={logo}
                 alt="Turan İnşaat Logo"
-                width={150}
+                width={100}
                 height={40}
                 priority
               />
@@ -118,7 +118,7 @@ export default function Header({ locale = "az" }: any) {
             </ul>
           </nav>
 
-          <Button link={"/contact"} text={"Bizimlə əlaqə"} type={1} />
+          <Button link={"/contact"} text={"Bizimlə əlaqə"} type={5} />
         </div>
       </header>
     </>

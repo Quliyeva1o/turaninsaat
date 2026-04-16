@@ -136,7 +136,7 @@ export default function Hero({
           {/* CTA */}
           {isHome && (
             <div className="flex justify-center gap-3 sm:gap-4 flex-wrap">
-              <Button text={content.cta1} link="/create" type={2} />
+              <Button text={content.cta1} link="/create" type={1} />
               <Button text={content.cta2} link="/projects" type={4} />
             </div>
           )}

@@ -17,7 +17,7 @@ const Button = ({ text, type, link }: any) => {
       }`}
     >
       <Link href={link}>{text}</Link>
-      {type !== 1 && <RightIco />}
+      {type !== 5 && <RightIco />}
     </div>
   );
 };
