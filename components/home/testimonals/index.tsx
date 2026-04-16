@@ -4,6 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
+import Button from "@/components/common/Button";
 
 type Product = {
   title: string;
@@ -74,7 +75,7 @@ export const Products = () => {
             {products.map((p, i) => (
               <SwiperSlide key={i}>
                 <div data-aos="fade-up"
-                  data-aos-delay={i+1 * 200} className="relative overflow-hidden rounded-[24px] group cursor-pointer">
+                  data-aos-delay={i + 1 * 200} className="relative overflow-hidden rounded-[24px] group cursor-pointer">
                   <img
                     src={p.image}
                     alt={p.title}
@@ -107,6 +108,10 @@ export const Products = () => {
 
             ))}
           </Swiper>
+
+        </div>
+        <div className="flex justify-center mt-8    ">       
+           <Button text="Bütün Məhsullar" type={4} link="/products"  />
         </div>
       </div>
     </section>

@@ -8,13 +8,13 @@ const contactInfo = [
     title: "24/7 Dəstək Mərkəzi",
     link: "tel:+994503127657",
     display: "+994 50 312 76 57",
-    icon: <FaPhoneAlt size={28} className="text-yellow-500" />,
+    icon: <FaPhoneAlt size={28} className="text-[#C49B63]" />,
   },
   {
     title: "Bizə Yazın",
     link: "mailto:turaninshaat21@mail.ru",
     display: "turaninshaat21@mail.ru",
-    icon: <FaEnvelope size={28} className="text-yellow-500" />,
+    icon: <FaEnvelope size={28} className="text-[#C49B63]" />,
   },
 ];
 
@@ -30,7 +30,7 @@ export const ContactSection = () => {
 
         {/* Heading */}
         <div className="mb-10 text-left">
-          <span data-aos="fade-right" className="text-yellow-500 font-semibold md:text-[16px] uppercase tracking-widest text-sm">
+          <span data-aos="fade-right" className="text-[#C49B63] font-semibold md:text-[16px] uppercase tracking-widest text-sm">
             Bizimlə Əlaqə
           </span>
           <h2 data-aos="fade-right" className="text-3xl md:text-[56px] font-extrabold mt-3 leading-tight">
@@ -70,7 +70,7 @@ export const ContactSection = () => {
                 {info.icon}
               </div>
               <div>
-                <h3 className="text-sm font-bold text-yellow-500">
+                <h3 className="text-sm font-bold text-[#C49B63]">
                   {info.title}
                 </h3>
                 <span className="text-slate-200 text-sm">
@@ -110,7 +110,7 @@ export const ContactSection = () => {
           />
           <button
             type="submit"
-            className="bg-yellow-500 text-black font-bold py-4 md:col-span-2 rounded-xl hover:bg-yellow-600 transition"
+            className="bg-[#C49B63] text-black font-bold py-4 md:col-span-2 rounded-xl hover:bg-[#B88A5A] transition"
           >
             Göndər
           </button>
