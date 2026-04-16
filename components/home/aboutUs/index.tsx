@@ -40,24 +40,85 @@ export default function AboutUs({ locale = "az" }: AboutProps) {
   return (
     <section
       aria-label="About Turan İnşaat"
-      className="bg-gray-50"
+      // style={{ background: "#0A1E30" }}
     >
-      <div className="max-w-[1300px] mx-auto px-6 sm:px-8 lg:px-8 py-25 flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-        
-        {/* TEXT */}
-        <div className="flex-1">
-          {/* Badge */}
-          <span data-aos="fade-right"  className="text-[#C49B63] uppercase font-extrabold text-sm md:text-[16px] tracking-[0.2em] mb-4 block">
-            {t.badge}
-          </span>
+      {/* subtle teal top border */}
+      <div style={{ height: "1px", background: "linear-gradient(90deg, transparent, #00A8B5, transparent)" }} />
 
-          {/* Title (SEO) */}
-          <h2 data-aos="fade-right" className="text-[#0F172A] font-extrabold text-3xl md:text-[56px] leading-tight mb-6">
+      <div className="max-w-[1340px] mx-auto px-6 sm:px-8 lg:px-12 py-24 lg:py-32 flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
+
+        {/* ── IMAGE (left on desktop) ── */}
+        <div className="flex-1 w-full order-2 lg:order-1">
+          <div
+            data-aos="fade-right"
+            className="relative w-full h-[280px] sm:h-[400px] lg:h-[560px] rounded-2xl overflow-hidden"
+            style={{ boxShadow: "0 32px 80px rgba(0,0,0,0.5), 0 0 0 1px rgba(0,168,181,0.12)" }}
+          >
+            <Image
+              src={imgSrc}
+              alt="Turan İnşaat hovuz və spa layihəsi"
+              fill
+              quality={100}
+              className="object-cover hover:scale-105 transition-transform duration-700"
+            />
+            {/* teal vignette overlay */}
+            <div
+              className="absolute inset-0"
+              style={{ background: "linear-gradient(135deg, rgba(0,168,181,0.08) 0%, transparent 60%, rgba(10,30,48,0.4) 100%)" }}
+            />
+
+            {/* floating stat badge */}
+            <div
+              className="absolute bottom-6 left-6 flex flex-col gap-0.5 px-5 py-4 rounded-xl"
+              style={{
+                background: "rgba(10,30,48,0.82)",
+                backdropFilter: "blur(12px)",
+                border: "0.5px solid rgba(0,168,181,0.25)",
+              }}
+            >
+              <span style={{ color: "#00A8B5", fontSize: 28, fontWeight: 800, lineHeight: 1 }}>12+</span>
+              <span style={{ color: "rgba(200,232,234,0.7)", fontSize: 12, fontWeight: 500, letterSpacing: "0.05em", textTransform: "uppercase" }}>
+                İllik təcrübə
+              </span>
+            </div>
+          </div>
+        </div>
+
+        {/* ── TEXT (right on desktop) ── */}
+        <div className="flex-1 order-1 lg:order-2">
+
+          {/* Badge */}
+          <p
+            data-aos="fade-left"
+            className="flex items-center gap-2 uppercase font-bold text-[11px] sm:text-[12px] tracking-[0.28em] mb-5"
+            style={{ color: "#00A8B5" }}
+          >
+            <span style={{ display: "inline-block", width: 24, height: 1, background: "#00A8B5" }} />
+            {t.badge}
+          </p>
+
+          {/* Title */}
+          <h2
+            data-aos="fade-left"
+            className="font-extrabold text-[28px] sm:text-[36px] md:text-[46px] leading-[1.1] tracking-tight mb-6"
+            style={{ color: "#0A1E30" }}
+          >
             {t.title}
           </h2>
 
+          {/* Divider */}
+          <div
+            data-aos="fade-left"
+            className="mb-6"
+            style={{ width: 48, height: 2, background: "linear-gradient(90deg, #00A8B5, transparent)" }}
+          />
+
           {/* Description */}
-          <p data-aos="fade-right" className="text-slate-600 text-base md:text-lg leading-relaxed mb-8">
+          <p
+            data-aos="fade-left"
+            className="text-[15px] sm:text-[16px] leading-relaxed mb-8"
+            style={{ color: "#0A1E30 " }}
+          >
             {t.desc}
           </p>
 
@@ -66,42 +127,67 @@ export default function AboutUs({ locale = "az" }: AboutProps) {
             {t.features.map((item, i) => (
               <li
                 key={i}
-                 data-aos="fade-right" 
-                className="relative pl-6 font-semibold text-[#0F172A] before:absolute before:left-0 before:top-2 before:w-2.5 before:h-2.5 before:bg-[#C49B63] before:rounded-full"
+                data-aos="fade-left"
+                data-aos-delay={i * 80}
+                className="flex items-center gap-3 text-[14px] sm:text-[15px] font-medium"
+                style={{ color: "#0A1E30" }}
               >
+                {/* teal check icon */}
+                <span
+                  className="flex-shrink-0 flex items-center justify-center rounded-full"
+                  style={{
+                    width: 22,
+                    height: 22,
+                    background: "rgba(0,168,181,0.12)",
+                    border: "1px solid rgba(0,168,181,0.3)",
+                  }}
+                >
+                  <svg width="10" height="8" viewBox="0 0 10 8" fill="none">
+                    <path d="M1 4l2.5 2.5L9 1" stroke="#00A8B5" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
+                </span>
                 {item}
               </li>
             ))}
           </ul>
 
-          {/* CTA */}
-          <div data-aos="fade-right"  className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
+          {/* CTA row */}
+          <div
+            data-aos="fade-left"
+            className="flex flex-col sm:flex-row items-start sm:items-center gap-5"
+          >
             <Button text={t.cta} link="/contact" type={2} />
 
-            <div>
-              <span className="text-slate-400 uppercase tracking-wider text-xs">
+            {/* divider */}
+            <div
+              className="hidden sm:block self-stretch"
+              style={{ width: 1, background: "rgba(200,232,234,0.12)" }}
+            />
+
+            <div className="flex flex-col gap-0.5">
+              <span
+                className="uppercase tracking-widest"
+                style={{ 
+                  // color: "rgba(200,232,234,0.45)", 
+                  fontSize: 10, fontWeight: 600 }}
+              >
                 {t.contactLabel}
               </span>
-              <div className="text-[#C49B63] font-extrabold text-lg mt-1">
+
+              <a href="tel:+994503127657"
+                className="font-bold text-[17px] hover:opacity-80 transition-opacity"
+                style={{ color: "#D4AF37", letterSpacing: "0.01em" }}
+              >
                 +994 50 312 76 57
-              </div>
+              </a>
             </div>
           </div>
         </div>
 
-        {/* IMAGE */}
-        <div className="flex-1 w-full">
-          <div data-aos="fade-left" className="relative w-full h-[300px] sm:h-[400px] lg:h-[520px] rounded-[32px] overflow-hidden shadow-xl">
-            <Image
-              src={imgSrc}
-              alt="Turan İnşaat hovuz və spa layihəsi"
-              fill
-              quality={100}
-              className="object-cover hover:scale-105 transition-transform duration-700"
-            />
-          </div>
-        </div>
       </div>
+
+      {/* subtle teal bottom border */}
+      <div style={{ height: "1px", background: "linear-gradient(90deg, transparent, #007A85, transparent)" }} />
     </section>
   );
 }

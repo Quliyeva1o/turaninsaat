@@ -1,124 +1,143 @@
 'use client'
+
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import Image from "next/image";
 import contactIllustration from "@/public/assets/images/contactus.jpg";
 
 const contactInfo = [
   {
-    title: "24/7 Dəstək Mərkəzi",
+    title: "24/7 Dəstək",
     link: "tel:+994503127657",
     display: "+994 50 312 76 57",
-    icon: <FaPhoneAlt size={28} className="text-[#C49B63]" />,
+    icon: <FaPhoneAlt size={22} className="text-[#C49B63]" />,
   },
   {
-    title: "Bizə Yazın",
+    title: "Email",
     link: "mailto:turaninshaat21@mail.ru",
     display: "turaninshaat21@mail.ru",
-    icon: <FaEnvelope size={28} className="text-[#C49B63]" />,
+    icon: <FaEnvelope size={22} className="text-[#C49B63]" />,
   },
 ];
 
 export const ContactSection = () => {
   return (
-<section className="relative py-25  bg-gradient-to-b from-[#0F172A] to-[#071421] text-white overflow-hidden">
-  <div className="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
+    <section className="relative py-24 bg-gradient-to-b from-[#0B1220] to-[#071421] text-white overflow-hidden">
 
-    <div className="flex flex-col lg:flex-row gap-16">
+      <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
-      {/* SOL tərəf */}
-      <div className="flex-1 flex flex-col justify-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
-        {/* Heading */}
-        <div className="mb-10 text-left">
-          <span data-aos="fade-right" className="text-[#C49B63] font-semibold md:text-[16px] uppercase tracking-widest text-sm">
-            Bizimlə Əlaqə
-          </span>
-          <h2 data-aos="fade-right" className="text-3xl md:text-[56px] font-extrabold mt-3 leading-tight">
-            Suallarınız və sorğularınız üçün buradayıq
-          </h2>
-          <p data-aos="fade-right" className="text-slate-300 mt-4 max-w-md">
-            Suallarınız, qiymət sorğularınız və əməkdaşlıq imkanları üçün bizimlə əlaqə saxlayın.
-          </p>
-        </div>
+          {/* ───────── LEFT SIDE ───────── */}
+          <div className="space-y-10">
 
-        {/* Image */}
-        <div className="mt-6" data-aos="fade-right">
-          <Image
-            src={contactIllustration}
-            alt="Turan İnşaat"
-            width={600}
-            height={600}
-            className="rounded-3xl shadow-2xl object-cover"
-            quality={100}
-          />
-        </div>
-      </div>
+            {/* Badge */}
+            <div data-aos="fade-up" className="flex items-center gap-3">
+              <span className="w-8 h-[1px] bg-[#C49B63]" />
+              <p className="uppercase text-[11px] tracking-[0.3em] text-[#C49B63] font-semibold">
+                Bizimlə Əlaqə
+              </p>
+            </div>
 
-      {/* SAĞ tərəf */}
-      <div className="flex-1 flex flex-col gap-8">
-
-        {/* Contact Info */}
-        <div className="flex flex-col gap-4">
-          {contactInfo.map((info, idx) => (
-            <a
-              key={idx}
-              href={info.link}
-              data-aos="fade-left"
-              className="flex items-center gap-4 bg-[#102948]/80 hover:bg-[#1B3450]/90 transition-all duration-300 rounded-2xl p-5 shadow-lg group"
+            {/* Title */}
+            <h2
+              data-aos="fade-up"
+              className="text-[30px] sm:text-[40px] lg:text-[48px] font-extrabold leading-[1.1] tracking-tight"
             >
-              <div className="w-14 h-14 flex items-center justify-center bg-[#0F172A] rounded-full">
-                {info.icon}
+              Suallarınız və sorğularınız üçün buradayıq
+            </h2>
+
+            {/* Description */}
+            <p
+              data-aos="fade-up"
+              className="text-[15px] sm:text-[16px] text-white/70 leading-relaxed max-w-xl"
+            >
+              Qiymət sorğuları, əməkdaşlıq və layihə detalları üçün bizimlə rahat şəkildə əlaqə saxlayın.
+            </p>
+
+            {/* Image */}
+            <div data-aos="fade-up" className="rounded-3xl overflow-hidden shadow-2xl">
+              <Image
+                src={contactIllustration}
+                alt="Contact"
+                className="w-full h-[320px] object-cover hover:scale-105 transition duration-700"
+              />
+            </div>
+          </div>
+
+          {/* ───────── RIGHT SIDE ───────── */}
+          <div className="space-y-8">
+
+            {/* Contact Cards */}
+            <div className="space-y-4">
+              {contactInfo.map((info, idx) => (
+                <a
+                  key={idx}
+                  href={info.link}
+                  data-aos="fade-up"
+                  className="group flex items-center gap-4 p-5 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 transition"
+                >
+                  <div className="w-12 h-12 flex items-center justify-center rounded-xl bg-[#0F172A]">
+                    {info.icon}
+                  </div>
+
+                  <div>
+                    <p className="text-[#C49B63] text-sm font-semibold">
+                      {info.title}
+                    </p>
+                    <p className="text-white/80 text-sm mt-1">
+                      {info.display}
+                    </p>
+                  </div>
+                </a>
+              ))}
+            </div>
+
+            {/* Form */}
+            <form
+              data-aos="fade-up"
+              className="space-y-4 p-6 sm:p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-md"
+            >
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <input
+                  placeholder="Adınız"
+                  className="h-12 px-4 rounded-xl bg-transparent border border-white/10 outline-none focus:border-[#C49B63]"
+                />
+
+                <input
+                  type="email"
+                  placeholder="Email"
+                  className="h-12 px-4 rounded-xl bg-transparent border border-white/10 outline-none focus:border-[#C49B63]"
+                />
+
+                <input
+                  placeholder="Telefon"
+                  className="h-12 px-4 rounded-xl bg-transparent border border-white/10 outline-none focus:border-[#C49B63]"
+                />
+
+                <input
+                  placeholder="Mövzu"
+                  className="h-12 px-4 rounded-xl bg-transparent border border-white/10 outline-none focus:border-[#C49B63]"
+                />
               </div>
-              <div>
-                <h3 className="text-sm font-bold text-[#C49B63]">
-                  {info.title}
-                </h3>
-                <span className="text-slate-200 text-sm">
-                  {info.display}
-                </span>
-              </div>
-            </a>
-          ))}
+
+              <textarea
+                rows={5}
+                placeholder="Mesajınız"
+                className="w-full p-4 rounded-xl bg-transparent border border-white/10 outline-none focus:border-[#C49B63]"
+              />
+
+              <button
+                type="submit"
+                className="w-full h-12 rounded-xl bg-[#C49B63] text-black font-semibold hover:bg-[#B88A5A] transition"
+              >
+                Göndər
+              </button>
+
+            </form>
+          </div>
         </div>
-
-        {/* Form */}
-        <form data-aos="fade-left" className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-[#102948]/80 p-8 rounded-3xl shadow-2xl backdrop-blur-sm">
-          <input
-            type="text"
-            placeholder="Adınız"
-            className="border border-gray-700 p-4 rounded-xl h-14 bg-transparent"
-          />
-          <input
-            type="email"
-            placeholder="Email"
-            className="border border-gray-700 p-4 rounded-xl h-14 bg-transparent"
-          />
-          <input
-            type="text"
-            placeholder="Telefon Nömrəniz"
-            className="border border-gray-700 p-4 rounded-xl h-14 bg-transparent"
-          />
-          <input
-            type="text"
-            placeholder="Mövzu"
-            className="border border-gray-700 p-4 rounded-xl h-14 bg-transparent"
-          />
-          <textarea
-            placeholder="Mesajınız"
-            rows={5}
-            className="border border-gray-700 p-4 rounded-xl md:col-span-2 bg-transparent"
-          />
-          <button
-            type="submit"
-            className="bg-[#C49B63] text-black font-bold py-4 md:col-span-2 rounded-xl hover:bg-[#B88A5A] transition"
-          >
-            Göndər
-          </button>
-        </form>
-
       </div>
-    </div>
-  </div>
-</section>
-  )
-}
+    </section>
+  );
+};

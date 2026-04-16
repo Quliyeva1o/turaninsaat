@@ -10,34 +10,62 @@ interface Props {
   locale?: 'az' | 'en';
 }
 
-
 export default function OurServices({ locale = 'az' }: Props) {
   const router = useRouter();
   const services = servicesContent[locale];
 
   return (
-    <section className="bg-[#0F172A] py-25 text-white">
-      <div className="max-w-[1300px] mx-auto px-6 md:px-10 text-center">
+    <section
+      aria-label="Our Services"
+      style={{ background: "#0A1E30" }}
+      className="py-24 lg:pt-12 lg:pb-22 text-white overflow-hidden"
+    >
+      {/* top teal border */}
+      {/* <div style={{ height: "1px", background: "linear-gradient(90deg, transparent, #00A8B5, transparent)" }} /> */}
 
-        {/* Header */}
-        <span data-aos="fade-up" className="uppercase tracking-[0.15em] text-sm font-extrabold text-[#2A69AC] md:text-[16px]">
-          {locale === 'az' ? "Xidmətlərimiz" : "Our Services"}
-        </span>
+      <div className="max-w-[1340px] mx-auto px-6 sm:px-8 lg:px-12 pt-12">
 
-        <h2 data-aos="fade-up" className="mt-6 text-3xl md:text-[56px] font-extrabold leading-tight font-[var(--font-manrope)]">
-          {locale === 'az'
-            ? "Premium hovuz və spa layihələri"
-            : "Premium Pools & Spa Solutions"}
-        </h2>
+        {/* ── Section header ── */}
+        <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
+          <p
+            data-aos="fade-up"
+            className="inline-flex items-center gap-2 uppercase font-bold tracking-[0.28em] mb-5"
+            style={{ color: "#00A8B5", fontSize: 11 }}
+          >
+            <span style={{ display: "inline-block", width: 20, height: 1, background: "#00A8B5" }} />
+            {locale === 'az' ? "Xidmətlərimiz" : "Our Services"}
+            <span style={{ display: "inline-block", width: 20, height: 1, background: "#00A8B5" }} />
+          </p>
 
-        <p data-aos="fade-up" className="mt-6 max-w-2xl mx-auto text-slate-400 font-[var(--font-dm-sans)]">
-          {locale === 'az'
-            ? "Turan İnşaat olaraq fərdi və ictimai hovuzlar, türk hamamı, sauna və spa layihələrinin dizaynı və tikintisində peşəkar xidmət göstəririk. Ideal həllərimiz villa, otel və spa mərkəzləri üçün nəzərdə tutulub."
-            : "Turan Construction provides professional design and construction of private and public pools, Turkish baths, saunas, and spa projects. Our solutions are ideal for villas, hotels, and spa centers."}
-        </p>
+          <h2
+            data-aos="fade-up"
+            className="font-extrabold leading-[1.1] tracking-tight mb-6"
+            style={{ color: "#FAF6EC", fontSize: "clamp(28px, 5vw, 52px)" }}
+          >
+            {locale === 'az'
+              ? "Premium hovuz və spa layihələri"
+              : "Premium Pools & Spa Solutions"}
+          </h2>
 
-        {/* Slider */}
-        <div className="mt-20 swipperwrapper">
+          <div
+            data-aos="fade-up"
+            className="mx-auto mb-6"
+            style={{ width: 48, height: 2, background: "linear-gradient(90deg, transparent, #00A8B5, transparent)" }}
+          />
+
+          <p
+            data-aos="fade-up"
+            className="text-[15px] sm:text-[16px] leading-relaxed"
+            style={{ color: "rgba(200,232,234,0.65)" }}
+          >
+            {locale === 'az'
+              ? "Turan İnşaat olaraq fərdi və ictimai hovuzlar, türk hamamı, sauna və spa layihələrinin dizaynı və tikintisində peşəkar xidmət göstəririk. İdeal həllərimiz villa, otel və spa mərkəzləri üçün nəzərdə tutulub."
+              : "Turan Construction provides professional design and construction of private and public pools, Turkish baths, saunas, and spa projects. Our solutions are ideal for villas, hotels, and spa centers."}
+          </p>
+        </div>
+
+        {/* ── Swiper ── */}
+     <div className="mt-20 swipperwrapper">
           <Swiper
             spaceBetween={20}
             slidesPerView={1}
@@ -78,15 +106,35 @@ export default function OurServices({ locale = 'az' }: Props) {
           </Swiper>
         </div>
 
-        {/* CTA */}
-        <div data-aos="fade-up" className="mt-15 w-full flex justify-center">
+        {/* ── CTA ── */}
+        <div data-aos="fade-up" className="flex justify-center mt-4">
           <Button
             text={locale === 'az' ? "Bütün xidmətlər" : "All Services"}
             link="/services"
             type={4}
           />
         </div>
+
       </div>
+
+      {/* bottom teal border */}
+      {/* <div style={{ height: "1px", background: "linear-gradient(90deg, transparent, #007A85, transparent)", marginTop: 64 }} /> */}
+
+      {/* swiper pagination dot override */}
+      <style>{`
+        .services-swiper-wrapper .swiper-pagination-bullet {
+          background: rgba(200,232,234,0.3);
+          opacity: 1;
+          width: 6px;
+          height: 6px;
+          transition: all 0.3s ease;
+        }
+        .services-swiper-wrapper .swiper-pagination-bullet-active {
+          background: #00A8B5;
+          width: 20px;
+          border-radius: 3px;
+        }
+      `}</style>
     </section>
   );
 }
