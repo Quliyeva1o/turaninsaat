@@ -40,7 +40,7 @@ export const Products = () => {
   <section
       aria-label="Our Products"
       style={{ background: "#0A1E30" }}
-      className="py-24 lg:pt-12 lg:pb-22 text-white overflow-hidden"
+      className="pt-5 pb-15 lg:pt-12 lg:pb-22 text-white overflow-hidden"
     >          <div className="max-w-[1340px] mx-auto px-6 sm:px-8 lg:px-12 pt-12">
 
         {/* ── Section header ── */}

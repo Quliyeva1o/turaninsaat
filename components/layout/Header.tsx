@@ -5,13 +5,13 @@ import Image from "next/image";
 import './header.css'
 import Button from "../common/Button";
 import logo from '../../public/assets/images/logoag.png'
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { servicesContent } from "@/utils";
 import { projects } from "../home/ourProjects/projes";
 
 export default function Header({ locale = "az" }: any) {
   const headerRef = useRef<HTMLElement>(null);
-
+const [menuOpen, setMenuOpen] = useState(false);
   useEffect(() => {
     // Scroll → header background
     const header = headerRef.current;
@@ -26,7 +26,9 @@ export default function Header({ locale = "az" }: any) {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-
+useEffect(() => {
+  document.body.style.overflow = menuOpen ? "hidden" : "auto";
+}, [menuOpen]);
   useEffect(() => {
     // Magic cursor
     const cursor = document.getElementById("magic-cursor");
@@ -72,6 +74,7 @@ export default function Header({ locale = "az" }: any) {
 
       <header ref={headerRef} className="site-header">
         <div className="container header-inner">
+
           <div className="site-logo w-[160px]">
             <Link href="/">
               <Image
@@ -84,8 +87,7 @@ export default function Header({ locale = "az" }: any) {
             </Link>
           </div>
 
-          <nav className="main-nav" aria-label="Main Navigation">
-            <ul className="menu">
+<nav className={`main-nav ${menuOpen ? "open" : ""}`} aria-label="Main Navigation">            <ul className="menu">
               <li>
                 <Link href="/">Ana səhifə</Link>
               </li>
@@ -119,6 +121,11 @@ export default function Header({ locale = "az" }: any) {
           </nav>
 
           <Button link={"/contact"} text={"Bizimlə əlaqə"} type={5} />
+                    <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+  <span className={menuOpen ? "open" : ""}></span>
+  <span className={menuOpen ? "open" : ""}></span>
+  <span className={menuOpen ? "open" : ""}></span>
+</div>
         </div>
       </header>
     </>

@@ -21,7 +21,7 @@ const contactInfo = [
 
 export const ContactSection = () => {
   return (
-    <section className="relative py-24 bg-gradient-to-b from-[#0B1220] to-[#071421] text-white overflow-hidden">
+    <section className="relative py-15 bg-gradient-to-b from-[#0B1220] to-[#071421] text-white overflow-hidden">
 
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
 

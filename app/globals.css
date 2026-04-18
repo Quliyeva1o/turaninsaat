@@ -70,8 +70,9 @@ span {
 /* 📱 Mobile */
 @media (max-width: 768px) {
   .headercontainer {
-    margin: 16px;
-    border-radius: 20px;
+    overflow: hidden;
+    /* margin: 0; */
+    /* border-radius: 20px; */
   }
 }
 
@@ -93,13 +94,6 @@ span {
   bottom: -50px !important;
 }
 
-/* 📱 Small mobile */
-@media (max-width: 480px) {
-  .headercontainer {
-    margin: 10px;
-    border-radius: 16px;
-  }
-}
 
 #ball {
   position: fixed;

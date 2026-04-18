@@ -45,7 +45,7 @@ export default function AboutUs({ locale = "az" }: AboutProps) {
       {/* subtle teal top border */}
       <div style={{ height: "1px", background: "linear-gradient(90deg, transparent, #00A8B5, transparent)" }} />
 
-      <div className="max-w-[1340px] mx-auto px-6 sm:px-8 lg:px-12 py-24 lg:py-32 flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
+      <div className="max-w-[1340px] overflow-hidden mx-auto px-6 sm:px-8 lg:px-12 py-15 lg:py-32 flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
 
         {/* ── IMAGE (left on desktop) ── */}
         <div className="flex-1 w-full order-2 lg:order-1">

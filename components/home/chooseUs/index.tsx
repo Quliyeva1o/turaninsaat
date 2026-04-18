@@ -41,7 +41,7 @@ export default function WhyChooseUs() {
     <section
       aria-label="Our Projects"
       // style={{ background: "#0A1E30" }}
-      className="py-24 lg:pt-12 lg:pb-22 overflow-hidden"
+      className="pt-5 pb-15 lg:pt-12 lg:pb-22 overflow-hidden"
     >
       {/* top border */}
       {/* <div style={{ height: "1px", background: "linear-gradient(90deg, transparent, #00A8B5, transparent)" }} /> */}

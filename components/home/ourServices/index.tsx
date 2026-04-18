@@ -18,7 +18,7 @@ export default function OurServices({ locale = 'az' }: Props) {
     <section
       aria-label="Our Services"
       style={{ background: "#0A1E30" }}
-      className="py-24 lg:pt-12 lg:pb-22 text-white overflow-hidden"
+      className="pt-5 pb-15 lg:pt-12 lg:pb-22 text-white overflow-hidden"
     >
       {/* top teal border */}
       {/* <div style={{ height: "1px", background: "linear-gradient(90deg, transparent, #00A8B5, transparent)" }} /> */}
