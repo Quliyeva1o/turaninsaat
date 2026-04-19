@@ -51,7 +51,7 @@ export default function Hero({
   useEffect(() => {
     const videoEl = videoRef.current;
     if (!videoEl) return;
-    const playVideo = () => { videoEl.play().catch(() => {}); };
+    const playVideo = () => { videoEl.play().catch(() => { }); };
     playVideo();
     document.addEventListener("touchstart", playVideo, { once: true });
     return () => { document.removeEventListener("touchstart", playVideo); };
@@ -60,11 +60,10 @@ export default function Hero({
   return (
     <section
       aria-label="Turan İnşaat Hero Section"
-      className={`relative ${
-        isHome
+      className={`relative ${isHome
           ? "h-[100vh] lg:h-[calc(100vh+100px)]"
           : "h-[280px] sm:h-[340px] md:h-[420px]"
-      }`}
+        }`}
     >
       <div className="flex items-center text-white h-full overflow-hidden">
         {/* VIDEO */}
@@ -101,9 +100,8 @@ export default function Hero({
         {/* CONTENT */}
         <div
           data-aos="fade-up"
-          className={`relative z-30 text-center w-full px-4 sm:px-6 lg:px-8 ${
-            isHome ? "pt-0" : "pt-0"
-          }`}
+          className={`relative z-30 text-center w-full px-4 sm:px-6 lg:px-8 ${isHome ? "pt-0" : "pt-0"
+            }`}
         >
           {/* BADGE */}
           <p className="inline-flex items-center gap-2 uppercase text-[#00A8B5] mb-5 text-[11px] sm:text-[13px] font-bold tracking-[0.25em]">
@@ -113,8 +111,19 @@ export default function Hero({
           </p>
 
           {/* TITLE */}
-          <h1 className="text-[32px] sm:text-[44px] md:text-[58px] lg:text-[72px] font-extrabold leading-[1.05] tracking-tight mb-6 text-white drop-shadow-sm">
-            {isHome ? content.title : text}
+          <h1
+            className={`
+    ${isHome
+                ? "text-[clamp(28px,5vw,72px)]"
+                : "text-[clamp(18px,3vw,48px)]"}
+    font-extrabold 
+    leading-[1.05] 
+    tracking-tight 
+    mb-6 
+    text-white 
+    drop-shadow-sm
+  `}
+          >            {isHome ? content.title : text}
           </h1>
 
           {/* DIVIDER */}
@@ -126,9 +135,8 @@ export default function Hero({
 
           {/* DESCRIPTION */}
           <p
-            className={`text-[15px] sm:text-[17px] md:text-[19px] max-w-3xl mx-auto text-[#C8E8EA]/90 leading-relaxed ${
-              isHome ? "mb-10 sm:mb-14" : "mb-6 sm:mb-8"
-            }`}
+            className={`text-[15px] sm:text-[17px] md:text-[19px] max-w-3xl mx-auto text-[#C8E8EA]/90 leading-relaxed ${isHome ? "mb-10 sm:mb-14" : "mb-6 sm:mb-8"
+              }`}
           >
             {isHome ? content.desc : subTitle}
           </p>

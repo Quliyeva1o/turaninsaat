@@ -101,7 +101,7 @@ export const Products = () => {
             {products.map((p, i) => (
               <SwiperSlide key={i}>
                 <div data-aos="fade-up"
-                  data-aos-delay={i + 1 * 200} className="relative overflow-hidden rounded-[24px] group cursor-pointer">
+                  data-aos-delay={i + 1 * 200} className="relative overflow-hidden rounded-2xl group cursor-pointer">
                   <img
                     src={p.image}
                     alt={p.title}
@@ -109,7 +109,7 @@ export const Products = () => {
                   />
 
                   {/* Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black rounded-[24px]" />
+                  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black rounded-2xl" />
 
                   {/* Content */}
                   <div className="absolute bottom-0 left-4 right-4 p-5 z-20 

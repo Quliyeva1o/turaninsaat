@@ -62,7 +62,7 @@ export default function OurProjects() {
               key={project.title}
               data-aos="fade-up"
               data-aos-delay={idx * 100}
-              className="relative overflow-hidden rounded-[24px] cursor-pointer group"
+              className="relative overflow-hidden rounded-2xl cursor-pointer group"
             >
               <img
                 src={project.images[0]}
@@ -70,7 +70,7 @@ export default function OurProjects() {
                 className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
               />
 
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black rounded-[24px]" />
+              <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black rounded-2xl" />
 
               <div className="absolute bottom-1 left-5  right-5 z-20 transform translate-y-[60%] h-[120px] group-hover:-translate-y-5 transition-transform duration-500">
                 <h3 className="text-[20px] sm:text-[22px] font-semibold leading-snug tracking-tight text-white">                  {project.title}

@@ -66,7 +66,7 @@ export default function Projects() {
                 {project.images?.[0]?.endsWith(".mp4") ? (
                   <video
                     src={project.images[0]}
-                    className="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="w-full h-50 md:h-72 object-cover group-hover:scale-110 transition-transform duration-500"
                     autoPlay
                     muted
                     loop
@@ -75,7 +75,7 @@ export default function Projects() {
                   <img
                     src={project.images?.[0]}
                     alt={project.title}
-                    className="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-500"
+                    className="w-full h-50 md:h-72 object-cover group-hover:scale-110 transition-transform duration-500"
                   />
                 )}
               </div>

@@ -46,7 +46,7 @@ export default function ContactPage() {
                 alt="Turan İnşaat"
                 width={600}
                 height={600}
-                className="rounded-3xl shadow-lg object-cover"
+                className="rounded-2xl shadow-lg object-cover"
                 quality={100}
               />
             </div>
@@ -79,7 +79,7 @@ export default function ContactPage() {
             </div>
 
             {/* Form */}
-            <form className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-[#F8FAFC] p-8 rounded-3xl border border-[#E2E8F0] shadow-sm">
+            <form className="grid grid-cols-1 md:grid-cols-2 gap-6 bg-[#F8FAFC] p-8 rounded-2xl border border-[#E2E8F0] shadow-sm">
               <input
                 type="text"
                 placeholder="Adınız"

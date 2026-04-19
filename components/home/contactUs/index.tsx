@@ -55,7 +55,7 @@ export const ContactSection = () => {
             </p>
 
             {/* Image */}
-            <div data-aos="fade-up" className="rounded-3xl overflow-hidden shadow-2xl">
+            <div data-aos="fade-up" className="rounded-2xl overflow-hidden shadow-2xl">
               <Image
                 src={contactIllustration}
                 alt="Contact"
@@ -95,7 +95,7 @@ export const ContactSection = () => {
             {/* Form */}
             <form
               data-aos="fade-up"
-              className="space-y-4 p-6 sm:p-8 rounded-3xl bg-white/5 border border-white/10 backdrop-blur-md"
+              className="space-y-4 p-6 sm:p-8 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-md"
             >
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
