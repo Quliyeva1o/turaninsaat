@@ -184,6 +184,7 @@ img: '/assets/images/poolCover.jpg',
 
     {
       title: "Əlavə SPA Avadanlıqları",
+      img:"/assets/images/sokdus.jpg",
       slug: "spa-avadanliqlari",
       desc: "SPA təcrübəsini tamamlamaq üçün şok duş, buz və digər avadanlıqlar.",
       sections: [

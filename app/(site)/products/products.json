@@ -1,0 +1,3389 @@
+[
+  {
+    "cat": "Keramika — Mayor Ceramica",
+    "badge": "spain",
+    "brand": "Mayor Ceramica",
+    "items": [
+      {
+        "name": "Tropic Turqueta İn (Parlaq)",
+        "specs": "14.7×14.7",
+        "img": "img61",
+        "prices": [{ "dim": "14.7×14.7", "val": "183.97" }]
+      },
+      {
+        "name": "Tropic Aguamarina İn (Parlaq)",
+        "specs": "14.7×14.7",
+        "img": "img62",
+        "prices": [{ "dim": "14.7×14.7", "val": "183.97" }]
+      },
+      {
+        "name": "Tropic Turqueta Out (Mat)",
+        "specs": "14.7×14.7",
+        "img": "img63",
+        "prices": [{ "dim": "14.7×14.7", "val": "162.54" }]
+      },
+      {
+        "name": "Tropic Aguamarina Out (Mat)",
+        "specs": "14.7×14.7",
+        "img": "img64",
+        "prices": [{ "dim": "14.7×14.7", "val": "162.54" }]
+      },
+      {
+        "name": "Bali Zatu Out (Mat)",
+        "specs": "İki ölçü",
+        "img": "img65",
+        "prices": [
+          { "dim": "14.7×14.7", "val": "162.54" },
+          { "dim": "30×60×0.9", "val": "136.16" }
+        ]
+      },
+      {
+        "name": "Volcanic Lava Out (Mat)",
+        "specs": "İki ölçü",
+        "img": "img66",
+        "prices": [
+          { "dim": "14.7×14.7", "val": "162.54" },
+          { "dim": "30×60×0.9", "val": "136.16" }
+        ]
+      },
+      {
+        "name": "Crosscut Petra",
+        "specs": "İspaniya | Mat & Parlaq",
+        "img": "img67"  ,
+        "prices": [
+          { "dim": "37.5×75×0.9", "val": "153.19" },
+          { "dim": "60×60×1", "val": "167.30" },
+          { "dim": "90×90×1", "val": "205.57" },
+          { "dim": "60×120×1", "val": "189.17" },
+          { "dim": "60×120×2", "val": "325.85" },
+          { "dim": "120×120×1", "val": "232.90" },
+          { "dim": "90×90×2", "val": "336.78" }
+        ]
+      },
+      {
+        "name": "Crosscut Cloud",
+        "specs": "İspaniya",
+        "img": "img68",
+        "prices": [
+          { "dim": "37.5×75×0.9", "val": "153.19" },
+          { "dim": "60×60×1", "val": "167.30" },
+          { "dim": "90×90×1", "val": "205.57" },
+          { "dim": "60×120×1", "val": "189.17" },
+          { "dim": "60×120×2", "val": "325.85" },
+          { "dim": "120×120×1", "val": "232.90" },
+          { "dim": "90×90×2", "val": "336.78" }
+        ]
+      },
+      {
+        "name": "Crosscut Puro",
+        "specs": "İspaniya",
+        "img": "img69",
+        "prices": [
+          { "dim": "37.5×75×0.9", "val": "153.19" },
+          { "dim": "60×60×1", "val": "167.30" },
+          { "dim": "90×90×1", "val": "205.57" },
+          { "dim": "60×120×1", "val": "189.17" },
+          { "dim": "60×120×2", "val": "325.85" },
+          { "dim": "120×120×1", "val": "232.90" },
+          { "dim": "90×90×2", "val": "336.78" }
+        ]
+      },
+      {
+        "name": "Veincut Sahara",
+        "specs": "İspaniya",
+        "img": "img70",
+        "prices": [
+          { "dim": "37.5×75×0.9", "val": "153.19" },
+          { "dim": "60×120×1", "val": "189.17" }
+        ]
+      },
+      {
+        "name": "Veincut Basalt",
+        "specs": "İspaniya",
+        "img": "img71",
+        "prices": [
+          { "dim": "37.5×75×0.9", "val": "153.19" },
+          { "dim": "60×120×1", "val": "189.17" }
+        ]
+      },
+      {
+        "name": "Veincut Aurora",
+        "specs": "İspaniya",
+        "img": "img72",
+        "prices": [
+          { "dim": "37.5×75×0.9", "val": "153.19" },
+          { "dim": "60×120×1", "val": "189.17" }
+        ]
+      },
+      {
+        "name": "Stromboli Light",
+        "specs": "İspaniya",
+        "img": "img73",
+        "prices": [
+          { "dim": "37.5×75×0.9", "val": "153.19" },
+          { "dim": "60×60×1", "val": "167.30" },
+          { "dim": "75×75×1", "val": "180.96" },
+          { "dim": "60×120×1", "val": "189.17" },
+          { "dim": "60×120×2", "val": "325.85" }
+        ]
+      },
+      {
+        "name": "Cupira Hueso",
+        "specs": "İspaniya",
+        "img": "img74",
+        "prices": [
+          { "dim": "37.5×75×0.9", "val": "153.19" },
+          { "dim": "60×120×1", "val": "189.17" }
+        ]
+      },
+      {
+        "name": "Pilləkan BPMA Maui",
+        "specs": "33×50×2.5 cm",
+        "img": "img82",
+        "prices": [{ "dim": "ədəd", "val": "157.07" }]
+      },
+      {
+        "name": "Pilləkan BPAR Aruba",
+        "specs": "24.6×50×3.4 cm",
+        "img": "img83",
+        "prices": [{ "dim": "ədəd", "val": "172.99" }]
+      },
+      {
+        "name": "Pilləkan BPCR Creta",
+        "specs": "32.6×50×2.5 cm",
+        "img": "img84",
+        "prices": [{ "dim": "ədəd", "val": "157.07" }]
+      },
+      {
+        "name": "Pilləkan BPSA Samoa",
+        "specs": "50×120×2.5 cm",
+        "img": "img85",
+        "prices": [{ "dim": "ədəd", "val": "464.84" }]
+      },
+      {
+        "name": "RJ 20 Pilləkan",
+        "specs": "19.3×50×2.2",
+        "img": "img86",
+        "prices": [{ "dim": "ədəd", "val": "227.31" }]
+      },
+      {
+        "name": "RJ 25 Pilləkan",
+        "specs": "24.5×50×2.2",
+        "img": "img87",
+        "prices": [{ "dim": "ədəd", "val": "257.22" }]
+      },
+      {
+        "name": "RJ 25 INV",
+        "specs": "24.5×50×2.2",
+        "img": "img88",
+        "prices": [{ "dim": "ədəd", "val": "295.04" }]
+      },
+      {
+        "name": "Recto step",
+        "specs": "32.6×120×1.1",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "344.92" }]
+      },
+      {
+        "name": "Full step",
+        "specs": "32.6×120×3.2",
+        "img": "img90",
+        "prices": [{ "dim": "ədəd", "val": "634.11" }]
+      },
+      {
+        "name": "MDCA E000",
+        "specs": "4.5×50 cm",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "68.45" }]
+      },
+      {
+        "name": "MDCA EE00",
+        "specs": "4.5×4.5 cm",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "82.78" }]
+      },
+      {
+        "name": "MDCA AI00",
+        "specs": "6.5×6.5 cm",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "95.52" }]
+      },
+      {
+        "name": "MDCA CE00",
+        "specs": "4.5×25 cm",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "127.35" }]
+      },
+      {
+        "name": "MDCA I000",
+        "specs": "5.5×50 cm",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "65.27" }]
+      },
+      {
+        "name": "MDCA EI00",
+        "specs": "5.5×5.5 cm",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "82.78" }]
+      },
+      {
+        "name": "MDCA AE00",
+        "specs": "6.5×6.5 cm",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "95.52" }]
+      },
+      {
+        "name": "MDCA CI00",
+        "specs": "5.5×25 cm",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "127.35" }]
+      },
+      {
+        "name": "RJ 20 FLEX Pilləkan",
+        "specs": "19.3×50×2.2",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "327.00" }]
+      },
+      {
+        "name": "RJ 25 FLEX Pilləkan",
+        "specs": "25×50×2.2",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "356.91" }]
+      },
+      {
+        "name": "RJ 20 FLEX Esquiana",
+        "specs": "Künc parçası",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "496.49" }]
+      },
+      {
+        "name": "RJ 25 FLEX Esquiana",
+        "specs": "Künc parçası",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "556.30" }]
+      },
+      {
+        "name": "RJ 25 INV Esquiana",
+        "specs": "Künc parçası",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "634.65" }]
+      },
+      {
+        "name": "Recto step Esquiana",
+        "specs": "Künc parçası",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "634.11" }]
+      }
+    ]
+  },
+  {
+    "cat": "Keramika — Rosa Gres",
+    "badge": "spain",
+    "brand": "Rosa Gres",
+    "items": [
+      {
+        "name": "Coral Blue",
+        "specs": "Rəngli",
+        "img": null,
+        "prices": [
+          { "dim": "31×62.6×0.9", "val": "174.95" },
+          { "dim": "48.8×97.9×1", "val": "234.11" },
+          { "dim": "97.9×97.9×1", "val": "272.05" }
+        ]
+      },
+      {
+        "name": "Coral Sand",
+        "specs": "",
+        "img": null,
+        "prices": [
+          { "dim": "31×62.6×0.9", "val": "164.66" },
+          { "dim": "48.8×97.9×1", "val": "220.33" },
+          { "dim": "97.9×97.9×1", "val": "256.05" }
+        ]
+      },
+      {
+        "name": "Cuore Verde",
+        "specs": "Rəngli",
+        "img": "img110",
+        "prices": [
+          { "dim": "31×62.6×0.9", "val": "174.95" },
+          { "dim": "48.8×97.9×1", "val": "234.11" },
+          { "dim": "97.9×97.9×1", "val": "272.05" }
+        ]
+      },
+      {
+        "name": "Cuore Rosso",
+        "specs": "",
+        "img": "img111",
+        "prices": [
+          { "dim": "31×62.6×0.9", "val": "164.66" },
+          { "dim": "48.8×97.9×1", "val": "220.33" },
+          { "dim": "97.9×97.9×1", "val": "256.05" }
+        ]
+      },
+      {
+        "name": "Cuore Beige",
+        "specs": "",
+        "img": "img112",
+        "prices": [
+          { "dim": "31×62.6×0.9", "val": "164.66" },
+          { "dim": "48.8×97.9×1", "val": "220.33" },
+          { "dim": "97.9×97.9×1", "val": "256.05" }
+        ]
+      },
+      {
+        "name": "Iconic White",
+        "specs": "",
+        "img": "img117",
+        "prices": [
+          { "dim": "31×62.6×0.9", "val": "164.66" },
+          { "dim": "48.8×97.9×1", "val": "220.33" },
+          { "dim": "48.8×97.9×2", "val": "367.50" },
+          { "dim": "97.9×97.9×1", "val": "256.05" }
+        ]
+      },
+      {
+        "name": "Iconic Grey",
+        "specs": "",
+        "img": "img118",
+        "prices": [
+          { "dim": "31×62.6×0.9", "val": "164.66" },
+          { "dim": "48.8×97.9×1", "val": "220.33" },
+          { "dim": "48.8×97.9×2", "val": "367.50" },
+          { "dim": "97.9×97.9×1", "val": "256.05" }
+        ]
+      },
+      {
+        "name": "Serena Mix",
+        "specs": "",
+        "img": "img116",
+        "prices": [
+          { "dim": "31×62.6×0.9", "val": "169.80" }
+        ]
+      },
+      {
+        "name": "Sophy White",
+        "specs": "",
+        "img": "img117",
+        "prices": [
+          { "dim": "31×62.6×0.9", "val": "164.66" },
+          { "dim": "48.8×97.9×1", "val": "220.33" },
+          { "dim": "97.9×97.9×1", "val": "256.05" }
+        ]
+      },
+      {
+        "name": "Sophy Grey",
+        "specs": "",
+        "img": "img118",
+        "prices": [
+          { "dim": "31×62.6×0.9", "val": "164.66" },
+          { "dim": "48.8×97.9×1", "val": "220.33" },
+          { "dim": "97.9×97.9×1", "val": "256.05" }
+        ]
+      },
+      {
+        "name": "Sophy Beige",
+        "specs": "",
+        "img": "img121",
+        "prices": [
+          { "dim": "31×62.6×0.9", "val": "164.66" },
+          { "dim": "48.8×97.9×1", "val": "220.33" },
+          { "dim": "97.9×97.9×1", "val": "256.05" }
+        ]
+      },
+      {
+        "name": "Mythos Selene",
+        "specs": "",
+        "img": "img115",
+        "prices": [
+          { "dim": "31×62.6×0.9", "val": "164.66" },
+          { "dim": "48.8×97.9×1", "val": "220.33" }
+        ]
+      },
+      {
+        "name": "Mythos Antique",
+        "specs": "",
+        "img": "img114",
+        "prices": [
+          { "dim": "31×62.6×0.9", "val": "164.66" },
+          { "dim": "48.8×97.9×1", "val": "220.33" }
+        ]
+      },
+      {
+        "name": "Mythos Dune",
+        "specs": "",
+        "img": "img113",
+        "prices": [
+          { "dim": "31×62.6×0.9", "val": "164.66" },
+          { "dim": "48.8×97.9×1", "val": "220.33" }
+        ]
+      },
+      {
+        "name": "Tresor Bali",
+        "specs": "",
+        "img": "img122",
+        "prices": [
+          { "dim": "31×62.6×0.9", "val": "174.95" }
+        ]
+      },
+      {
+        "name": "Tresor Java",
+        "specs": "",
+        "img": "img123",
+        "prices": [
+          { "dim": "31×62.6×0.9", "val": "164.66" }
+        ]
+      },
+      {
+        "name": "Pietro White",
+        "specs": "Rəngli",
+        "img": "img126",
+        "prices": [
+          { "dim": "31×62.6×0.9", "val": "174.95" },
+          { "dim": "48.8×97.9×1", "val": "234.11" },
+          { "dim": "48.8×97.9×2", "val": "390.47" }
+        ]
+      },
+      {
+        "name": "Pietro Golden",
+        "specs": "Rəngli",
+        "img": "img127",
+        "prices": [
+          { "dim": "31×62.6×0.9", "val": "174.95" },
+          { "dim": "48.8×97.9×1", "val": "234.11" },
+          { "dim": "48.8×97.9×2", "val": "390.47" }
+        ]
+      },
+      {
+        "name": "Pietro Grey",
+        "specs": "Rəngli",
+        "img": "img128",
+        "prices": [
+          { "dim": "31×62.6×0.9", "val": "174.95" },
+          { "dim": "48.8×97.9×1", "val": "234.11" },
+          { "dim": "48.8×97.9×2", "val": "390.47" }
+        ]
+      },
+      {
+        "name": "Pietro Dark",
+        "specs": "",
+        "img": "img129",
+        "prices": [
+          { "dim": "31×62.6×0.9", "val": "164.66" },
+          { "dim": "48.8×97.9×1", "val": "220.33" },
+          { "dim": "48.8×97.9×2", "val": "367.50" }
+        ]
+      },
+      {
+        "name": "Serena Bianco",
+        "specs": "",
+        "img": "img130",
+        "prices": [
+          { "dim": "31×62.6×0.9", "val": "164.66" },
+          { "dim": "48.8×97.9×1", "val": "220.33" }
+        ]
+      },
+      {
+        "name": "Serana Ocra",
+        "specs": "",
+        "img": "img131",
+        "prices": [
+          { "dim": "31×62.6×0.9", "val": "164.66" },
+          { "dim": "48.8×97.9×1", "val": "220.33" }
+        ]
+      },
+      {
+        "name": "Serana Griggio",
+        "specs": "",
+        "img": "img132",
+        "prices": [
+          { "dim": "31×62.6×0.9", "val": "164.66" },
+          { "dim": "48.8×97.9×1", "val": "220.33" }
+        ]
+      },
+      {
+        "name": "Serena Nero",
+        "specs": "",
+        "img": "img133",
+        "prices": [
+          { "dim": "31×62.6×0.9", "val": "164.66" },
+          { "dim": "48.8×97.9×1", "val": "220.33" }
+        ]
+      },
+      {
+        "name": "Mistery White",
+        "specs": "",
+        "img": "img134",
+        "prices": [
+          { "dim": "31×62.6×0.9", "val": "164.66" },
+          { "dim": "48.8×97.9×1", "val": "220.33" }
+        ]
+      },
+      {
+        "name": "Mistery Sand",
+        "specs": "",
+        "img": "img135",
+        "prices": [
+          { "dim": "31×62.6×0.9", "val": "164.66" },
+          { "dim": "48.8×97.9×1", "val": "220.33" }
+        ]
+      },
+      {
+        "name": "Mistery Grey",
+        "specs": "",
+        "img": "img136",
+        "prices": [
+          { "dim": "31×62.6×0.9", "val": "164.66" },
+          { "dim": "48.8×97.9×1", "val": "220.33" }
+        ]
+      },
+      {
+        "name": "Mistery Blue Stone",
+        "specs": "",
+        "img": "img137",
+        "prices": [
+          { "dim": "31×62.6×0.9", "val": "164.66" },
+          { "dim": "48.8×97.9×1", "val": "220.33" }
+        ]
+      },
+      {
+        "name": "Stela White",
+        "specs": "",
+        "img": "img138",
+        "prices": [{ "dim": "19.41×97.9×1", "val": "174.95" }]
+      },
+      {
+        "name": "Stela Golden",
+        "specs": "",
+        "img": "img139",
+        "prices": [{ "dim": "19.41×97.9×1", "val": "174.95" }]
+      },
+      {
+        "name": "Stela Grey",
+        "specs": "",
+        "img": "img140",
+        "prices": [{ "dim": "19.41×97.9×1", "val": "174.95" }]
+      },
+      {
+        "name": "Stela Dark",
+        "specs": "",
+        "img": "img141",
+        "prices": [{ "dim": "19.41×97.9×1", "val": "174.95" }]
+      },
+      {
+        "name": "647 model",
+        "specs": "62.6×31×2.6 cm",
+        "img": "img144",
+        "prices": [{ "dim": "ədəd", "val": "223.83" }]
+      },
+      {
+        "name": "664 model",
+        "specs": "62.6×62.6×2.6 cm",
+        "img": "img146",
+        "prices": [{ "dim": "ədəd", "val": "614.05" }]
+      },
+      {
+        "name": "665 model",
+        "specs": "62.6×62.6×2.6 cm",
+        "img": "img148",
+        "prices": [{ "dim": "ədəd", "val": "614.05" }]
+      },
+      {
+        "name": "I31 model",
+        "specs": "62.6×31×2.6 cm",
+        "img": "img197",
+        "prices": [{ "dim": "ədəd", "val": "360.56" }]
+      },
+      {
+        "name": "245CM model",
+        "specs": "62.6×24.5×2.2 cm",
+        "img": "img150",
+        "prices": [{ "dim": "ədəd", "val": "537.39" }]
+      },
+      {
+        "name": "245EC model",
+        "specs": "62.6×62.6×2.2 cm",
+        "img": "img152",
+        "prices": [{ "dim": "ədəd", "val": "614.05" }]
+      },
+      {
+        "name": "245FL model",
+        "specs": "49.5×24.5×2.2 cm",
+        "img": "img154",
+        "prices": [{ "dim": "ədəd", "val": "461.19" }]
+      },
+      {
+        "name": "245EF model",
+        "specs": "26.6×26.6×2.2 cm",
+        "img": "img156",
+        "prices": [{ "dim": "ədəd", "val": "515.38" }]
+      },
+      {
+        "name": "L62 model",
+        "specs": "62.6×31.7×3.8 cm",
+        "img": "img158",
+        "prices": [{ "dim": "ədəd", "val": "212.74" }]
+      },
+      {
+        "name": "L98 model",
+        "specs": "97.9×31.7×3.8 cm",
+        "img": "img160",
+        "prices": [{ "dim": "ədəd", "val": "341.53" }]
+      },
+      {
+        "name": "E62 model",
+        "specs": "62.6×62.6×3.8 cm",
+        "img": "img162",
+        "prices": [{ "dim": "ədəd", "val": "576.09" }]
+      },
+      {
+        "name": "DL1 model",
+        "specs": "31.7×31.7×3.8 cm",
+        "img": "img164",
+        "prices": [{ "dim": "ədəd", "val": "487.30" }]
+      },
+      {
+        "name": "S62 model",
+        "specs": "62.6×31×2.6 cm",
+        "img": "img166",
+        "prices": [{ "dim": "ədəd", "val": "206.67" }]
+      },
+      {
+        "name": "SI3 model",
+        "specs": "46×46×2.6 cm",
+        "img": "img170",
+        "prices": [{ "dim": "ədəd", "val": "506.80" }]
+      },
+      {
+        "name": "SE3 model",
+        "specs": "31×31×2.6 cm",
+        "img": "img168",
+        "prices": [{ "dim": "ədəd", "val": "530.86" }]
+      },
+      {
+        "name": "DS1 model",
+        "specs": "31×31×2.6 cm",
+        "img": "img172",
+        "prices": [{ "dim": "ədəd", "val": "627.39" }]
+      },
+      {
+        "name": "J62 model",
+        "specs": "62.6×31×3.8 cm",
+        "img": "img174",
+        "prices": [{ "dim": "ədəd", "val": "269.35" }]
+      },
+      {
+        "name": "EJE model",
+        "specs": "4×4 cm",
+        "img": "img177",
+        "prices": [{ "dim": "ədəd", "val": "135.89" }]
+      },
+      {
+        "name": "IJ6 model",
+        "specs": "31×31×31 cm",
+        "img": "img175",
+        "prices": [{ "dim": "ədəd", "val": "614.05" }]
+      },
+      {
+        "name": "EJ6 model",
+        "specs": "62.6×62.6×31 cm",
+        "img": "img176",
+        "prices": [{ "dim": "ədəd", "val": "614.05" }]
+      },
+      {
+        "name": "RS951",
+        "specs": "29.7×19.5×20.8 cm",
+        "img": "img178",
+        "prices": [{ "dim": "ədəd", "val": "75.47" }]
+      },
+      {
+        "name": "RS953",
+        "specs": "29.7×29.7×20.8 cm",
+        "img": "img179",
+        "prices": [{ "dim": "ədəd", "val": "786.90" }]
+      },
+      {
+        "name": "RS958",
+        "specs": "36.7×36.7×20.8 cm",
+        "img": "img180",
+        "prices": [{ "dim": "ədəd", "val": "1055.88" }]
+      },
+      {
+        "name": "183 model",
+        "specs": "31×4×4 cm",
+        "img": "img181",
+        "prices": [{ "dim": "ədəd", "val": "49.46" }]
+      },
+      {
+        "name": "115 model",
+        "specs": "4×4 cm",
+        "img": "img183",
+        "prices": [{ "dim": "ədəd", "val": "114.35" }]
+      },
+      {
+        "name": "117 model",
+        "specs": "4×4 cm",
+        "img": "img185",
+        "prices": [{ "dim": "ədəd", "val": "171.98" }]
+      },
+      {
+        "name": "040 model",
+        "specs": "31×4×4 cm",
+        "img": "img187",
+        "prices": [{ "dim": "ədəd", "val": "258.21" }]
+      },
+      {
+        "name": "188 model",
+        "specs": "31×4×4 cm",
+        "img": "img189",
+        "prices": [{ "dim": "ədəd", "val": "42.66" }]
+      },
+      {
+        "name": "114 model",
+        "specs": "4×4 cm",
+        "img": "img191",
+        "prices": [{ "dim": "ədəd", "val": "114.35" }]
+      },
+      {
+        "name": "116 model",
+        "specs": "4×4 cm",
+        "img": "img193",
+        "prices": [{ "dim": "ədəd", "val": "171.98" }]
+      },
+      {
+        "name": "030 model",
+        "specs": "31×4×4 cm",
+        "img": "img195",
+        "prices": [{ "dim": "ədəd", "val": "258.21" }]
+      }
+    ]
+  },
+  {
+    "cat": "Keramika — Nurpool",
+    "badge": "turkey",
+    "brand": "Nurpool",
+    "items": [
+      {
+        "name": "Olympos Green",
+        "specs": "30×60×0.75 Granüllü Porselen",
+        "img": "img201",
+        "prices": [{ "dim": "30×60×0.75", "val": "74.00" }]
+      },
+      {
+        "name": "Olympos Blue",
+        "specs": "30×60×0.75 Granüllü Porselen",
+        "img": "img202",
+        "prices": [{ "dim": "30×60×0.75", "val": "74.00" }]
+      },
+      {
+        "name": "Green Heaven",
+        "specs": "30×60×0.75 Granüllü Porselen",
+        "img": "img203",
+        "prices": [{ "dim": "30×60×0.75", "val": "74.00" }]
+      },
+      {
+        "name": "Nevada",
+        "specs": "30×60×0.75 Granüllü Porselen",
+        "img": "img204",
+        "prices": [{ "dim": "30×60×0.75", "val": "74.00" }]
+      }
+    ]
+  },
+  {
+    "cat": "Mozaik — Betaş",
+    "badge": "turkey",
+    "brand": "Betaş Mozaik",
+    "items": [
+      {
+        "name": "BP-501",
+        "specs": "Silikonlu, mavi",
+        "img": "img210",
+        "prices": [
+          { "dim": "2.5×2.5", "val": "56.10" },
+          { "dim": "3.8×3.8", "val": "99.14" },
+          { "dim": "5.0×5.0", "val": "119.95" }
+        ]
+      },
+      {
+        "name": "BP-502",
+        "specs": "Silikonlu",
+        "img": "img211",
+        "prices": [
+          { "dim": "2.5×2.5", "val": "56.10" },
+          { "dim": "3.8×3.8", "val": "99.14" },
+          { "dim": "5.0×5.0", "val": "119.95" }
+        ]
+      },
+      {
+        "name": "BP-591",
+        "specs": "Silikonlu",
+        "img": "img209",
+        "prices": [
+          { "dim": "2.5×2.5", "val": "61.69" },
+          { "dim": "3.8×3.8", "val": "105.43" },
+          { "dim": "5.0×5.0", "val": "126.56" }
+        ]
+      },
+      {
+        "name": "BP-442500",
+        "specs": "Silikonlu",
+        "img": "img214",
+        "prices": [
+          { "dim": "2.5×2.5", "val": "61.69" },
+          { "dim": "3.8×3.8", "val": "105.43" },
+          { "dim": "5.0×5.0", "val": "126.56" }
+        ]
+      },
+      {
+        "name": "BP-252",
+        "specs": "Silikonlu",
+        "img": "img212",
+        "prices": [
+          { "dim": "2.5×2.5", "val": "99.14" },
+          { "dim": "3.8×3.8", "val": "125.66" },
+          { "dim": "5.0×5.0", "val": "159.73" }
+        ]
+      },
+      {
+        "name": "BP-530",
+        "specs": "Silikonlu",
+        "img": "img222",
+        "prices": [
+          { "dim": "2.5×2.5", "val": "56.10" },
+          { "dim": "3.8×3.8", "val": "99.14" },
+          { "dim": "5.0×5.0", "val": "119.95" }
+        ]
+      },
+      {
+        "name": "BP-507",
+        "specs": "Silikonlu",
+        "img": "img208",
+        "prices": [
+          { "dim": "2.5×2.5", "val": "56.10" },
+          { "dim": "3.8×3.8", "val": "99.14" },
+          { "dim": "5.0×5.0", "val": "119.95" }
+        ]
+      },
+      {
+        "name": "BP-520",
+        "specs": "Silikonlu",
+        "img": "img216",
+        "prices": [
+          { "dim": "2.5×2.5", "val": "61.69" },
+          { "dim": "3.8×3.8", "val": "105.43" },
+          { "dim": "5.0×5.0", "val": "126.56" }
+        ]
+      },
+      {
+        "name": "BP-523",
+        "specs": "Silikonlu",
+        "img": "img215",
+        "prices": [
+          { "dim": "2.5×2.5", "val": "56.10" },
+          { "dim": "3.8×3.8", "val": "99.14" },
+          { "dim": "5.0×5.0", "val": "119.95" }
+        ]
+      },
+      {
+        "name": "BP-521",
+        "specs": "Silikonlu",
+        "img": "img213",
+        "prices": [
+          { "dim": "2.5×2.5", "val": "61.69" },
+          { "dim": "3.8×3.8", "val": "105.43" },
+          { "dim": "5.0×5.0", "val": "126.56" }
+        ]
+      },
+      {
+        "name": "BP-951",
+        "specs": "Silikonlu",
+        "img": "",
+        "prices": [
+          { "dim": "2.5×2.5", "val": "88.13" },
+          { "dim": "3.8×3.8", "val": "114.24" },
+          { "dim": "5.0×5.0", "val": "147.90" }
+        ]
+      },
+      {
+        "name": "BP-213",
+        "specs": "Silikonlu",
+        "img": null,
+        "prices": [
+          { "dim": "2.5×2.5", "val": "93.64" },
+          { "dim": "3.8×3.8", "val": "119.95" },
+          { "dim": "5.0×5.0", "val": "153.82" }
+        ]
+      },
+      {
+        "name": "BP-206",
+        "specs": "Silikonlu",
+        "img": null,
+        "prices": [
+          { "dim": "2.5×2.5", "val": "93.64" },
+          { "dim": "3.8×3.8", "val": "119.95" },
+          { "dim": "5.0×5.0", "val": "153.82" }
+        ]
+      },
+      {
+        "name": "BP-214",
+        "specs": "Silikonlu",
+        "img": null,
+        "prices": [
+          { "dim": "2.5×2.5", "val": "99.14" },
+          { "dim": "3.8×3.8", "val": "125.66" },
+          { "dim": "5.0×5.0", "val": "159.73" }
+        ]
+      },
+      {
+        "name": "BP-180",
+        "specs": "Silikonlu",
+        "img": "img218",
+        "prices": [{ "dim": "2.5×2.5", "val": "82.62" }]
+      },
+      {
+        "name": "BP-216",
+        "specs": "Silikonlu",
+        "img": null,
+        "prices": [
+          { "dim": "2.5×2.5", "val": "99.14" },
+          { "dim": "5.0×5.0", "val": "125.66" }
+        ]
+      }
+    ]
+  },
+  {
+    "cat": "Mozaik — Squamers",
+    "badge": "spain",
+    "brand": "Squamers",
+    "items": [
+      {
+        "name": "Identity Brigit",
+        "specs": "Silikonlu",
+        "img": null,
+        "prices": [
+          { "dim": "2.5×2.5", "val": "109.29" },
+          { "dim": "5.0×5.0", "val": "211.26" }
+        ]
+      },
+      {
+        "name": "Identity Shark",
+        "specs": "Silikonlu",
+        "img": null,
+        "prices": [
+          { "dim": "2.5×2.5", "val": "109.29" },
+          { "dim": "5.0×5.0", "val": "211.26" }
+        ]
+      },
+      {
+        "name": "Essence Marine",
+        "specs": "Silikonlu",
+        "img": null,
+        "prices": [
+          { "dim": "2.5×2.5", "val": "90.45" },
+          { "dim": "5.0×5.0", "val": "181.08" }
+        ]
+      },
+      {
+        "name": "Kubu Okoze",
+        "specs": "Silikonlu",
+        "img": null,
+        "prices": [
+          { "dim": "2.5×2.5", "val": "109.29" },
+          { "dim": "5.0×5.0", "val": "211.26" }
+        ]
+      },
+      {
+        "name": "Identity Baleen",
+        "specs": "Silikonlu",
+        "img": null,
+        "prices": [
+          { "dim": "2.5×2.5", "val": "125.03" },
+          { "dim": "5.0×5.0", "val": "211.26" }
+        ]
+      },
+      {
+        "name": "Identity Oranda",
+        "specs": "Silikonlu",
+        "img": "img226",
+        "prices": [
+          { "dim": "2.5×2.5", "val": "125.03" },
+          { "dim": "5.0×5.0", "val": "211.26" }
+        ]
+      },
+      {
+        "name": "Identity Kintsugi",
+        "specs": "Silikonlu",
+        "img": "img235",
+        "prices": [
+          { "dim": "2.5×2.5", "val": "125.03" },
+          { "dim": "5.0×5.0", "val": "211.26" }
+        ]
+      },
+      {
+        "name": "Identity Kidako",
+        "specs": "Silikonlu",
+        "img": "img228",
+        "prices": [
+          { "dim": "2.5×2.5", "val": "125.03" },
+          { "dim": "5.0×5.0", "val": "211.26" }
+        ]
+      },
+      {
+        "name": "Identity Esturion",
+        "specs": "Silikonlu",
+        "img": null,
+        "prices": [
+          { "dim": "2.5×2.5", "val": "125.03" },
+          { "dim": "5.0×5.0", "val": "211.26" }
+        ]
+      },
+      {
+        "name": "Identity Atai",
+        "specs": "Silikonlu",
+        "img": null,
+        "prices": [
+          { "dim": "2.5×2.5", "val": "125.03" },
+          { "dim": "5.0×5.0", "val": "211.26" }
+        ]
+      },
+      {
+        "name": "Identity Midori",
+        "specs": "Silikonlu",
+        "img": null,
+        "prices": [
+          { "dim": "2.5×2.5", "val": "125.03" },
+          { "dim": "5.0×5.0", "val": "211.26" }
+        ]
+      },
+      {
+        "name": "Identity Papuan",
+        "specs": "Silikonlu",
+        "img": null,
+        "prices": [{ "dim": "2.5×2.5", "val": "125.03" }]
+      },
+      {
+        "name": "Identity Jenysia",
+        "specs": "Silikonlu",
+        "img": null,
+        "prices": [{ "dim": "2.5×2.5", "val": "125.03" }]
+      },
+      {
+        "name": "Identity Phiphi",
+        "specs": "Silikonlu",
+        "img": null,
+        "prices": [{ "dim": "2.5×2.5", "val": "125.03" }]
+      },
+      {
+        "name": "Identity Siroko",
+        "specs": "Silikonlu",
+        "img": "img234",
+        "prices": [
+          { "dim": "2.5×2.5", "val": "125.03" },
+          { "dim": "5.0×5.0", "val": "211.26" }
+        ]
+      },
+      {
+        "name": "Identity Addis",
+        "specs": "Silikonlu",
+        "img": null,
+        "prices": [{ "dim": "2.5×2.5", "val": "125.03" }]
+      },
+      {
+        "name": "Identity Caiman",
+        "specs": "Silikonlu",
+        "img": null,
+        "prices": [{ "dim": "2.5×2.5", "val": "125.03" }]
+      },
+      {
+        "name": "Identity Jinyu",
+        "specs": "Silikonlu",
+        "img": null,
+        "prices": [{ "dim": "2.5×2.5", "val": "125.03" }]
+      },
+      {
+        "name": "Identity Malawi",
+        "specs": "Silikonlu",
+        "img": null,
+        "prices": [{ "dim": "2.5×2.5", "val": "125.03" }]
+      },
+      {
+        "name": "Identity Fiji",
+        "specs": "Silikonlu",
+        "img": null,
+        "prices": [{ "dim": "2.5×2.5", "val": "125.03" }]
+      },
+      {
+        "name": "Essence Coast Light",
+        "specs": "Silikonlu",
+        "img": "img239",
+        "prices": [
+          { "dim": "2.5×2.5", "val": "103.47" },
+          { "dim": "5.0×5.0", "val": "181.08" }
+        ]
+      },
+      {
+        "name": "Essence Posidonia",
+        "specs": "Silikonlu",
+        "img": null,
+        "prices": [
+          { "dim": "2.5×2.5", "val": "103.47" },
+          { "dim": "5.0×5.0", "val": "181.08" }
+        ]
+      },
+      {
+        "name": "Essence Calm",
+        "specs": "Silikonlu",
+        "img": "img249",
+        "prices": [
+          { "dim": "2.5×2.5", "val": "103.47" },
+          { "dim": "5.0×5.0", "val": "181.08" }
+        ]
+      },
+      {
+        "name": "Essence Ocean",
+        "specs": "Silikonlu",
+        "img": "img251",
+        "prices": [
+          { "dim": "2.5×2.5", "val": "103.47" },
+          { "dim": "5.0×5.0", "val": "181.08" }
+        ]
+      },
+      {
+        "name": "Kubu Namazu",
+        "specs": "Silikonlu",
+        "img": "img254",
+        "prices": [
+          { "dim": "2.5×2.5", "val": "125.03" },
+          { "dim": "5.0×5.0", "val": "211.26" }
+        ]
+      },
+      {
+        "name": "Kubu Sand Rock Bone",
+        "specs": "Silikonlu",
+        "img": "img256",
+        "prices": [{ "dim": "2.5×2.5", "val": "125.03" }]
+      },
+      {
+        "name": "Genuine GN 105",
+        "specs": "Silikonlu",
+        "img": null,
+        "prices": [
+          { "dim": "2.5×2.5", "val": "67.42" },
+          { "dim": "5.0×5.0", "val": "146.59" }
+        ]
+      },
+      {
+        "name": "Genuine GN 104",
+        "specs": "Silikonlu",
+        "img": null,
+        "prices": [
+          { "dim": "2.5×2.5", "val": "67.42" },
+          { "dim": "5.0×5.0", "val": "146.59" }
+        ]
+      },
+      {
+        "name": "Genuine GN 201",
+        "specs": "Silikonlu",
+        "img": null,
+        "prices": [
+          { "dim": "2.5×2.5", "val": "67.42" },
+          { "dim": "5.0×5.0", "val": "146.59" }
+        ]
+      },
+      {
+        "name": "Genuine GN 202",
+        "specs": "Silikonlu",
+        "img": null,
+        "prices": [
+          { "dim": "2.5×2.5", "val": "67.42" },
+          { "dim": "5.0×5.0", "val": "146.59" }
+        ]
+      },
+      {
+        "name": "Genuine Tetra",
+        "specs": "Silikonlu",
+        "img": null,
+        "prices": [{ "dim": "2.5×2.5", "val": "85.80" }]
+      },
+      {
+        "name": "Genuine Koi",
+        "specs": "Silikonlu",
+        "img": null,
+        "prices": [{ "dim": "2.5×2.5", "val": "85.80" }]
+      }
+    ]
+  },
+  {
+    "cat": "Yapı Kimyasalları — Kalekim",
+    "badge": "turkey",
+    "brand": "Kalekim",
+    "items": [
+      {
+        "name": "IzolaTex Plus A+B 30kg",
+        "specs": "Tam elastik izolyasiya komplekt",
+        "img": "img262",
+        "prices": [{ "dim": "set", "val": "198.24" }]
+      },
+      {
+        "name": "İzoline 100",
+        "specs": "Polietilen membran 30m²",
+        "img": "img263",
+        "prices": [{ "dim": "set", "val": "764.64" }]
+      },
+      {
+        "name": "Izoseal 25kg",
+        "specs": "Neqotiv/pozitiv su keçirməzliyi",
+        "img": null,
+        "prices": [{ "dim": "25 kq", "val": "127.44" }]
+      },
+      {
+        "name": "Kalepolymas MS 600ml",
+        "specs": "Poliuretan su keçirməz mastika",
+        "img": "img265",
+        "prices": [{ "dim": "600 ml", "val": "33.98" }]
+      },
+      {
+        "name": "TeknoFlex Beyaz 25kg",
+        "specs": "Sement əsaslı elastik keramika yapışdırıcısı",
+        "img": null,
+        "prices": [{ "dim": "25 kq", "val": "73.63" }]
+      },
+      {
+        "name": "Profesyonel Beyaz 25kg",
+        "specs": "Sement əsaslı elastik qranit yapışdırıcısı",
+        "img": null,
+        "prices": [{ "dim": "25 kq", "val": "62.30" }]
+      },
+      {
+        "name": "FugaFlex Beyaz 20kg",
+        "specs": "Sement elastik dərz dolğusu ağ",
+        "img": null,
+        "prices": [{ "dim": "20 kq", "val": "90.62" }]
+      },
+      {
+        "name": "FugaFlex Rəngli 20kg",
+        "specs": "Sement elastik dərz dolğusu rəngli",
+        "img": null,
+        "prices": [{ "dim": "20 kq", "val": "113.28" }]
+      },
+      {
+        "name": "Tamirat 5 25kg",
+        "specs": "Sement incə təmir harcı",
+        "img": "img269",
+        "prices": [{ "dim": "25 kq", "val": "67.97" }]
+      },
+      {
+        "name": "Tamirat S40 25kg",
+        "specs": "Sement qalın təmir harcı",
+        "img": null,
+        "prices": [{ "dim": "25 kq", "val": "70.80" }]
+      },
+      {
+        "name": "Pah Bantı 50m",
+        "specs": "90° künclər üçün",
+        "img": null,
+        "prices": [{ "dim": "50 m", "val": "424.80" }]
+      },
+      {
+        "name": "İzostop Rapid 5kg",
+        "specs": "Ani su kəsici məhlul",
+        "img": null,
+        "prices": [{ "dim": "5 kq", "val": "84.96" }]
+      },
+      {
+        "name": "Binder 5 litr",
+        "specs": "Akrilik əsaslı astar",
+        "img": "img271",
+        "prices": [{ "dim": "5 l", "val": "42.48" }]
+      },
+      {
+        "name": "B-tone 5kg",
+        "specs": "Ümumi beton səthi astar",
+        "img": null,
+        "prices": [{ "dim": "5 kq", "val": "226.56" }]
+      },
+      {
+        "name": "Tamirat A+B 5kg",
+        "specs": "Epoksid əsaslı anker məhlul",
+        "img": null,
+        "prices": [{ "dim": "5 kq", "val": "192.58" }]
+      },
+      {
+        "name": "İzolyasiya toru 75gr",
+        "specs": "",
+        "img": null,
+        "prices": [{ "dim": "set", "val": "62.30" }]
+      }
+    ]
+  },
+  {
+    "cat": "Hovuz Robotu — Chasing",
+    "badge": "other",
+    "brand": "Chasing",
+    "items": [
+      {
+        "name": "DT B Kabelsiz Robot",
+        "specs": "10×5m hovuz · 100 Mikron · 5070 Gph · 5 saat · Batareyalı",
+        "img": "img283",
+        "prices": [{ "dim": "DT B", "val": "2869.52" }]
+      },
+      {
+        "name": "DT C Pro Kabelli Robot",
+        "specs": "12×6m hovuz · 100 Mikron · 5070 Gph · 15m kabel",
+        "img": "img284",
+        "prices": [{ "dim": "DT C Pro", "val": "3095.60" }]
+      },
+      {
+        "name": "Hydro 6 — 18m Kabelli",
+        "specs": "17×10m hovuz · 1-180 Mikron · 8800 Gph · 18m kabel",
+        "img": "img285",
+        "prices": [{ "dim": "Hydro 6 18m", "val": "5820.80" }]
+      },
+      {
+        "name": "Hydro 6 — 25m Kabelli",
+        "specs": "20×10m hovuz · 1-180 Mikron · 8800 Gph · 25m kabel",
+        "img": "img286",
+        "prices": [{ "dim": "Hydro 6 25m", "val": "6092.80" }]
+      },
+      {
+        "name": "Robot Arabası",
+        "specs": "Chasing hovuz robotu arabası",
+        "img": "img287",
+        "prices": [{ "dim": "ədəd", "val": "421.60" }]
+      }
+    ]
+  },
+  {
+    "cat": "Hovuz Örtüsü — Marquise Rulo",
+    "badge": "other",
+    "brand": "Pool Office",
+    "items": [
+      {
+        "name": "Marquise Rulo — 2.5×2.5m",
+        "specs": "Avtomatik · 3 rəng",
+        "img": "img299",
+        "prices": [{ "dim": "2.5×2.5", "val": "12126" }]
+      },
+      {
+        "name": "Marquise Rulo — 5×5m",
+        "specs": "Avtomatik",
+        "img": "img299",
+        "prices": [{ "dim": "5×5", "val": "18721" }]
+      },
+      {
+        "name": "Marquise Rulo — 8×8m",
+        "specs": "Avtomatik",
+        "img": "img299",
+        "prices": [{ "dim": "8×8", "val": "32336" }]
+      },
+      {
+        "name": "Marquise Rulo — 12×8m",
+        "specs": "Avtomatik (maks)",
+        "img": "img299",
+        "prices": [{ "dim": "12×8", "val": "40917" }]
+      }
+    ]
+  },
+  {
+    "cat": "Hovuz Örtüsü — Manual Maldivs",
+    "badge": "other",
+    "brand": "Pool Office",
+    "items": [
+      {
+        "name": "Manual Maldivs — 2.5×2.5m",
+        "specs": "Manual rulo · 3 rəng",
+        "img": "img303",
+        "prices": [{ "dim": "2.5×2.5", "val": "9467" }]
+      },
+      {
+        "name": "Manual Maldivs — 5×5m",
+        "specs": "Manual rulo",
+        "img": "img303",
+        "prices": [{ "dim": "5×5", "val": "14750" }]
+      },
+      {
+        "name": "Manual Maldivs — 10×5m",
+        "specs": "Manual rulo (maks)",
+        "img": "img303",
+        "prices": [{ "dim": "10×5", "val": "20972" }]
+      }
+    ]
+  },
+  {
+    "cat": "Hovuz Örtüsü — Yarı Qapalı Prestij",
+    "badge": "other",
+    "brand": "Pool Office",
+    "items": [
+      {
+        "name": "Yarı Qapalı Prestij — 2.5×2.5m",
+        "specs": "Yarı qapalı",
+        "img": "img312",
+        "prices": [{ "dim": "2.5×2.5", "val": "25174" }]
+      },
+      {
+        "name": "Yarı Qapalı Prestij — 6×6m",
+        "specs": "Yarı qapalı",
+        "img": "img312",
+        "prices": [{ "dim": "6×6", "val": "33329" }]
+      },
+      {
+        "name": "Yarı Qapalı Prestij — 12×8m",
+        "specs": "Yarı qapalı (maks)",
+        "img": "img312",
+        "prices": [{ "dim": "12×8", "val": "64531" }]
+      }
+    ]
+  },
+  {
+    "cat": "Hovuz Örtüsü — Qapalı Prestij",
+    "badge": "other",
+    "brand": "Pool Office",
+    "items": [
+      {
+        "name": "Qapalı Prestij — 2.5×2.5m",
+        "specs": "Tam qapalı",
+        "img": null,
+        "prices": [{ "dim": "2.5×2.5", "val": "25174" }]
+      },
+      {
+        "name": "Qapalı Prestij — 12×8m",
+        "specs": "Tam qapalı (maks)",
+        "img": null,
+        "prices": [{ "dim": "12×8", "val": "64531" }]
+      }
+    ]
+  },
+{
+  "cat": "Hovuz Filterləri",
+  "badge": "turkey",
+  "brand": "Nurpool / Astralpool",
+  "items": [
+    {
+      "name": "Bobin Sarğılı Filter",
+      "specs": "Nurpool",
+      "img": "img319",
+      "prices": [
+        { "dim": "Ø525 · 12m³/saat 6 yollu vana", "val": "524.56" },
+        { "dim": "Ø600 · 14m³/saat 6 yollu vana", "val": "657.07" },
+        { "dim": "Ø700 · 19m³/saat 6 yollu vana", "val": "814.86" },
+        { "dim": "Ø750 · 21m³/saat 6 yollu vana", "val": "934.37" },
+        { "dim": "Ø900 · 30m³/saat 6 yollu vana", "val": "1312.03" },
+        { "dim": "Ø1050 · 38m³/saat 6 yollu vana", "val": "2652.00" },
+        { "dim": "Ø1050 · 43m³/saat (vanasız)", "val": "2983.50" },
+        { "dim": "Ø1200 · 56m³/saat (vanasız)", "val": "4143.75" }
+      ]
+    },
+    {
+      "name": "Polyester Filter",
+      "specs": "Nurpool",
+      "img": "img321",
+      "prices": [
+        { "dim": "Ø500 · 12m³/saat 6 yollu vana", "val": "724.71" },
+        { "dim": "Ø620 · 14m³/saat 6 yollu vana", "val": "776.48" },
+        { "dim": "Ø760 · 22m³/saat 6 yollu vana", "val": "1151.33" },
+        { "dim": "Ø920 · 30m³/saat 6 yollu vana", "val": "1285.20" },
+        { "dim": "Ø1050 · 43m³/saat (vanasız)", "val": "2868.75" },
+        { "dim": "Ø1200 · 56m³/saat (vanasız)", "val": "4080.00" },
+        { "dim": "Ø1400 · 77m³/saat (vanasız)", "val": "5992.50" },
+        { "dim": "Ø1600 · 100m³/saat (vanasız)", "val": "7012.50" }
+      ]
+    },
+    {
+      "name": "Astralpool Vesubio",
+      "specs": "Polyester",
+      "img": "img322",
+      "prices": [
+        { "dim": "Ø450 · 8m³/saat (vana daxil)", "val": "2671.77" },
+        { "dim": "Ø600 · 14m³/saat (vana daxil)", "val": "3163.94" },
+        { "dim": "Ø750 · 22m³/saat (vana daxil)", "val": "3902.19" },
+        { "dim": "Ø900 · 32m³/saat (vana daxil)", "val": "4658.02" },
+        { "dim": "Ø1050 · 43m³/saat (vanasız)", "val": "7558.30" },
+        { "dim": "Ø1200 · 56m³/saat (vanasız)", "val": "9316.05" },
+        { "dim": "Ø1400 · 77m³/saat (vanasız)", "val": "18456.32" },
+        { "dim": "Ø1600 · 100m³/saat (vanasız)", "val": "20495.31" }
+      ]
+    },
+    {
+      "name": "Kuvars qum",
+      "specs": "",
+      "img": 327,
+      "prices": [
+        { "dim": "Aydınlar · 0.5-5mm fraksiyalar", "val": "1.50" },
+        { "dim": "Astralpool · 0.4-2mm", "val": "3.60" }
+      ]
+    },
+    {
+      "name": "Şüşə media",
+      "specs": "",
+      "img": 0,
+      "prices": [
+        { "dim": "GlassBerk · 0.5-5mm fraksiyalar", "val": "1.80" },
+        { "dim": "Astralpool · 0.5-7mm", "val": "5.40" }
+      ]
+    },
+    {
+      "name": "6 yollu vana",
+      "specs": "Ø50-Ø90",
+      "img": 332,
+      "prices": [
+        { "dim": "Bobin Sarğılı — Nurpool Ø50", "val": "217.45" },
+        { "dim": "Bobin Sarğılı — Nurpool Ø63", "val": "237.21" },
+        { "dim": "Bobin Sarğılı — Nurpool Ø75", "val": "1262.25" },
+        { "dim": "Bobin Sarğılı — Nurpool Ø90", "val": "2524.50" },
+
+        { "dim": "Polyester — Astralpool Ø50", "val": "416.70" },
+        { "dim": "Polyester — Astralpool Ø63", "val": "597.16" },
+        { "dim": "Polyester — Astralpool Ø75", "val": "1919.46" },
+        { "dim": "Polyester — Astralpool Ø90", "val": "2870.98" },
+
+        { "dim": "Polyester Ø50", "val": "192.78" },
+        { "dim": "Polyester Ø63", "val": "264.18" },
+        { "dim": "Polyester Ø75", "val": "1499.40" },
+        { "dim": "Polyester Ø90", "val": "2784.60" }
+      ]
+    },
+
+    {
+      "name": "Filter qapaqları — Astralpool & Nurpool",
+      "specs": "Rezin daxil",
+      "img": 0,
+      "prices": [
+        { "dim": "Ø450-1200 Volcano", "val": "381.47" },
+        { "dim": "Ø400-750 Cantabric", "val": "274.33" },
+        { "dim": "Ø900 Cantabric", "val": "418.07" },
+        { "dim": "Ø450-1200 Nurpool Polyester", "val": "193.46" },
+        { "dim": "Ø450-1200 Nurpool Bobin", "val": "150.00" }
+      ]
+    },
+    {
+      "name": "Filter qapaq rezini — Astralpool & Nurpool",
+      "specs": "",
+      "img": 0,
+      "prices": [
+        { "dim": "Ø450-1200 Volcano", "val": "109.73" },
+        { "dim": "Ø400-750 Cantabric", "val": "88.76" },
+        { "dim": "Ø900 Cantabric", "val": "93.02" },
+        { "dim": "Ø450-1200 Nurpool Polyester", "val": "50.00" },
+        { "dim": "Ø450-1200 Nurpool Bobin", "val": "50.00" }
+      ]
+    },
+    {
+      "name": "Manometr dəsti — Astralpool & Nurpool",
+      "specs": "",
+      "img": 336,
+      "prices": [
+        { "dim": "Ø450-1200 Volcano", "val": "219.43" },
+        { "dim": "Ø400-750 Cantabric", "val": "441.48" },
+        { "dim": "Ø900 Cantabric", "val": "441.48" },
+        { "dim": "Ø450-1200 Nurpool Polyester", "val": "94.00" },
+        { "dim": "Ø450-1200 Nurpool Bobin", "val": "94.00" }
+      ]
+    },
+    {
+      "name": "Astralpool Manometr",
+      "specs": "",
+      "img": 0,
+      "prices": [{ "dim": "ədəd", "val": "164.56" }]
+    },
+    {
+      "name": "Nurpool Manometr",
+      "specs": "",
+      "img": 0,
+      "prices": [{ "dim": "ədəd", "val": "50.00" }]
+    },
+    {
+      "name": "Hava prujoru Nurpool",
+      "specs": "",
+      "img": 0,
+      "prices": [{ "dim": "ədəd", "val": "32.00" }]
+    }
+  ]
+},
+  {
+    "cat": "Sirkulyasiya Nasosları",
+    "badge": "turkey",
+    "brand": "Nurpool / Astralpool / Speck",
+    "items": [
+      {
+        "name": "Nurpool A50 — 0.5HP",
+        "specs": "Ø50 · 6m³/saat",
+        "img": "img348",
+        "prices": [{ "dim": "A50", "val": "328.23" }]
+      },
+      {
+        "name": "Nurpool A75 — 0.75HP",
+        "specs": "Ø50 · 10.2m³/saat",
+        "img": "img348",
+        "prices": [{ "dim": "A75", "val": "351.72" }]
+      },
+      {
+        "name": "Nurpool A100 — 1HP",
+        "specs": "Ø50 · 12.2m³/saat",
+        "img": "img348",
+        "prices": [{ "dim": "A100", "val": "362.66" }]
+      },
+      {
+        "name": "Nurpool A150 — 1.5HP",
+        "specs": "Ø50 · 18.2m³/saat",
+        "img": "img348",
+        "prices": [{ "dim": "A150", "val": "404.82" }]
+      },
+      {
+        "name": "Nurpool A150-63 — 1.5HP",
+        "specs": "Ø63 · 21m³/saat",
+        "img": "img351",
+        "prices": [{ "dim": "A150-63", "val": "522.23" }]
+      },
+      {
+        "name": "Nurpool A200 — 2HP",
+        "specs": "Ø63 · 25.5m³/saat",
+        "img": "img351",
+        "prices": [{ "dim": "A200", "val": "574.28" }]
+      },
+      {
+        "name": "Nurpool A300 — 3HP",
+        "specs": "Ø63 · 33m³/saat",
+        "img": "img351",
+        "prices": [{ "dim": "A300", "val": "669.28" }]
+      },
+      {
+        "name": "Nurpool A400S — 4HP",
+        "specs": "Ø90 · 50m³/saat",
+        "img": "img356",
+        "prices": [{ "dim": "A400S", "val": "1353.76" }]
+      },
+      {
+        "name": "Nurpool A400T — 4HP Trifaze",
+        "specs": "Ø110 · 58m³/saat",
+        "img": "img356",
+        "prices": [{ "dim": "A400T", "val": "2588.87" }]
+      },
+      {
+        "name": "Nurpool A500T — 5HP Trifaze",
+        "specs": "Ø110 · 75m³/saat",
+        "img": "img356",
+        "prices": [{ "dim": "A500T", "val": "2814.06" }]
+      },
+      {
+        "name": "Nurpool A750T — 7.5HP",
+        "specs": "Ø110 · 90m³/saat · Trifaze",
+        "img": "img356",
+        "prices": [{ "dim": "A750T", "val": "3656.88" }]
+      },
+      {
+        "name": "Nurpool A1000T — 10HP",
+        "specs": "Ø110 · 115m³/saat",
+        "img": "img356",
+        "prices": [{ "dim": "A1000T", "val": "3871.92" }]
+      },
+      {
+        "name": "Astralpool Sena 0.33HP",
+        "specs": "Ø50 · 4m³/saat",
+        "img": "img360",
+        "prices": [{ "dim": "Sena 0.33", "val": "1416.74" }]
+      },
+      {
+        "name": "Astralpool Sena 0.5HP",
+        "specs": "Ø50 · 4m³/saat",
+        "img": "img360",
+        "prices": [{ "dim": "Sena 0.5", "val": "1447.21" }]
+      },
+      {
+        "name": "Astralpool Sena 0.75HP",
+        "specs": "Ø50 · 8.9m³/saat",
+        "img": "img360",
+        "prices": [{ "dim": "Sena 0.75", "val": "1477.68" }]
+      },
+      {
+        "name": "Astralpool Sena 1HP",
+        "specs": "Ø50 · 11.6m³/saat",
+        "img": "img360",
+        "prices": [{ "dim": "Sena 1HP", "val": "1569.08" }]
+      },
+      {
+        "name": "Astralpool Sena 1.25HP",
+        "specs": "Ø63 · 14.1m³/saat",
+        "img": "img360",
+        "prices": [{ "dim": "Sena 1.25", "val": "1599.55" }]
+      },
+      {
+        "name": "Astralpool Verdon 0.75HP",
+        "specs": "Ø50 · 10.5m³/saat",
+        "img": "img361",
+        "prices": [{ "dim": "Verdon 0.75", "val": "1416.74" }]
+      },
+      {
+        "name": "Astralpool Verdon 1HP",
+        "specs": "Ø50 · 15.5m³/saat",
+        "img": "img361",
+        "prices": [{ "dim": "Verdon 1HP", "val": "1447.21" }]
+      },
+      {
+        "name": "Astralpool Verdon 1.5HP",
+        "specs": "Ø63 · 20.5m³/saat",
+        "img": "img361",
+        "prices": [{ "dim": "Verdon 1.5", "val": "1706.18" }]
+      },
+      {
+        "name": "Astralpool Verdon 2HP",
+        "specs": "Ø63 · 25m³/saat",
+        "img": "img361",
+        "prices": [{ "dim": "Verdon 2HP", "val": "1736.65" }]
+      },
+      {
+        "name": "Astralpool Verdon 3HP",
+        "specs": "Ø63 · 31m³/saat",
+        "img": "img361",
+        "prices": [{ "dim": "Verdon 3HP", "val": "1873.76" }]
+      },
+      {
+        "name": "Astralpool Victoria 1HP",
+        "specs": "Ø50 · 16m³/saat",
+        "img": null,
+        "prices": [{ "dim": "Victoria 1HP", "val": "1934.69" }]
+      },
+      {
+        "name": "Astralpool Victoria 1.5HP",
+        "specs": "Ø63 · 21.5m³/saat",
+        "img": null,
+        "prices": [{ "dim": "Victoria 1.5", "val": "2178.43" }]
+      },
+      {
+        "name": "Astralpool Victoria 2HP",
+        "specs": "Ø63 · 26m³/saat",
+        "img": null,
+        "prices": [{ "dim": "Victoria 2HP", "val": "2224.13" }]
+      },
+      {
+        "name": "Astralpool Victoria 3HP",
+        "specs": "Ø63 · 34m³/saat",
+        "img": null,
+        "prices": [{ "dim": "Victoria 3HP", "val": "2589.74" }]
+      },
+      {
+        "name": "Astralpool Maxim 3.5HP",
+        "specs": "Ø90 · 48m³/saat · Trifaze",
+        "img": null,
+        "prices": [{ "dim": "Maxim 3.5", "val": "4874.81" }]
+      },
+      {
+        "name": "Astralpool Maxim 4.5HP",
+        "specs": "Ø90 · 65m³/saat",
+        "img": null,
+        "prices": [{ "dim": "Maxim 4.5", "val": "6398.19" }]
+      },
+      {
+        "name": "Astralpool Maxim 5.5HP",
+        "specs": "Ø90 · 78m³/saat",
+        "img": null,
+        "prices": [{ "dim": "Maxim 5.5", "val": "6626.70" }]
+      },
+      {
+        "name": "Speck Badu SuperPro 1HP",
+        "specs": "Ø50 · 15m³/saat",
+        "img": null,
+        "prices": [{ "dim": "Badu 1HP", "val": "1811.07" }]
+      },
+      {
+        "name": "Speck Badu SuperPro 1.5HP",
+        "specs": "Ø50 · 20m³/saat",
+        "img": null,
+        "prices": [{ "dim": "Badu 1.5HP", "val": "2040.63" }]
+      },
+      {
+        "name": "Speck Badu SuperPro 2HP",
+        "specs": "Ø63 · 27m³/saat",
+        "img": null,
+        "prices": [{ "dim": "Badu 2HP", "val": "2175.50" }]
+      },
+      {
+        "name": "Speck Badu SuperPro 3HP",
+        "specs": "Ø63 · 36.6m³/saat",
+        "img": null,
+        "prices": [{ "dim": "Badu 3HP", "val": "3755.74" }]
+      },
+      {
+        "name": "Hava bloveri Milan 1HP",
+        "specs": "100m³/saat",
+        "img": null,
+        "prices": [{ "dim": "Milan 1HP", "val": "794.00" }]
+      },
+      {
+        "name": "Hava bloveri Milan 2HP",
+        "specs": "150m³/saat",
+        "img": null,
+        "prices": [{ "dim": "Milan 2HP", "val": "986.00" }]
+      },
+      {
+        "name": "Hava bloveri Milan 3HP",
+        "specs": "200m³/saat",
+        "img": null,
+        "prices": [{ "dim": "Milan 3HP", "val": "1264.00" }]
+      }
+    ]
+  },
+  {
+    "cat": "Qızdırıcı & Dezinfeksiya",
+    "badge": "other",
+    "brand": "Elecro / Fairland / Termoline",
+    "items": [
+      {
+        "name": "Elecro G2 Titan — 49KW",
+        "specs": "AISI 304 boru tipli",
+        "img": "img368",
+        "prices": [{ "dim": "49KW", "val": "2091.69" }]
+      },
+      {
+        "name": "Elecro G2 Titan — 85KW",
+        "specs": "AISI 304 boru tipli",
+        "img": "img368",
+        "prices": [{ "dim": "85KW", "val": "2563.67" }]
+      },
+      {
+        "name": "Elecro G2 Titan — 122KW",
+        "specs": "AISI 304 boru tipli",
+        "img": "img368",
+        "prices": [{ "dim": "122KW", "val": "3582.30" }]
+      },
+      {
+        "name": "Elecro G2 Titan — 170KW",
+        "specs": "AISI 304 boru tipli",
+        "img": "img368",
+        "prices": [{ "dim": "170KW", "val": "5991.41" }]
+      },
+      {
+        "name": "Elecro G2 Titan — 220KW",
+        "specs": "AISI 304 boru tipli",
+        "img": "img368",
+        "prices": [{ "dim": "220KW", "val": "6657.12" }]
+      },
+      {
+        "name": "Elecro G2 Titan — 270KW",
+        "specs": "AISI 304 boru tipli",
+        "img": "img368",
+        "prices": [{ "dim": "270KW", "val": "8432.35" }]
+      },
+      {
+        "name": "Elecro G2 Titan — 320KW",
+        "specs": "AISI 304 boru tipli",
+        "img": "img368",
+        "prices": [{ "dim": "320KW", "val": "9763.78" }]
+      },
+      {
+        "name": "Nurpool Esenjor — 75KW",
+        "specs": "AISI 304 boru tipli",
+        "img": null,
+        "prices": [{ "dim": "75KW", "val": "450.00" }]
+      },
+      {
+        "name": "Nurpool Esenjor — 120KW",
+        "specs": "AISI 304",
+        "img": null,
+        "prices": [{ "dim": "120KW", "val": "540.00" }]
+      },
+      {
+        "name": "Termoline Plaka — 80000kcal",
+        "specs": "AISI 304 plaka tipli",
+        "img": "img374",
+        "prices": [{ "dim": "80000 kcal", "val": "950.00" }]
+      },
+      {
+        "name": "Termoline Plaka — 100000kcal",
+        "specs": "AISI 304 plaka tipli",
+        "img": "img374",
+        "prices": [{ "dim": "100000 kcal", "val": "1100.00" }]
+      },
+      {
+        "name": "Termoline Plaka — 150000kcal",
+        "specs": "AISI 304 plaka tipli",
+        "img": "img374",
+        "prices": [{ "dim": "150000 kcal", "val": "1300.00" }]
+      },
+      {
+        "name": "Termoline Plaka — 200000kcal",
+        "specs": "AISI 304 plaka tipli",
+        "img": "img374",
+        "prices": [{ "dim": "200000 kcal", "val": "1400.00" }]
+      },
+      {
+        "name": "Termoline Plaka — 250000kcal",
+        "specs": "AISI 304 plaka tipli",
+        "img": "img374",
+        "prices": [{ "dim": "250000 kcal", "val": "2200.00" }]
+      },
+      {
+        "name": "Elecro Heat Smart WiFi",
+        "specs": "WiFi bağlantılı istilik kontrol",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "1960.21" }]
+      },
+      {
+        "name": "Fairland X17 R32 — 11.3KW",
+        "specs": "25-40m³ hovuz · İnverterli",
+        "img": null,
+        "prices": [{ "dim": "11.3KW", "val": "7327.68" }]
+      },
+      {
+        "name": "Fairland X17 R32 — 16KW",
+        "specs": "41-55m³ hovuz",
+        "img": null,
+        "prices": [{ "dim": "16KW", "val": "10208.16" }]
+      },
+      {
+        "name": "Fairland X17 R32 — 22KW",
+        "specs": "51-75m³ hovuz",
+        "img": null,
+        "prices": [{ "dim": "22KW", "val": "13366.08" }]
+      },
+      {
+        "name": "Fairland X17 R32 — 32KW",
+        "specs": "76-110m³ hovuz",
+        "img": null,
+        "prices": [{ "dim": "32KW", "val": "18809.34" }]
+      },
+      {
+        "name": "Fairland X17 R32 — 40KW",
+        "specs": "86-140m³ hovuz",
+        "img": null,
+        "prices": [{ "dim": "40KW", "val": "21864.45" }]
+      },
+      {
+        "name": "Fairland Nəmalıcı 2.5 l/saat",
+        "specs": "600m³/saat · 1.3KW",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "8649.60" }]
+      },
+      {
+        "name": "Fairland Nəmalıcı 4.0 l/saat",
+        "specs": "1000m³/saat · 2.1KW",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "10885.71" }]
+      },
+      {
+        "name": "Fairland Nəmalıcı 5.0 l/saat",
+        "specs": "1200m³/saat · 2.1KW",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "12875.66" }]
+      },
+      {
+        "name": "Elecro Quantum UV — 35m³",
+        "specs": "Hidroxil radikal · 10m³/saat",
+        "img": "img378",
+        "prices": [{ "dim": "35m³", "val": "3735.73" }]
+      },
+      {
+        "name": "Elecro Quantum UV — 65m³",
+        "specs": "14m³/saat keçiricilik",
+        "img": "img378",
+        "prices": [{ "dim": "65m³", "val": "4352.38" }]
+      },
+      {
+        "name": "Elecro Quantum UV — 130m³",
+        "specs": "28m³/saat keçiricilik",
+        "img": "img378",
+        "prices": [{ "dim": "130m³", "val": "5765.41" }]
+      },
+      {
+        "name": "Radikal UV Lampa",
+        "specs": "Ehtiyat lampa",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "405.22" }]
+      },
+      {
+        "name": "Astralpool Dozaj Sistemi (kiçik)",
+        "specs": "pH 5L + xlor 10L · 2 bar",
+        "img": "img386",
+        "prices": [{ "dim": "ədəd", "val": "5521.07" }]
+      },
+      {
+        "name": "Astralpool Dozaj Sistemi (böyük)",
+        "specs": "pH 10L + xlor 10L · 5 bar",
+        "img": "img386",
+        "prices": [{ "dim": "ədəd", "val": "11607.75" }]
+      },
+      {
+        "name": "Xlorator Dossi 5 — 80m³/saat",
+        "specs": "Astralpool",
+        "img": null,
+        "prices": [{ "dim": "80 m³/saat", "val": "795.96" }]
+      },
+      {
+        "name": "Xlorator Dossi 10 — 160m³/saat",
+        "specs": "Astralpool",
+        "img": null,
+        "prices": [{ "dim": "160 m³/saat", "val": "994.95" }]
+      },
+      {
+        "name": "Kimyasal tankı — 100 litr",
+        "specs": "",
+        "img": null,
+        "prices": [{ "dim": "100 litr", "val": "390.00" }]
+      },
+      {
+        "name": "Kimyasal tankı — 200 litr",
+        "specs": "",
+        "img": null,
+        "prices": [{ "dim": "200 litr", "val": "580.00" }]
+      },
+      {
+        "name": "Kimyasal tankı — 300 litr",
+        "specs": "",
+        "img": null,
+        "prices": [{ "dim": "300 litr", "val": "990.00" }]
+      },
+      {
+        "name": "Qarşı axın — Hugo Lahme Taifun Duo",
+        "specs": "2.6KW · 316L paslanmaz",
+        "img": "img368",
+        "prices": [{ "dim": "ədəd", "val": "32859.96" }]
+      },
+      {
+        "name": "Qarşı axın — Astralpool Advance ND",
+        "specs": "5.5HP pompa · 23-60m³/s",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "29185.20" }]
+      }
+    ]
+  },
+  {
+    "cat": "Boru & Fittinq — Pimtaş",
+    "badge": "turkey",
+    "brand": "Pimtaş",
+    "items": [
+      {
+        "name": "U-PVC Boru PN10",
+        "specs": "Ø20-Ø355 mm",
+        "img": "img397",
+        "prices": [
+          { "dim": "Ø20", "val": "1.73" },
+          { "dim": "Ø25", "val": "2.07" },
+          { "dim": "Ø32", "val": "3.03" },
+          { "dim": "Ø40", "val": "4.43" },
+          { "dim": "Ø50", "val": "7.04" },
+          { "dim": "Ø63", "val": "10.93" },
+          { "dim": "Ø75", "val": "15.62" },
+          { "dim": "Ø90", "val": "22.37" },
+          { "dim": "Ø110", "val": "27.09" },
+          { "dim": "Ø125", "val": "34.89" },
+          { "dim": "Ø140", "val": "44.05" },
+          { "dim": "Ø160", "val": "57.78" },
+          { "dim": "Ø200", "val": "92.78" },
+          { "dim": "Ø225", "val": "116.66" },
+          { "dim": "Ø250", "val": "144.82" },
+          { "dim": "Ø280", "val": "182.44" },
+          { "dim": "Ø315", "val": "226.68" },
+          { "dim": "Ø355", "val": "288.78" }
+        ]
+      },
+      {
+        "name": "90° Dirsək PN16",
+        "specs": "Ø20-Ø355 mm",
+        "img": "img400",
+        "prices": [
+          { "dim": "Ø20", "val": "0.97" },
+          { "dim": "Ø25", "val": "1.19" },
+          { "dim": "Ø32", "val": "1.78" },
+          { "dim": "Ø40", "val": "3.43" },
+          { "dim": "Ø50", "val": "3.47" },
+          { "dim": "Ø63", "val": "4.36" },
+          { "dim": "Ø75", "val": "8.34" },
+          { "dim": "Ø90", "val": "11.56" },
+          { "dim": "Ø110", "val": "19.56" },
+          { "dim": "Ø125", "val": "30.52" },
+          { "dim": "Ø140", "val": "45.17" },
+          { "dim": "Ø160", "val": "58.46" },
+          { "dim": "Ø200", "val": "147.75" },
+          { "dim": "Ø225", "val": "215.18" },
+          { "dim": "Ø250", "val": "541.57" },
+          { "dim": "Ø280", "val": "846.20" },
+          { "dim": "Ø315", "val": "957.42" },
+          { "dim": "Ø355", "val": "2837.36" }
+        ]
+      },
+      {
+        "name": "45° Dirsək PN16",
+        "specs": "Ø20-Ø355 mm",
+        "img": null,
+        "prices": [
+          { "dim": "Ø20", "val": "0.97" },
+          { "dim": "Ø25", "val": "1.14" },
+          { "dim": "Ø32", "val": "1.74" },
+          { "dim": "Ø40", "val": "3.22" },
+          { "dim": "Ø50", "val": "3.34" },
+          { "dim": "Ø63", "val": "3.94" },
+          { "dim": "Ø75", "val": "7.96" },
+          { "dim": "Ø90", "val": "10.75" },
+          { "dim": "Ø110", "val": "18.88" },
+          { "dim": "Ø125", "val": "29.12" },
+          { "dim": "Ø140", "val": "41.70" },
+          { "dim": "Ø160", "val": "58.20" },
+          { "dim": "Ø200", "val": "129.59" },
+          { "dim": "Ø225", "val": "212.76" },
+          { "dim": "Ø250", "val": "464.20" },
+          { "dim": "Ø280", "val": "773.67" },
+          { "dim": "Ø315", "val": "826.86" },
+          { "dim": "Ø355", "val": "2306.51" }
+        ]
+      },
+      {
+        "name": "Kortəpə PN16",
+        "specs": "Ø20-Ø355 mm",
+        "img": null,
+        "prices": [
+          { "dim": "Ø20", "val": "0.76" },
+          { "dim": "Ø25", "val": "0.93" },
+          { "dim": "Ø32", "val": "1.19" },
+          { "dim": "Ø40", "val": "1.48" },
+          { "dim": "Ø50", "val": "2.24" },
+          { "dim": "Ø63", "val": "2.67" },
+          { "dim": "Ø75", "val": "4.53" },
+          { "dim": "Ø90", "val": "5.80" },
+          { "dim": "Ø110", "val": "8.47" },
+          { "dim": "Ø125", "val": "14.43" },
+          { "dim": "Ø140", "val": "18.16" },
+          { "dim": "Ø160", "val": "33.06" },
+          { "dim": "Ø200", "val": "54.64" },
+          { "dim": "Ø225", "val": "91.87" },
+          { "dim": "Ø250", "val": "140.23" },
+          { "dim": "Ø280", "val": "198.25" },
+          { "dim": "Ø315", "val": "261.11" },
+          { "dim": "Ø355", "val": "953.90" }
+        ]
+      },
+      {
+        "name": "Mufta PN16",
+        "specs": "Ø20-Ø355 mm",
+        "img": "img406",
+        "prices": [
+          { "dim": "Ø20", "val": "0.72" },
+          { "dim": "Ø25", "val": "0.89" },
+          { "dim": "Ø32", "val": "1.02" },
+          { "dim": "Ø40", "val": "1.69" },
+          { "dim": "Ø50", "val": "1.74" },
+          { "dim": "Ø63", "val": "2.71" },
+          { "dim": "Ø75", "val": "5.50" },
+          { "dim": "Ø90", "val": "6.94" },
+          { "dim": "Ø110", "val": "11.73" },
+          { "dim": "Ø125", "val": "15.24" },
+          { "dim": "Ø140", "val": "17.99" },
+          { "dim": "Ø160", "val": "26.92" },
+          { "dim": "Ø200", "val": "62.86" },
+          { "dim": "Ø225", "val": "100.84" },
+          { "dim": "Ø250", "val": "172.14" },
+          { "dim": "Ø280", "val": "272.54" },
+          { "dim": "Ø315", "val": "338.00" },
+          { "dim": "Ø355", "val": "1296.39" }
+        ]
+      },
+      {
+        "name": "Te PN16",
+        "specs": "Ø20-Ø355 mm",
+        "img": "img411",
+        "prices": [
+          { "dim": "Ø20", "val": "1.19" },
+          { "dim": "Ø25", "val": "1.35" },
+          { "dim": "Ø32", "val": "2.75" },
+          { "dim": "Ø40", "val": "3.85" },
+          { "dim": "Ø50", "val": "3.94" },
+          { "dim": "Ø63", "val": "5.55" },
+          { "dim": "Ø75", "val": "9.78" },
+          { "dim": "Ø90", "val": "15.11" },
+          { "dim": "Ø110", "val": "23.79" },
+          { "dim": "Ø125", "val": "37.50" },
+          { "dim": "Ø140", "val": "60.53" },
+          { "dim": "Ø160", "val": "83.35" },
+          { "dim": "Ø200", "val": "154.73" },
+          { "dim": "Ø225", "val": "290.13" },
+          { "dim": "Ø250", "val": "599.60" },
+          { "dim": "Ø280", "val": "918.74" },
+          { "dim": "Ø315", "val": "1066.22" },
+          { "dim": "Ø355", "val": "3200.37" }
+        ]
+      },
+      {
+        "name": "Kürəli Vana PN16",
+        "specs": "Ø20-Ø110 mm",
+        "img": "img421",
+        "prices": [
+          { "dim": "Ø20", "val": "22.01" },
+          { "dim": "Ø25", "val": "23.28" },
+          { "dim": "Ø32", "val": "27.51" },
+          { "dim": "Ø40", "val": "29.63" },
+          { "dim": "Ø50", "val": "34.71" },
+          { "dim": "Ø63", "val": "45.72" },
+          { "dim": "Ø75", "val": "118.53" },
+          { "dim": "Ø90", "val": "156.62" },
+          { "dim": "Ø110", "val": "232.82" }
+        ]
+      },
+      {
+        "name": "Kələbək Vana PN16",
+        "specs": "Ø63-Ø400 mm",
+        "img": "img425",
+        "prices": [
+          { "dim": "Ø63", "val": "263.75" },
+          { "dim": "Ø75", "val": "285.73" },
+          { "dim": "Ø90", "val": "316.50" },
+          { "dim": "Ø110", "val": "356.07" },
+          { "dim": "Ø125", "val": "417.61" },
+          { "dim": "Ø140", "val": "417.61" },
+          { "dim": "Ø160", "val": "611.03" },
+          { "dim": "Ø200", "val": "888.94" },
+          { "dim": "Ø225", "val": "907.18" },
+          { "dim": "Ø250", "val": "2302.13" },
+          { "dim": "Ø280", "val": "2370.51" },
+          { "dim": "Ø315", "val": "5470.42" },
+          { "dim": "Ø355", "val": "20445.68" },
+          { "dim": "Ø400", "val": "20445.68" }
+        ]
+      },
+      {
+        "name": "Yaylı Əks klapan PN16",
+        "specs": "Ø20-Ø110 mm",
+        "img": null,
+        "prices": [
+          { "dim": "Ø20", "val": "22.22" },
+          { "dim": "Ø25", "val": "24.34" },
+          { "dim": "Ø32", "val": "30.27" },
+          { "dim": "Ø40", "val": "33.23" },
+          { "dim": "Ø50", "val": "37.46" },
+          { "dim": "Ø50 toplu", "val": "126.04" },
+          { "dim": "Ø63", "val": "49.74" },
+          { "dim": "Ø75", "val": "116.41" },
+          { "dim": "Ø90", "val": "129.11" },
+          { "dim": "Ø110", "val": "226.47" }
+        ]
+      },
+      {
+        "name": "Kələbək Əks Klapan PN16",
+        "specs": "Ø63-Ø400 mm",
+        "img": null,
+        "prices": [
+          { "dim": "Ø63", "val": "167.04" },
+          { "dim": "Ø75", "val": "184.63" },
+          { "dim": "Ø90", "val": "211.00" },
+          { "dim": "Ø110", "val": "254.96" },
+          { "dim": "Ø125", "val": "276.94" },
+          { "dim": "Ø140", "val": "320.90" },
+          { "dim": "Ø160", "val": "364.86" },
+          { "dim": "Ø200", "val": "565.28" },
+          { "dim": "Ø225", "val": "656.45" },
+          { "dim": "Ø250", "val": "1385.84" },
+          { "dim": "Ø280", "val": "1723.18" },
+          { "dim": "Ø315", "val": "2420.66" },
+          { "dim": "Ø400", "val": "8205.62" }
+        ]
+      },
+      {
+        "name": "Pompa Rakoru PN16",
+        "specs": "Ø50, Ø63",
+        "img": null,
+        "prices": [
+          { "dim": "Ø50", "val": "17.36" },
+          { "dim": "Ø63", "val": "20.95" }
+        ]
+      },
+      {
+        "name": "U-PVC Yapışdırıcı",
+        "specs": "0.5 kq / 1 kq",
+        "img": null,
+        "prices": [
+          { "dim": "0.5 kq", "val": "54.87" },
+          { "dim": "1 kq", "val": "70.55" }
+        ]
+      }
+    ]
+  },
+  {
+    "cat": "Hovuz Lampaları",
+    "badge": "other",
+    "brand": "Nurpool / Aquativ / Astralpool",
+    "items": [
+      {
+        "name": "Nurpool 30W Ağ LED",
+        "specs": "Suvaq üstü · ABS ağ",
+        "img": "img476",
+        "prices": [{ "dim": "30W ağ", "val": "66.08" }]
+      },
+      {
+        "name": "Nurpool 30W Gün işığı LED",
+        "specs": "Suvaq üstü · ABS ağ",
+        "img": "img476",
+        "prices": [{ "dim": "30W gün", "val": "66.08" }]
+      },
+      {
+        "name": "Nurpool 30W Ağ LED (Qara çərçivə)",
+        "specs": "Suvaq üstü · ABS qara",
+        "img": "img476",
+        "prices": [{ "dim": "30W qara", "val": "89.51" }]
+      },
+      {
+        "name": "Nurpool 30W AISI 316",
+        "specs": "Suvaq üstü · Paslanmaz",
+        "img": "img476",
+        "prices": [{ "dim": "30W SS", "val": "159.12" }]
+      },
+      {
+        "name": "Nurpool 36W LED + Kovan",
+        "specs": "Divar içi kovanla",
+        "img": "img476",
+        "prices": [{ "dim": "36W", "val": "276.25" }]
+      },
+      {
+        "name": "Aquativ 23W Ağ LED",
+        "specs": "Suvaq üstü · ABS ağ",
+        "img": "img480",
+        "prices": [{ "dim": "23W ağ", "val": "87.42" }]
+      },
+      {
+        "name": "Aquativ 23W Gün işığı LED",
+        "specs": "Suvaq üstü · ABS ağ",
+        "img": "img480",
+        "prices": [{ "dim": "23W gün", "val": "87.42" }]
+      },
+      {
+        "name": "Aquativ 23W Mavi-ağ qarışıq LED",
+        "specs": "Suvaq üstü · ABS ağ",
+        "img": "img480",
+        "prices": [{ "dim": "23W mavi-ağ", "val": "105.94" }]
+      },
+      {
+        "name": "Aquativ 23W Mavi LED",
+        "specs": "Suvaq üstü · ABS ağ",
+        "img": "img480",
+        "prices": [{ "dim": "23W mavi", "val": "109.25" }]
+      },
+      {
+        "name": "Aquativ 23W RGB 4-kabel",
+        "specs": "Suvaq üstü · ABS ağ",
+        "img": "img480",
+        "prices": [{ "dim": "23W RGB", "val": "115.87" }]
+      },
+      {
+        "name": "Aquativ 33W RGB 4-kabel",
+        "specs": "Suvaq üstü · ABS ağ",
+        "img": "img480",
+        "prices": [{ "dim": "33W RGB", "val": "165.52" }]
+      },
+      {
+        "name": "Aquativ 23W Ağ LED (Qara çərçivə)",
+        "specs": "Suvaq üstü · ABS qara",
+        "img": "img480",
+        "prices": [{ "dim": "23W qara", "val": "109.25" }]
+      },
+      {
+        "name": "Aquativ 23W AISI 316",
+        "specs": "Suvaq üstü · Paslanmaz",
+        "img": "img480",
+        "prices": [{ "dim": "23W SS", "val": "192.01" }]
+      },
+      {
+        "name": "Köhnə kovanlı lampaya klips",
+        "specs": "23W divar üstü lampa montajı",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "36.42" }]
+      },
+      {
+        "name": "Aquativ 12W Ağ LED",
+        "specs": "Suvaq üstü · ABS ağ",
+        "img": null,
+        "prices": [{ "dim": "12W ağ", "val": "82.39" }]
+      },
+      {
+        "name": "Aquativ 12W AISI 316",
+        "specs": "Suvaq üstü · paslanmaz",
+        "img": null,
+        "prices": [{ "dim": "12W SS", "val": "132.42" }]
+      },
+      {
+        "name": "Aquativ 33W Ø281mm (ağ çərçivə)",
+        "specs": "ABS ağ · kovansız",
+        "img": "img503",
+        "prices": [{ "dim": "33W", "val": "163.44" }]
+      },
+      {
+        "name": "Aquativ 33W Ø281mm (qara çərçivə)",
+        "specs": "ABS qara · kovansız",
+        "img": "img503",
+        "prices": [{ "dim": "33W qara", "val": "171.04" }]
+      },
+      {
+        "name": "Aquativ 33W Ø281mm AISI 316",
+        "specs": "Paslanmaz · kovansız",
+        "img": "img503",
+        "prices": [{ "dim": "33W SS", "val": "266.06" }]
+      },
+      {
+        "name": "Aquativ 45W Ø281mm (ağ çərçivə)",
+        "specs": "ABS ağ · kovansız",
+        "img": "img503",
+        "prices": [{ "dim": "45W", "val": "319.28" }]
+      },
+      {
+        "name": "Aquativ 45W Ø281mm (qara çərçivə)",
+        "specs": "ABS qara · kovansız",
+        "img": "img503",
+        "prices": [{ "dim": "45W qara", "val": "326.88" }]
+      },
+      {
+        "name": "Aquativ 45W AISI 316",
+        "specs": "Ø281mm · paslanmaz",
+        "img": "img503",
+        "prices": [{ "dim": "45W SS", "val": "395.29" }]
+      },
+      {
+        "name": "33W/45W Slim kovan",
+        "specs": "Beton içi parça kovan",
+        "img": null,
+        "prices": [{ "dim": "slim", "val": "36.42" }]
+      },
+      {
+        "name": "33W/45W Beton parçası",
+        "specs": "Kovan üçün beton içi parça",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "23.91" }]
+      },
+      {
+        "name": "Aquativ 18W Ø102mm",
+        "specs": "ABS ağ · kovansız",
+        "img": null,
+        "prices": [{ "dim": "18W", "val": "149.71" }]
+      },
+      {
+        "name": "Aquativ 18W Ø102mm (qara)",
+        "specs": "ABS qara · kovansız",
+        "img": null,
+        "prices": [{ "dim": "18W qara", "val": "153.75" }]
+      },
+      {
+        "name": "Aquativ 18W AISI 316",
+        "specs": "Ø102mm · paslanmaz",
+        "img": null,
+        "prices": [{ "dim": "18W SS", "val": "190.17" }]
+      },
+      {
+        "name": "Aquativ 18W Slim kovan",
+        "specs": "Ø102mm beton içi parça",
+        "img": null,
+        "prices": [{ "dim": "slim kovan", "val": "55.17" }]
+      },
+      {
+        "name": "FlexiMini AISI 316 3.5W",
+        "specs": "Ø96 · Ø63 boruya keçmə",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "1051.99" }]
+      },
+      {
+        "name": "FlexiMini 3.5W boru divar parçası",
+        "specs": "Ø63 boru divar içi beton parçası",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "107.79" }]
+      },
+      {
+        "name": "Elektronik idarəetmə sistemi 1F 10m",
+        "specs": "Ø63 boruya keçmə",
+        "img": null,
+        "prices": [{ "dim": "10m", "val": "545.12" }]
+      },
+      {
+        "name": "Elektronik idarəetmə sistemi 3F 15m",
+        "specs": "Ø63 boruya keçmə",
+        "img": null,
+        "prices": [{ "dim": "15m", "val": "712.85" }]
+      },
+      {
+        "name": "Elektronik idarəetmə sistemi 3F 20m",
+        "specs": "Ø63 boruya keçmə",
+        "img": null,
+        "prices": [{ "dim": "20m", "val": "754.79" }]
+      },
+      {
+        "name": "Astralpool 32W Proyektor",
+        "specs": "Paslanmaz enox effektli ABS",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "2845.56" }]
+      },
+      {
+        "name": "Astralpool 32W Proyektor Kovanı",
+        "specs": "Divar içi beton parçası",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "517.37" }]
+      },
+      {
+        "name": "Trafo Çetinkaya 300W IP65",
+        "specs": "",
+        "img": null,
+        "prices": [
+          { "dim": "300W", "val": "102.00" },
+          { "dim": "400W", "val": "127.50" },
+          { "dim": "600W", "val": "207.19" }
+        ]
+      },
+      {
+        "name": "Trafo Astralpool IP20",
+        "specs": "",
+        "img": null,
+        "prices": [
+          { "dim": "100W", "val": "366.47" },
+          { "dim": "300W", "val": "582.05" },
+          { "dim": "400W IP65", "val": "862.29" },
+          { "dim": "600W", "val": "862.29" }
+        ]
+      }
+    ]
+  },
+  {
+    "cat": "Hovuz Aksesuarları",
+    "badge": "turkey",
+    "brand": "Nurpool / Astralpool",
+    "items": [
+      {
+        "name": "Su şəlaləsi 700×500 Ø50",
+        "specs": "AISI 304 Nurpool",
+        "img": "img433",
+        "prices": [{ "dim": "ədəd", "val": "580.00" }]
+      },
+      {
+        "name": "Su şəlaləsi 800×500 Ø63",
+        "specs": "AISI 304 Nurpool",
+        "img": "img433",
+        "prices": [{ "dim": "ədəd", "val": "740.00" }]
+      },
+      {
+        "name": "Su şəlaləsi 1000×500 Ø63",
+        "specs": "AISI 304 Nurpool",
+        "img": "img433",
+        "prices": [{ "dim": "ədəd", "val": "980.00" }]
+      },
+      {
+        "name": "Su şəlaləsi 1000×500 Ø63 (2. model)",
+        "specs": "AISI 304 Nurpool",
+        "img": "img433",
+        "prices": [{ "dim": "ədəd", "val": "980.00" }]
+      },
+      {
+        "name": "Su şəlaləsi 1000×600 Ø63",
+        "specs": "AISI 304 Nurpool",
+        "img": "img433",
+        "prices": [{ "dim": "ədəd", "val": "980.00" }]
+      },
+      {
+        "name": "Pilləkan AISI 304 — 4 pillə Muro (Nurpool)",
+        "specs": "Nurpool",
+        "img": "img436",
+        "prices": [{ "dim": "ədəd", "val": "340.00" }]
+      },
+      {
+        "name": "Pilləkan AISI 304 — 4 pillə Standart (Nurpool)",
+        "specs": "Nurpool",
+        "img": "img436",
+        "prices": [{ "dim": "ədəd", "val": "408.00" }]
+      },
+      {
+        "name": "Pilləkan AISI 304 — 5 pillə Muro (Nurpool)",
+        "specs": "Nurpool",
+        "img": "img436",
+        "prices": [{ "dim": "ədəd", "val": "370.60" }]
+      },
+      {
+        "name": "Pilləkan AISI 304 — 5 pillə Standart (Nurpool)",
+        "specs": "Nurpool",
+        "img": "img436",
+        "prices": [{ "dim": "ədəd", "val": "455.60" }]
+      },
+      {
+        "name": "Pilləkan AISI 304 — 4 pillə Muro (Astralpool)",
+        "specs": "Astralpool",
+        "img": "img438",
+        "prices": [{ "dim": "ədəd", "val": "1666.90" }]
+      },
+      {
+        "name": "Pilləkan AISI 304 — 4 pillə Standart (Astralpool)",
+        "specs": "Astralpool",
+        "img": "img438",
+        "prices": [{ "dim": "ədəd", "val": "1666.90" }]
+      },
+      {
+        "name": "Pilləkan AISI 304 — 5 pillə Muro (Astralpool)",
+        "specs": "Astralpool",
+        "img": "img438",
+        "prices": [{ "dim": "ədəd", "val": "2073.46" }]
+      },
+      {
+        "name": "Pilləkan AISI 304 — 5 pillə Standart (Astralpool)",
+        "specs": "Astralpool",
+        "img": "img438",
+        "prices": [{ "dim": "ədəd", "val": "2073.46" }]
+      },
+      {
+        "name": "Pilləkan AISI 316 — 4 pillə Muro (Astralpool)",
+        "specs": "Astralpool",
+        "img": "img440",
+        "prices": [{ "dim": "ədəd", "val": "2601.98" }]
+      },
+      {
+        "name": "Pilləkan AISI 316 — 4 pillə Standart (Astralpool)",
+        "specs": "Astralpool",
+        "img": "img440",
+        "prices": [{ "dim": "ədəd", "val": "2601.98" }]
+      },
+      {
+        "name": "Pilləkan AISI 316 — 5 pillə Muro (Astralpool)",
+        "specs": "Astralpool",
+        "img": "img440",
+        "prices": [{ "dim": "ədəd", "val": "2967.89" }]
+      },
+      {
+        "name": "Pilləkan AISI 316 — 5 pillə Standart (Astralpool)",
+        "specs": "Astralpool",
+        "img": "img440",
+        "prices": [{ "dim": "ədəd", "val": "2967.89" }]
+      },
+      {
+        "name": "Pilləkan AISI 304 — 4 pillə Muro (İML İspaniya)",
+        "specs": "İML İspaniya",
+        "img": "img441",
+        "prices": [{ "dim": "ədəd", "val": "609.84" }]
+      },
+      {
+        "name": "Pilləkan AISI 304 — Kripsol İspaniya 4 pillə",
+        "specs": "Kripsol İspaniya",
+        "img": "img441",
+        "prices": [{ "dim": "ədəd", "val": "813.12" }]
+      },
+      {
+        "name": "Pilləkan AISI 316 — Kripsol İspaniya 4 pillə",
+        "specs": "Kripsol İspaniya",
+        "img": "img441",
+        "prices": [{ "dim": "ədəd", "val": "1016.40" }]
+      },
+      {
+        "name": "Pilləkan AISI 304 — Kripsol İspaniya 5 pillə",
+        "specs": "Kripsol İspaniya",
+        "img": "img441",
+        "prices": [{ "dim": "ədəd", "val": "1118.04" }]
+      },
+      {
+        "name": "Pilləkan AISI 316 — Kripsol İspaniya 5 pillə",
+        "specs": "Kripsol İspaniya",
+        "img": "img441",
+        "prices": [{ "dim": "ədəd", "val": "1300.99" }]
+      },
+      {
+        "name": "Separator 25m Fina standart",
+        "specs": "Ø15 cm",
+        "img": "img442",
+        "prices": [{ "dim": "25 m", "val": "1800.00" }]
+      },
+      {
+        "name": "Separator bərkidici",
+        "specs": "",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "80.00" }]
+      },
+      {
+        "name": "Separator gərdirici",
+        "specs": "",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "170.00" }]
+      },
+      {
+        "name": "Yan süzgəc standart ağız",
+        "specs": "ABS Ø63 · Pimtaş",
+        "img": "img446",
+        "prices": [{ "dim": "ədəd", "val": "91.20" }]
+      },
+      {
+        "name": "Yan süzgəc geniş ağız",
+        "specs": "ABS Ø63 · Pimtaş",
+        "img": "img448",
+        "prices": [{ "dim": "ədəd", "val": "140.95" }]
+      },
+      {
+        "name": "Yan süzgəc slim model",
+        "specs": "ABS Ø63 · Pimtaş",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "249.90" }]
+      },
+      {
+        "name": "Yan süzgəc səbəti — Astralpool",
+        "specs": "",
+        "img": null,
+        "prices": [{ "dim": "Astralpool", "val": "103.28" }]
+      },
+      {
+        "name": "Yan süzgəc səbəti — Universal",
+        "specs": "",
+        "img": null,
+        "prices": [{ "dim": "Universal", "val": "29.84" }]
+      },
+      {
+        "name": "Yan süzgəc AISI 316",
+        "specs": "Astralpool paslanmaz gövdə",
+        "img": "img454",
+        "prices": [{ "dim": "ədəd", "val": "4158.00" }]
+      },
+      {
+        "name": "Yan süzgəc səbəti AISI 316",
+        "specs": "Astralpool paslanmaz",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "2661.12" }]
+      },
+      {
+        "name": "Dib süzgəci 20×20 ABS ağ",
+        "specs": "Nurpool",
+        "img": "img465",
+        "prices": [{ "dim": "ədəd", "val": "23.32" }]
+      },
+      {
+        "name": "Dib süzgəci 25×25 ABS ağ",
+        "specs": "Nurpool",
+        "img": "img465",
+        "prices": [{ "dim": "ədəd", "val": "26.66" }]
+      },
+      {
+        "name": "Dib süzgəci 41×41 ABS ağ",
+        "specs": "Nurpool",
+        "img": "img465",
+        "prices": [{ "dim": "ədəd", "val": "299.88" }]
+      },
+      {
+        "name": "Dib süzgəci 20×20 ABS qara",
+        "specs": "Nurpool",
+        "img": "img465",
+        "prices": [{ "dim": "ədəd", "val": "32.37" }]
+      },
+      {
+        "name": "Dib süzgəci AISI 316 20×20",
+        "specs": "Nurpool paslanmaz",
+        "img": "img467",
+        "prices": [{ "dim": "ədəd", "val": "221.34" }]
+      },
+      {
+        "name": "Dib süzgəci AISI 316 30×30",
+        "specs": "Nurpool paslanmaz",
+        "img": "img467",
+        "prices": [{ "dim": "ədəd", "val": "383.85" }]
+      },
+      {
+        "name": "Dib süzgəci AISI 316 40×40",
+        "specs": "Nurpool paslanmaz",
+        "img": "img467",
+        "prices": [{ "dim": "ədəd", "val": "644.41" }]
+      },
+      {
+        "name": "Dairəvi dib süzgəci Ø50/Ø63",
+        "specs": "Nurpool",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "13.80" }]
+      },
+      {
+        "name": "Jet yerdən ABS ağ",
+        "specs": "Ø50, Ø63 · Nurpool/Astralpool",
+        "img": "img468",
+        "prices": [{ "dim": "ədəd", "val": "5.66" }]
+      },
+      {
+        "name": "Jet yerdən ABS qara",
+        "specs": "Ø50, Ø63",
+        "img": "img468",
+        "prices": [{ "dim": "ədəd", "val": "8.09" }]
+      },
+      {
+        "name": "Jet yerdən AISI 304 örtük",
+        "specs": "Ø50, Ø63",
+        "img": "img468",
+        "prices": [{ "dim": "ədəd", "val": "99.96" }]
+      },
+      {
+        "name": "Jet tamamən paslanmaz yerdən",
+        "specs": "Nurpool/Astralpool",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "399.84" }]
+      },
+      {
+        "name": "Jet divardan tamamən paslanmaz",
+        "specs": "",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "233.24" }]
+      },
+      {
+        "name": "Vakum ABS ağ",
+        "specs": "Ø50, Ø63",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "5.66" }]
+      },
+      {
+        "name": "Vakum ABS qara",
+        "specs": "Ø50, Ø63",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "8.09" }]
+      },
+      {
+        "name": "Vakum AISI 304 örtük",
+        "specs": "Ø63",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "99.96" }]
+      },
+      {
+        "name": "Vakum tamamən paslanmaz",
+        "specs": "",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "159.94" }]
+      },
+      {
+        "name": "Cakuzzi xortumu Nurpool Ø50",
+        "specs": "",
+        "img": null,
+        "prices": [{ "dim": "Ø50", "val": "31.65" }]
+      },
+      {
+        "name": "Cakuzzi xortumu Nurpool Ø63",
+        "specs": "",
+        "img": null,
+        "prices": [{ "dim": "Ø63", "val": "40.70" }]
+      },
+      {
+        "name": "Hidromasaj Abs Jet",
+        "specs": "Ø50 su, Ø50 hava",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "53.93" }]
+      },
+      {
+        "name": "İzqara klassik 15cm ağ",
+        "specs": "Nurpool",
+        "img": "img516",
+        "prices": [{ "dim": "m", "val": "17.02" }]
+      },
+      {
+        "name": "İzqara klassik 20cm ağ (tək keçmə)",
+        "specs": "Nurpool",
+        "img": "img516",
+        "prices": [{ "dim": "m", "val": "18.56" }]
+      },
+      {
+        "name": "İzqara klassik 20cm ağ (cüt keçmə)",
+        "specs": "Nurpool",
+        "img": "img516",
+        "prices": [{ "dim": "m", "val": "22.28" }]
+      },
+      {
+        "name": "İzqara klassik 25cm ağ (tək keçmə)",
+        "specs": "Nurpool",
+        "img": "img516",
+        "prices": [{ "dim": "m", "val": "24.75" }]
+      },
+      {
+        "name": "İzqara klassik 25cm ağ (cüt keçmə)",
+        "specs": "Nurpool",
+        "img": "img516",
+        "prices": [{ "dim": "m", "val": "28.46" }]
+      },
+      {
+        "name": "İzqara klassik 30cm ağ (cüt keçmə)",
+        "specs": "Nurpool",
+        "img": "img516",
+        "prices": [{ "dim": "m", "val": "48.55" }]
+      },
+      {
+        "name": "İzqara klassik köşə 15cm",
+        "specs": "Nurpool · 45° və 90°",
+        "img": "img516",
+        "prices": [{ "dim": "ədəd", "val": "15.23" }]
+      },
+      {
+        "name": "İzqara klassik köşə 20cm",
+        "specs": "Nurpool · 45° və 90°",
+        "img": "img516",
+        "prices": [{ "dim": "ədəd", "val": "16.18" }]
+      },
+      {
+        "name": "İzqara klassik köşə 25cm",
+        "specs": "Nurpool · 45° və 90°",
+        "img": "img516",
+        "prices": [{ "dim": "ədəd", "val": "17.14" }]
+      },
+      {
+        "name": "İzqara klassik qara 20cm",
+        "specs": "Nurpool",
+        "img": "img518",
+        "prices": [{ "dim": "m", "val": "28.56" }]
+      },
+      {
+        "name": "İzqara klassik köşə qara 20cm",
+        "specs": "Nurpool · 90°",
+        "img": "img518",
+        "prices": [{ "dim": "ədəd", "val": "21.42" }]
+      },
+      {
+        "name": "İzqara künc profili ağ",
+        "specs": "Nurpool",
+        "img": null,
+        "prices": [{ "dim": "m", "val": "4.33" }]
+      },
+      {
+        "name": "İzqara künc profili qara",
+        "specs": "Nurpool",
+        "img": null,
+        "prices": [{ "dim": "m", "val": "7.14" }]
+      },
+      {
+        "name": "İzqara blok 20cm ağ (düz)",
+        "specs": "Nurpool",
+        "img": "img529",
+        "prices": [{ "dim": "m", "val": "27.85" }]
+      },
+      {
+        "name": "İzqara blok 20cm ağ (oval)",
+        "specs": "Nurpool",
+        "img": "img529",
+        "prices": [{ "dim": "m", "val": "26.66" }]
+      },
+      {
+        "name": "İzqara blok 25cm ağ (düz)",
+        "specs": "Nurpool",
+        "img": "img529",
+        "prices": [{ "dim": "m", "val": "34.03" }]
+      },
+      {
+        "name": "İzqara blok 25cm ağ (oval)",
+        "specs": "Nurpool",
+        "img": "img529",
+        "prices": [{ "dim": "m", "val": "32.13" }]
+      },
+      {
+        "name": "İzqara blok köşə 20cm ağ",
+        "specs": "Nurpool · 90°",
+        "img": "img529",
+        "prices": [{ "dim": "ədəd", "val": "19.04" }]
+      },
+      {
+        "name": "İzqara blok köşə 25cm ağ",
+        "specs": "Nurpool · 90°",
+        "img": "img529",
+        "prices": [{ "dim": "ədəd", "val": "22.85" }]
+      },
+      {
+        "name": "İzqara dırnaqlı 20cm ağ",
+        "specs": "Nurpool",
+        "img": null,
+        "prices": [{ "dim": "m", "val": "19.99" }]
+      },
+      {
+        "name": "İzqara dırnaqlı 25cm ağ",
+        "specs": "Nurpool",
+        "img": null,
+        "prices": [{ "dim": "m", "val": "26.66" }]
+      },
+      {
+        "name": "İzqara xalça 20cm ağ",
+        "specs": "Nurpool",
+        "img": null,
+        "prices": [{ "dim": "m", "val": "26.66" }]
+      },
+      {
+        "name": "Tutamaq 12.5×25 kobalt",
+        "specs": "Sertekpool porcelen",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "24.44" }]
+      },
+      {
+        "name": "Tutamaq 12.5×25 açıq mavi",
+        "specs": "Sertekpool porcelen",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "24.44" }]
+      },
+      {
+        "name": "Tutamaq 12.5×25 ağ",
+        "specs": "Sertekpool porcelen",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "24.44" }]
+      },
+      {
+        "name": "Tutamaq 12.5×25 yaşıl",
+        "specs": "Sertekpool porcelen",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "26.56" }]
+      },
+      {
+        "name": "Tutamaq oyuklu 12.5×25 açıq mavi",
+        "specs": "Sertekpool porcelen",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "36.13" }]
+      },
+      {
+        "name": "Tutamaq 25×25 kobalt",
+        "specs": "Sertekpool porcelen",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "37.19" }]
+      },
+      {
+        "name": "Tutamaq 25×25 ağ",
+        "specs": "Sertekpool porcelen",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "37.19" }]
+      },
+      {
+        "name": "Kaymaz 12.5×25 ağ",
+        "specs": "Sertekpool",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "4.25" }]
+      },
+      {
+        "name": "Kaymaz 25×25 ağ",
+        "specs": "Sertekpool",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "11.69" }]
+      }
+    ]
+  },
+  {
+    "cat": "Hovuz Kimyasalları",
+    "badge": "other",
+    "brand": "Pooltech / Lagoon / Quardex",
+    "items": [
+      {
+        "name": "90% Toz xlor qranul",
+        "specs": "Pooltech / Lagoon",
+        "img": "img536",
+        "prices": [
+          { "dim": "5 kq", "val": "46.00" },
+          { "dim": "50 kq", "val": "450.00" }
+        ]
+      },
+      {
+        "name": "90% Tablet xlor",
+        "specs": "Pooltech / Lagoon",
+        "img": "img536",
+        "prices": [
+          { "dim": "5 kq", "val": "48.00" },
+          { "dim": "50 kq", "val": "470.00" }
+        ]
+      },
+      {
+        "name": "90% Multi tablet xlor",
+        "specs": "Pooltech / Lagoon",
+        "img": "img536",
+        "prices": [
+          { "dim": "5 kq", "val": "52.00" },
+          { "dim": "50 kq", "val": "510.00" }
+        ]
+      },
+      {
+        "name": "56% Toz xlor qranul",
+        "specs": "Pooltech / Lagoon",
+        "img": "img536",
+        "prices": [
+          { "dim": "5 kq", "val": "46.00" },
+          { "dim": "50 kq", "val": "450.00" }
+        ]
+      },
+      {
+        "name": "5 li kimyasal komplekt",
+        "specs": "Pooltech / Lagoon",
+        "img": "img544",
+        "prices": [
+          { "dim": "1 kpl", "val": "152.00" },
+          { "dim": "5 kpl", "val": "146.00" },
+          { "dim": "10 kpl", "val": "140.00" },
+          { "dim": "50 kpl", "val": "130.00" }
+        ]
+      },
+      {
+        "name": "pH Düşürücü qranul",
+        "specs": "Pooltech Grillo / Lagoon",
+        "img": "img549",
+        "prices": [
+          { "dim": "5 kq", "val": "25.00" },
+          { "dim": "25 kq", "val": "115.00" }
+        ]
+      },
+      {
+        "name": "Yosun önləyici",
+        "specs": "Pooltech / Lagoon",
+        "img": "img550",
+        "prices": [
+          { "dim": "5 l", "val": "19.00" },
+          { "dim": "20 l", "val": "76.00" }
+        ]
+      },
+      {
+        "name": "Çöktürücü",
+        "specs": "Pooltech / Lagoon",
+        "img": null,
+        "prices": [
+          { "dim": "5 l", "val": "14.00" },
+          { "dim": "20 l", "val": "56.00" }
+        ]
+      },
+      {
+        "name": "Parlatıcı",
+        "specs": "Pooltech / Lagoon",
+        "img": null,
+        "prices": [
+          { "dim": "5 l", "val": "24.00" },
+          { "dim": "20 l", "val": "96.00" }
+        ]
+      },
+      {
+        "name": "Maye xlor 13% Quardex",
+        "specs": "",
+        "img": "img552",
+        "prices": [{ "dim": "25 l", "val": "150.00" }]
+      },
+      {
+        "name": "Maye pH düşürücü Quardex",
+        "specs": "",
+        "img": "img552",
+        "prices": [{ "dim": "25 l", "val": "150.00" }]
+      },
+      {
+        "name": "pH Yüksəldici Quardex",
+        "specs": "",
+        "img": null,
+        "prices": [{ "dim": "10 kq", "val": "150.00" }]
+      },
+      {
+        "name": "Tablet xlor Waterboss",
+        "specs": "",
+        "img": null,
+        "prices": [{ "dim": "25 kq", "val": "26.00" }]
+      },
+      {
+        "name": "Tablet xlor Mozırısol",
+        "specs": "",
+        "img": null,
+        "prices": [{ "dim": "25 kq", "val": "42.00" }]
+      },
+      {
+        "name": "Tuz ruhu kislota",
+        "specs": "",
+        "img": null,
+        "prices": [{ "dim": "2.5 l", "val": "9.80" }]
+      },
+      {
+        "name": "pH & Xlor test kiti",
+        "specs": "",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "11.00" }]
+      }
+    ]
+  },
+  {
+    "cat": "Təmizlik Aksesuarları",
+    "badge": "other",
+    "brand": "",
+    "items": [
+      {
+        "name": "EVA spiral xortum 9m Ø50",
+        "specs": "Adaptor daxil",
+        "img": "img561",
+        "prices": [{ "dim": "9m", "val": "56.79" }]
+      },
+      {
+        "name": "EVA spiral xortum 12m Ø50",
+        "specs": "Adaptor daxil",
+        "img": "img561",
+        "prices": [{ "dim": "12m", "val": "75.69" }]
+      },
+      {
+        "name": "EVA spiral xortum 15m Ø50",
+        "specs": "Adaptor daxil",
+        "img": "img561",
+        "prices": [{ "dim": "15m", "val": "97.74" }]
+      },
+      {
+        "name": "EVA spiral xortum 21m Ø50",
+        "specs": "Adaptor daxil",
+        "img": "img561",
+        "prices": [{ "dim": "21m", "val": "150.33" }]
+      },
+      {
+        "name": "EVA spiral xortum 30m Ø50",
+        "specs": "Adaptor daxil",
+        "img": "img561",
+        "prices": [{ "dim": "30m", "val": "217.26" }]
+      },
+      {
+        "name": "EVA spiral xortum 30m Ø63",
+        "specs": "Adaptor daxil",
+        "img": "img561",
+        "prices": [{ "dim": "30m", "val": "313.57" }]
+      },
+      {
+        "name": "PE xortum 5m Ø50",
+        "specs": "Adaptor daxil",
+        "img": "img562",
+        "prices": [{ "dim": "5m", "val": "33.38" }]
+      },
+      {
+        "name": "PE xortum 9m Ø50",
+        "specs": "Adaptor daxil",
+        "img": "img562",
+        "prices": [{ "dim": "9m", "val": "41.68" }]
+      },
+      {
+        "name": "PE xortum 12m Ø50",
+        "specs": "Adaptor daxil",
+        "img": "img562",
+        "prices": [{ "dim": "12m", "val": "55.51" }]
+      },
+      {
+        "name": "PE xortum 15m Ø50",
+        "specs": "Adaptor daxil",
+        "img": "img562",
+        "prices": [{ "dim": "15m", "val": "71.53" }]
+      },
+      {
+        "name": "PE xortum 30m Ø50",
+        "specs": "Adaptor daxil",
+        "img": "img562",
+        "prices": [{ "dim": "30m", "val": "147.17" }]
+      },
+      {
+        "name": "PE xortum 60m Ø50",
+        "specs": "Adaptor daxil",
+        "img": "img562",
+        "prices": [{ "dim": "60m", "val": "294.35" }]
+      },
+      {
+        "name": "Teleskopik sap 2×2.4m",
+        "specs": "",
+        "img": "img563",
+        "prices": [{ "dim": "ədəd", "val": "48.83" }]
+      },
+      {
+        "name": "Teleskopik sap 2×3m",
+        "specs": "",
+        "img": "img563",
+        "prices": [{ "dim": "ədəd", "val": "61.99" }]
+      },
+      {
+        "name": "Teleskopik sap 2×3.5m",
+        "specs": "",
+        "img": "img563",
+        "prices": [{ "dim": "ədəd", "val": "77.89" }]
+      },
+      {
+        "name": "Teleskopik sap 3×3m",
+        "specs": "",
+        "img": "img563",
+        "prices": [{ "dim": "ədəd", "val": "125.11" }]
+      },
+      {
+        "name": "Vakum süpürgəsi standart",
+        "specs": "34.5×13cm 1½″ PE50",
+        "img": "img568",
+        "prices": [{ "dim": "ədəd", "val": "46.14" }]
+      },
+      {
+        "name": "Vakum süpürgəsi böyük (1½″)",
+        "specs": "44.5×13cm 1½″ PE50",
+        "img": "img568",
+        "prices": [{ "dim": "ədəd", "val": "49.72" }]
+      },
+      {
+        "name": "Vakum süpürgəsi böyük (2″)",
+        "specs": "44.5×13cm 2″ PE63",
+        "img": "img568",
+        "prices": [{ "dim": "ədəd", "val": "116.47" }]
+      },
+      {
+        "name": "Dərin model kepçə",
+        "specs": "",
+        "img": "img569",
+        "prices": [{ "dim": "ədəd", "val": "16.13" }]
+      },
+      {
+        "name": "Düz model kepçə",
+        "specs": "",
+        "img": "img569",
+        "prices": [{ "dim": "ədəd", "val": "13.27" }]
+      },
+      {
+        "name": "Tablet xlor dispenseri",
+        "specs": "",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "15.78" }]
+      },
+      {
+        "name": "Təkər termometr",
+        "specs": "",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "35.84" }]
+      },
+      {
+        "name": "Elektron termometr",
+        "specs": "",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "43.31" }]
+      },
+      {
+        "name": "46sm neylon fırça",
+        "specs": "Standart",
+        "img": "img575",
+        "prices": [{ "dim": "ədəd", "val": "10.16" }]
+      },
+      {
+        "name": "46sm nerj saplı fırça",
+        "specs": "Deluxe",
+        "img": "img575",
+        "prices": [{ "dim": "ədəd", "val": "29.33" }]
+      },
+      {
+        "name": "60sm nerj saplı fırça",
+        "specs": "Deluxe",
+        "img": "img575",
+        "prices": [{ "dim": "ədəd", "val": "35.20" }]
+      },
+      {
+        "name": "26sm neylon fırça",
+        "specs": "",
+        "img": "img575",
+        "prices": [{ "dim": "ədəd", "val": "7.89" }]
+      },
+      {
+        "name": "26sm nerj saplı fırça",
+        "specs": "",
+        "img": "img575",
+        "prices": [{ "dim": "ədəd", "val": "16.04" }]
+      },
+      {
+        "name": "Küncər fırça",
+        "specs": "",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "9.96" }]
+      },
+      {
+        "name": "Küncər nerj saplı fırça",
+        "specs": "",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "13.67" }]
+      },
+      {
+        "name": "Ø50 Xortum adaptor başlığı",
+        "specs": "",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "5.12" }]
+      },
+      {
+        "name": "Xortum birləşmə adaptoru",
+        "specs": "",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "4.97" }]
+      },
+      {
+        "name": "Vakum xortum adaptoru (1 tip)",
+        "specs": "",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "4.62" }]
+      },
+      {
+        "name": "Vakum xortum adaptoru (2 tip)",
+        "specs": "",
+        "img": null,
+        "prices": [{ "dim": "ədəd", "val": "5.06" }]
+      }
+    ]
+  }
+]
