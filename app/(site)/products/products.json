@@ -49,7 +49,7 @@
       {
         "name": "Crosscut Petra",
         "specs": "İspaniya | Mat & Parlaq",
-        "img": "img67"  ,
+        "img": "img67",
         "prices": [
           { "dim": "37.5×75×0.9", "val": "153.19" },
           { "dim": "60×60×1", "val": "167.30" },
@@ -157,7 +157,7 @@
       {
         "name": "Pilləkan BPSA Samoa",
         "specs": "50×120×2.5 cm",
-        "img": "img85",
+        "img": "img94",
         "prices": [{ "dim": "ədəd", "val": "464.84" }]
       },
       {
@@ -181,97 +181,98 @@
       {
         "name": "Recto step",
         "specs": "32.6×120×1.1",
-        "img": null,
+        "img": "img94",
         "prices": [{ "dim": "ədəd", "val": "344.92" }]
       },
       {
         "name": "Full step",
         "specs": "32.6×120×3.2",
-        "img": "img90",
+        "img": "img96",
         "prices": [{ "dim": "ədəd", "val": "634.11" }]
       },
       {
         "name": "MDCA E000",
         "specs": "4.5×50 cm",
-        "img": null,
+        "img": "img97",
         "prices": [{ "dim": "ədəd", "val": "68.45" }]
       },
       {
         "name": "MDCA EE00",
         "specs": "4.5×4.5 cm",
-        "img": null,
+        "img": "img98",
         "prices": [{ "dim": "ədəd", "val": "82.78" }]
       },
       {
         "name": "MDCA AI00",
         "specs": "6.5×6.5 cm",
-        "img": null,
+        "img": "img99",
         "prices": [{ "dim": "ədəd", "val": "95.52" }]
       },
       {
         "name": "MDCA CE00",
         "specs": "4.5×25 cm",
-        "img": null,
+        "img": "img100",
         "prices": [{ "dim": "ədəd", "val": "127.35" }]
       },
       {
         "name": "MDCA I000",
         "specs": "5.5×50 cm",
-        "img": null,
+        "img": "img101",
         "prices": [{ "dim": "ədəd", "val": "65.27" }]
       },
       {
         "name": "MDCA EI00",
         "specs": "5.5×5.5 cm",
-        "img": null,
+        "img": "img102",
         "prices": [{ "dim": "ədəd", "val": "82.78" }]
       },
       {
         "name": "MDCA AE00",
         "specs": "6.5×6.5 cm",
-        "img": null,
+        "img": "img103"
+        ,
         "prices": [{ "dim": "ədəd", "val": "95.52" }]
       },
       {
         "name": "MDCA CI00",
         "specs": "5.5×25 cm",
-        "img": null,
+        "img": "img104",
         "prices": [{ "dim": "ədəd", "val": "127.35" }]
       },
       {
         "name": "RJ 20 FLEX Pilləkan",
         "specs": "19.3×50×2.2",
-        "img": null,
+        "img": "img90" ,
         "prices": [{ "dim": "ədəd", "val": "327.00" }]
       },
       {
         "name": "RJ 25 FLEX Pilləkan",
         "specs": "25×50×2.2",
-        "img": null,
+        "img": "img93",
         "prices": [{ "dim": "ədəd", "val": "356.91" }]
       },
       {
         "name": "RJ 20 FLEX Esquiana",
         "specs": "Künc parçası",
-        "img": null,
+        "img": "img105",
         "prices": [{ "dim": "ədəd", "val": "496.49" }]
       },
       {
         "name": "RJ 25 FLEX Esquiana",
         "specs": "Künc parçası",
-        "img": null,
+        "img": "img93",
         "prices": [{ "dim": "ədəd", "val": "556.30" }]
       },
       {
         "name": "RJ 25 INV Esquiana",
         "specs": "Künc parçası",
-        "img": null,
+        "img": "img105",
         "prices": [{ "dim": "ədəd", "val": "634.65" }]
       },
       {
         "name": "Recto step Esquiana",
         "specs": "Künc parçası",
-        "img": null,
+        "img": "img95",
         "prices": [{ "dim": "ədəd", "val": "634.11" }]
       }
     ]
@@ -284,7 +285,7 @@
       {
         "name": "Coral Blue",
         "specs": "Rəngli",
-        "img": null,
+        "img": "img108",
         "prices": [
           { "dim": "31×62.6×0.9", "val": "174.95" },
           { "dim": "48.8×97.9×1", "val": "234.11" },
@@ -294,7 +295,7 @@
       {
         "name": "Coral Sand",
         "specs": "",
-        "img": null,
+        "img": "img109",
         "prices": [
           { "dim": "31×62.6×0.9", "val": "164.66" },
           { "dim": "48.8×97.9×1", "val": "220.33" },
@@ -837,7 +838,7 @@
       {
         "name": "BP-252",
         "specs": "Silikonlu",
-        "img": "img212",
+        "img": "img207",
         "prices": [
           { "dim": "2.5×2.5", "val": "99.14" },
           { "dim": "3.8×3.8", "val": "125.66" },
@@ -897,7 +898,7 @@
       {
         "name": "BP-951",
         "specs": "Silikonlu",
-        "img": "",
+        "img": "img217",
         "prices": [
           { "dim": "2.5×2.5", "val": "88.13" },
           { "dim": "3.8×3.8", "val": "114.24" },
@@ -907,7 +908,7 @@
       {
         "name": "BP-213",
         "specs": "Silikonlu",
-        "img": null,
+        "img": "img220",
         "prices": [
           { "dim": "2.5×2.5", "val": "93.64" },
           { "dim": "3.8×3.8", "val": "119.95" },
@@ -917,7 +918,7 @@
       {
         "name": "BP-206",
         "specs": "Silikonlu",
-        "img": null,
+        "img": "img221",
         "prices": [
           { "dim": "2.5×2.5", "val": "93.64" },
           { "dim": "3.8×3.8", "val": "119.95" },
@@ -927,7 +928,7 @@
       {
         "name": "BP-214",
         "specs": "Silikonlu",
-        "img": null,
+        "img": "img219",
         "prices": [
           { "dim": "2.5×2.5", "val": "99.14" },
           { "dim": "3.8×3.8", "val": "125.66" },
@@ -943,7 +944,7 @@
       {
         "name": "BP-216",
         "specs": "Silikonlu",
-        "img": null,
+        "img": "img212",
         "prices": [
           { "dim": "2.5×2.5", "val": "99.14" },
           { "dim": "5.0×5.0", "val": "125.66" }
@@ -959,7 +960,7 @@
       {
         "name": "Identity Brigit",
         "specs": "Silikonlu",
-        "img": null,
+        "img": "img225",
         "prices": [
           { "dim": "2.5×2.5", "val": "109.29" },
           { "dim": "5.0×5.0", "val": "211.26" }
@@ -968,7 +969,7 @@
       {
         "name": "Identity Shark",
         "specs": "Silikonlu",
-        "img": null,
+        "img": "img226",
         "prices": [
           { "dim": "2.5×2.5", "val": "109.29" },
           { "dim": "5.0×5.0", "val": "211.26" }
@@ -977,7 +978,7 @@
       {
         "name": "Essence Marine",
         "specs": "Silikonlu",
-        "img": null,
+        "img": "img234",
         "prices": [
           { "dim": "2.5×2.5", "val": "90.45" },
           { "dim": "5.0×5.0", "val": "181.08" }
@@ -986,7 +987,7 @@
       {
         "name": "Kubu Okoze",
         "specs": "Silikonlu",
-        "img": null,
+        "img": "img233",
         "prices": [
           { "dim": "2.5×2.5", "val": "109.29" },
           { "dim": "5.0×5.0", "val": "211.26" }
@@ -995,7 +996,7 @@
       {
         "name": "Identity Baleen",
         "specs": "Silikonlu",
-        "img": null,
+        "img": "img230",
         "prices": [
           { "dim": "2.5×2.5", "val": "125.03" },
           { "dim": "5.0×5.0", "val": "211.26" }
@@ -1031,7 +1032,7 @@
       {
         "name": "Identity Esturion",
         "specs": "Silikonlu",
-        "img": null,
+        "img": "img236",
         "prices": [
           { "dim": "2.5×2.5", "val": "125.03" },
           { "dim": "5.0×5.0", "val": "211.26" }
@@ -1040,7 +1041,7 @@
       {
         "name": "Identity Atai",
         "specs": "Silikonlu",
-        "img": null,
+        "img": "img229",
         "prices": [
           { "dim": "2.5×2.5", "val": "125.03" },
           { "dim": "5.0×5.0", "val": "211.26" }
@@ -1049,7 +1050,7 @@
       {
         "name": "Identity Midori",
         "specs": "Silikonlu",
-        "img": null,
+        "img": "img237",
         "prices": [
           { "dim": "2.5×2.5", "val": "125.03" },
           { "dim": "5.0×5.0", "val": "211.26" }
@@ -1058,25 +1059,25 @@
       {
         "name": "Identity Papuan",
         "specs": "Silikonlu",
-        "img": null,
+        "img": "img231",
         "prices": [{ "dim": "2.5×2.5", "val": "125.03" }]
       },
       {
         "name": "Identity Jenysia",
         "specs": "Silikonlu",
-        "img": null,
+        "img": "img238",
         "prices": [{ "dim": "2.5×2.5", "val": "125.03" }]
       },
       {
         "name": "Identity Phiphi",
         "specs": "Silikonlu",
-        "img": null,
+        "img": "img232",
         "prices": [{ "dim": "2.5×2.5", "val": "125.03" }]
       },
       {
         "name": "Identity Siroko",
         "specs": "Silikonlu",
-        "img": "img234",
+        "img": "img239",
         "prices": [
           { "dim": "2.5×2.5", "val": "125.03" },
           { "dim": "5.0×5.0", "val": "211.26" }
@@ -1085,37 +1086,37 @@
       {
         "name": "Identity Addis",
         "specs": "Silikonlu",
-        "img": null,
+        "img": "img240",
         "prices": [{ "dim": "2.5×2.5", "val": "125.03" }]
       },
       {
         "name": "Identity Caiman",
         "specs": "Silikonlu",
-        "img": null,
+        "img": "img250",
         "prices": [{ "dim": "2.5×2.5", "val": "125.03" }]
       },
       {
         "name": "Identity Jinyu",
         "specs": "Silikonlu",
-        "img": null,
+        "img": "img247",
         "prices": [{ "dim": "2.5×2.5", "val": "125.03" }]
       },
       {
         "name": "Identity Malawi",
         "specs": "Silikonlu",
-        "img": null,
+        "img": "img248",
         "prices": [{ "dim": "2.5×2.5", "val": "125.03" }]
       },
       {
         "name": "Identity Fiji",
         "specs": "Silikonlu",
-        "img": null,
+        "img": "img249",
         "prices": [{ "dim": "2.5×2.5", "val": "125.03" }]
       },
       {
         "name": "Essence Coast Light",
         "specs": "Silikonlu",
-        "img": "img239",
+        "img": "img243",
         "prices": [
           { "dim": "2.5×2.5", "val": "103.47" },
           { "dim": "5.0×5.0", "val": "181.08" }
@@ -1124,7 +1125,7 @@
       {
         "name": "Essence Posidonia",
         "specs": "Silikonlu",
-        "img": null,
+        "img": "img244",
         "prices": [
           { "dim": "2.5×2.5", "val": "103.47" },
           { "dim": "5.0×5.0", "val": "181.08" }
@@ -1133,7 +1134,7 @@
       {
         "name": "Essence Calm",
         "specs": "Silikonlu",
-        "img": "img249",
+        "img": "img245",
         "prices": [
           { "dim": "2.5×2.5", "val": "103.47" },
           { "dim": "5.0×5.0", "val": "181.08" }
@@ -1142,7 +1143,7 @@
       {
         "name": "Essence Ocean",
         "specs": "Silikonlu",
-        "img": "img251",
+        "img": "img246",
         "prices": [
           { "dim": "2.5×2.5", "val": "103.47" },
           { "dim": "5.0×5.0", "val": "181.08" }
@@ -1151,7 +1152,7 @@
       {
         "name": "Kubu Namazu",
         "specs": "Silikonlu",
-        "img": "img254",
+        "img": "img251",
         "prices": [
           { "dim": "2.5×2.5", "val": "125.03" },
           { "dim": "5.0×5.0", "val": "211.26" }
@@ -1160,13 +1161,13 @@
       {
         "name": "Kubu Sand Rock Bone",
         "specs": "Silikonlu",
-        "img": "img256",
+        "img": "img252",
         "prices": [{ "dim": "2.5×2.5", "val": "125.03" }]
       },
       {
         "name": "Genuine GN 105",
         "specs": "Silikonlu",
-        "img": null,
+        "img": "img253",
         "prices": [
           { "dim": "2.5×2.5", "val": "67.42" },
           { "dim": "5.0×5.0", "val": "146.59" }
@@ -1175,7 +1176,7 @@
       {
         "name": "Genuine GN 104",
         "specs": "Silikonlu",
-        "img": null,
+        "img": "img254",
         "prices": [
           { "dim": "2.5×2.5", "val": "67.42" },
           { "dim": "5.0×5.0", "val": "146.59" }
@@ -1184,7 +1185,7 @@
       {
         "name": "Genuine GN 201",
         "specs": "Silikonlu",
-        "img": null,
+        "img": "img255",
         "prices": [
           { "dim": "2.5×2.5", "val": "67.42" },
           { "dim": "5.0×5.0", "val": "146.59" }
@@ -1193,7 +1194,7 @@
       {
         "name": "Genuine GN 202",
         "specs": "Silikonlu",
-        "img": null,
+        "img": "img256",
         "prices": [
           { "dim": "2.5×2.5", "val": "67.42" },
           { "dim": "5.0×5.0", "val": "146.59" }
@@ -1202,13 +1203,13 @@
       {
         "name": "Genuine Tetra",
         "specs": "Silikonlu",
-        "img": null,
+        "img": "img257",
         "prices": [{ "dim": "2.5×2.5", "val": "85.80" }]
       },
       {
         "name": "Genuine Koi",
         "specs": "Silikonlu",
-        "img": null,
+        "img": "img258",
         "prices": [{ "dim": "2.5×2.5", "val": "85.80" }]
       }
     ]
@@ -1456,7 +1457,7 @@
 {
   "cat": "Hovuz Filterləri",
   "badge": "turkey",
-  "brand": "Nurpool / Astralpool",
+  "brand": "Nurpool / Baffina",
   "items": [
     {
       "name": "Bobin Sarğılı Filter",
@@ -1506,7 +1507,7 @@
     {
       "name": "Kuvars qum",
       "specs": "",
-      "img": 327,
+      "img": "img334",
       "prices": [
         { "dim": "Aydınlar · 0.5-5mm fraksiyalar", "val": "1.50" },
         { "dim": "Astralpool · 0.4-2mm", "val": "3.60" }
@@ -1515,7 +1516,7 @@
     {
       "name": "Şüşə media",
       "specs": "",
-      "img": 0,
+      "img": "img335",
       "prices": [
         { "dim": "GlassBerk · 0.5-5mm fraksiyalar", "val": "1.80" },
         { "dim": "Astralpool · 0.5-7mm", "val": "5.40" }
@@ -1524,7 +1525,7 @@
     {
       "name": "6 yollu vana",
       "specs": "Ø50-Ø90",
-      "img": 332,
+      "img": "img326",
       "prices": [
         { "dim": "Bobin Sarğılı — Nurpool Ø50", "val": "217.45" },
         { "dim": "Bobin Sarğılı — Nurpool Ø63", "val": "237.21" },
