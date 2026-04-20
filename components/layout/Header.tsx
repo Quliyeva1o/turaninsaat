@@ -113,6 +113,9 @@ useEffect(() => {
                     </li>
                   ))}
                 </ul>
+              </li>     <li >
+                <Link href="/products">Məhsullarımız</Link>
+                
               </li>
               <li className="mobile-only">
                 <Link href="/contact">Bizimlə əlaqə</Link>
