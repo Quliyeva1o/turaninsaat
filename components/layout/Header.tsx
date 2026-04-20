@@ -8,12 +8,13 @@ import logo from '../../public/assets/images/logoag.png'
 import { useEffect, useRef, useState } from "react";
 import { servicesContent } from "@/utils";
 import { projects } from "../home/ourProjects/projes";
+import { usePathname } from "next/navigation";
 
 export default function Header({ locale = "az" }: any) {
   const headerRef = useRef<HTMLElement>(null);
-const [menuOpen, setMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
+
   useEffect(() => {
-    // Scroll → header background
     const header = headerRef.current;
     if (!header) return;
     const onScroll = () => {
@@ -26,11 +27,18 @@ const [menuOpen, setMenuOpen] = useState(false);
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-useEffect(() => {
-  document.body.style.overflow = menuOpen ? "hidden" : "auto";
-}, [menuOpen]);
+
   useEffect(() => {
-    // Magic cursor
+    document.body.style.overflow = menuOpen ? "hidden" : "auto";
+  }, [menuOpen]);
+
+  const pathname = usePathname();
+
+  useEffect(() => {
+    setMenuOpen(false);
+  }, [pathname]);
+
+  useEffect(() => {
     const cursor = document.getElementById("magic-cursor");
     const ball = document.getElementById("ball");
     if (!cursor || !ball) return;
@@ -87,7 +95,8 @@ useEffect(() => {
             </Link>
           </div>
 
-<nav className={`main-nav ${menuOpen ? "open" : ""}`} aria-label="Main Navigation">            <ul className="menu">
+          <nav className={`main-nav ${menuOpen ? "open" : ""}`} aria-label="Main Navigation">
+            <ul className="menu">
               <li>
                 <Link href="/">Ana səhifə</Link>
               </li>
@@ -113,9 +122,9 @@ useEffect(() => {
                     </li>
                   ))}
                 </ul>
-              </li>     <li >
+              </li>
+              <li>
                 <Link href="/products">Məhsullarımız</Link>
-                
               </li>
               <li className="mobile-only">
                 <Link href="/contact">Bizimlə əlaqə</Link>
@@ -123,12 +132,22 @@ useEffect(() => {
             </ul>
           </nav>
 
-          <Button link={"/contact"} text={"Bizimlə əlaqə"} type={5} />
-                    <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
-  <span className={menuOpen ? "open" : ""}></span>
-  <span className={menuOpen ? "open" : ""}></span>
-  <span className={menuOpen ? "open" : ""}></span>
-</div>
+          {/* Desktop-only CTA — hidden on mobile via CSS */}
+          <div className="desktop-cta">
+            <Button link={"/contact"} text={"Bizimlə əlaqə"} type={5} />
+          </div>
+
+          <button
+            className="hamburger"
+            onClick={() => setMenuOpen(!menuOpen)}
+            aria-label={menuOpen ? "Menyunu bağla" : "Menyunu aç"}
+            aria-expanded={menuOpen}
+          >
+            <span className={menuOpen ? "open" : ""}></span>
+            <span className={menuOpen ? "open" : ""}></span>
+            <span className={menuOpen ? "open" : ""}></span>
+          </button>
+
         </div>
       </header>
     </>

@@ -1,7 +1,9 @@
 'use client';
 import { useState } from "react";
+import Image from "next/image";
+import products from "./products.json";
 
-// ─── Types ────────────────────────────────────────────────────────────────────
+// ─── Types ─────────────────────────────────────────
 
 export type Badge = "spain" | "turkey" | "other";
 
@@ -24,94 +26,148 @@ export interface ProductGroup {
   items: Product[];
 }
 
-// ─── Data ─────────────────────────────────────────────────────────────────────
-
-import products from "./products.json";
-import Image from "next/image";
 const data = products as ProductGroup[];
 
-// ─── Badge config ─────────────────────────────────────────────────────────────
+// ─── Badge config ─────────────────────────────────
 
-const BADGE_CONFIG: Record<Badge, { label: string; bg: string; color: string }> = {
-  spain: { label: "İspaniya", bg: "#dbeafe", color: "#1e40af" },
-  turkey: { label: "Türkiyə", bg: "#fee2e2", color: "#991b1b" },
-  other: { label: "Digər", bg: "#dcfce7", color: "#166534" },
+const BADGE_CONFIG = {
+  spain: { label: "İspaniya", bg: "#eff6ff", color: "#1d4ed8" },
+  turkey: { label: "Türkiyə", bg: "#fef2f2", color: "#b91c1c" },
+  other: { label: "Digər", bg: "#f0fdf4", color: "#166534" },
 };
 
-// ─── Sub-components ───────────────────────────────────────────────────────────
+// ─── Badge ────────────────────────────────────────
 
 function BadgePill({ badge }: { badge: Badge }) {
-  const { label, bg, color } = BADGE_CONFIG[badge];
+  const b = BADGE_CONFIG[badge];
+
   return (
     <span
       style={{
-        display: "inline-block",
-        fontSize: 10,
-        padding: "2px 8px",
-        borderRadius: 6,
-        background: bg,
-        color,
+        fontSize: 11,
+        padding: "4px 10px",
+        borderRadius: 999,
+        background: b.bg,
+        color: b.color,
         fontWeight: 500,
-        marginBottom: 6,
-        letterSpacing: "0.04em",
+        width: "fit-content",
       }}
     >
-      {label}
+      {b.label}
     </span>
   );
 }
+
+// ─── Product Card ─────────────────────────────────
 
 function ProductCard({ item, badge, brand }: { item: Product; badge: Badge; brand: string }) {
   return (
     <div
       style={{
         background: "#fff",
-        border: "1px solid #e5e7eb",
-        borderRadius: 12,
-        padding: "12px 14px",
+        border: "1px solid #f1f5f9",
+        borderRadius: 16,
+        padding: 14,
         display: "flex",
         flexDirection: "column",
-        gap: 4,
-        transition: "box-shadow 0.15s",
+        gap: 10,
+        height: "100%",
+        transition: "all 0.25s ease",
       }}
       onMouseEnter={(e) => {
-        (e.currentTarget as HTMLDivElement).style.boxShadow = "0 4px 12px rgba(0,0,0,0.08)";
+        e.currentTarget.style.transform = "translateY(-4px)";
+        e.currentTarget.style.boxShadow = "0 10px 25px rgba(0,0,0,0.06)";
       }}
       onMouseLeave={(e) => {
-        (e.currentTarget as HTMLDivElement).style.boxShadow = "none";
+        e.currentTarget.style.transform = "none";
+        e.currentTarget.style.boxShadow = "none";
       }}
     >
+      {/* Image */}
+      <div
+        style={{
+          position: "relative",
+          width: "100%",
+          aspectRatio: "1 / 1",
+          borderRadius: 12,
+          overflow: "hidden",
+          // background: "#f8fafc",
+        }}
+      >
         <Image
           src={`/assets/products/${item.img}.jpg`}
           alt={item.name}
-          width={200}
-          height={200}
+          fill
+          style={{
+            objectFit: "contain",
+            // padding: 12,
+          }}
         />
+      </div>
+
       <BadgePill badge={badge} />
+
       {brand && (
-        <p style={{ fontSize: 10, fontWeight: 600, color: "#16a34a", textTransform: "uppercase", letterSpacing: "0.05em", margin: 0 }}>
+        <p
+          style={{
+            fontSize: 11,
+            fontWeight: 600,
+            color: "#16a34a",
+            textTransform: "uppercase",
+            letterSpacing: "0.05em",
+            margin: 0,
+          }}
+        >
           {brand}
         </p>
       )}
-      <p style={{ fontSize: 13, fontWeight: 600, color: "#111827", lineHeight: 1.35, margin: 0 }}>
+
+      <p
+        style={{
+          fontSize: 14,
+          fontWeight: 600,
+          color: "#0f172a",
+          lineHeight: 1.4,
+          margin: 0,
+        }}
+      >
         {item.name}
       </p>
+
       {item.specs && (
-        <p style={{ fontSize: 11, color: "#6b7280", lineHeight: 1.5, margin: 0 }}>
+        <p
+          style={{
+            fontSize: 12,
+            color: "#64748b",
+            margin: 0,
+          }}
+        >
           {item.specs}
         </p>
       )}
-      <div style={{ borderTop: "1px solid #f3f4f6", marginTop: 6, paddingTop: 8, display: "flex", flexDirection: "column", gap: 3 }}>
+
+      {/* Prices */}
+      <div
+        style={{
+          marginTop: "auto",
+          borderTop: "1px solid #f1f5f9",
+          paddingTop: 10,
+          display: "flex",
+          flexDirection: "column",
+          gap: 4,
+        }}
+      >
         {item.prices.map((p, i) => (
-          <div key={i} style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-            <span style={{ fontSize: 11, color: "#9ca3af" }}>{p.dim}</span>
-            <span
-              style={{
-                fontSize: i === 0 ? 14 : 12,
-                fontWeight: i === 0 ? 700 : 500,
-                color: i === 0 ? "#16a34a" : "#374151",
-              }}
-            >
+          <div
+            key={i}
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              fontSize: 13,
+            }}
+          >
+            <span style={{ color: "#94a3b8" }}>{p.dim}</span>
+            <span style={{ fontWeight: 600, color: "#0f172a" }}>
               {p.val} ₼
             </span>
           </div>
@@ -121,33 +177,29 @@ function ProductCard({ item, badge, brand }: { item: Product; badge: Badge; bran
   );
 }
 
+// ─── Group Section ────────────────────────────────
+
 function GroupSection({ group }: { group: ProductGroup }) {
   return (
-    <section style={{ marginBottom: 32 }}>
+    <section style={{ marginBottom: 48 }}>
       <h2
         style={{
-          fontSize: 13,
+          fontSize: 14,
           fontWeight: 600,
-          color: "#6b7280",
+          color: "#64748b",
           textTransform: "uppercase",
-          letterSpacing: "0.06em",
-          marginBottom: 12,
-          paddingBottom: 8,
-          borderBottom: "1px solid #e5e7eb",
+          letterSpacing: "0.08em",
+          marginBottom: 16,
         }}
       >
         {group.cat}
-        <span style={{ fontSize: 11, fontWeight: 400, marginLeft: 8, color: "#9ca3af" }}>
-          ({group.items.length} məhsul)
+        <span style={{ marginLeft: 8, color: "#94a3b8", fontSize: 12 }}>
+          ({group.items.length})
         </span>
       </h2>
+
       <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
-          gap: 10,
-        }}
-      >
+        className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
         {group.items.map((item, i) => (
           <ProductCard key={i} item={item} badge={group.badge} brand={group.brand} />
         ))}
@@ -156,7 +208,7 @@ function GroupSection({ group }: { group: ProductGroup }) {
   );
 }
 
-// ─── Main component ───────────────────────────────────────────────────────────
+// ─── Main ─────────────────────────────────────────
 
 const ALL = "Hamısı";
 
@@ -172,11 +224,11 @@ export default function ProductCatalog() {
       ...g,
       items: search.trim()
         ? g.items.filter(
-            (item) =>
-              item.name.toLowerCase().includes(search.toLowerCase()) ||
-              item.specs.toLowerCase().includes(search.toLowerCase()) ||
-              g.brand.toLowerCase().includes(search.toLowerCase())
-          )
+          (item) =>
+            item.name.toLowerCase().includes(search.toLowerCase()) ||
+            item.specs.toLowerCase().includes(search.toLowerCase()) ||
+            g.brand.toLowerCase().includes(search.toLowerCase())
+        )
         : g.items,
     }))
     .filter((g) => g.items.length > 0);
@@ -184,14 +236,30 @@ export default function ProductCatalog() {
   const totalProducts = filtered.reduce((sum, g) => sum + g.items.length, 0);
 
   return (
-    <div style={{ fontFamily: "system-ui, sans-serif", maxWidth: 1200, margin: "0 auto", padding: "24px 16px" }}>
+    <div
+      style={{
+        fontFamily: "system-ui, sans-serif",
+        maxWidth: 1200,
+        margin: "0 auto",
+        padding: "32px 16px",
+      }}
+    >
       {/* Header */}
-      <div style={{ marginBottom: 24 }}>
-        <h1 style={{ fontSize: 24, fontWeight: 700, color: "#111827", margin: 0 }}>
-          2026 Hovuz Məhsulları Kataloqu
+      <div style={{ marginBottom: 32 }}>
+        <h1
+          style={{
+            fontSize: 28,
+            fontWeight: 700,
+            color: "#0f172a",
+            margin: 0,
+            letterSpacing: "-0.02em",
+          }}
+        >
+          2026 Hovuz Məhsulları
         </h1>
-        <p style={{ fontSize: 13, color: "#6b7280", marginTop: 4 }}>
-          Rev 01 · 01.04.2026 · Bütün qiymətlər AZN ilə
+
+        <p style={{ fontSize: 13, color: "#64748b", marginTop: 6 }}>
+          Premium kataloq · Bütün qiymətlər AZN ilə
         </p>
       </div>
 
@@ -203,34 +271,31 @@ export default function ProductCatalog() {
         onChange={(e) => setSearch(e.target.value)}
         style={{
           width: "100%",
-          maxWidth: 380,
-          padding: "9px 14px",
+          maxWidth: 420,
+          padding: "10px 16px",
+          borderRadius: 999,
+          border: "1px solid #e2e8f0",
+          background: "#f8fafc",
           fontSize: 14,
-          border: "1px solid #d1d5db",
-          borderRadius: 8,
-          outline: "none",
-          marginBottom: 16,
-          boxSizing: "border-box",
+          marginBottom: 20,
         }}
       />
 
-      {/* Category tabs */}
-      <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginBottom: 24 }}>
+      {/* Categories */}
+      <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 24 }}>
         {categories.map((cat) => (
           <button
             key={cat}
             onClick={() => setActiveCategory(cat)}
             style={{
               fontSize: 12,
-              padding: "5px 12px",
-              borderRadius: 8,
-              border: "1px solid",
-              borderColor: cat === activeCategory ? "#16a34a" : "#e5e7eb",
-              background: cat === activeCategory ? "#16a34a" : "#fff",
-              color: cat === activeCategory ? "#fff" : "#374151",
+              padding: "6px 14px",
+              borderRadius: 999,
+              border: "1px solid #e2e8f0",
+              background: cat === activeCategory ? "#0f172a" : "#fff",
+              color: cat === activeCategory ? "#fff" : "#475569",
               cursor: "pointer",
-              fontWeight: cat === activeCategory ? 600 : 400,
-              transition: "all 0.15s",
+              fontWeight: 500,
             }}
           >
             {cat}
@@ -239,15 +304,17 @@ export default function ProductCatalog() {
       </div>
 
       {/* Count */}
-      <p style={{ fontSize: 12, color: "#9ca3af", marginBottom: 20 }}>
+      <p style={{ fontSize: 12, color: "#94a3b8", marginBottom: 24 }}>
         {totalProducts} məhsul göstərilir
       </p>
 
-      {/* Product groups */}
+      {/* Content */}
       {filtered.length === 0 ? (
-        <p style={{ color: "#9ca3af", fontSize: 14 }}>Heç bir məhsul tapılmadı.</p>
+        <p style={{ color: "#94a3b8" }}>Heç nə tapılmadı</p>
       ) : (
-        filtered.map((group) => <GroupSection key={group.cat} group={group} />)
+        filtered.map((group) => (
+          <GroupSection key={group.cat} group={group} />
+        ))
       )}
     </div>
   );
