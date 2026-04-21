@@ -1,7 +1,7 @@
 'use client';
 import { useState } from "react";
 import Image from "next/image";
-import products from "./products.json";
+import products from "../../../data/products.json";
 
 // ─── Types ─────────────────────────────────────────
 

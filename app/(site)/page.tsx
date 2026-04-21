@@ -4,7 +4,7 @@ import AboutUs from "@/components/home/aboutUs";
 import OurServices from "@/components/home/ourServices";
 import WhyChooseUs from "@/components/home/chooseUs";
 import OurProjects from "@/components/home/ourProjects";
-import { Products } from "@/components/home/testimonals";
+import { ProductsHome } from "@/components/home/products";
 import { ContactSection } from "@/components/home/contactUs";
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
       <OurServices />
       <OurProjects />
 
-      <Products />
+      <ProductsHome />
       <WhyChooseUs />
       <ContactSection />
     </>
