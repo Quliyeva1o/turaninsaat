@@ -16,7 +16,7 @@ const Button = ({ text, type, link }: any) => {
           : styles.ghost
       }`}
     >
-      <Link href={link}>{text}</Link>
+      <Link href={link} prefetch={false}>{text}</Link>
       {type !== 5 && <RightIco />}
     </div>
   );

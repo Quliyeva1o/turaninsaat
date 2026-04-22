@@ -98,36 +98,42 @@ export default function Header({ locale = "az" }: any) {
           <nav className={`main-nav ${menuOpen ? "open" : ""}`} aria-label="Main Navigation">
             <ul className="menu">
               <li>
-                <Link href="/">Ana səhifə</Link>
+                <Link href="/" prefetch={false}>Ana səhifə</Link>
               </li>
               <li>
-                <Link href="/about">Haqqımızda</Link>
+                <Link href="/about" prefetch={false}>Haqqımızda</Link>
               </li>
               <li className="has-dropdown">
-                <Link href="/services">Xidmətlər</Link>
+                <Link href="/services" prefetch={false}>Xidmətlər</Link>
                 <ul className="dropdown">
                   {servicesContent[locale].map((s: any) => (
                     <li key={s.slug}>
-                      <Link href={`/services/${s.slug}`}>{s.title}</Link>
+                      <Link href={`/services/${s.slug}`} prefetch={false}>
+                        {s.title}
+                      </Link>
                     </li>
                   ))}
                 </ul>
               </li>
               <li className="has-dropdown">
-                <Link href="/projects">Layihələr</Link>
+                <Link href="/projects" prefetch={false}>Layihələr</Link>
                 <ul className="dropdown">
                   {projects.map((proje) => (
                     <li key={proje.slug}>
-                      <Link href={`/projects?${proje.slug}`}>{proje.title}</Link>
+                      <Link href={`/projects?${proje.slug}`} prefetch={false}>
+                        {proje.title}
+                      </Link>
                     </li>
                   ))}
                 </ul>
               </li>
               <li>
-                <Link href="/products">Məhsullarımız</Link>
+                <Link href="/products" prefetch={false}>Məhsullarımız</Link>
               </li>
               <li className="mobile-only">
-                <Link href="/contact">Bizimlə əlaqə</Link>
+                <Link href="/contact" prefetch={false}>
+                  Bizimlə əlaqə
+                </Link>
               </li>
             </ul>
           </nav>
