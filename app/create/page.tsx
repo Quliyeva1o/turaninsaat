@@ -38,8 +38,8 @@ import judiGreyKareGece from "../../public/assets/hovuzlar/kare/judiGreyGece.png
 
 import light from "../../public/assets/kenarkafeller/light.png";
 import lightGece from "../../public/assets/kenarkafeller/lightgece.png";
-import superstone from "../../public/assets/kenarkafeller/superstone.png";
-import superstoneGece from "../../public/assets/kenarkafeller/superstonegece.png";
+import superstone from "../../public/assets/kenarkafeller/superstonegpt.png";
+import superstoneGece from "../../public/assets/kenarkafeller/superstonegptgece.png";
 import judiGrey from "../../public/assets/kenarkafeller/judigrey.png";
 import judiGreyGece from "../../public/assets/kenarkafeller/judigreygece.png";
 import lucaGrey from "../../public/assets/kenarkafeller/lucaGrey.png";
@@ -407,6 +407,8 @@ export default function Create() {
     { key: "floralblue", label: "Floral Blue", gunduz: floralblue, gece: floralblueGece },
     { key: "floralgreen", label: "Floral Green", gunduz: floralgreen, gece: floralgreenGece },
     { key: "judiGrey", label: "Judi Grey", gunduz: judiGreyKare, gece: judiGreyKareGece },
+        { key: "gpt", label: "gpt ", gunduz: gpt, gece: gptgece },
+
   ];
 
   const kenarKafeller: TileOption[] = [
@@ -441,10 +443,10 @@ export default function Create() {
   ];
 
   const [selections, setSelections] = useState<Record<string, string>>({
-    hovuz: "bali",
+    hovuz: "gpt",
     kenar: "superstone",
     orta: "superstone",
-    teras: "boz",
+    teras: "gpt",
   });
 
   const handleSelect = (categoryId: string, key: string) => {
