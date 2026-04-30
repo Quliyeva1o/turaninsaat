@@ -1232,10 +1232,10 @@
         "prices": [{ "dim": "set", "val": "764.64" }]
       },
       {
-        "name": "Izoseal 25kg",
-        "specs": "Neqotiv/pozitiv su keçirməzliyi",
-        "img": null,
-        "prices": [{ "dim": "25 kq", "val": "127.44" }]
+        "name": "Sika 107 elastik 20kg",
+        "specs": "A və B kompanenti",
+        "img": "sika107",
+        "prices": [{ "dim": "20 kq", "val": "200" }]
       },
       {
         "name": "Kalepolymas MS 600ml",
