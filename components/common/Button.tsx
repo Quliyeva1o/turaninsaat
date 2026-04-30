@@ -3,7 +3,7 @@ import Link from "next/link";
 import styles from "./index.module.css";
 import RightIco from "@/public/assets/icons/rightIco";
 
-const Button = ({ text, type, link }: any) => {
+const Button = ({ text, type, link , target}: any) => {
   return (
     <div
       className={`${styles.btn} ${
@@ -16,7 +16,7 @@ const Button = ({ text, type, link }: any) => {
           : styles.ghost
       }`}
     >
-      <Link href={link} prefetch={false}>{text}</Link>
+      <Link href={link} target={target} prefetch={false}>{text}</Link>
       {type !== 5 && <RightIco />}
     </div>
   );
