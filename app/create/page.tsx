@@ -6,7 +6,20 @@ import { useState, useRef } from "react";
 // =========================
 // ASSETS — same imports as before
 // =========================
-// import a151 from "@/public/assets/hovuzlar/klassikcam/a151.png";
+import img61 from "@/public/assets/hovuzlaar/img61.png";
+import img62 from "@/public/assets/hovuzlaar/img62.png";
+import img63 from "@/public/assets/hovuzlaar/img63.png";
+import img64 from "@/public/assets/hovuzlaar/img64.png";
+import img65 from "@/public/assets/hovuzlaar/img65.png";
+import img66 from "@/public/assets/hovuzlaar/img66.png";
+import img67 from "@/public/assets/hovuzlaar/img67.png";
+import img68 from "@/public/assets/hovuzlaar/img68.png";
+import img1088 from "@/public/assets/hovuzlaar/img10888.png";
+
+
+
+
+
 // import a151gece from "@/public/assets/hovuzlar/klassikcam/a151gece.png";
 // import a155 from "@/public/assets/hovuzlar/klassikcam/a155.png";
 // import a155gece from "@/public/assets/hovuzlar/klassikcam/a155gece.png";
@@ -38,8 +51,8 @@ import { useState, useRef } from "react";
 
 // import light from "@/public/assets/kenarkafeller/light.png";
 // import lightGece from "@/public/assets/kenarkafeller/lightgece.png";
- import superstone from "@/public/assets/kenarkafeller/superstonegpt.png";
- import superstoneGece from "@/public/assets/kenarkafeller/superstonegptgece.png";
+import superstone from "@/public/assets/kenarkafeller/superstonegpt.png";
+import superstoneGece from "@/public/assets/kenarkafeller/superstonegptgece.png";
 // import judiGrey from "@/public/assets/kenarkafeller/judigrey.png";
 // import judiGreyGece from "@/public/assets/kenarkafeller/judigreygece.png";
 // import lucaGrey from "@/public/assets/kenarkafeller/lucaGrey.png";
@@ -393,7 +406,17 @@ export default function Create() {
 
   // --- Data ---
   const hovuzlar: TileOption[] = [
-    // { key: "a151", label: "A151", gunduz: a151, gece: a151gece },
+    { key: "a151", label: "A151", gunduz: img61, gece: img61 },
+    { key: "a62", label: "a62", gunduz: img62, gece: img62 },
+    { key: "a63", label: "a63", gunduz: img63, gece: img63 },
+    { key: "a64", label: "a64", gunduz: img64, gece: img64 },
+    { key: "a65", label: "a65", gunduz: img65, gece: img65 },
+    { key: "a66", label: "a66", gunduz: img66, gece: img66 },
+    { key: "a65", label: "a67", gunduz: img67, gece: img67 },
+    { key: "a668", label: "a68", gunduz: img68, gece: img68 },
+    { key: "a1011", label: "a1011", gunduz: img1088, gece: img1088 },
+
+
     // { key: "a155", label: "A155", gunduz: a155, gece: a155gece },
     // { key: "a158", label: "A158", gunduz: a158, gece: a158gece },
     // { key: "a159", label: "A159", gunduz: a159, gece: a159gece },
@@ -407,7 +430,7 @@ export default function Create() {
     // { key: "floralblue", label: "Floral Blue", gunduz: floralblue, gece: floralblueGece },
     // { key: "floralgreen", label: "Floral Green", gunduz: floralgreen, gece: floralgreenGece },
     // { key: "judiGrey", label: "Judi Grey", gunduz: judiGreyKare, gece: judiGreyKareGece },
-        { key: "gpt", label: "gpt ", gunduz: gpt, gece: gptgece },
+    { key: "gpt", label: "gpt ", gunduz: gpt, gece: gptgece },
 
   ];
 
@@ -415,7 +438,7 @@ export default function Create() {
     // { key: "light", label: "Light", gunduz: light, gece: lightGece },
     // { key: "judi", label: "Judi Grey", gunduz: judiGrey, gece: judiGreyGece },
     // { key: "luca", label: "Luca Grey", gunduz: lucaGrey, gece: lucaGreyGece },
-     { key: "superstone", label: "Superstone", gunduz: superstone, gece: superstoneGece },
+    { key: "superstone", label: "Superstone", gunduz: superstone, gece: superstoneGece },
   ];
 
   const ortaKafeller: TileOption[] = [
@@ -466,7 +489,7 @@ export default function Create() {
           key={opt.key}
           img={isNight ? opt.gece : opt.gunduz}
           isActive={opt.key === hovuzKey}
-          zIndex={10}
+          zIndex={20}
           alt={`hovuz-${opt.key}`}
         />
       ))}
