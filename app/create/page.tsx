@@ -6,61 +6,61 @@ import { useState, useRef } from "react";
 // =========================
 // ASSETS — same imports as before
 // =========================
-import a151 from "@/public/assets/hovuzlar/klassikcam/a151.png";
-import a151gece from "@/public/assets/hovuzlar/klassikcam/a151gece.png";
-import a155 from "@/public/assets/hovuzlar/klassikcam/a155.png";
-import a155gece from "@/public/assets/hovuzlar/klassikcam/a155gece.png";
-import a158 from "@/public/assets/hovuzlar/klassikcam/a158.png"
-import a158gece from "@/public/assets/hovuzlar/klassikcam/a158gece.png";
-import a159 from "@/public/assets/hovuzlar/klassikcam/a159.png";
-import a159gece from "@/public/assets/hovuzlar/klassikcam/a159gece.png";
-import a161 from "@/public/assets/hovuzlar/klassikcam/a161.png";
-import a161gece from "@/public/assets/hovuzlar/klassikcam/a161gece.png";
-import a161l from "@/public/assets/hovuzlar/klassikcam/a161l.png";
-import a161lgece from "@/public/assets/hovuzlar/klassikcam/a161lgece.png";
-import a218 from "@/public/assets/hovuzlar/klassikcam/a218.png";
-import a218gece from "@/public/assets/hovuzlar/klassikcam/a218gece.png";
-import a231 from "@/public/assets/hovuzlar/klassikcam/a231.png";
-import a231gece from "@/public/assets/hovuzlar/klassikcam/a231gece.png";
-import a236 from "@/public/assets/hovuzlar/klassikcam/a236.png";
-import a236gece from "@/public/assets/hovuzlar/klassikcam/a236gece.png";
-import a276 from "@/public/assets/hovuzlar/klassikcam/a276.png";
-import a276gece from "@/public/assets/hovuzlar/klassikcam/a276gece.png";
+// import a151 from "@/public/assets/hovuzlar/klassikcam/a151.png";
+// import a151gece from "@/public/assets/hovuzlar/klassikcam/a151gece.png";
+// import a155 from "@/public/assets/hovuzlar/klassikcam/a155.png";
+// import a155gece from "@/public/assets/hovuzlar/klassikcam/a155gece.png";
+// import a158 from "@/public/assets/hovuzlar/klassikcam/a158.png"
+// import a158gece from "@/public/assets/hovuzlar/klassikcam/a158gece.png";
+// import a159 from "@/public/assets/hovuzlar/klassikcam/a159.png";
+// import a159gece from "@/public/assets/hovuzlar/klassikcam/a159gece.png";
+// import a161 from "@/public/assets/hovuzlar/klassikcam/a161.png";
+// import a161gece from "@/public/assets/hovuzlar/klassikcam/a161gece.png";
+// import a161l from "@/public/assets/hovuzlar/klassikcam/a161l.png";
+// import a161lgece from "@/public/assets/hovuzlar/klassikcam/a161lgece.png";
+// import a218 from "@/public/assets/hovuzlar/klassikcam/a218.png";
+// import a218gece from "@/public/assets/hovuzlar/klassikcam/a218gece.png";
+// import a231 from "@/public/assets/hovuzlar/klassikcam/a231.png";
+// import a231gece from "@/public/assets/hovuzlar/klassikcam/a231gece.png";
+// import a236 from "@/public/assets/hovuzlar/klassikcam/a236.png";
+// import a236gece from "@/public/assets/hovuzlar/klassikcam/a236gece.png";
+// import a276 from "@/public/assets/hovuzlar/klassikcam/a276.png";
+// import a276gece from "@/public/assets/hovuzlar/klassikcam/a276gece.png";
 
-import bali from "@/public/assets/hovuzlar/kare/bali.png";
-import baligece from "@/public/assets/hovuzlar/kare/baligece.png";
-import floralblue from "@/public/assets/hovuzlar/kare/floralBlue.png";
-import floralblueGece from "@/public/assets/hovuzlar/kare/floralBlueGece.png";
-import floralgreen from "@/public/assets/hovuzlar/kare/floralGreen.png";
-import floralgreenGece from "@/public/assets/hovuzlar/kare/floralGreenGece.png";
-import judiGreyKare from "@/public/assets/hovuzlar/kare/judiGrey.png";
-import judiGreyKareGece from "@/public/assets/hovuzlar/kare/judiGreyGece.png";
+// import bali from "@/public/assets/hovuzlar/kare/bali.png";
+// import baligece from "@/public/assets/hovuzlar/kare/baligece.png";
+// import floralblue from "@/public/assets/hovuzlar/kare/floralBlue.png";
+// import floralblueGece from "@/public/assets/hovuzlar/kare/floralBlueGece.png";
+// import floralgreen from "@/public/assets/hovuzlar/kare/floralGreen.png";
+// import floralgreenGece from "@/public/assets/hovuzlar/kare/floralGreenGece.png";
+// import judiGreyKare from "@/public/assets/hovuzlar/kare/judiGrey.png";
+// import judiGreyKareGece from "@/public/assets/hovuzlar/kare/judiGreyGece.png";
 
-import light from "@/public/assets/kenarkafeller/light.png";
-import lightGece from "@/public/assets/kenarkafeller/lightgece.png";
-import superstone from "@/public/assets/kenarkafeller/superstonegpt.png";
-import superstoneGece from "@/public/assets/kenarkafeller/superstonegptgece.png";
-import judiGrey from "@/public/assets/kenarkafeller/judigrey.png";
-import judiGreyGece from "@/public/assets/kenarkafeller/judigreygece.png";
-import lucaGrey from "@/public/assets/kenarkafeller/lucaGrey.png";
-import lucaGreyGece from "@/public/assets/kenarkafeller/lucaGreyGece.png";
+// import light from "@/public/assets/kenarkafeller/light.png";
+// import lightGece from "@/public/assets/kenarkafeller/lightgece.png";
+ import superstone from "@/public/assets/kenarkafeller/superstonegpt.png";
+ import superstoneGece from "@/public/assets/kenarkafeller/superstonegptgece.png";
+// import judiGrey from "@/public/assets/kenarkafeller/judigrey.png";
+// import judiGreyGece from "@/public/assets/kenarkafeller/judigreygece.png";
+// import lucaGrey from "@/public/assets/kenarkafeller/lucaGrey.png";
+// import lucaGreyGece from "@/public/assets/kenarkafeller/lucaGreyGece.png";
 
-import lightorta from "@/public/assets/ortakafeller/lightorta.png";
-import lightortaGece from "@/public/assets/ortakafeller/lightortaGece.png";
-import judiGreyorta from "@/public/assets/ortakafeller/judiGreyorta.png";
-import judiGreyortaGece from "@/public/assets/ortakafeller/judiGreyortaGece.png";
-import lucaGreyOrta from "@/public/assets/ortakafeller/lucaGreyOrta.png";
-import lucaGreyOrtaGece from "@/public/assets/ortakafeller/lucaGreyOrtaGece.png";
+// import lightorta from "@/public/assets/ortakafeller/lightorta.png";
+// import lightortaGece from "@/public/assets/ortakafeller/lightortaGece.png";
+// import judiGreyorta from "@/public/assets/ortakafeller/judiGreyorta.png";
+// import judiGreyortaGece from "@/public/assets/ortakafeller/judiGreyortaGece.png";
+// import lucaGreyOrta from "@/public/assets/ortakafeller/lucaGreyOrta.png";
+// import lucaGreyOrtaGece from "@/public/assets/ortakafeller/lucaGreyOrtaGece.png";
 
-import terasLight from "@/public/assets/teraslar/villa3.webp";
-import terasLightGece from "@/public/assets/teraslar/villa3gece.webp";
-import terasJudi from "@/public/assets/teraslar/villa2.webp";
-import terasJudiGece from "@/public/assets/teraslar/villa3gecee.webp";
-import terasLuca from "@/public/assets/teraslar/hovuz.webp";
-import terasLucaGece from "@/public/assets/teraslar/hovuzgece.webp";
-import mavivilla from "@/public/assets/teraslar/mavivilla.webp";
-import mavivillagece from "@/public/assets/teraslar/mavivillagece.webp";
-import villa4 from "@/public/assets/teraslar/villa4.webp";
+// import terasLight from "@/public/assets/teraslar/villa3.webp";
+// import terasLightGece from "@/public/assets/teraslar/villa3gece.webp";
+// import terasJudi from "@/public/assets/teraslar/villa2.webp";
+// import terasJudiGece from "@/public/assets/teraslar/villa3gecee.webp";
+// import terasLuca from "@/public/assets/teraslar/hovuz.webp";
+// import terasLucaGece from "@/public/assets/teraslar/hovuzgece.webp";
+// import mavivilla from "@/public/assets/teraslar/mavivilla.webp";
+// import mavivillagece from "@/public/assets/teraslar/mavivillagece.webp";
+// import villa4 from "@/public/assets/teraslar/villa4.webp";
 
 import gpt from "@/public/assets/teraslar/mavihovuz.webp";
 import gptgece from "@/public/assets/teraslar/mavihovuzgece.webp";
@@ -393,44 +393,44 @@ export default function Create() {
 
   // --- Data ---
   const hovuzlar: TileOption[] = [
-    { key: "a151", label: "A151", gunduz: a151, gece: a151gece },
-    { key: "a155", label: "A155", gunduz: a155, gece: a155gece },
-    { key: "a158", label: "A158", gunduz: a158, gece: a158gece },
-    { key: "a159", label: "A159", gunduz: a159, gece: a159gece },
-    { key: "a161", label: "A161", gunduz: a161, gece: a161gece },
-    { key: "a161l", label: "A161L", gunduz: a161l, gece: a161lgece },
-    { key: "a218", label: "A218", gunduz: a218, gece: a218gece },
-    { key: "a231", label: "A231", gunduz: a231, gece: a231gece },
-    { key: "a236", label: "A236", gunduz: a236, gece: a236gece },
-    { key: "a276", label: "A276", gunduz: a276, gece: a276gece },
-    { key: "bali", label: "Bali", gunduz: bali, gece: baligece },
-    { key: "floralblue", label: "Floral Blue", gunduz: floralblue, gece: floralblueGece },
-    { key: "floralgreen", label: "Floral Green", gunduz: floralgreen, gece: floralgreenGece },
-    { key: "judiGrey", label: "Judi Grey", gunduz: judiGreyKare, gece: judiGreyKareGece },
+    // { key: "a151", label: "A151", gunduz: a151, gece: a151gece },
+    // { key: "a155", label: "A155", gunduz: a155, gece: a155gece },
+    // { key: "a158", label: "A158", gunduz: a158, gece: a158gece },
+    // { key: "a159", label: "A159", gunduz: a159, gece: a159gece },
+    // { key: "a161", label: "A161", gunduz: a161, gece: a161gece },
+    // { key: "a161l", label: "A161L", gunduz: a161l, gece: a161lgece },
+    // { key: "a218", label: "A218", gunduz: a218, gece: a218gece },
+    // { key: "a231", label: "A231", gunduz: a231, gece: a231gece },
+    // { key: "a236", label: "A236", gunduz: a236, gece: a236gece },
+    // { key: "a276", label: "A276", gunduz: a276, gece: a276gece },
+    // { key: "bali", label: "Bali", gunduz: bali, gece: baligece },
+    // { key: "floralblue", label: "Floral Blue", gunduz: floralblue, gece: floralblueGece },
+    // { key: "floralgreen", label: "Floral Green", gunduz: floralgreen, gece: floralgreenGece },
+    // { key: "judiGrey", label: "Judi Grey", gunduz: judiGreyKare, gece: judiGreyKareGece },
         { key: "gpt", label: "gpt ", gunduz: gpt, gece: gptgece },
 
   ];
 
   const kenarKafeller: TileOption[] = [
-    { key: "light", label: "Light", gunduz: light, gece: lightGece },
-    { key: "judi", label: "Judi Grey", gunduz: judiGrey, gece: judiGreyGece },
-    { key: "luca", label: "Luca Grey", gunduz: lucaGrey, gece: lucaGreyGece },
-    { key: "superstone", label: "Superstone", gunduz: superstone, gece: superstoneGece },
+    // { key: "light", label: "Light", gunduz: light, gece: lightGece },
+    // { key: "judi", label: "Judi Grey", gunduz: judiGrey, gece: judiGreyGece },
+    // { key: "luca", label: "Luca Grey", gunduz: lucaGrey, gece: lucaGreyGece },
+     { key: "superstone", label: "Superstone", gunduz: superstone, gece: superstoneGece },
   ];
 
   const ortaKafeller: TileOption[] = [
-    { key: "light", label: "Light", gunduz: lightorta, gece: lightortaGece },
-    { key: "judi", label: "Judi Grey", gunduz: judiGreyorta, gece: judiGreyortaGece },
-    { key: "luca", label: "Luca Grey", gunduz: lucaGreyOrta, gece: lucaGreyOrtaGece },
+    // { key: "light", label: "Light", gunduz: lightorta, gece: lightortaGece },
+    // { key: "judi", label: "Judi Grey", gunduz: judiGreyorta, gece: judiGreyortaGece },
+    // { key: "luca", label: "Luca Grey", gunduz: lucaGreyOrta, gece: lucaGreyOrtaGece },
     { key: "superstone", label: "Superstone", gunduz: superstone, gece: superstoneGece },
   ];
 
   const teraslar: TileOption[] = [
-    { key: "judi", label: "Judi", gunduz: terasJudi, gece: terasJudiGece },
-    { key: "boz", label: "Boz", gunduz: villa4, gece: terasJudiGece },
-    { key: "light", label: "Light", gunduz: terasLight, gece: terasLightGece },
-    { key: "luca", label: "Luca", gunduz: terasLuca, gece: terasLucaGece },
-    { key: "mavivilla", label: "Mavi Villa", gunduz: mavivilla, gece: mavivillagece },
+    // { key: "judi", label: "Judi", gunduz: terasJudi, gece: terasJudiGece },
+    // { key: "boz", label: "Boz", gunduz: villa4, gece: terasJudiGece },
+    // { key: "light", label: "Light", gunduz: terasLight, gece: terasLightGece },
+    // { key: "luca", label: "Luca", gunduz: terasLuca, gece: terasLucaGece },
+    // { key: "mavivilla", label: "Mavi Villa", gunduz: mavivilla, gece: mavivillagece },
     { key: "gpt", label: "GPT Villa", gunduz: gpt, gece: gptgece },
 
   ];
