@@ -694,7 +694,7 @@ export default function Create() {
           zIndex={1}
           // isMobile
           style={
-            isMobile
+            !isMobile
               ? {
                 transform: ['a66', 'a63', 'a64', 'a65', 'a67'].some(k => opt.key.includes(k))
                   ? "translateX(22px)"
