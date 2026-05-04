@@ -4,11 +4,11 @@ import { notFound } from "next/navigation";
 import HeroWrapper from "@/components/home/heroWrapper";
 import ServiceDetail from "./ServiceDetailClient";
 
-type Props = { params: Promise<{ slug: string }> }; // ✅ Promise
+type Props = { params: Promise<{ slug: string }> }; 
 
 // ✅ servicesContent-dən avtomatik — əl ilə map yoxdur
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = await params; // ✅ await
+  const { slug } = await params;
   const service = servicesContent["az"].find((s: any) => s.slug === slug);
   if (!service) {
     return {

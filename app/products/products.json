@@ -1547,7 +1547,7 @@
     {
       "name": "Filter qapaqları — Astralpool & Nurpool",
       "specs": "Rezin daxil",
-      "img": 0,
+      "img": null,
       "prices": [
         { "dim": "Ø450-1200 Volcano", "val": "381.47" },
         { "dim": "Ø400-750 Cantabric", "val": "274.33" },
@@ -1559,7 +1559,7 @@
     {
       "name": "Filter qapaq rezini — Astralpool & Nurpool",
       "specs": "",
-      "img": 0,
+      "img": null,
       "prices": [
         { "dim": "Ø450-1200 Volcano", "val": "109.73" },
         { "dim": "Ø400-750 Cantabric", "val": "88.76" },
@@ -1583,19 +1583,19 @@
     {
       "name": "Astralpool Manometr",
       "specs": "",
-      "img": 0,
+      "img": null,
       "prices": [{ "dim": "ədəd", "val": "164.56" }]
     },
     {
       "name": "Nurpool Manometr",
       "specs": "",
-      "img": 0,
+      "img": null,
       "prices": [{ "dim": "ədəd", "val": "50.00" }]
     },
     {
       "name": "Hava prujoru Nurpool",
       "specs": "",
-      "img": 0,
+      "img": null,
       "prices": [{ "dim": "ədəd", "val": "32.00" }]
     }
   ]

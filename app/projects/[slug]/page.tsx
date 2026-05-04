@@ -3,15 +3,15 @@ import ProjectDetailClient from "./ProjectDetailClient";
 import { projects } from "@/components/home/ourProjects/projes";
 import HeroWrapper from "@/components/home/heroWrapper";
 
-type Props = {
-  params: { slug: string };
-};
+type Props = { params: Promise<{ slug: string }> };
+
 
 // SEO
 export async function generateMetadata(
   { params }: Props
 ): Promise<Metadata> {
-  const project = projects.find((p) => p.slug === params.slug);
+  const { slug } = await params;
+  const project = projects.find((p) => p.slug === slug);
 
   if (!project) {
     return {
