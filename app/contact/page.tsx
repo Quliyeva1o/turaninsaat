@@ -2,22 +2,25 @@ import ContactClient from "./ContactClient";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Bizimlə Əlaqə | Turan İnşaat",
+  title: "Bizimlə Əlaqə | Turan İnşaat – Bakı, Novxanı",
   description:
-    "Hovuz, jacuzzi, sauna, türk hamamı və digər layihələr üçün Turan İnşaat ilə əlaqə saxlayın. Telefon: +994 50 312 76 57 | Email: turaninshaat21@mail.ru",
+    "Hovuz, sauna, jacuzzi, türk hamamı və spa layihələri üçün Turan İnşaat ilə əlaqə saxlayın. Tel: +994 50 312 76 57 | Ünvan: Bakı, Binəqədi-Novxanı şossesi, Novxanı kəndi",
   keywords: [
     "Turan İnşaat əlaqə",
-    "hovuz tikintisi Bakı",
-    "sauna quraşdırılması",
+    "hovuz tikintisi Bakı əlaqə",
+    "sauna quraşdırılması Bakı",
     "türk hamamı Azərbaycan",
-    "jacuzzi qiymət",
-    "pool construction Baku",
-    "əlaqə nömrəsi",
+    "jacuzzi qiymət Bakı",
+    "pool construction Baku contact",
+    "Novxanı inşaat şirkəti",
+    "Binəqədi hovuz",
+    "turaninshaat21@mail.ru",
+    "turanprojects.az əlaqə",
   ],
   openGraph: {
     title: "Bizimlə Əlaqə | Turan İnşaat",
     description:
-      "Hovuz, sauna, jacuzzi və hamam layihələri üçün peşəkar komandamızla əlaqə saxlayın.",
+      "Hovuz, sauna, jacuzzi, türk hamamı layihələri üçün bizimlə əlaqə saxlayın. Bakı, Novxanı – +994 50 312 76 57",
     url: "https://turaninshaat.az/contact",
     siteName: "Turan İnşaat",
     locale: "az_AZ",
@@ -35,16 +38,13 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Bizimlə Əlaqə | Turan İnşaat",
     description:
-      "Hovuz, sauna, jacuzzi və hamam layihələri üçün peşəkar komandamızla əlaqə saxlayın.",
+      "Hovuz, sauna, jacuzzi və hamam layihələri üçün peşəkar komandamızla əlaqə saxlayın. Bakı, Novxanı.",
     images: ["/assets/images/contactus.jpg"],
   },
   alternates: {
     canonical: "https://turaninshaat.az/contact",
   },
-  robots: {
-    index: true,
-    follow: true,
-  },
+  robots: { index: true, follow: true },
 };
 
 export default function ContactPage() {

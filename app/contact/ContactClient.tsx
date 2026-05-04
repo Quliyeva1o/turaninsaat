@@ -1,5 +1,5 @@
 'use client'
-import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import Image from "next/image";
 import contactIllustration from "@/public/assets/images/contactus.jpg";
 const HeroWrapper = dynamic(() => import("@/components/home/heroWrapper"));
@@ -7,16 +7,16 @@ const HeroWrapper = dynamic(() => import("@/components/home/heroWrapper"));
 
 const contactInfo = [
   {
-    title: "24/7 Dəstək Mərkəzi",
-    link: "tel:+994503127657",
-    display: "+994 50 312 76 57",
-    icon: <FaPhoneAlt size={24} className="text-[#2A69AC]" />,
+    title: "Ofis Ünvanımız",
+    link: "https://maps.google.com/?q=Novxanı,Bakı",
+    display: "Novxanı kəndi, Binəqədi-Novxanı şossesi (Berlin Avto ilə üzbəüz)",
+    icon: <FaMapMarkerAlt size={24} className="text-[#2A69AC]" />,
   },
   {
-    title: "Bizə Yazın",
-    link: "mailto:turaninshaat21@mail.ru",
-    display: "turaninshaat21@mail.ru",
-    icon: <FaEnvelope size={24} className="text-[#2A69AC]" />,
+    title: "Ofis Telefonu",
+    link: "tel:+994123482875",
+    display: "+994 12 348 28 75",
+    icon: <FaPhoneAlt size={24} className="text-[#2A69AC]" />,
   },
 ];
 
@@ -44,7 +44,18 @@ export default function ContactClient() {
                 <p className="text-gray-500 mt-4 max-w-md">
                   Suallarınız, qiymət sorğularınız və əməkdaşlıq imkanları üçün bizimlə əlaqə saxlayın.
                 </p>
+                <div className="flex gap-4 mt-6">
+                  <a href="https://instagram.com/turanprojects.az" target="_blank"
+                    className="flex items-center gap-2 text-sm font-semibold text-[#2A69AC] hover:underline">
+                    Instagram: @turanprojects.az
+                  </a>
+                  <a href="https://tiktok.com/@turanprojects.az" target="_blank"
+                    className="flex items-center gap-2 text-sm font-semibold text-[#2A69AC] hover:underline">
+                    TikTok: @turanprojects.az
+                  </a>
+                </div>
               </div>
+
 
               <div className="mt-6">
                 <Image

@@ -45,7 +45,6 @@ const Footer = () => {
 
           {/* Navigation */}
           <div data-aos="fade-up" data-aos-delay="100">
-            {/* ✅ FIX: h4 → h3 */}
             <h3 className="text-lg font-bold mb-5">Keçidlər</h3>
             <ul className="space-y-3 text-md text-gray-600">
               <li><Link href="/" className="hover:text-[#2A69AC]">Ana səhifə</Link></li>
@@ -58,7 +57,6 @@ const Footer = () => {
 
           {/* Services */}
           <div data-aos="fade-up" data-aos-delay="200">
-            {/* ✅ FIX: h4 → h3 */}
             <h3 className="text-lg font-bold mb-5">Xidmətlər</h3>
             <ul className="space-y-3 text-md text-gray-600">
               <li><Link href="#">Hovuz Tikintisi</Link></li>
@@ -70,7 +68,6 @@ const Footer = () => {
 
           {/* Contact */}
           <div data-aos="fade-up" data-aos-delay="300">
-            {/* ✅ FIX: h4 → h3 */}
             <h3 className="text-lg font-bold mb-5">Əlaqə</h3>
 
             <div className="flex flex-col gap-4">
