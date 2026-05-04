@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Manrope, DM_Sans} from "next/font/google";
+import { Geist, Manrope, DM_Sans } from "next/font/google";
 import "./globals.css";
 import 'aos/dist/aos.css'
 
@@ -21,16 +21,14 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://yourcompany.az"),
-
+  metadataBase: new URL("https://turanprojects.az"),
   title: {
-    default: "Tikinti Şirkəti | Etibarlı və Keyfiyyətli İnşaat",
-    template: "%s | YourCompany",
+    default: "Turan İnşaat MMC | Hovuz, SPA və Tikinti Həlləri",
+    template: "%s | Turan İnşaat",
   },
 
   description:
-    "Peşəkar tikinti şirkəti. Yaşayış və kommersiya obyektlərinin tikintisi, təmir və layihələndirmə xidmətləri.",
-
+    "Turan İnşaat MMC – hovuz, spa, türk hamamı və tikinti sahəsində 12+ illik təcrübə. Fərdi və kommersiya layihələri üçün peşəkar həllər.",
   keywords: [
     "tikinti şirkəti",
     "inşaat",
@@ -92,6 +90,20 @@ export default function RootLayout({
       <body>
         {children}
       </body>
+      {/* <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            name: "Turan İnşaat MMC",
+            url: "https://turanprojects.az",
+            logo: "https://turanprojects.az/logo.png",
+            description:
+              "Hovuz, SPA və tikinti sahəsində peşəkar xidmətlər.",
+          }),
+        }}
+      /> */}
     </html>
   );
 }

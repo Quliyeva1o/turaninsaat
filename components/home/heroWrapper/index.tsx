@@ -15,19 +15,20 @@ const heroContents: Record<string, any> = {
         img: aboutImg,
         subTitle: "Turan İnşaat hovuz, türk hamamı, sauna və spa layihələrində uzunmüddətli keyfiyyət və estetik dizayn təmin edir."
     },
-    "/contact": { 
-        text: "Bizimlə əlaqə", 
-        img: contactImg, 
-        subTitle: "Suallarınız və əməkdaşlıq üçün bizimlə əlaqə saxlayın." 
+    "/contact": {
+        text: "Bizimlə əlaqə",
+        img: contactImg,
+        subTitle: "Suallarınız və əməkdaşlıq üçün bizimlə əlaqə saxlayın."
     },
-    "/services": { 
-        text: "Hovuz, SPA və Hamam Xidmətləri", 
-        img: servicesImg, 
-        subTitle: "Fərdi və ictimai hovuz, türk hamamı və SPA xidmətləri." 
-    },    "/products": { 
-        text: "Məhsullarımız", 
-        img: servicesImg, 
-        subTitle: "Hovuz və SPA üçün geniş məhsul çeşidimizlə tanış olun." 
+    "/services": {
+        text: "Hovuz, SPA və Hamam Xidmətləri",
+        img: servicesImg,
+        subTitle: "Fərdi və ictimai hovuz, türk hamamı və SPA xidmətləri."
+    }, 
+    "/products": {
+        text: "Məhsullarımız",
+        img: servicesImg,
+        subTitle: "Hovuz və SPA üçün geniş məhsul çeşidimizlə tanış olun."
     },
     "/projects": {
         text: "Layihələrimiz",
@@ -62,25 +63,26 @@ const serviceHeroMap: Record<string, any> = {
 
 export default function HeroWrapper() {
     const pathname = usePathname();
-    const [hero, setHero] = useState<any>(heroContents["/"]);
 
-    useEffect(() => {
-        // 👉 exact match
-        if (heroContents[pathname]) {
-            setHero(heroContents[pathname]);
-            return;
+    const hero = (() => {
+        const cleanPath = pathname.replace(/\/$/, "");
+
+        if (heroContents[cleanPath]) {
+            return heroContents[cleanPath];
         }
 
-        // 👉 services/[slug]
-        if (pathname.startsWith("/services/")) {
-            const slug = pathname.split("/")[2];
-            setHero(serviceHeroMap[slug] || heroContents["/services"]);
-            return;
+        if (cleanPath.startsWith("/services/")) {
+            const slug = cleanPath.split("/")[2];
+            return serviceHeroMap[slug] || heroContents["/services"];
         }
 
-        // 👉 fallback
-        setHero(heroContents["/"]);
-    }, [pathname]);
+        if (cleanPath.startsWith("/projects/")) {
+            const slug = cleanPath.split("/")[2];
+            return heroContents["/projects"];
+        }
+
+        return heroContents["/"];
+    })();
 
     return (
         <Hero

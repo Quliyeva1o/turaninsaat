@@ -7,9 +7,11 @@ const nextConfig: NextConfig = {
 module.exports = {
   images: {
     remotePatterns: [
+      { protocol: "https", hostname: "i.pinimg.com" },
+
       {
         protocol: 'https',
-        hostname: 'turaninsaat.vercel.app',
+        hostname: 'turanprojects.az',
       },
     ],
     // Defines a list of allowed quality values for security/control
