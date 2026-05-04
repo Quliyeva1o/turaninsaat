@@ -1,56 +1,40 @@
-'use client';
-
-import { useParams } from "next/navigation";
+"use client";
 import Link from "next/link";
-import { servicesContent } from "@/utils";
 import Image from "next/image";
-import { useMemo } from "react";
 
-interface Props {
-  locale?: "az" | "en";
-}
+// ✅ tip servicesContent strukturuna uyğun
+type ServiceItem = { title: string; img: string };
+type ServiceSection = { title: string; items: ServiceItem[] };
 
-export default function ServiceDetailClient({ locale = "az" }: Props) {
-  const params = useParams();
-  const slug = params.slug as string;
+type Service = {
+  slug: string;
+  title: string;
+  desc: string;
+  img: string;
+  sections: ServiceSection[];
+};
 
-  const service = useMemo(() => {
-    return servicesContent[locale].find((s: any) => s.slug === slug);
-  }, [slug, locale]);
-
-  if (!service) {
-    return (
-      <main className="min-h-screen flex flex-col items-center justify-center text-white bg-[#0A1E30]">
-        <h1 className="text-3xl font-bold mb-4">
-          {locale === "az" ? "Xidmət tapılmadı" : "Service not found"}
-        </h1>
-        <Link href="/services" className="text-[#00A8B5] underline">
-          {locale === "az" ? "Geri qayıt" : "Go back"}
-        </Link>
-      </main>
-    );
-  }
-
+export default function ServiceDetail({ service }: { service: Service }) {
   return (
     <main className="min-h-screen text-white bg-[#0A1E30]">
       <section className="max-w-5xl mx-auto py-24 px-6">
 
-        {/* 🔥 Breadcrumb */}
-        <nav className="text-sm mb-6 text-gray-400">
-          <Link href="/">Ana səhifə</Link> /{" "}
-          <Link href="/services">Xidmətlər</Link> /{" "}
-          <span>{service.title}</span>
+        {/* Breadcrumb — JSON-LD ilə birlikdə Google-da görünür */}
+        <nav aria-label="breadcrumb" className="text-sm mb-6 text-gray-400">
+          <Link href="/">Ana səhifə</Link>
+          {" / "}
+          <Link href="/services">Xidmətlər</Link>
+          {" / "}
+          <span className="text-gray-200">{service.title}</span>
         </nav>
 
-        {/* Back */}
         <Link
           href="/services"
           className="inline-flex items-center gap-2 text-sm mb-10 text-[#00A8B5]"
         >
-          ← {locale === "az" ? "Bütün xidmətlər" : "All Services"}
+          ← Bütün xidmətlər
         </Link>
 
-        {/* H1 */}
         <h1 className="font-extrabold leading-tight mb-4 text-[#FAF6EC] text-[clamp(28px,4vw,48px)]">
           {service.title}
         </h1>
@@ -59,58 +43,38 @@ export default function ServiceDetailClient({ locale = "az" }: Props) {
           {service.desc}
         </p>
 
-        {/* 🔥 MAIN IMAGE */}
-        {service.img && (
-          <Image
-            src={service.img}
-            alt={`${service.title} - Turan İnşaat hovuz və spa həlləri`}
-            width={1200}
-            height={600}
-            className="w-full h-64 md:h-96 object-cover rounded-2xl mb-14"
-          />
-        )}
-
-        {/* 🔥 JSON-LD (AI üçün) */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "Service",
-              name: service.title,
-              description: service.desc,
-              provider: {
-                "@type": "Organization",
-                name: "Turan İnşaat MMC",
-                url: "https://turanprojects.az",
-              },
-            }),
-          }}
+        <Image
+          src={service.img}
+          alt={`${service.title} - Turan İnşaat`}
+          width={1200}
+          height={600}
+          priority // ✅ LCP şəkli — lazy yox
+          className="w-full h-64 md:h-96 object-cover rounded-2xl mb-14"
         />
 
-        {/* Sections */}
         <div className="space-y-12">
-          {service.sections.map((section: any, i: number) => (
-            <div key={i}>
+          {service.sections.map((section) => (
+            // ✅ key index yox — section title unikaldır
+            <div key={section.title}>
               <h2 className="text-xl font-bold mb-6 text-[#00A8B5]">
                 {section.title}
               </h2>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-                {section.items.map((item: any, idx: number) => (
+                {section.items.map((item) => (
                   <div
-                    key={idx}
+                    key={item.title}
                     className="rounded-xl overflow-hidden shadow-lg group bg-[#0f2a3f]"
                   >
                     <Image
-                      src={item?.img}
-                      alt={`${item.title} - hovuz və spa avadanlığı`}
+                      src={item.img}
+                      alt={`${item.title} - hovuz avadanlığı`}
                       width={400}
                       height={300}
                       className="w-full h-40 object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="p-4 flex gap-2">
-                      <span className="text-[#00A8B5]">•</span>
+                      <span className="text-[#00A8B5]" aria-hidden="true">•</span>
                       <p className="text-sm leading-snug text-[rgba(200,232,234,0.85)]">
                         {item.title}
                       </p>

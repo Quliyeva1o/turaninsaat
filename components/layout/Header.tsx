@@ -67,14 +67,7 @@ export default function Header({ locale = "az" }: any) {
 
   return (
     <>
-      <div className="preloader" style={{ display: "none" }}>
-        <div className="loading-container">
-          <div className="loading"></div>
-          <div id="loading-icon">
-            <Image src="/loader.svg" alt="Loading" width={40} height={40} />
-          </div>
-        </div>
-      </div>
+
 
       <div id="magic-cursor" style={{ opacity: 0, visibility: "hidden" }}>
         <div id="ball" />

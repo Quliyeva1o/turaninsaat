@@ -27,7 +27,7 @@ export interface ProductGroup {
   items: Product[];
 }
 
-const data = products as ProductGroup[];
+const data = products as any[];
 
 // ─── Badge config ─────────────────────────────────
 
@@ -226,7 +226,7 @@ export default function ProductCatalog() {
       ...g,
       items: search.trim()
         ? g.items.filter(
-          (item) =>
+          (item: any) =>
             item.name.toLowerCase().includes(search.toLowerCase()) ||
             item.specs.toLowerCase().includes(search.toLowerCase()) ||
             g.brand.toLowerCase().includes(search.toLowerCase())
@@ -238,87 +238,87 @@ export default function ProductCatalog() {
   const totalProducts = filtered.reduce((sum, g) => sum + g.items.length, 0);
 
   return (
-       <> <HeroWrapper/>
-    <div
-      style={{
-        fontFamily: "system-ui, sans-serif",
-        maxWidth: 1200,
-        margin: "0 auto",
-        padding: "32px 16px",
-      }}
-    >
-      {/* Header */}
-      <div style={{ marginBottom: 32 }}>
-        <h1
-          style={{
-            fontSize: 28,
-            fontWeight: 700,
-            color: "#0f172a",
-            margin: 0,
-            letterSpacing: "-0.02em",
-          }}
-        >
-          2026 Hovuz Məhsulları
-        </h1>
-
-        <p style={{ fontSize: 13, color: "#64748b", marginTop: 6 }}>
-          Premium kataloq · Bütün qiymətlər AZN ilə
-        </p>
-      </div>
-
-      {/* Search */}
-      <input
-        type="text"
-        placeholder="Məhsul axtar..."
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
+    <> <HeroWrapper />
+      <div
         style={{
-          width: "100%",
-          maxWidth: 420,
-          padding: "10px 16px",
-          borderRadius: 999,
-          border: "1px solid #e2e8f0",
-          background: "#f8fafc",
-          fontSize: 14,
-          marginBottom: 20,
+          fontFamily: "system-ui, sans-serif",
+          maxWidth: 1200,
+          margin: "0 auto",
+          padding: "32px 16px",
         }}
-      />
-
-      {/* Categories */}
-      <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 24 }}>
-        {categories.map((cat) => (
-          <button
-            key={cat}
-            onClick={() => setActiveCategory(cat)}
+      >
+        {/* Header */}
+        <div style={{ marginBottom: 32 }}>
+          <h1
             style={{
-              fontSize: 12,
-              padding: "6px 14px",
-              borderRadius: 999,
-              border: "1px solid #e2e8f0",
-              background: cat === activeCategory ? "#0f172a" : "#fff",
-              color: cat === activeCategory ? "#fff" : "#475569",
-              cursor: "pointer",
-              fontWeight: 500,
+              fontSize: 28,
+              fontWeight: 700,
+              color: "#0f172a",
+              margin: 0,
+              letterSpacing: "-0.02em",
             }}
           >
-            {cat}
-          </button>
-        ))}
-      </div>
+            2026 Hovuz Məhsulları
+          </h1>
 
-      {/* Count */}
-      <p style={{ fontSize: 12, color: "#94a3b8", marginBottom: 24 }}>
-        {totalProducts} məhsul göstərilir
-      </p>
+          <p style={{ fontSize: 13, color: "#64748b", marginTop: 6 }}>
+            Premium kataloq · Bütün qiymətlər AZN ilə
+          </p>
+        </div>
 
-      {/* Content */}
-      {filtered.length === 0 ? (
-        <p style={{ color: "#94a3b8" }}>Heç nə tapılmadı</p>
-      ) : (
-        filtered.map((group) => (
-          <GroupSection key={group.cat} group={group} />
-        ))
-      )}
-    </div></>
+        {/* Search */}
+        <input
+          type="text"
+          placeholder="Məhsul axtar..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          style={{
+            width: "100%",
+            maxWidth: 420,
+            padding: "10px 16px",
+            borderRadius: 999,
+            border: "1px solid #e2e8f0",
+            background: "#f8fafc",
+            fontSize: 14,
+            marginBottom: 20,
+          }}
+        />
+
+        {/* Categories */}
+        <div style={{ display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 24 }}>
+          {categories.map((cat) => (
+            <button
+              key={cat}
+              onClick={() => setActiveCategory(cat)}
+              style={{
+                fontSize: 12,
+                padding: "6px 14px",
+                borderRadius: 999,
+                border: "1px solid #e2e8f0",
+                background: cat === activeCategory ? "#0f172a" : "#fff",
+                color: cat === activeCategory ? "#fff" : "#475569",
+                cursor: "pointer",
+                fontWeight: 500,
+              }}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
+
+        {/* Count */}
+        <p style={{ fontSize: 12, color: "#94a3b8", marginBottom: 24 }}>
+          {totalProducts} məhsul göstərilir
+        </p>
+
+        {/* Content */}
+        {filtered.length === 0 ? (
+          <p style={{ color: "#94a3b8" }}>Heç nə tapılmadı</p>
+        ) : (
+          filtered.map((group) => (
+            <GroupSection key={group.cat} group={group} />
+          ))
+        )}
+      </div></>
   );
 }
