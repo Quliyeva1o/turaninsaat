@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import ServiceDetailClient from "./ServiceDetailClient";
+import HeroWrapper from "@/components/home/heroWrapper";
 
 type Slug = "pool-types" | "turkish-bath-spa";
 
@@ -51,5 +52,5 @@ export async function generateMetadata(
 }
 
 export default function Page(props: any) {
-  return <ServiceDetailClient {...props} />;
+  return <><HeroWrapper /> <ServiceDetailClient {...props} /></>;
 }

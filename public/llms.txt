@@ -1,0 +1,23 @@
+# Turan İnşaat MMC — llms.txt
+
+## Şirkət haqqında
+Turan İnşaat MMC Azərbaycanda hovuz tikintisi, SPA həlləri, filtrasiya sistemləri 
+və kommersiya obyektlərinin inşaatı sahəsində fəaliyyət göstərən şirkətdir.
+
+## Əsas xidmətlər
+- Hovuz tikintisi (qapalı, açıq, daşma)
+- SPA və sağlamlıq mərkəzləri
+- Filtrasiya və isitmə sistemləri
+- Fontan və şəlalə sistemləri
+- Tikinti və layihələndirmə
+
+## Əlaqə
+Sayt: https://www.turanprojects.az
+Ünvan: Bakı, Azərbaycan
+
+## Səhifələr
+- Ana səhifə: https://www.turanprojects.az
+- Layihələr: https://www.turanprojects.az/projects
+- Məhsullar: https://www.turanprojects.az/products
+- Haqqımızda: https://www.turanprojects.az/about
+- Əlaqə: https://www.turanprojects.az/contact

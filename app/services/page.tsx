@@ -1,4 +1,5 @@
 'use client';
+import HeroWrapper from '@/components/home/heroWrapper';
 import { servicesContent } from '@/utils';
 import { useRouter } from 'next/navigation';
 
@@ -14,7 +15,9 @@ export default function Services({ locale = "az" }: Props) {
   const router = useRouter();
 
   return (
+
     <main className="bg-gray-50 text-gray-900">
+      <HeroWrapper />
       <section className="max-w-[1400px] mx-auto px-6 md:px-10 py-24">
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">

@@ -2,6 +2,7 @@
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 import Image from "next/image";
 import contactIllustration from "@/public/assets/images/contactus.jpg";
+import HeroWrapper from "@/components/home/heroWrapper";
 
 const contactInfo = [
   {
@@ -20,7 +21,10 @@ const contactInfo = [
 
 export default function ContactPage() {
   return (
+   <>          <HeroWrapper/>
+
     <section className="py-28 lg:py-36 bg-white text-[#102948]">
+      
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
         <div className="flex flex-col lg:flex-row gap-16">
@@ -116,6 +120,6 @@ export default function ContactPage() {
           </div>
         </div>
       </div>
-    </section>
+    </section></>   
   );
 }

@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Button from "@/components/common/Button";
 import certImg from "@/public/assets/images/certificate.png";
+import HeroWrapper from "@/components/home/heroWrapper";
 
 interface Props {
   locale?: "az" | "en";
@@ -106,6 +107,7 @@ export default function About({ locale = "az" }: Props) {
 
   return (
     <main>
+      <HeroWrapper/>
       {/* ─── HERO ABOUT SECTION ─── */}
       <section
         className="relative overflow-hidden"

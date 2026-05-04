@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import ProjectDetailClient from "./ProjectDetailClient";
 import { projects } from "@/components/home/ourProjects/projes";
+import HeroWrapper from "@/components/home/heroWrapper";
 
 type Props = {
   params: { slug: string };
@@ -31,5 +32,5 @@ export async function generateMetadata(
 }
 
 export default function Page(props: any) {
-  return <ProjectDetailClient {...props} />;
+  return <><HeroWrapper /><ProjectDetailClient {...props} /></>;
 }

@@ -1,7 +1,8 @@
 'use client';
 import { useState } from "react";
 import Image from "next/image";
-import products from "../../../data/products.json";
+import products from "@/data/products.json";
+import HeroWrapper from "@/components/home/heroWrapper";
 
 // ─── Types ─────────────────────────────────────────
 
@@ -62,6 +63,7 @@ function BadgePill({ badge }: { badge: Badge }) {
 
 function ProductCard({ item, badge, brand }: { item: Product; badge: Badge; brand: string }) {
   return (
+
     <div
       style={{
         background: "#fff",
@@ -236,6 +238,7 @@ export default function ProductCatalog() {
   const totalProducts = filtered.reduce((sum, g) => sum + g.items.length, 0);
 
   return (
+       <> <HeroWrapper/>
     <div
       style={{
         fontFamily: "system-ui, sans-serif",
@@ -316,6 +319,6 @@ export default function ProductCatalog() {
           <GroupSection key={group.cat} group={group} />
         ))
       )}
-    </div>
+    </div></>
   );
 }

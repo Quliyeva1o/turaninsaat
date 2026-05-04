@@ -24,7 +24,7 @@ const heroContents: Record<string, any> = {
         text: "Hovuz, SPA və Hamam Xidmətləri",
         img: servicesImg,
         subTitle: "Fərdi və ictimai hovuz, türk hamamı və SPA xidmətləri."
-    }, 
+    },
     "/products": {
         text: "Məhsullarımız",
         img: servicesImg,

@@ -4,6 +4,7 @@ import { projects } from "@/components/home/ourProjects/projes";
 import { useState, useRef, useEffect, useMemo } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import HeroWrapper from "@/components/home/heroWrapper";
 
 export default function Projects() {
   const sectionRef = useRef<HTMLDivElement>(null);
@@ -45,6 +46,8 @@ export default function Projects() {
   }, [modalOpen, mediaList.length]);
 
   return (
+    <>
+    <HeroWrapper/>
     <section ref={sectionRef} className="py-16 bg-white text-gray-900">
       <div className="max-w-[1300px] mx-auto px-6 md:px-10">
 
@@ -119,6 +122,6 @@ export default function Projects() {
           </div>
         </div>
       )}
-    </section>
+    </section></>
   );
 }

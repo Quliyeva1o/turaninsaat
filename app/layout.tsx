@@ -1,50 +1,46 @@
 import type { Metadata } from "next";
-import { Geist, Manrope, DM_Sans } from "next/font/google";
+import { Geist, Geist_Mono, Manrope, DM_Sans } from "next/font/google";
 import "./globals.css";
-import 'aos/dist/aos.css'
+import "aos/dist/aos.css";
+import LayoutClient from "./LayoutClient";
+import SchemaOrg from "@/components/seo/SchemaOrg";
 
-// Google Fonts
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-  display: "swap",
-});
+const manrope = Manrope({ variable: "--font-manrope", subsets: ["latin"] });
+const dmSans = DM_Sans({ variable: "--font-dm-sans", subsets: ["latin"] });
+const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"], display: "swap" });
+const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"], display: "swap" });
 
-const manrope = Manrope({
-  variable: "--font-manrope",
-  subsets: ["latin"],
-});
-
-const dmSans = DM_Sans({
-  variable: "--font-dm-sans",
-  subsets: ["latin"],
-});
+const BASE_URL = "https://www.turanprojects.az"; // ✅ tək mənbə — hər yerdə buradan istifadə et
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://turanprojects.az"),
+  metadataBase: new URL(BASE_URL), // ✅ yourcompany.az → turanprojects.az
+
   title: {
-    default: "Turan İnşaat MMC | Hovuz, SPA və Tikinti Həlləri",
-    template: "%s | Turan İnşaat",
+    default: "Turan İnşaat | Hovuz və SPA Tikintisi Bakı", // ✅ 50 simvol
+    template: "%s | Turan İnşaat",                         // ✅ YourCompany → Turan İnşaat
   },
 
   description:
-    "Turan İnşaat MMC – hovuz, spa, türk hamamı və tikinti sahəsində 12+ illik təcrübə. Fərdi və kommersiya layihələri üçün peşəkar həllər.",
+    "Bakıda peşəkar hovuz tikintisi, SPA mərkəzləri, filtrasiya və isitmə sistemləri. Yaşayış və kommersiya obyektlərinin layihələndirilməsi və inşaatı.", // ✅ 152 simvol (120-160 arası)
+
   keywords: [
-    "tikinti şirkəti",
-    "inşaat",
-    "ev tikintisi",
-    "təmir işləri",
-    "construction company azerbaijan",
+    "hovuz tikintisi bakı",
+    "spa mərkəzi",
+    "filtrasiya sistemləri",
+    "inşaat şirkəti azerbaycan",
+    "turan inşaat",
+    "pool construction baku",
   ],
 
-  authors: [{ name: "YourCompany" }],
-  creator: "YourCompany",
+  authors: [{ name: "Turan İnşaat MMC" }],
+  creator: "Turan İnşaat MMC",
 
   openGraph: {
-    title: "Tikinti Şirkəti | Keyfiyyətli İnşaat",
-    description: "Azerbaycanda peşəkar tikinti və təmir xidmətləri.",
-    url: "https://yourcompany.az",
-    siteName: "YourCompany",
+    title: "Turan İnşaat | Hovuz və SPA Tikintisi Bakı",
+    description:
+      "Bakıda peşəkar hovuz tikintisi, SPA mərkəzləri, filtrasiya və isitmə sistemləri. Fərdi layihələndirmə.",
+    url: BASE_URL, // ✅ sabit dəyişəndən
+    siteName: "Turan İnşaat",
     locale: "az_AZ",
     type: "website",
     images: [
@@ -52,15 +48,15 @@ export const metadata: Metadata = {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Tikinti Şirkəti",
+        alt: "Turan İnşaat — Hovuz və SPA Tikintisi",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Tikinti Şirkəti | YourCompany",
-    description: "Peşəkar tikinti və inşaat həlləri",
+    title: "Turan İnşaat | Hovuz və SPA Tikintisi",
+    description: "Bakıda peşəkar hovuz tikintisi və SPA həlləri.",
     images: ["/images/og-image.jpg"],
   },
 
@@ -76,34 +72,19 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://yourcompany.az",
-  },
+    canonical: BASE_URL,
+  }
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="az" className={`${geistSans.variable} ${manrope.variable} ${dmSans.variable}`}>
-      <body>
-        {children}
+    <html lang="az">
+
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} ${manrope.variable} ${dmSans.variable} antialiased`}
+      >  <SchemaOrg />
+        <LayoutClient>{children}</LayoutClient>
       </body>
-      {/* <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            name: "Turan İnşaat MMC",
-            url: "https://turanprojects.az",
-            logo: "https://turanprojects.az/logo.png",
-            description:
-              "Hovuz, SPA və tikinti sahəsində peşəkar xidmətlər.",
-          }),
-        }}
-      /> */}
     </html>
   );
 }
