@@ -5,7 +5,7 @@ import RightIco from "@/public/assets/icons/rightIco";
 
 const Button = ({ text, type, link , target}: any) => {
   return (
-    <div
+   <Link href={link} target={target} prefetch={false}>   <div
       className={`${styles.btn} ${
         type === 1
           ? styles.primary
@@ -16,9 +16,9 @@ const Button = ({ text, type, link , target}: any) => {
           : styles.ghost
       }`}
     >
-      <Link href={link} target={target} prefetch={false}>{text}</Link>
+    {text}
       {type !== 5 && <RightIco />}
-    </div>
+    </div></Link>
   );
 };
 

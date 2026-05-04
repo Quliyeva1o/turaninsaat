@@ -1,7 +1,7 @@
 "use client";
 
 import Image, { StaticImageData } from "next/image";
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
 // =========================
 // ASSETS — same imports as before
@@ -15,6 +15,7 @@ import img66 from "@/public/assets/hovuzlaar/img66.png";
 import img67 from "@/public/assets/hovuzlaar/img67.png";
 import img68 from "@/public/assets/hovuzlaar/img68.png";
 import img1088 from "@/public/assets/hovuzlaar/img10888.png";
+import logo from '@/public/assets/images/logoag.png'
 
 
 
@@ -77,6 +78,8 @@ import superstoneGece from "@/public/assets/kenarkafeller/superstonegptgece.png"
 
 import gpt from "@/public/assets/teraslar/esashovuz.png";
 import gptgece from "@/public/assets/teraslar/mavihovuzgece.webp";
+import Link from "next/link";
+import { BiHome } from "react-icons/bi";
 // =========================
 // TYPES
 // =========================
@@ -103,6 +106,7 @@ interface ImageLayerProps {
   zIndex: number;
   alt: string;
   style?: React.CSSProperties;
+  // isMobile?: boolean
 }
 
 function ImageLayer({ img, isActive, zIndex, alt, style }: ImageLayerProps) {
@@ -110,7 +114,7 @@ function ImageLayer({ img, isActive, zIndex, alt, style }: ImageLayerProps) {
     <Image
       src={img}
       alt={alt}
-      className="absolute w-full h-full object-cover object-bottom transition-opacity duration-500"
+      className={`absolute w-full h-full object-cover object-bottom transition-opacity duration-500`}
       style={{ ...style, opacity: isActive ? 1 : 0, zIndex }}
       width={100000}
       height={100000}
@@ -224,6 +228,9 @@ function TileCard({
 // =========================
 // CATALOG PANEL
 // =========================
+// =========================
+// CATALOG PANEL (responsive)
+// =========================
 function CatalogPanel({
   categories,
   selections,
@@ -236,166 +243,349 @@ function CatalogPanel({
   isNight: boolean;
 }) {
   const [activeCategory, setActiveCategory] = useState(categories[0].id);
+  const [isMobile, setIsMobile] = useState(false);
+  const [isPortrait, setIsPortrait] = useState(true);
+  const [mounted, setMounted] = useState(false); // ← əlavə et
+
+  useEffect(() => {
+    const check = () => {
+      setIsMobile(window.innerWidth < 768);
+      setIsPortrait(window.innerHeight > window.innerWidth);
+    };
+    check();
+    setMounted(true); // ← check-dən sonra mounted=true
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
+
+  const tabSize = isMobile ? 42 : 48;
+  const panelWidth = isMobile ? 80 : 176;
+  const gridcol = isMobile ? '' : '1fr 1fr';
 
   const activeCat = categories.find((c) => c.id === activeCategory)!;
+  if (!mounted) return null;
 
-  return (
-    <div
-      style={{
-        position: "absolute",
-        left: 16,
-        top: "50%",
-        transform: "translateY(-50%)",
-        zIndex: 100,
-        display: "flex",
-        gap: 8,
-        height: "min(600px, 85vh)",
-      }}
-    >
-      {/* Category tabs (icon strip) */}
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          gap: 6,
-          justifyContent: "center",
-        }}
-      >
-        {categories.map((cat) => {
-          const isActive = cat.id === activeCategory;
-          const selectedOpt = cat.options.find((o) => o.key === selections[cat.id]);
-          return (
-            <button
-              key={cat.id}
-              onClick={() => setActiveCategory(cat.id)}
-              title={cat.label}
-              style={{
-                width: 48,
-                height: 48,
-                borderRadius: 12,
-                border: isActive
-                  ? "1.5px solid rgba(255,255,255,0.7)"
-                  : "1.5px solid rgba(255,255,255,0.12)",
-                background: isActive
-                  ? "rgba(255,255,255,0.15)"
-                  : "rgba(0,0,0,0.45)",
-                backdropFilter: "blur(12px)",
-                cursor: "pointer",
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-                justifyContent: "center",
-                gap: 2,
-                transition: "all 0.2s ease",
-                boxShadow: isActive ? "0 4px 16px rgba(0,0,0,0.4)" : "none",
-                padding: 0,
-                position: "relative",
-                overflow: "hidden",
-              }}
-            >
-              {/* Mini preview of selected tile */}
-              {selectedOpt && (
-                <div style={{ position: "absolute", inset: 0, opacity: 0.35 }}>
-                  <Image
-                    src={isNight ? selectedOpt.gece : selectedOpt.gunduz}
-                    alt=""
-                    fill
-                    className="object-cover"
-                    sizes="48px"
-                  />
-                </div>
-              )}
-              <span style={{ fontSize: 18, position: "relative" }}>{cat.icon}</span>
-              <span
+  // ── MOBILE PORTRAIT: horizontal strip at top-left ─────────────────────────
+  {
+    return (isMobile && isPortrait) ?
+      (
+        <div
+          style={{
+            position: "absolute",
+            top: 12,
+            left: 12,
+            zIndex: 100,
+            display: "flex",
+            flexDirection: "column",
+            gap: 8,
+            maxWidth: "calc(100vw - 80px)",
+          }}
+        >
+          {/* Row 1 — Home + category tabs */}
+          <div style={{ display: "flex", gap: 6, alignItems: "center" }}>
+            <Link href="/" title="Ana səhifə">
+              <button
                 style={{
-                  fontSize: 8,
-                  color: isActive ? "rgba(255,255,255,0.95)" : "rgba(255,255,255,0.45)",
-                  fontWeight: 600,
-                  letterSpacing: "0.04em",
-                  textTransform: "uppercase",
-                  position: "relative",
+                  width: 40,
+                  height: 40,
+                  borderRadius: 10,
+                  border: "1.5px solid rgba(255,255,255,0.12)",
+                  background: "rgba(0,0,0,0.5)",
+                  backdropFilter: "blur(12px)",
+                  cursor: "pointer",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  flexShrink: 0,
                 }}
               >
-                {cat.label.slice(0, 5)}
-              </span>
-            </button>
-          );
-        })}
-      </div>
+                <BiHome size={18} color="white" />
+              </button>
+            </Link>
 
-      {/* Tiles grid panel */}
-      <div
-        style={{
-          width: 176,
-          height: "100%",
-          background: "rgba(8,8,12,0.72)",
-          backdropFilter: "blur(20px)",
-          borderRadius: 16,
-          border: "1px solid rgba(255,255,255,0.1)",
-          boxShadow: "0 8px 40px rgba(0,0,0,0.6)",
-          display: "flex",
-          flexDirection: "column",
-          overflow: "hidden",
-        }}
-      >
-        {/* Panel header */}
-        <div
-          style={{
-            padding: "14px 14px 10px",
-            borderBottom: "1px solid rgba(255,255,255,0.07)",
-            flexShrink: 0,
-          }}
-        >
-          <p
+            {categories.map((cat) => {
+              const isActive = cat.id === activeCategory;
+              const selectedOpt = cat.options.find((o) => o.key === selections[cat.id]);
+              return (
+                <button
+                  key={cat.id}
+                  onClick={() => setActiveCategory(cat.id)}
+                  title={cat.label}
+                  style={{
+                    width: 40,
+                    height: 40,
+                    borderRadius: 10,
+                    border: isActive
+                      ? "1.5px solid rgba(255,255,255,0.7)"
+                      : "1.5px solid rgba(255,255,255,0.12)",
+                    background: isActive ? "rgba(255,255,255,0.15)" : "rgba(0,0,0,0.5)",
+                    backdropFilter: "blur(12px)",
+                    cursor: "pointer",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: 1,
+                    boxShadow: isActive ? "0 4px 16px rgba(0,0,0,0.4)" : "none",
+                    padding: 0,
+                    position: "relative",
+                    overflow: "hidden",
+                    flexShrink: 0,
+                    transition: "all 0.2s ease",
+                  }}
+                >
+                  {selectedOpt && (
+                    <div style={{ position: "absolute", inset: 0, opacity: 0.35 }}>
+                      <Image
+                        src={isNight ? selectedOpt.gece : selectedOpt.gunduz}
+                        alt=""
+                        fill
+                        className="object-cover"
+                        sizes="40px"
+                      />
+                    </div>
+                  )}
+                  <span style={{ fontSize: 16, position: "relative" }}>{cat.icon}</span>
+                  <span
+                    style={{
+                      fontSize: 7,
+                      color: isActive ? "rgba(255,255,255,0.95)" : "rgba(255,255,255,0.45)",
+                      fontWeight: 600,
+                      letterSpacing: "0.04em",
+                      textTransform: "uppercase",
+                      position: "relative",
+                    }}
+                  >
+                    {cat.label.slice(0, 5)}
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Row 2 — Horizontal scrollable tiles */}
+          <div
             style={{
-              margin: 0,
-              fontSize: 11,
-              fontWeight: 700,
-              color: "rgba(255,255,255,0.5)",
-              letterSpacing: "0.12em",
-              textTransform: "uppercase",
+              background: "rgba(8,8,12,0.75)",
+              backdropFilter: "blur(20px)",
+              borderRadius: 12,
+              border: "1px solid rgba(255,255,255,0.1)",
+              boxShadow: "0 8px 32px rgba(0,0,0,0.6)",
+              padding: "8px 10px",
             }}
           >
-            {activeCat.icon} {activeCat.label}
-          </p>
-          <p
-            style={{
-              margin: "2px 0 0",
-              fontSize: 9,
-              color: "rgba(255,255,255,0.25)",
-              letterSpacing: "0.06em",
-            }}
-          >
-            {activeCat.options.length} seçim
-          </p>
-        </div>
+            <p
+              style={{
+                margin: "0 0 6px",
+                fontSize: 9,
+                fontWeight: 700,
+                color: "rgba(255,255,255,0.45)",
+                letterSpacing: "0.12em",
+                textTransform: "uppercase",
+              }}
+            >
+              {activeCat.icon} {activeCat.label} · {activeCat.options.length} seçim
+            </p>
 
-        {/* Scrollable grid */}
+            <div
+              style={{
+                display: "flex",
+                gap: 8,
+                overflowX: "auto",
+                scrollbarWidth: "none",
+                paddingBottom: 2,
+              }}
+            >
+              {activeCat.options.map((option) => (
+                <div key={option.key} style={{ flexShrink: 0, width: 60 }}>
+                  <TileCard
+                    option={option}
+                    isSelected={selections[activeCategory] === option.key}
+                    isNight={isNight}
+                    onClick={() => onSelect(activeCategory, option.key)}
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      )
+      :
+      (
         <div
           style={{
-            flex: 1,
-            overflowY: "auto",
-            padding: "10px 10px 14px",
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr",
-            gap: 10,
-            alignContent: "start",
-            scrollbarWidth: "none",
+            position: "absolute",
+            left: 16,
+            top: "50%",
+            transform: "translateY(-50%)",
+            zIndex: 100,
+            display: "flex",
+            gap: 8,
+            height: isMobile ? "min(420px, 90vh)" : "min(600px, 85vh)",
           }}
         >
-          {activeCat.options.map((option) => (
-            <TileCard
-              key={option.key}
-              option={option}
-              isSelected={selections[activeCategory] === option.key}
-              isNight={isNight}
-              onClick={() => onSelect(activeCategory, option.key)}
-            />
-          ))}
+          {/* Category tabs (icon strip) */}
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              gap: isMobile ? 5 : 6,
+              justifyContent: "center",
+            }}
+          >
+            <Link href="/" title="Ana səhifə">
+              <button
+                style={{
+                  width: tabSize,
+                  height: tabSize,
+                  borderRadius: 12,
+                  border: "1.5px solid rgba(255,255,255,0.12)",
+                  background: "rgba(0,0,0,0.45)",
+                  backdropFilter: "blur(12px)",
+                  cursor: "pointer",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  transition: "all 0.2s ease",
+                }}
+              >
+                <BiHome size={isMobile ? 18 : 22} color="white" />
+              </button>
+            </Link>
+
+            {categories.map((cat) => {
+              const isActive = cat.id === activeCategory;
+              const selectedOpt = cat.options.find((o) => o.key === selections[cat.id]);
+              return (
+                <button
+                  key={cat.id}
+                  onClick={() => setActiveCategory(cat.id)}
+                  title={cat.label}
+                  style={{
+                    width: tabSize,
+                    height: tabSize,
+                    borderRadius: 12,
+                    border: isActive
+                      ? "1.5px solid rgba(255,255,255,0.7)"
+                      : "1.5px solid rgba(255,255,255,0.12)",
+                    background: isActive ? "rgba(255,255,255,0.15)" : "rgba(0,0,0,0.45)",
+                    backdropFilter: "blur(12px)",
+                    cursor: "pointer",
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: 2,
+                    transition: "all 0.2s ease",
+                    boxShadow: isActive ? "0 4px 16px rgba(0,0,0,0.4)" : "none",
+                    padding: 0,
+                    position: "relative",
+                    overflow: "hidden",
+                  }}
+                >
+                  {selectedOpt && (
+                    <div style={{ position: "absolute", inset: 0, opacity: 0.35 }}>
+                      <Image
+                        src={isNight ? selectedOpt.gece : selectedOpt.gunduz}
+                        alt=""
+                        fill
+                        className="object-cover"
+                        sizes={`${tabSize}px`}
+                      />
+                    </div>
+                  )}
+                  <span style={{ fontSize: isMobile ? 15 : 18, position: "relative" }}>{cat.icon}</span>
+                  <span
+                    style={{
+                      fontSize: isMobile ? 7 : 8,
+                      color: isActive ? "rgba(255,255,255,0.95)" : "rgba(255,255,255,0.45)",
+                      fontWeight: 600,
+                      letterSpacing: "0.04em",
+                      textTransform: "uppercase",
+                      position: "relative",
+                    }}
+                  >
+                    {cat.label.slice(0, 5)}
+                  </span>
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Tiles grid panel */}
+          <div
+            style={{
+              width: panelWidth,
+              height: "100%",
+              background: "rgba(8,8,12,0.72)",
+              backdropFilter: "blur(20px)",
+              borderRadius: 16,
+              border: "1px solid rgba(255,255,255,0.1)",
+              boxShadow: "0 8px 40px rgba(0,0,0,0.6)",
+              display: "flex",
+              flexDirection: "column",
+              overflow: "hidden",
+            }}
+          >
+            <div
+              style={{
+                padding: "12px 12px 8px",
+                borderBottom: "1px solid rgba(255,255,255,0.07)",
+                flexShrink: 0,
+              }}
+            >
+              <p
+                style={{
+                  margin: 0,
+                  fontSize: isMobile ? 10 : 11,
+                  fontWeight: 700,
+                  color: "rgba(255,255,255,0.5)",
+                  letterSpacing: "0.12em",
+                  textTransform: "uppercase",
+                }}
+              >
+                {activeCat.icon} {activeCat.label}
+              </p>
+              <p
+                style={{
+                  margin: "2px 0 0",
+                  fontSize: 9,
+                  color: "rgba(255,255,255,0.25)",
+                  letterSpacing: "0.06em",
+                }}
+              >
+                {activeCat.options.length} seçim
+              </p>
+            </div>
+
+            <div
+              style={{
+                flex: 1,
+                overflowY: "auto",
+                padding: "10px 10px 14px",
+                display: "grid",
+                gridTemplateColumns: gridcol,
+                gap: isMobile ? 2 : 8,
+                alignContent: "start",
+                scrollbarWidth: "none",
+              }}
+            >
+              {activeCat.options.map((option) => (
+                <TileCard
+                  key={option.key}
+                  option={option}
+                  isSelected={selections[activeCategory] === option.key}
+                  isNight={isNight}
+                  onClick={() => onSelect(activeCategory, option.key)}
+                />
+              ))}
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  );
+      )
+
+
+  }
 }
 
 // =========================
@@ -412,7 +602,7 @@ export default function Create() {
     { key: "a64", label: "a64", gunduz: img64, gece: img64 },
     { key: "a65", label: "a65", gunduz: img65, gece: img65 },
     { key: "a66", label: "a66", gunduz: img66, gece: img66 },
-    { key: "a65", label: "a67", gunduz: img67, gece: img67 },
+    { key: "a67", label: "a67", gunduz: img67, gece: img67 },
     { key: "a668", label: "a68", gunduz: img68, gece: img68 },
     { key: "a1011", label: "a1011", gunduz: img1088, gece: img1088 },
 
@@ -430,7 +620,7 @@ export default function Create() {
     // { key: "floralblue", label: "Floral Blue", gunduz: floralblue, gece: floralblueGece },
     // { key: "floralgreen", label: "Floral Green", gunduz: floralgreen, gece: floralgreenGece },
     // { key: "judiGrey", label: "Judi Grey", gunduz: judiGreyKare, gece: judiGreyKareGece },
-    { key: "gpt", label: "gpt ", gunduz: gpt, gece: gptgece },
+    // { key: "gpt", label: "gpt ", gunduz: gpt, gece: gptgece },
 
   ];
 
@@ -461,12 +651,12 @@ export default function Create() {
   const categories: CatalogCategory[] = [
     { id: "hovuz", label: "Hovuz", icon: "🏊", options: hovuzlar },
     { id: "kenar", label: "Kenar", icon: "🪨", options: kenarKafeller },
-    { id: "orta", label: "Orta", icon: "⬛", options: ortaKafeller },
+    // { id: "orta", label: "Orta", icon: "⬛", options: ortaKafeller },
     { id: "teras", label: "Teras", icon: "🏡", options: teraslar },
   ];
 
   const [selections, setSelections] = useState<Record<string, string>>({
-    hovuz: "gpt",
+    hovuz: "a151",
     kenar: "superstone",
     orta: "superstone",
     teras: "gpt",
@@ -480,16 +670,40 @@ export default function Create() {
   const kenarKey = selections.kenar;
   const ortaKey = selections.orta;
   const terasKey = selections.teras;
-
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const check = () => {
+      setIsMobile(window.innerWidth < 768);
+      // setIsPortrait(window.innerHeight > window.innerWidth);
+    };
+    check();
+    // setMounted(true); // ← check-dən sonra mounted=true
+    window.addEventListener("resize", check);
+    return () => window.removeEventListener("resize", check);
+  }, []);
   return (
     <div className="relative w-screen h-screen overflow-hidden">
+
+
       {/* HOVUZLAR */}
       {hovuzlar.map((opt) => (
         <ImageLayer
           key={opt.key}
           img={isNight ? opt.gece : opt.gunduz}
           isActive={opt.key === hovuzKey}
-          zIndex={20}
+          zIndex={1}
+          // isMobile
+          style={
+            isMobile
+              ? {
+                transform: ['a66', 'a63', 'a64', 'a65', 'a67'].some(k => opt.key.includes(k))
+                  ? "translateX(22px)"
+                  : opt.key.includes('a62')
+                    ? "scale(1.07) translateX(7px)"
+                    : undefined
+              }
+              : undefined
+          }
           alt={`hovuz-${opt.key}`}
         />
       ))}
@@ -498,9 +712,10 @@ export default function Create() {
       {kenarKafeller.map((opt) => (
         <ImageLayer
           key={opt.key}
+          // isMobile
           img={isNight ? opt.gece : opt.gunduz}
           isActive={opt.key === kenarKey}
-          zIndex={20}
+          zIndex={4}
           alt={`kenar-${opt.key}`}
         />
       ))}
@@ -508,11 +723,11 @@ export default function Create() {
       {/* ORTA KAFELLƏR */}
       {ortaKafeller.map((opt) => (
         <ImageLayer
+          // isMobile
           key={opt.key}
           img={isNight ? opt.gece : opt.gunduz}
           isActive={opt.key === ortaKey}
-          zIndex={22}
-          style={{ transform: "scale(1.01) translateX(3px)" }}
+          zIndex={2}
           alt={`orta-${opt.key}`}
         />
       ))}
@@ -521,12 +736,14 @@ export default function Create() {
       {teraslar.map((opt) => (
         <ImageLayer
           key={opt.key}
+          // isMobile
           img={isNight ? opt.gece : opt.gunduz}
           isActive={opt.key === terasKey}
-          zIndex={65}
+          zIndex={3}
           alt={`teras-${opt.key}`}
         />
       ))}
+
 
       {/* ===================== */}
       {/* LEFT CATALOG PANEL   */}

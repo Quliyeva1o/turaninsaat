@@ -72,14 +72,15 @@ export default function OurProjects() {
 
               <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black rounded-2xl" />
 
-              <div className="absolute bottom-1 left-5  right-5 z-20 transform translate-y-[60%] h-[120px] group-hover:-translate-y-5 transition-transform duration-500">
+              <div className="absolute bottom-13 md:bottom-1 left-5 right-5 z-20 transform md:translate-y-[60%] h-[120px] group-hover:-translate-y-5 transition-transform duration-500">
                 <h3 className="text-[20px] sm:text-[22px] font-semibold leading-snug tracking-tight text-white">                  {project.title}
                 </h3>
                 <p className="text-[14px] mt-4 sm:text-[15px] text-white/80 leading-relaxed">
                   {project.description}
                 </p>
+            <Link href="/projects">
                 <span className="mt-4 inline-flex items-center gap-2 text-[#C49B63] text-[14px] font-medium tracking-wide">                  Ətraflı →
-                </span>
+                </span></Link>
               </div>
             </article>
           ))}

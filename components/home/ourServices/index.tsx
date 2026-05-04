@@ -93,7 +93,7 @@ export default function OurServices({ locale = 'az' }: Props) {
                     className="h-56 w-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black rounded-2xl" />
-                  <div className="absolute bottom-0 left-4 right-4 p-4 z-20 transform translate-y-[60%] group-hover:translate-y-0 transition-transform duration-500">
+                  <div className="absolute bottom-0 left-4 right-4 p-4 z-20 transform md:translate-y-[60%] group-hover:translate-y-0 transition-transform duration-500">
                     <h3 className="text-lg font-bold font-[var(--font-manrope)]">{s.title}</h3>
                     <p className="text-sm mt-6 text-slate-200 font-[var(--font-dm-sans)]">{s.desc}</p>
                     <span className="mt-3 inline-flex items-center gap-2 text-[#C49B63] font-semibold">
