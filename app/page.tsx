@@ -1,12 +1,7 @@
 // 'use client' SİLİNDİ — artıq server component-dir
 import AboutUs from "@/components/home/aboutUs";
-import OurServices from "@/components/home/ourServices";
-import WhyChooseUs from "@/components/home/chooseUs";
-import OurProjects from "@/components/home/ourProjects";
-import { ProductsHome } from "@/components/home/products";
-import { ContactSection } from "@/components/home/contactUs";
-import HeroWrapper from "@/components/home/heroWrapper";
 import type { Metadata } from "next";
+import dynamic from "next/dynamic";
 
 export const metadata: Metadata = {
   title: "Hovuz və SPA Tikintisi Bakı",
@@ -16,6 +11,22 @@ export const metadata: Metadata = {
     canonical: "https://www.turanprojects.az",
   },
 };
+
+const OurServices = dynamic(() => import("@/components/home/ourServices"));
+const OurProjects = dynamic(
+  () => import("@/components/home/ourProjects"),
+  {
+    loading: () => <div className="h-96 animate-pulse bg-gray-100 rounded-xl" />,
+  }
+); const ProductsHome = dynamic(() =>
+  import("@/components/home/products").then((mod) => mod.ProductsHome)
+);
+const WhyChooseUs = dynamic(() => import("@/components/home/chooseUs"));
+const ContactSection = dynamic(() =>
+  import("@/components/home/contactUs").then((mod) => mod.ContactSection)
+);
+
+const HeroWrapper = dynamic(() => import("@/components/home/heroWrapper"));
 
 export default function Home() {
   return (

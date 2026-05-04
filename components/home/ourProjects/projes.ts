@@ -2,18 +2,17 @@ export const projects = [
   {
     title: "Hyatt Regency – Çöl Hovuz",
     slug: "hyatt-pool",
-    description: "Otellər üçün geniş açıq hovuz layihəsi.",
+    description: "Hyatt Regency oteli üçün xüsusi dizayn edilmiş geniş açıq hovuz layihəsi.",
     images: [
       "/assets/projects/hyattRegency/hovuz1.jpg",
       "/assets/projects/hyattRegency/hyattVideo.mp4",
       "/assets/projects/hyattRegency/hovuz2.jpeg",
-
     ],
   },
   {
     title: "Goradil layihəsi",
     slug: "goradil",
-    description: "Tikinti prosesi və hovuz tamamlanma mərhələləri.",
+    description: "Goradil ərazisində həyata keçirilmiş fərdi villa hovuzu tikinti və tamamlanma mərhələləri.",
     images: [
       "/assets/projects/goradil/tikintiprocess2.png",
       "/assets/projects/goradil/hovuz1.png",
@@ -24,7 +23,7 @@ export const projects = [
   {
     title: "Villa Badam layihəsi",
     slug: "villa-badam",
-    description: "Tikinti prosesi və hovuz tamamlanma mərhələləri.",
+    description: "Villa Badam ərazisində inşa edilmiş müasir dizaynlı özel hovuz layihəsi.",
     images: [
       "/assets/projects/villabadam/video4.mp4",
       "/assets/projects/villabadam/video3.mp4",
@@ -34,7 +33,7 @@ export const projects = [
   {
     title: "Daşma hovuz (Badamdar layihəsi)",
     slug: "badamdar",
-    description: "Tikinti prosesi və hovuz tamamlanma mərhələləri.",
+    description: "Badamdar qəsəbəsində inşa edilmiş estetik infinity (daşma) hovuz layihəsi.",
     images: [
       "/assets/projects/badamdar/hovuz1.jpeg",
       "/assets/projects/badamdar/hovuz2.jpeg",
@@ -44,7 +43,7 @@ export const projects = [
   {
     title: "Daşma hovuz (Bilgəh Mircəlal küç.)",
     slug: "bilgeh",
-    description: "Tikinti prosesi və hovuz tamamlanma mərhələləri.",
+    description: "Bilgəh, Mircəlal küçəsindəki villa üçün panoramik görünüşlü daşma hovuz layihəsi.",
     images: [
       "/assets/projects/bilgeh/hovuz.JPG",
       "/assets/projects/bilgeh/hovuz1.jpeg",
@@ -52,15 +51,12 @@ export const projects = [
       "/assets/projects/bilgeh/hovuz4.jpeg",
       "/assets/projects/bilgeh/hovuz5.jpeg",
       "/assets/projects/bilgeh/hovuz6.jpeg",
-
-
-
     ],
   },
   {
     title: "My Class (Yasamal) – Hovuz",
     slug: "myclass-hovuz",
-    description: "Fitness mərkəzi üçün müasir filtrasiya sistemi ilə qurulmuş hovuz layihəsi.",
+    description: "Fitness mərkəzi üçün müasir filtrasiya sistemi ilə qurulmuş professional hovuz layihəsi.",
     images: [
       "/assets/projects/myclass/hovuz.jpg",
       "/assets/projects/myclass/hovuz2.jpg",
@@ -71,7 +67,7 @@ export const projects = [
   {
     title: "My Class (Yasamal) – Cakuzi",
     slug: "myclass-cakuzi",
-    description: "Relaks və hidromasaj üçün premium jacuzzi sistemi.",
+    description: "My Class fitness mərkəzi üçün relaksasiya və hidromasaj təcrübəsi yaradan premium jacuzzi sistemi.",
     images: [
       "/assets/projects/myclass/cakuzi.jpg",
       "/assets/projects/myclass/cakuzi2.jpg",
@@ -82,7 +78,7 @@ export const projects = [
   {
     title: "My Class (Yasamal) – Sauna",
     slug: "myclass-sauna",
-    description: "Fin sauna texnologiyası ilə hazırlanmış zona.",
+    description: "My Class mərkəzinə inteqrasiya olunmuş Fin sauna texnologiyası ilə təchiz edilmiş istirahət zonası.",
     images: [
       "/assets/projects/myclass/sauna.jpg",
       "/assets/projects/myclass/sauna2.jpg",
@@ -93,73 +89,64 @@ export const projects = [
   {
     title: "My Class (Yasamal) – Türk Hamamı",
     slug: "myclass-hamam",
-    description: "Mərmər interyer və buxar sistemi ilə klassik hamam.",
+    description: "My Class mərkəzindəki mərmər interyer və ənənəvi buxar sistemi ilə hazırlanmış klassik Türk hamamı.",
     images: [
       "/assets/projects/myclass/turkhamami.jpg",
       "/assets/projects/myclass/turkhamami2.jpg",
     ],
-  }
-  ,
+  },
   {
-    title: "My Class (Yasamal) – buixar otagi ",
+    title: "My Class (Yasamal) – Buxar otağı",
     slug: "myclass-buxar",
-    description: "Mərmər interyer və buxar sistemi ilə klassik hamam.",
+    description: "My Class mərkəzindəki nəmlik və istilik balansı ilə dizayn edilmiş müasir buxar otağı.",
     images: [
       "/assets/projects/myclass/buxarotagi.jpg",
     ],
   },
   {
-    title: "My Class (Yasamal) – duzotagi",
+    title: "My Class (Yasamal) – Duz otağı",
     slug: "myclass-duzotagi",
-    description: "Mərmər interyer və buxar sistemi ilə klassik hamam.",
+    description: "My Class mərkəzindəki terapevtik xüsusiyyətlərə malik haloterapi (duz otağı) zonası.",
     images: [
       "/assets/projects/myclass/duzotagi.jpg",
       "/assets/projects/myclass/duzotagi2.jpg",
       "/assets/projects/myclass/duzotagi3.jpg",
       "/assets/projects/myclass/duzotagi4.jpg",
-
     ],
   },
   {
-    title: "My Class (Yasamal) – masaj otagi",
+    title: "My Class (Yasamal) – Masaj otağı",
     slug: "myclass-masaj",
-    description: "Mərmər interyer və buxar sistemi ilə klassik hamam.",
+    description: "My Class mərkəzindəki müştərilər üçün tam rahatlıq təmin edən professional masaj otağı.",
     images: [
       "/assets/projects/myclass/masajotagi.jpg",
       "/assets/projects/myclass/masajotagi 2.jpg",
-
     ],
-  }
-  ,
+  },
   {
-    title: "My Class (Yasamal) – kise otagi",
+    title: "My Class (Yasamal) – Kese otağı",
     slug: "myclass-kise",
-    description: "Mərmər interyer və buxar sistemi ilə klassik hamam.",
+    description: "My Class mərkəzindəki ənənəvi kese prosedurları üçün xüsusi təchiz edilmiş zona.",
     images: [
-
       "/assets/projects/myclass/turkhamami3.jpg",
-
     ],
   },
   {
     title: "Buzovna - Hovuz",
     slug: "buzovna-hovuz",
-    description: "Mərmər interyer və buxar sistemi ilə klassik hamam.",
+    description: "Buzovna ərazisindəki villada dəniz mənzərəsinə uyğun inşa edilmiş açıq hovuz layihəsi.",
     images: [
-
       "/assets/projects/buzovna/hovuz.jpeg",
       "/assets/projects/buzovna/hovuz2.jpeg",
       "/assets/projects/buzovna/hovuz3.jpeg",
       "/assets/projects/buzovna/hovuz4.jpeg",
       "/assets/projects/buzovna/hovuz5.jpeg",
-
     ],
-  }
-  ,
+  },
   {
-    title: "makfit - Hovuz",
+    title: "Makfit - Hovuz",
     slug: "makfit-hovuz",
-    description: "Mərmər interyer və buxar sistemi ilə klassik hamam.",
+    description: "Makfit fitness klubu üçün tikintidən son mərhələyə qədər icra edilmiş professional hovuz layihəsi.",
     images: [
       "/assets/projects/makfit/hovuzfinal.webp",
       "/assets/projects/makfit/hovuz.jpeg",
@@ -171,56 +158,54 @@ export const projects = [
       "/assets/projects/makfit/hovuz7.jpeg",
       "/assets/projects/makfit/hovuz8.jpeg",
       "/assets/projects/makfit/hovuz9.jpeg",
-
     ],
-  }
-  ,
+  },
   {
-    title: "crown - buxar",
+    title: "Crown - Buxar",
     slug: "crown-buxar",
-    description: "Mərmər interyer və buxar sistemi ilə klassik hamam.",
+    description: "Crown kompleksi üçün yüksək nəmlik və istilik idarəetməsi ilə qurulmuş buxar otağı.",
     images: [
       "/assets/projects/crown/buxar.webp",
-      "/assets/projects/crown/buxar2.jpeg"
+      "/assets/projects/crown/buxar2.jpeg",
     ],
   },
   {
-    title: "crown - buz hovuzu",
+    title: "Crown - Buz hovuzu",
     slug: "crown-buz",
-    description: "Mərmər interyer və buxar sistemi ilə klassik hamam.",
+    description: "Crown kompleksindəki sağlamlıq dövrəsinin bir hissəsi olan serinləyici buz hovuzu.",
     images: [
       "/assets/projects/crown/Buz-hovuzu.webp",
-    ]
+    ],
   },
   {
-    title: "crown - kise",
+    title: "Crown - Kese",
     slug: "crown-kise",
-    description: "Mərmər interyer və buxar sistemi ilə klassik hamam.",
+    description: "Crown kompleksindəki dərin təmizləmə və dəri baxımı üçün nəzərdə tutulmuş kese otağı.",
     images: [
       "/assets/projects/crown/Kis.webp",
       "/assets/projects/crown/kise2.jpeg",
-
     ],
-  }, {
-    title: "crown - rus hamami",
+  },
+  {
+    title: "Crown - Rus hamamı",
     slug: "crown-rus",
-    description: "Mərmər interyer və buxar sistemi ilə klassik hamam.",
+    description: "Crown kompleksindəki ənənəvi Rus hamamı (banya) texnologiyası ilə inşa edilmiş istirahət zonası.",
     images: [
       "/assets/projects/crown/rushamam1.webp",
     ],
-  }, {
-    title: "crown - sauna",
+  },
+  {
+    title: "Crown - Sauna",
     slug: "crown-saunaa",
-    description: "Mərmər interyer və buxar sistemi ilə klassik hamam.",
+    description: "Crown kompleksindəki yüksək temperatur və aşağı nəmlik rejimli Fin saunası.",
     images: [
       "/assets/projects/crown/Sauna.webp",
-      "/assets/projects/crown/Sauna.webp",
     ],
-  }
-  , {
-    title: "crown - Turk hamami",
+  },
+  {
+    title: "Crown - Türk hamamı",
     slug: "crown-turk",
-    description: "Mərmər interyer və buxar sistemi ilə klassik hamam.",
+    description: "Crown kompleksindəki mərmər üzlük və ənənəvi buxar sistemi ilə tamamlanmış lüks Türk hamamı.",
     images: [
       "/assets/projects/crown/Trkhamami1.webp",
       "/assets/projects/crown/Trkhamami2.webp",
@@ -228,5 +213,5 @@ export const projects = [
       "/assets/projects/crown/Trkhamami4.webp",
       "/assets/projects/crown/turkhamami5.jpeg",
     ],
-  }
+  },
 ];

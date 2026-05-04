@@ -35,9 +35,9 @@ export default function ServiceDetail({ service }: { service: Service }) {
           ← Bütün xidmətlər
         </Link>
 
-        <h1 className="font-extrabold leading-tight mb-4 text-[#FAF6EC] text-[clamp(28px,4vw,48px)]">
+        <h2 className="font-extrabold leading-tight mb-4 text-[#FAF6EC] text-[clamp(28px,4vw,48px)]">
           {service.title}
-        </h1>
+        </h2>
 
         <p className="text-base mb-10 text-[rgba(200,232,234,0.65)]">
           {service.desc}
