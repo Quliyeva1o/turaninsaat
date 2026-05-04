@@ -23,10 +23,21 @@ const Footer = () => {
             </p>
 
             <div className="flex gap-4 mt-6">
-              <a className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-[#2A69AC] hover:text-white transition">
+              {/* ✅ FIX: href əlavə edildi */}
+              <a
+                href="https://www.instagram.com/turanprojects.az"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-[#2A69AC] hover:text-white transition"
+              >
                 <FaInstagram />
               </a>
-              <a className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-[#2A69AC] hover:text-white transition">
+
+              <a href="https://wa.me/994503127657"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-[#2A69AC] hover:text-white transition"
+              >
                 <FaWhatsapp />
               </a>
             </div>
@@ -34,7 +45,8 @@ const Footer = () => {
 
           {/* Navigation */}
           <div data-aos="fade-up" data-aos-delay="100">
-            <h4 className="text-lg font-bold mb-5">Keçidlər</h4>
+            {/* ✅ FIX: h4 → h3 */}
+            <h3 className="text-lg font-bold mb-5">Keçidlər</h3>
             <ul className="space-y-3 text-md text-gray-600">
               <li><Link href="/" className="hover:text-[#2A69AC]">Ana səhifə</Link></li>
               <li><Link href="/about" className="hover:text-[#2A69AC]">Haqqımızda</Link></li>
@@ -46,7 +58,8 @@ const Footer = () => {
 
           {/* Services */}
           <div data-aos="fade-up" data-aos-delay="200">
-            <h4 className="text-lg font-bold mb-5">Xidmətlər</h4>
+            {/* ✅ FIX: h4 → h3 */}
+            <h3 className="text-lg font-bold mb-5">Xidmətlər</h3>
             <ul className="space-y-3 text-md text-gray-600">
               <li><Link href="#">Hovuz Tikintisi</Link></li>
               <li><Link href="#">Sauna</Link></li>
@@ -57,7 +70,8 @@ const Footer = () => {
 
           {/* Contact */}
           <div data-aos="fade-up" data-aos-delay="300">
-            <h4 className="text-lg font-bold mb-5">Əlaqə</h4>
+            {/* ✅ FIX: h4 → h3 */}
+            <h3 className="text-lg font-bold mb-5">Əlaqə</h3>
 
             <div className="flex flex-col gap-4">
 
@@ -81,7 +95,7 @@ const Footer = () => {
         </div>
 
         {/* Divider */}
-        <div data-aos="fade-up"  className="h-[1px] w-full bg-gray-200 mb-6" />
+        <div data-aos="fade-up" className="h-[1px] w-full bg-gray-200 mb-6" />
 
         {/* Bottom */}
         <div data-aos="fade-up" className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
