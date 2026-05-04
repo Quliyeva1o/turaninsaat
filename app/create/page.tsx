@@ -75,7 +75,7 @@ import superstoneGece from "@/public/assets/kenarkafeller/superstonegptgece.png"
 // import mavivillagece from "@/public/assets/teraslar/mavivillagece.webp";
 // import villa4 from "@/public/assets/teraslar/villa4.webp";
 
-import gpt from "@/public/assets/teraslar/mavihovuz.webp";
+import gpt from "@/public/assets/teraslar/esashovuz.png";
 import gptgece from "@/public/assets/teraslar/mavihovuzgece.webp";
 // =========================
 // TYPES
@@ -523,7 +523,7 @@ export default function Create() {
           key={opt.key}
           img={isNight ? opt.gece : opt.gunduz}
           isActive={opt.key === terasKey}
-          zIndex={15}
+          zIndex={65}
           alt={`teras-${opt.key}`}
         />
       ))}
