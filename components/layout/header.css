@@ -49,15 +49,16 @@
 
 /* ── Header shell ── */
 .site-header {
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
   background: transparent;
+  transition: all 0.3s ease;
 }
 
 .site-header.scrolled {
-  position: fixed;
+  /* position: fixed; */
   background: rgba(10, 30, 48, 0.85);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);

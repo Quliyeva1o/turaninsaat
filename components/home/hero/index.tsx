@@ -60,7 +60,7 @@ export default function Hero({
   return (
     <section
       aria-label="Turan İnşaat Hero Section"
-      className={`relative ${isHome
+      className={`relative overflow-hidden ${isHome
           ? "h-[100vh] lg:h-[calc(100vh+100px)]"
           : "h-[280px] sm:h-[340px] md:h-[420px]"
         }`}
