@@ -80,9 +80,9 @@ export default function ContactClient() {
 
               <div className="flex items-center gap-3">
                 <span className="w-8 h-[1px] bg-[#2A6AAB]" />
-                <p className="uppercase text-[11px] tracking-[0.25em] text-[#2A6AAB] font-semibold">
+                <h1 className="uppercase text-[11px] tracking-[0.25em] text-[#2A6AAB] font-semibold">
                   Bizimlə Əlaqə
-                </p>
+                </h1>
               </div>
 
               <h2 className="text-[32px] sm:text-[44px] font-extrabold leading-tight">

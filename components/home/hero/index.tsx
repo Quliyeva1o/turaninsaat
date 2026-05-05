@@ -61,8 +61,8 @@ export default function Hero({
     <section
       aria-label="Turan İnşaat Hero Section"
       className={`relative overflow-hidden ${isHome
-          ? "h-[100vh] lg:h-[calc(100vh+100px)]"
-          : "h-[280px] sm:h-[340px] md:h-[420px]"
+        ? "h-[100vh] lg:h-[calc(100vh+100px)]"
+        : "h-[280px] sm:h-[340px] md:h-[420px]"
         }`}
     >
       <div className="flex items-center text-white h-full overflow-hidden">
@@ -111,7 +111,7 @@ export default function Hero({
           </p>
 
           {/* TITLE */}
-          <h1
+          <h4
             className={`
     ${isHome
                 ? "text-[clamp(28px,5vw,72px)]"
@@ -124,7 +124,7 @@ export default function Hero({
     drop-shadow-sm
   `}
           >            {isHome ? content.title : text}
-          </h1>
+          </h4>
 
           {/* DIVIDER */}
           {isHome && (
