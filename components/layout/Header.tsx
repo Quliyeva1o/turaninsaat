@@ -123,7 +123,7 @@ export default function Header({ locale = "az" }: any) {
               <li>
                 <Link href="/products" prefetch={false}>Məhsullarımız</Link>
               </li>   <li>
-                <Link href="/products" prefetch={false}>Öz hovuzunu yarat</Link>
+                <Link href="/create" prefetch={false}>Öz hovuzunu yarat</Link>
               </li>
               <li className="mobile-only">
                 <Link href="/contact" prefetch={false}>

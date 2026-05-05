@@ -49,7 +49,7 @@ const Footer = () => {
                 { href: "/about", label: "Haqqımızda" },
                 { href: "/projects", label: "Layihələr" },
                 { href: "/products", label: "Məhsullarımız" },
-                { href: "/products", label: "Öz hovuzunu yarat" },
+                { href: "/create", label: "Öz hovuzunu yarat" },
                 { href: "/contact", label: "Əlaqə" },
               ].map((item) => (
                 <li key={item.label}>
