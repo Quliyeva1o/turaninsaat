@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-import Image from "next/image";
 import { projects } from "@/components/home/ourProjects/projes";
 import HeroWrapper from "@/components/home/heroWrapper";
 import ProjectDetailClient from "./ProjectDetailClient";
@@ -22,14 +21,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!project) {
     return { title: "Layihə tapılmadı | Turan İnşaat" };
   }
-
-  const firstImage = project.images?.find((img) => !img.endsWith(".mp4"));
-  const imageUrl = firstImage
-    ? firstImage.startsWith("http")
-      ? firstImage
-      : `${BASE_URL}${firstImage}`
-    : undefined;
-
   const pageUrl = `${BASE_URL}/projects/${project.slug}`;
 
   return {
@@ -49,15 +40,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: "article",
       siteName: "Turan İnşaat MMC",
       locale: "az_AZ",
-      images: imageUrl
-        ? [{ url: imageUrl, width: 1200, height: 630, alt: `${project.title} — Turan İnşaat` }]
-        : [],
+      // images: imageUrl
+      //   ? [{ url: imageUrl, width: 1200, height: 630, alt: `${project.title} — Turan İnşaat` }]
+      //   : [],
     },
     twitter: {
       card: "summary_large_image",
       title: `${project.title} | Turan İnşaat Bakı`,
       description: project.seoDescription ?? project.description,
-      images: imageUrl ? [imageUrl] : [],
+      // images: imageUrl ? [imageUrl] : [],
     },
     robots: {
       index: true,
@@ -129,13 +120,13 @@ export default async function Page({ params }: Props) {
   const imageGalleryJsonLd =
     galleryImages && galleryImages.length > 1
       ? {
-          "@context": "https://schema.org",
-          "@type": "ImageGallery",
-          name: `${project.title} — Foto Qalereya`,
-          description: project.seoDescription ?? project.description,
-          url: pageUrl,
-          associatedMedia: galleryImages,
-        }
+        "@context": "https://schema.org",
+        "@type": "ImageGallery",
+        name: `${project.title} — Foto Qalereya`,
+        description: project.seoDescription ?? project.description,
+        url: pageUrl,
+        associatedMedia: galleryImages,
+      }
       : null;
 
   return (
@@ -163,16 +154,7 @@ export default async function Page({ params }: Props) {
       */}
       <div className="sr-only">
         <h1>{project.title}</h1>
-        <p>{project.seoDescription ?? project.description}</p>
-        {imageUrl && (
-          <Image
-            src={imageUrl}
-            alt={`${project.title} — Turan İnşaat`}
-            width={1200}
-            height={630}
-            priority
-          />
-        )}
+        <p>{project.seoDescription ?? project.description}</p> 
       </div>
 
       {/* Interactive gallery — client component */}
