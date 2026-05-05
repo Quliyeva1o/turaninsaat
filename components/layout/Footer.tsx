@@ -5,102 +5,120 @@ import Image from "next/image";
 import { memo } from "react";
 import { FaPhoneAlt, FaEnvelope, FaInstagram, FaWhatsapp } from "react-icons/fa";
 import logo from "@/public/assets/images/logo.png";
+import { servicesContent } from "@/utils";
+import { projects } from "@/components/home/ourProjects/projes";
 
 const Footer = () => {
   return (
-    <footer className="bg-white text-[#12223B] pt-25 pb-20 border-t border-gray-200">
-
+    <footer className="bg-white text-[#12223B] border-t border-gray-200 pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
 
-        {/* TOP */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+        {/* Grid — 5 bərabər sütun */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-[1.6fr_1fr_1fr_1fr_1fr] gap-10 mb-12">
 
-          {/* Logo & About */}
+          {/* Logo & Haqqında */}
           <div data-aos="fade-up" data-aos-delay="0">
-            <Image src={logo} alt="Turan İnşaat" width={140} height={40} />
-            <p className="text-gray-500 mt-4 text-md leading-relaxed">
+            <Image src={logo} alt="Turan İnşaat" width={130} height={36} />
+            <p className="text-gray-500 text-sm leading-relaxed mt-4">
               Peşəkar hovuz, spa və mühəndislik həlləri ilə rahatlıq və estetik dizaynı birləşdiririk.
             </p>
+            <div className="flex gap-2 mt-5">
 
-            <div className="flex gap-4 mt-6">
-              {/* ✅ FIX: href əlavə edildi */}
-              <a
-                href="https://www.instagram.com/turanprojects.az"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-[#2A69AC] hover:text-white transition"
+              <a href="https://www.instagram.com/turanprojects.az"
+                target="_blank" rel="noopener noreferrer"
+                className="w-9 h-9 flex items-center justify-center rounded-lg bg-gray-100 hover:bg-[#2A69AC] hover:text-white text-gray-500 transition"
               >
-                <FaInstagram />
+                <FaInstagram size={15} />
               </a>
-
-              <a href="https://wa.me/994503127657"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-[#2A69AC] hover:text-white transition"
+              <a
+                href="https://wa.me/994503127657"
+                target="_blank" rel="noopener noreferrer"
+                className="w-9 h-9 flex items-center justify-center rounded-lg bg-gray-100 hover:bg-[#2A69AC] hover:text-white text-gray-500 transition"
               >
-                <FaWhatsapp />
+                <FaWhatsapp size={15} />
               </a>
             </div>
           </div>
 
-          {/* Navigation */}
-          <div data-aos="fade-up" data-aos-delay="100">
-            <h3 className="text-lg font-bold mb-5">Keçidlər</h3>
-            <ul className="space-y-3 text-md text-gray-600">
-              <li><Link href="/" className="hover:text-[#2A69AC]">Ana səhifə</Link></li>
-              <li><Link href="/about" className="hover:text-[#2A69AC]">Haqqımızda</Link></li>
-              <li><Link href="/services" className="hover:text-[#2A69AC]">Xidmətlər</Link></li>
-              <li><Link href="/projects" className="hover:text-[#2A69AC]">Layihələr</Link></li>
-              <li><Link href="/contact" className="hover:text-[#2A69AC]">Əlaqə</Link></li>
+          {/* Keçidlər */}
+          <div data-aos="fade-up" data-aos-delay="75">
+            <h3 className="text-[14px] font-bold tracking-widest uppercase text-[#12223B] mb-4">Keçidlər</h3>
+            <ul className="space-y-2.5 text-sm text-gray-500">
+              {[
+                { href: "/", label: "Ana səhifə" },
+                { href: "/about", label: "Haqqımızda" },
+                { href: "/projects", label: "Layihələr" },
+                { href: "/products", label: "Məhsullarımız" },
+                { href: "/products", label: "Öz hovuzunu yarat" },
+                { href: "/contact", label: "Əlaqə" },
+              ].map((item) => (
+                <li key={item.label}>
+                  <Link href={item.href} className="hover:text-[#2A69AC] transition-colors">{item.label}</Link>
+                </li>
+              ))}
             </ul>
           </div>
 
-          {/* Services */}
-          <div data-aos="fade-up" data-aos-delay="200">
-            <h3 className="text-lg font-bold mb-5">Xidmətlər</h3>
-            <ul className="space-y-3 text-md text-gray-600">
-              <li><Link href="#">Hovuz Tikintisi</Link></li>
-              <li><Link href="#">Sauna</Link></li>
-              <li><Link href="#">Spa Zonaları</Link></li>
-              <li><Link href="#">Buxar otağı</Link></li>
+          {/* Xidmətlər */}
+          <div data-aos="fade-up" data-aos-delay="150">
+            <h3 className="text-[14px] font-bold tracking-widest uppercase text-[#12223B] mb-4">Xidmətlər</h3>
+            <ul className="space-y-2.5 text-sm text-gray-500">
+              {servicesContent["az"].slice(0, 5).map((s: any) => (
+                <li key={s.slug}>
+                  <Link href={`/services/${s.slug}`} className="hover:text-[#2A69AC] transition-colors">{s.title}</Link>
+                </li>
+              ))}
+              <li>
+                <Link href="/services" className="text-[#2A69AC] text-xs font-semibold hover:underline mt-1 inline-block">Daha çox →</Link>
+              </li>
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* Layihələr */}
+          <div data-aos="fade-up" data-aos-delay="225">
+            <h3 className="text-[14px] font-bold tracking-widest uppercase text-[#12223B] mb-4">Layihələr</h3>
+            <ul className="space-y-2.5 text-sm text-gray-500">
+              {projects.slice(0, 5).map((proje) => (
+                <li key={proje.slug}>
+                  <Link href={`/projects?${proje.slug}`} className="hover:text-[#2A69AC] transition-colors">{proje.title}</Link>
+                </li>
+              ))}
+              <li>
+                <Link href="/projects" className="text-[#2A69AC] text-xs font-semibold hover:underline mt-1 inline-block">Daha çox →</Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Əlaqə */}
           <div data-aos="fade-up" data-aos-delay="300">
-            <h3 className="text-lg font-bold mb-5">Əlaqə</h3>
-
-            <div className="flex flex-col gap-4">
-
+            <h3 className="text-[14px] font-bold tracking-widest uppercase text-[#12223B] mb-4">Əlaqə</h3>
+            <div className="flex flex-col gap-3">
               <a href="tel:+994503127657" className="flex items-center gap-3 group">
-                <div className="w-10 h-10 flex items-center justify-center bg-gray-100 rounded-full group-hover:bg-[#2A69AC] group-hover:text-white transition">
-                  <FaPhoneAlt />
+                <div className="w-9 h-9 flex items-center justify-center rounded-lg bg-gray-100 group-hover:bg-[#2A69AC] group-hover:text-white text-gray-500 transition flex-shrink-0">
+                  <FaPhoneAlt size={13} />
                 </div>
-                <span className="text-gray-600 text-md">+994 50 312 76 57</span>
+                <span className="text-sm text-gray-600">+994 50 312 76 57</span>
               </a>
-
               <a href="mailto:turaninshaat21@mail.ru" className="flex items-center gap-3 group">
-                <div className="w-10 h-10 flex items-center justify-center bg-gray-100 rounded-full group-hover:bg-[#2A69AC] group-hover:text-white transition">
-                  <FaEnvelope />
+                <div className="w-9 h-9 flex items-center justify-center rounded-lg bg-gray-100 group-hover:bg-[#2A69AC] group-hover:text-white text-gray-500 transition flex-shrink-0">
+                  <FaEnvelope size={13} />
                 </div>
-                <span className="text-gray-600 text-md">turaninshaat21@mail.ru</span>
+                <span className="text-sm text-gray-600">turaninshaat21@mail.ru</span>
               </a>
-
             </div>
           </div>
 
         </div>
 
         {/* Divider */}
-        <div data-aos="fade-up" className="h-[1px] w-full bg-gray-200 mb-6" />
+        <div data-aos="fade-up" className="h-px bg-gray-200 mb-6" />
 
-        {/* Bottom */}
-        <div data-aos="fade-up" className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
-          <p>© {new Date().getFullYear()} Turan İnşaat MMC</p>
-
-          <div className="flex gap-6">
-            <Link href="#" className="hover:text-[#2A69AC]">Privacy</Link>
-            <Link href="#" className="hover:text-[#2A69AC]">Terms</Link>
+        {/* Alt hissə */}
+        <div  className="flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-gray-400">
+          <p>© {new Date().getFullYear()} Turan İnşaat MMC. Bütün hüquqlar qorunur.</p>
+          <div className="flex gap-5">
+            <Link href="#" className="hover:text-[#2A69AC] transition-colors">Gizlilik siyasəti</Link>
+            <Link href="#" className="hover:text-[#2A69AC] transition-colors">Şərtlər</Link>
           </div>
         </div>
 
