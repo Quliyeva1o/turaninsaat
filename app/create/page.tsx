@@ -15,8 +15,6 @@ import img66 from "@/public/assets/hovuzlaar/img66.webp";
 import img67 from "@/public/assets/hovuzlaar/img67.webp";
 import img68 from "@/public/assets/hovuzlaar/img68.webp";
 import img1088 from "@/public/assets/hovuzlaar/img10888.webp";
-import logo from '@/public/assets/images/logoag.webp'
-
 
 
 
@@ -217,6 +215,7 @@ function TileCard({
           whiteSpace: "nowrap",
           overflow: "hidden",
           textOverflow: "ellipsis",
+          maxWidth:'70px'
         }}
       >
         {option.label}
@@ -596,12 +595,12 @@ export default function Create() {
 
   // --- Data ---
   const hovuzlar: TileOption[] = [
-    { key: "a151", label: "A151", gunduz: img61, gece: img61 },
-    { key: "a62", label: "a62", gunduz: img62, gece: img62 },
+    { key: "a151", label: "Tropic Aguamarina İn (Parlaq)", gunduz: img61, gece: img61 },
+    { key: "a62", label: "Tropic Aguamarina Out (Mat)", gunduz: img62, gece: img62 },
     { key: "a63", label: "a63", gunduz: img63, gece: img63 },
     { key: "a64", label: "a64", gunduz: img64, gece: img64 },
-    { key: "a65", label: "a65", gunduz: img65, gece: img65 },
-    { key: "a66", label: "a66", gunduz: img66, gece: img66 },
+    { key: "a65", label: "Bali Zatu Out (Mat)", gunduz: img65, gece: img65 },
+    { key: "a66", label: "Volcanic Lava Out (Mat)", gunduz: img66, gece: img66 },
     { key: "a67", label: "a67", gunduz: img67, gece: img67 },
     { key: "a668", label: "a68", gunduz: img68, gece: img68 },
     { key: "a1011", label: "a1011", gunduz: img1088, gece: img1088 },
@@ -787,6 +786,79 @@ export default function Create() {
       >
         {isNight ? "🌙" : "☀️"}
       </button>
+
+      <div style={{ position: "absolute", width: 1, height: 1, overflow: "hidden", opacity: 0, pointerEvents: "none", zIndex: -1 }}>
+        <h1>Hovuz Dizayn Konfiquratoru – Kafel və Teras Seçimi | Azərbaycan</h1>
+
+        <h2>Hovuz kafeli seçin – interaktiv 3D konfiqurator</h2>
+        <p>
+          Bizim interaktiv hovuz dizayn konfiquratoru ilə öz hovuzunuzun görünüşünü
+          real vaxtda modelləşdirin. Yüzlərlə kafel, mozaika və teras seçimi arasından
+          istədiyiniz kombinasiyanı seçin, gündüz və gecə rejimində görüntüləyin.
+          Azərbaycanda ən geniş hovuz kafeli kataloqu – Tropic Aguamarina İn, Tropic Aguamarina Out, A158, Bali,
+          Floral Blue, Judi Grey, Superstone və daha çox model.
+        </p>
+
+        <h2>Hovuz tikintisi və kafel satışı – Bakı və bütün Azərbaycan</h2>
+        <p>
+          Peşəkar hovuz tikintisi, su izolyasiyası, kafel döşənməsi və teras
+          abadlıq işləri. Ev hovuzları, kommersiya hovuzları, uşaq hovuzları,
+          sonsuzluq hovuzları – hər növ layihə üçün keyfiyyətli materiallar və
+          təcrübəli komanda. Bakı, Sumqayıt, Gəncə və Azərbaycanın bütün
+          bölgələrinə xidmət göstəririk.
+        </p>
+
+        <h2>Hovuz kafeli növləri – klassik, mozaika, kare, superstone</h2>
+        <p>
+          Klassik şüşə mozaika kafelləri, kare formatında seramik hovuz kafeli,
+          Superstone texnologiyalı daş efektli kafel, Judi Grey və Luca Grey
+          kolleksiyaları. Hər kafel növü suya davamlı, sürüşməyə qarşı müqavimətli
+          və uzunömürlü materiallardan istehsal edilir. ISO standartlarına uyğun
+          məhsullar – Avropa keyfiyyəti, Azərbaycan qiyməti.
+        </p>
+
+        <h2>Kenar kafellər – hovuz kənarı üçün xüsusi seriya</h2>
+        <p>
+          Hovuz kənarı kafellər xüsusi texnologiya ilə istehsal olunur: sürüşməyə
+          qarşı tekstura, kimyəvi xlorlu suya davamlılıq, ultrabənövşəyi şüalara
+          qarşı rəng sabitliyi. Superstone seriyası, Light, Judi Grey və Luca Grey
+          modelləri ilə hovuzunuzun kənarını estetik və təhlükəsiz edin.
+        </p>
+
+        <h2>Teras döşəmə kafelləri – villa və bağ evləri üçün</h2>
+        <p>
+          Villa teras döşəmə kafeli, açıq alan döşəmə materialları, bağ evi teras
+          abadlığı. GPT Villa seriyası, Mavi Villa kolleksiyası, Light Teras modeli –
+          hovuzunuzun ətrafını mükəmməl tamamlayan teras dizaynları. Gündüz və gecə
+          rejimində fərqli aydınlatma effektləri ilə görüntüləyin.
+        </p>
+
+        <h2>Gündüz / Gecə rejimi – LED işıqlandırma ilə hovuz dizaynı</h2>
+        <p>
+          Hovuz LED işıqlandırma sistemi gecə vaxtı hovuzunuzu əfsanəvi görünüşə
+          qovuşdurur. Konfiguratorda gündüz və gecə rejimini dəyişərək kafellərin
+          işıq altında necə göründüyünü əvvəlcədən müzakirə edin. Su altı LED
+          lampaları, rəngli işıqlandırma, mavi hovuz efekti.
+        </p>
+
+        <h2>Tez-tez verilən suallar – Hovuz kafeli və dizayn</h2>
+        <p>
+          Hovuz kafeli nə qədər davam edir? Keyfiyyətli hovuz kafeli 20-30 il
+          problemsiz xidmət göstərir. Hovuz kafeli nə vaxt dəyişdirilməlidir?
+          Çatlaqlıq, rəng solması və ya yapışmanın zəifləməsi zamanı. Superstone
+          kafel nədir? Təbii daş görünüşlü, yüksək sürüşməyə qarşı müqavimətli
+          premium kafel seriyasıdır. Hovuz üçün ən yaxşı kafel hansıdır?
+          Şüşə mozaika kafelləri suya ən davamlı və estetik seçimdir.
+        </p>
+
+        <h2>Əlaqə – Hovuz layihəniz üçün pulsuz konsultasiya</h2>
+        <p>
+          Hovuz tikintisi, kafel seçimi, teras dizaynı mövzularında pulsuz
+          konsultasiya üçün bizimlə əlaqə saxlayın. Bakıda nümunə salonumuz,
+          peşəkar ölçmə və layihələndirmə xidməti, rəsmi zəmanət.
+          Azərbaycanda hovuz sektoru üzrə 10 ildən artıq təcrübə.
+        </p>
+      </div>
 
       {/* Bottom status bar */}
       <div

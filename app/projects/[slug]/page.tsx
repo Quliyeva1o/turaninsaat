@@ -148,14 +148,6 @@ export default async function Page({ params }: Props) {
         />
       )}
 
-      {/*
-        SSR-rendered SEO content — Google indexes <h1> and first image
-        immediately without JS execution. sr-only keeps it visually hidden.
-      */}
-      <div className="sr-only">
-        <h1>{project.title}</h1>
-        <p>{project.seoDescription ?? project.description}</p> 
-      </div>
 
       {/* Interactive gallery — client component */}
       <ProjectDetailClient />

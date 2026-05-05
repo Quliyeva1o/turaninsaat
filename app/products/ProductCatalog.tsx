@@ -96,7 +96,7 @@ function ProductCard({ item, badge, brand }: { item: Product; badge: Badge; bran
           // background: "#f8fafc",
         }}
       >
-        <Image
+        {item.img && item.img !== null && <Image
           src={`/assets/products/${item.img}.webp`}
           alt={item.name}
           fill
@@ -104,7 +104,7 @@ function ProductCard({ item, badge, brand }: { item: Product; badge: Badge; bran
             objectFit: "contain",
             // padding: 12,
           }}
-        />
+        />}
       </div>
 
       <BadgePill badge={badge} />

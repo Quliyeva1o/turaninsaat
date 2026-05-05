@@ -30,14 +30,13 @@ const Footer = () => {
               >
                 <FaInstagram size={15} />
               </a>
-              <a
-                href="https://wa.me/994503127657"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
+
+              <button
+                onClick={() => window.open('https://wa.me/994503127657', '_blank')}
                 className="w-9 h-9 flex items-center justify-center rounded-lg bg-gray-100 hover:bg-[#2A69AC] hover:text-white text-gray-500 transition"
               >
                 <FaWhatsapp size={15} />
-              </a>
+              </button>
             </div>
           </div>
 

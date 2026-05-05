@@ -161,7 +161,7 @@ function ProductCard({ product }: { product: Product }) {
     <div style={styles.card}>
       {/* Şəkil sahəsi */}
       <div style={styles.imgWrapper}>
-        {product.img && product.img!==null && !imgError ? (
+        {product.img && product.img !== null && !imgError ? (
           <Image
             src={`/assets/products/${product.img}.webp`}
             alt={product.name}
@@ -222,28 +222,28 @@ export function ProductsHome() {
     <section aria-label="Seçilmiş məhsullar" style={styles.section}>
       {/* Başlıq */}
       <div style={styles.header}>
-  <p
-            data-aos="fade-up"
-            className="inline-flex items-center gap-2 uppercase font-bold tracking-[0.28em] mb-5"
-            style={{ color: "#00A8B5", fontSize: 11 }}
-          >
-            <span style={{ display: "inline-block", width: 20, height: 1, background: "#00A8B5" }} />
-            Məhsullarımız
-            <span style={{ display: "inline-block", width: 20, height: 1, background: "#00A8B5" }} />
-          </p>        <h2  data-aos="fade-up"
-            className="font-extrabold leading-[1.1] tracking-tight mb-6"
-            style={{ color: "#FAF6EC", fontSize: "clamp(28px, 5vw, 52px)" }}>Hovuz və SPA üçün texnoloji həllər
+        <p
+          data-aos="fade-up"
+          className="inline-flex items-center gap-2 uppercase font-bold tracking-[0.28em] mb-5"
+          style={{ color: "#00A8B5", fontSize: 11 }}
+        >
+          <span style={{ display: "inline-block", width: 20, height: 1, background: "#00A8B5" }} />
+          Məhsullarımız
+          <span style={{ display: "inline-block", width: 20, height: 1, background: "#00A8B5" }} />
+        </p>        <h2 data-aos="fade-up"
+          className="font-extrabold leading-[1.1] tracking-tight mb-6"
+          style={{ color: "#FAF6EC", fontSize: "clamp(28px, 5vw, 52px)" }}>Hovuz və SPA üçün texnoloji həllər
 
         </h2>
 
-          <div
-            data-aos="fade-up"
-            className="mx-auto mb-6"
-            style={{ width: 48, height: 2, background: "linear-gradient(90deg, transparent, #00A8B5, transparent)" }}
-          />
-    <p         data-aos="fade-up"
-            className="text-[15px] sm:text-[16px] leading-relaxed"
-            style={{ color: "rgba(200,232,234,0.65)" }}>Müasir hovuz sistemləri, filtrasiya və spa avadanlıqları ilə keyfiyyətli və uzunömürlü həllər təqdim edirik.
+        <div
+          data-aos="fade-up"
+          className="mx-auto mb-6"
+          style={{ width: 48, height: 2, background: "linear-gradient(90deg, transparent, #00A8B5, transparent)" }}
+        />
+        <p data-aos="fade-up"
+          className="text-[15px] sm:text-[16px] leading-relaxed"
+          style={{ color: "rgba(200,232,234,0.65)" }}>Müasir hovuz sistemləri, filtrasiya və spa avadanlıqları ilə keyfiyyətli və uzunömürlü həllər təqdim edirik.
 
         </p>
       </div>
