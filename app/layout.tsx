@@ -4,6 +4,7 @@ import "./globals.css";
 import "aos/dist/aos.css";
 import LayoutClient from "./LayoutClient";
 import SchemaOrg from "@/components/seo/SchemaOrg";
+import Script from "next/script";
 
 const manrope = Manrope({ variable: "--font-manrope", subsets: ["latin", "cyrillic"] });
 const dmSans = DM_Sans({ variable: "--font-dm-sans", subsets: ["latin"] });
@@ -21,7 +22,7 @@ export const metadata: Metadata = {
   },
 
   description:
-    "Bakıda peşəkar hovuz tikintisi, SPA mərkəzləri, filtrasiya və isitmə sistemləri. Yaşayış və kommersiya obyektlərinin layihələndirilməsi və inşaatı.",
+    "Bakıda peşəkar hovuz tikintisi, SPA mərkəzləri, filtrasiya və isitmə sistemləri. Yaşayış və kommersiya obyektlərinin fərdi layihələndirilməsi. Pulsuz konsultasiya üçün bizimlə əlaqə saxlayın.",
 
   keywords: [
     "hovuz tikintisi bakı",
@@ -39,7 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Turan İnşaat | Hovuz və SPA Tikintisi Bakı",
     description:
-      "Bakıda peşəkar hovuz tikintisi, SPA mərkəzləri, filtrasiya və isitmə sistemləri.",
+      "Bakıda peşəkar hovuz tikintisi, SPA mərkəzləri, filtrasiya və isitmə sistemləri. Yaşayış və kommersiya obyektlərinin fərdi layihələndirilməsi. Pulsuz konsultasiya üçün bizimlə əlaqə saxlayın.",
     url: BASE_URL,
     siteName: "Turan İnşaat",
     locale: "az_AZ",
@@ -77,10 +78,25 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="az">
+      <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-WVLCWTLX4T"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+             window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-WVLCWTLX4T');
+          `}
+        </Script>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${manrope.variable} ${dmSans.variable} antialiased`}
       >
-        <SchemaOrg /> 
+        <SchemaOrg />
         <LayoutClient>{children}</LayoutClient>
       </body>
     </html>

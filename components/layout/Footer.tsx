@@ -32,7 +32,8 @@ const Footer = () => {
               </a>
               <a
                 href="https://wa.me/994503127657"
-                target="_blank" rel="noopener noreferrer"
+                target="_blank"
+                rel="noopener noreferrer nofollow"
                 className="w-9 h-9 flex items-center justify-center rounded-lg bg-gray-100 hover:bg-[#2A69AC] hover:text-white text-gray-500 transition"
               >
                 <FaWhatsapp size={15} />
@@ -114,7 +115,7 @@ const Footer = () => {
         <div data-aos="fade-up" className="h-px bg-gray-200 mb-6" />
 
         {/* Alt hissə */}
-        <div  className="flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-gray-400">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-3 text-xs text-gray-400">
           <p>© {new Date().getFullYear()} Turan İnşaat MMC. Bütün hüquqlar qorunur.</p>
           <div className="flex gap-5">
             <Link href="#" className="hover:text-[#2A69AC] transition-colors">Gizlilik siyasəti</Link>
