@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const service = servicesContent["az"].find((s: any) => s.slug === slug);
   if (!service) return { title: "Xidmət tapılmadı | Turan İnşaat" };
 
-  const url = `https://turanprojects.az/services/${service.slug}`;
+  const url = `https://www.turanprojects.az/services/${service.slug}`;
 
   // Build a keyword-rich title suffix per service category
   const titleSuffix = "Turan İnşaat MMC, Bakı";
@@ -39,7 +39,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         {
           url: service.img.startsWith("http")
             ? service.img
-            : `https://turanprojects.az${service.img}`,
+            : `https://www.turanprojects.az${service.img}`,
           width: 1200,
           height: 630,
           alt: `${service.title} — Turan İnşaat`,
@@ -53,7 +53,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       images: [
         service.img.startsWith("http")
           ? service.img
-          : `https://turanprojects.az${service.img}`,
+          : `https://www.turanprojects.az${service.img}`,
       ],
     },
   };
@@ -68,7 +68,7 @@ export default async function ServicePage({ params }: Props) {
   const service = servicesContent["az"].find((s: any) => s.slug === slug);
   if (!service) notFound();
 
-  const pageUrl = `https://turanprojects.az/services/${service.slug}`;
+  const pageUrl = `https://www.turanprojects.az/services/${service.slug}`;
 
   // ─── Service JSON-LD ─────────────────────────────────────
   const serviceJsonLd = {
@@ -79,11 +79,11 @@ export default async function ServicePage({ params }: Props) {
     url: pageUrl,
     image: service.img.startsWith("http")
       ? service.img
-      : `https://turanprojects.az${service.img}`,
+      : `https://www.turanprojects.az${service.img}`,
     provider: {
       "@type": "LocalBusiness",
       name: "Turan İnşaat MMC",
-      url: "https://turanprojects.az",
+      url: "https://www.turanprojects.az",
       telephone: ["+994557513115", "+994503127657", "+994124482875"],
       email: "farizmehdiyevs@mail.ru",
       address: {
@@ -127,13 +127,13 @@ export default async function ServicePage({ params }: Props) {
         "@type": "ListItem",
         position: 1,
         name: "Ana səhifə",
-        item: "https://turanprojects.az",
+        item: "https://www.turanprojects.az",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Xidmətlər",
-        item: "https://turanprojects.az/services",
+        item: "https://www.turanprojects.az/services",
       },
       {
         "@type": "ListItem",

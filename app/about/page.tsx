@@ -67,7 +67,7 @@ const jsonLd = {
   "sameAs": [
     "https://instagram.com/turanprojects.az",
     "https://tiktok.com/@turanprojects.az",
-    "https://turanprojects.az"
+    "https://www.turanprojects.az"
   ]
 };
 

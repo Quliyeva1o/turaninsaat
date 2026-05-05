@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     "Bakıda peşəkar hovuz tikintisi, SPA mərkəzləri, filtrasiya və isitmə sistemləri. Yaşayış və kommersiya obyektlərinin layihələndirilməsi.",
   alternates: {
-    canonical: "https://turanprojects.az",
+    canonical: "https://www.turanprojects.az",
   },
 };
 

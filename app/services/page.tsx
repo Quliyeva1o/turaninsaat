@@ -18,19 +18,19 @@ export const metadata: Metadata = {
     "Turan İnşaat",
   ],
   alternates: {
-    canonical: "https://turanprojects.az/services",
+    canonical: "https://www.turanprojects.az/services",
   },
   openGraph: {
     title: "Xidmətlərimiz | Hovuz, SPA, Sauna Tikintisi — Turan İnşaat",
     description:
       "Bakıda hovuz, SPA, sauna, türk hamamı, filtrasiya, isitmə sistemi və su abadlığı xidmətləri. Lisenziyalı tikinti şirkəti.",
-    url: "https://turanprojects.az/services",
+    url: "https://www.turanprojects.az/services",
     siteName: "Turan İnşaat MMC",
     locale: "az_AZ",
     type: "website",
     images: [
       {
-        url: "https://turanprojects.az/assets/images/og-services.jpg",
+        url: "https://www.turanprojects.az/assets/images/og-services.jpg",
         width: 1200,
         height: 630,
         alt: "Turan İnşaat — Hovuz və SPA Xidmətləri",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: "Hovuz, SPA, Sauna Tikintisi | Turan İnşaat Bakı",
     description:
       "Bakıda lisenziyalı hovuz tikintisi, SPA, türk hamamı, sauna, filtrasiya sistemləri.",
-    images: ["https://turanprojects.az/assets/images/og-services.jpg"],
+    images: ["https://www.turanprojects.az/assets/images/og-services.jpg"],
   },
 };
 
@@ -58,13 +58,13 @@ export default function ServicesPage() {
         "@type": "ListItem",
         position: 1,
         name: "Ana səhifə",
-        item: "https://turanprojects.az",
+        item: "https://www.turanprojects.az",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Xidmətlər",
-        item: "https://turanprojects.az/services",
+        item: "https://www.turanprojects.az/services",
       },
     ],
   };
@@ -76,7 +76,7 @@ export default function ServicesPage() {
     name: "Turan İnşaat Xidmətləri",
     description:
       "Hovuz tikintisi, SPA, sauna, filtrasiya, isitmə sistemləri və su abadlığı xidmətləri",
-    url: "https://turanprojects.az/services",
+    url: "https://www.turanprojects.az/services",
     numberOfItems: services.length,
     itemListElement: services.map((service: any, index: number) => ({
       "@type": "ListItem",
@@ -85,12 +85,12 @@ export default function ServicesPage() {
         "@type": "Service",
         name: service.title,
         description: service.desc,
-        url: `https://turanprojects.az/services/${service.slug}`,
+        url: `https://www.turanprojects.az/services/${service.slug}`,
         image: service.img,
         provider: {
           "@type": "Organization",
           name: "Turan İnşaat MMC",
-          url: "https://turanprojects.az",
+          url: "https://www.turanprojects.az",
         },
       },
     })),
@@ -99,7 +99,7 @@ export default function ServicesPage() {
   const webPageJsonLd = {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "@id": "https://turanprojects.az/services",
+    "@id": "https://www.turanprojects.az/services",
     name: "Xidmətlərimiz",
     description:
       "Hovuz, SPA, sauna, filtrasiya və su abadlığı xidmətləri",

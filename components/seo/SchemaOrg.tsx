@@ -4,12 +4,12 @@ export default function SchemaOrg() {
     "@graph": [
       {
         "@type": ["Organization", "LocalBusiness"],
-        "@id": "https://turanprojects.az/#organization",
+        "@id": "https://www.turanprojects.az/#organization",
         name: "Turan İnşaat MMC",
-        url: "https://turanprojects.az",
+        url: "https://www.turanprojects.az",
         logo: {
           "@type": "ImageObject",
-          url: "https://turanprojects.az/images/logo.png",
+          url: "https://www.turanprojects.az/images/logo.png",
         },
         address: {
           "@type": "PostalAddress",
@@ -27,8 +27,8 @@ export default function SchemaOrg() {
       },
       {
         "@type": "WebSite",
-        "@id": "https://turanprojects.az/#website",
-        url: "https://turanprojects.az",
+        "@id": "https://www.turanprojects.az/#website",
+        url: "https://www.turanprojects.az",
         name: "Turan İnşaat",
         inLanguage: "az",
       },

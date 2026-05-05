@@ -46,7 +46,7 @@ const contactInfo = [
   },
   {
     title: "Vebsayt",
-    link: "https://turanprojects.az",
+    link: "https://www.turanprojects.az",
     display: "www.turanprojects.az",
     icon: <FaGlobe size={18} className="text-[#2A6AAB]" />,
   },

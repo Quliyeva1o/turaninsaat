@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import HeroWrapper from "@/components/home/heroWrapper";
 import ProjectsGrid from "@/components/projects/ProjectGrid";
 
-const BASE_URL = "https://turanprojects.az";
+const BASE_URL = "https://www.turanprojects.az";
 
 export const metadata: Metadata = {
   title: "Layihələrimiz | Hovuz, SPA və Sauna Tikintisi – Turan İnşaat",

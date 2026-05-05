@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 import { projects } from "@/components/home/ourProjects/projes";
 
-const BASE_URL = "https://turanprojects.az";
+const BASE_URL = "https://www.turanprojects.az";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const lastModified = new Date();

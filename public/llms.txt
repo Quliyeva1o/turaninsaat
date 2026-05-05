@@ -12,12 +12,12 @@ və kommersiya obyektlərinin inşaatı sahəsində fəaliyyət göstərən şir
 - Tikinti və layihələndirmə
 
 ## Əlaqə
-Sayt: https://turanprojects.az
+Sayt: https://www.turanprojects.az
 Ünvan: Bakı, Azərbaycan
 
 ## Səhifələr
-- Ana səhifə: https://turanprojects.az
-- Layihələr: https://turanprojects.az/projects
-- Məhsullar: https://turanprojects.az/products
-- Haqqımızda: https://turanprojects.az/about
-- Əlaqə: https://turanprojects.az/contact
+- Ana səhifə: https://www.turanprojects.az
+- Layihələr: https://www.turanprojects.az/projects
+- Məhsullar: https://www.turanprojects.az/products
+- Haqqımızda: https://www.turanprojects.az/about
+- Əlaqə: https://www.turanprojects.az/contact

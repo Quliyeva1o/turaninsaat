@@ -8,6 +8,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://turanprojects.az/sitemap.xml",
+    sitemap: "https://www.turanprojects.az/sitemap.xml",
   };
 }
