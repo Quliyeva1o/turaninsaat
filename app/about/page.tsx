@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: "Haqqımızda | Turan İnşaat MMC",
     description:
       "12+ il təcrübə, 200+ tamamlanmış layihə. Hovuz, sauna, türk hamamı, rus hamamı, duz otağı və spa sahəsində Azərbaycanın etibarlı mütəxəssisi.",
-    url: "https://turaninshaat.az/about",
+    url: "https://www.turanprojects.az/about",
     siteName: "Turan İnşaat",
     locale: "az_AZ",
     type: "website",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     images: ["/assets/images/certificate.png"],
   },
   alternates: {
-    canonical: "https://turaninshaat.az/about",
+    canonical: "https://www.turanprojects.az/about",
   },
   robots: {
     index: true,
@@ -55,7 +55,7 @@ const jsonLd = {
   "@type": "LocalBusiness",
   "name": "Turan İnşaat MMC",
   "description": "Hovuz tikintisi, sauna, türk hamamı, spa quraşdırması üzrə lisenziyalı şirkət",
-  "url": "https://turaninshaat.az",
+  "url": "https://www.turanprojects.az",
   "telephone": ["+994503127657", "+994557513115"],
   "email": "turaninshaat21@mail.ru",
   "address": {

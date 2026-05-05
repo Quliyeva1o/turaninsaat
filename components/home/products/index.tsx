@@ -161,7 +161,7 @@ function ProductCard({ product }: { product: Product }) {
     <div style={styles.card}>
       {/* Şəkil sahəsi */}
       <div style={styles.imgWrapper}>
-        {product.img && !imgError ? (
+        {product.img && product.img!==null && !imgError ? (
           <Image
             src={`/assets/products/${product.img}.jpg`}
             alt={product.name}

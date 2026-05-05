@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     title: "Bizimlə Əlaqə | Turan İnşaat",
     description:
       "Hovuz, sauna, jacuzzi, türk hamamı layihələri üçün bizimlə əlaqə saxlayın. Bakı, Novxanı – +994 50 312 76 57",
-    url: "https://turaninshaat.az/contact",
+    url: "https://www.turanprojects.az/contact",
     siteName: "Turan İnşaat",
     locale: "az_AZ",
     type: "website",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     images: ["/assets/images/contactus.jpg"],
   },
   alternates: {
-    canonical: "https://turaninshaat.az/contact",
+    canonical: "https://www.turanprojects.az/contact",
   },
   robots: { index: true, follow: true },
 };
