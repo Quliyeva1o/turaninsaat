@@ -45,13 +45,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       locale: "az_AZ",
       images: firstImage
         ? [
-            {
-              url: firstImage,
-              width: 1200,
-              height: 630,
-              alt: project.title,
-            },
-          ]
+          {
+            url: firstImage,
+            width: 1200,
+            height: 630,
+            alt: project.title,
+          },
+        ]
         : [],
     },
     twitter: {
@@ -72,13 +72,17 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 function ProjectStructuredData({ project }: { project: (typeof projects)[0] }) {
   const firstImage = project.images?.find((img) => !img.endsWith(".mp4"));
 
-  const jsonLd = {
+  const articleLd = {
     "@context": "https://schema.org",
     "@type": "Article",
     headline: project.title,
     description: project.seoDescription ?? project.description,
     url: `${BASE_URL}/projects/${project.slug}`,
-    image: firstImage ? `${BASE_URL}${firstImage}` : undefined,
+    image: firstImage
+      ? firstImage.startsWith("http")
+        ? firstImage
+        : `${BASE_URL}${firstImage}`
+      : undefined,
     author: {
       "@type": "Organization",
       name: "Turan İnşaat MMC",
@@ -93,37 +97,44 @@ function ProjectStructuredData({ project }: { project: (typeof projects)[0] }) {
         url: `${BASE_URL}/logo.png`,
       },
     },
-    // BreadcrumbList for better SERP appearance
-    breadcrumb: {
-      "@type": "BreadcrumbList",
-      itemListElement: [
-        {
-          "@type": "ListItem",
-          position: 1,
-          name: "Ana Səhifə",
-          item: BASE_URL,
-        },
-        {
-          "@type": "ListItem",
-          position: 2,
-          name: "Layihələr",
-          item: `${BASE_URL}/projects`,
-        },
-        {
-          "@type": "ListItem",
-          position: 3,
-          name: project.title,
-          item: `${BASE_URL}/projects/${project.slug}`,
-        },
-      ],
-    },
+  };
+
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Ana Səhifə",
+        item: BASE_URL,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Layihələr",
+        item: `${BASE_URL}/projects`,
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: project.title,
+        item: `${BASE_URL}/projects/${project.slug}`,
+      },
+    ],
   };
 
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+      />
+    </>
   );
 }
 

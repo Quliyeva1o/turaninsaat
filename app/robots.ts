@@ -6,13 +6,8 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/create", "/api/"],
-      },
-      {
-        userAgent: "GPTBot",
-        disallow: ["/"],
       },
     ],
-    sitemap: "https://www.turanprojects.az/sitemap.xml",
+    sitemap: "https://turanprojects.az/sitemap.xml",
   };
 }

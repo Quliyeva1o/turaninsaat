@@ -2,7 +2,7 @@ import { servicesContent } from "@/utils";
 import type { Metadata } from "next";
 import HeroWrapper from "@/components/home/heroWrapper";
 import ServiceCard from "@/components/services/ServiceCard";
- 
+
 export const metadata: Metadata = {
   title: "Xidmətlərimiz | Hovuz, SPA, Sauna Tikintisi — Turan İnşaat",
   description:
@@ -45,10 +45,10 @@ export const metadata: Metadata = {
     images: ["https://turanprojects.az/assets/images/og-services.jpg"],
   },
 };
- 
+
 export default function ServicesPage() {
   const services = servicesContent["az"];
- 
+
   // ─── BreadcrumbList JSON-LD ───────────────────────────────
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
@@ -68,7 +68,7 @@ export default function ServicesPage() {
       },
     ],
   };
- 
+
   // ─── ItemList JSON-LD (service list for Google rich results) ─
   const serviceListJsonLd = {
     "@context": "https://schema.org",
@@ -88,14 +88,23 @@ export default function ServicesPage() {
         url: `https://turanprojects.az/services/${service.slug}`,
         image: service.img,
         provider: {
-          "@type": "LocalBusiness",
+          "@type": "Organization",
           name: "Turan İnşaat MMC",
           url: "https://turanprojects.az",
         },
       },
     })),
   };
- 
+
+  const webPageJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "@id": "https://turanprojects.az/services",
+    name: "Xidmətlərimiz",
+    description:
+      "Hovuz, SPA, sauna, filtrasiya və su abadlığı xidmətləri",
+  };
+
   return (
     <main className="bg-gray-50 text-gray-900">
       {/* JSON-LD structured data */}
@@ -107,15 +116,19 @@ export default function ServicesPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceListJsonLd) }}
       />
- 
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd) }}
+      />
+
       <HeroWrapper />
- 
+
       <section className="max-w-[1400px] mx-auto px-6 md:px-10 py-24">
         {/* Screen-reader visible h1 for SEO */}
         <h1 className="sr-only">
           Hovuz, SPA, Sauna Tikintisi Xidmətləri — Turan İnşaat MMC, Bakı
         </h1>
- 
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {services.map((service: any) => (
             <ServiceCard key={service.slug} service={service} />
@@ -125,4 +138,3 @@ export default function ServicesPage() {
     </main>
   );
 }
- 

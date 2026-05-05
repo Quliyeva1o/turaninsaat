@@ -1,3 +1,5 @@
+/** @type {import('next').NextConfig} */
+
 const nextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
@@ -14,6 +16,21 @@ const nextConfig = {
     ],
   },
 
+  async redirects() {
+    return [
+      {
+        source: "/:path*",
+        has: [
+          {
+            type: "host",
+            value: "www.turanprojects.az",
+          },
+        ],
+        destination: "https://turanprojects.az/:path*",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;

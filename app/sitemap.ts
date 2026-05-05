@@ -1,38 +1,51 @@
 import { MetadataRoute } from "next";
+import { projects } from "@/components/home/ourProjects/projes";
 
-const BASE_URL = "https://www.turanprojects.az";
+const BASE_URL = "https://turanprojects.az";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [
+  const lastModified = new Date();
+
+  const staticPages: MetadataRoute.Sitemap = [
     {
       url: `${BASE_URL}/`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: "weekly",
       priority: 1,
     },
     {
       url: `${BASE_URL}/services`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: "monthly",
-      priority: 0.8,
+      priority: 0.9,
     },
     {
       url: `${BASE_URL}/projects`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: "weekly",
-      priority: 0.8,
+      priority: 0.9,
     },
     {
       url: `${BASE_URL}/about`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: "monthly",
-      priority: 0.6,
+      priority: 0.7,
     },
     {
       url: `${BASE_URL}/contact`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: "yearly",
-      priority: 0.5,
+      priority: 0.6,
     },
   ];
+
+  // dynamic projects
+  const projectPages: MetadataRoute.Sitemap = projects.map((p) => ({
+    url: `${BASE_URL}/projects/${p.slug}`,
+    lastModified,
+    changeFrequency: "weekly",
+    priority: 0.8,
+  }));
+
+  return [...staticPages, ...projectPages];
 }
