@@ -14,16 +14,6 @@ const nextConfig = {
     ],
   },
 
-  async redirects() {
-    return [
-      {
-        source: "/:path*",
-        has: [{ type: "host", value: "www.turanprojects.az" }],
-        destination: "https://turanprojects.az/:path*",
-        permanent: true, // 301 redirect
-      },
-    ];
-  },
 };
 
 export default nextConfig;

@@ -13,6 +13,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/"],
       },
     ],
-    sitemap: "https://www.turanprojects.az/sitemap.xml",
+    sitemap: "https://turanprojects.az/sitemap.xml",
   };
 }

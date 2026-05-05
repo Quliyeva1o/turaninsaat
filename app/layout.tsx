@@ -10,7 +10,7 @@ const dmSans = DM_Sans({ variable: "--font-dm-sans", subsets: ["latin"] });
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"], display: "swap" });
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"], display: "swap" });
 
-const BASE_URL = "https://www.turanprojects.az";
+const BASE_URL = "https://turanprojects.az";
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),

@@ -6,7 +6,7 @@ import { projects } from "@/components/home/ourProjects/projes";
 import HeroWrapper from "@/components/home/heroWrapper";
 import ProjectDetailClient from "./ProjectDetailClient";
 
-const BASE_URL = "https://www.turanprojects.az";
+const BASE_URL = "https://turanprojects.az";
 
 type Props = { params: Promise<{ slug: string }> };
 
