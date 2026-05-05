@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Button from "@/components/common/Button";
-import imgSrc from "@/public/assets/images/aboutUs.jpg";
+import imgSrc from "@/public/assets/images/aboutUss.webp";
 
 interface AboutProps {
   locale?: "az" | "en";

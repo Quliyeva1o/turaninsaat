@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import './header.css'
 import Button from "../common/Button";
-import logo from '../../public/assets/images/logoag.png'
+import logo from '../../public/assets/images/logoag.webp'
 import { useEffect, useRef, useState } from "react";
 import { servicesContent } from "@/utils";
 import { projects } from "../home/ourProjects/projes";

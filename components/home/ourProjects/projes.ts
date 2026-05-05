@@ -9,9 +9,9 @@ export const projects = [
     keywords:
       "Hyatt Regency Bakı hovuz, otel hovuzu inşaatı, kommersiya hovuzu Bakı, açıq hovuz layihəsi",
     images: [
-      "/assets/projects/hyattRegency/hovuz1.jpg",
+      "/assets/projects/hyattRegency/hovuz1.webp",
       "/assets/projects/hyattRegency/hyattVideo.mp4",
-      "/assets/projects/hyattRegency/hovuz2.jpeg",
+      "/assets/projects/hyattRegency/hovuz2.webp",
     ],
   },
   {
@@ -24,10 +24,10 @@ export const projects = [
     keywords:
       "Goradil villa hovuzu, fərdi hovuz tikintisi, Bakı ətrafı hovuz, villa hovuzu inşaatı",
     images: [
-      "/assets/projects/goradil/tikintiprocess2.png",
-      "/assets/projects/goradil/hovuz1.png",
-      "/assets/projects/goradil/hovuz2.png",
-      "/assets/projects/goradil/tikintiprocess1.png",
+      "/assets/projects/goradil/tikintiprocess2.webp",
+      "/assets/projects/goradil/hovuz1.webp",
+      "/assets/projects/goradil/hovuz2.webp",
+      "/assets/projects/goradil/tikintiprocess1.webp",
     ],
   },
   {
@@ -55,9 +55,9 @@ export const projects = [
     keywords:
       "infinity hovuz Bakı, daşma hovuz Badamdar, overflow hovuz, Bakı infinity pool",
     images: [
-      "/assets/projects/badamdar/hovuz1.jpeg",
-      "/assets/projects/badamdar/hovuz2.jpeg",
-      "/assets/projects/badamdar/hovuz3.jpeg",
+      "/assets/projects/badamdar/hovuz1.webp",
+      "/assets/projects/badamdar/hovuz2.webp",
+      "/assets/projects/badamdar/hovuz3.webp",
     ],
   },
   {
@@ -70,12 +70,12 @@ export const projects = [
     keywords:
       "Bilgəh hovuz, Bilgəh villa hovuzu, Mircəlal küçəsi, infinity hovuz Bakı",
     images: [
-      "/assets/projects/bilgeh/hovuz.JPG",
-      "/assets/projects/bilgeh/hovuz1.jpeg",
-      "/assets/projects/bilgeh/hovuz3.jpeg",
-      "/assets/projects/bilgeh/hovuz4.jpeg",
-      "/assets/projects/bilgeh/hovuz5.jpeg",
-      "/assets/projects/bilgeh/hovuz6.jpeg",
+      "/assets/projects/bilgeh/hovuz.webp",
+      "/assets/projects/bilgeh/hovuz1.webp",
+      "/assets/projects/bilgeh/hovuz3.webp",
+      "/assets/projects/bilgeh/hovuz4.webp",
+      "/assets/projects/bilgeh/hovuz5.webp",
+      "/assets/projects/bilgeh/hovuz6.webp",
     ],
   },
   {
@@ -88,10 +88,10 @@ export const projects = [
     keywords:
       "fitness mərkəzi hovuzu, My Class Yasamal, idman hovuzu Bakı, kommersiya hovuzu",
     images: [
-      "/assets/projects/myclass/hovuz.jpg",
-      "/assets/projects/myclass/hovuz2.jpg",
-      "/assets/projects/myclass/hovuz3.jpg",
-      "/assets/projects/myclass/hovuz4.jpg",
+      "/assets/projects/myclass/hovuz.webp",
+      "/assets/projects/myclass/hovuz2.webp",
+      "/assets/projects/myclass/hovuz3.webp",
+      "/assets/projects/myclass/hovuz4.webp",
     ],
   },
   {
@@ -104,10 +104,10 @@ export const projects = [
     keywords:
       "cakuzi Bakı, jacuzzi quraşdırma, hidromasaj sistemi, spa cakuzi",
     images: [
-      "/assets/projects/myclass/cakuzi.jpg",
-      "/assets/projects/myclass/cakuzi2.jpg",
-      "/assets/projects/myclass/cakuzi3.jpg",
-      "/assets/projects/myclass/cakuzi4.jpg",
+      "/assets/projects/myclass/cakuzi.webp",
+      "/assets/projects/myclass/cakuzi2.webp",
+      "/assets/projects/myclass/cakuzi3.webp",
+      "/assets/projects/myclass/cakuzi4.webp",
     ],
   },
   {
@@ -119,10 +119,10 @@ export const projects = [
       "My Class Fitness Mərkəzi üçün Fin saunası quraşdırılması. Professional sauna tikintisi, keyfiyyətli materiallar. Turan İnşaat.",
     keywords: "sauna Bakı, fin saunası quraşdırma, sauna tikintisi, spa sauna",
     images: [
-      "/assets/projects/myclass/sauna.jpg",
-      "/assets/projects/myclass/sauna2.jpg",
-      "/assets/projects/myclass/sauna3.jpg",
-      "/assets/projects/myclass/sauna4.jpg",
+      "/assets/projects/myclass/sauna.webp",
+      "/assets/projects/myclass/sauna2.webp",
+      "/assets/projects/myclass/sauna3.webp",
+      "/assets/projects/myclass/sauna4.webp",
     ],
   },
   {
@@ -135,8 +135,8 @@ export const projects = [
     keywords:
       "türk hamamı Bakı, hamam tikintisi, spa hamam, mərmər hamam quraşdırma",
     images: [
-      "/assets/projects/myclass/turkhamami.jpg",
-      "/assets/projects/myclass/turkhamami2.jpg",
+      "/assets/projects/myclass/turkhamami.webp",
+      "/assets/projects/myclass/turkhamami2.webp",
     ],
   },
   {
@@ -148,7 +148,7 @@ export const projects = [
       "My Class üçün müasir buxar otağı – nəmlik və istilik balansı ilə dizayn. Professional buxar sistemi quraşdırma, Bakı.",
     keywords:
       "buxar otağı Bakı, steam room quraşdırma, spa buxar otağı, buxar sistemi",
-    images: ["/assets/projects/myclass/buxarotagi.jpg"],
+    images: ["/assets/projects/myclass/buxarotagi.webp"],
   },
   {
     title: "My Class (Yasamal) – Duz otağı",
@@ -160,10 +160,10 @@ export const projects = [
     keywords:
       "duz otağı Bakı, haloterapi, salt room quraşdırma, duz mağarası",
     images: [
-      "/assets/projects/myclass/duzotagi.jpg",
-      "/assets/projects/myclass/duzotagi2.jpg",
-      "/assets/projects/myclass/duzotagi3.jpg",
-      "/assets/projects/myclass/duzotagi4.jpg",
+      "/assets/projects/myclass/duzotagi.webp",
+      "/assets/projects/myclass/duzotagi2.webp",
+      "/assets/projects/myclass/duzotagi3.webp",
+      "/assets/projects/myclass/duzotagi4.webp",
     ],
   },
   {
@@ -176,8 +176,8 @@ export const projects = [
     keywords:
       "masaj otağı Bakı, spa masaj otağı dizayni, professional masaj otağı tikintisi",
     images: [
-      "/assets/projects/myclass/masajotagi.jpg",
-      "/assets/projects/myclass/masajotagi 2.jpg",
+      "/assets/projects/myclass/masajotagi.webp",
+      "/assets/projects/myclass/masajotagi 2.webp",
     ],
   },
   {
@@ -188,7 +188,7 @@ export const projects = [
     seoDescription:
       "My Class üçün kese (kəsə) otağı – ənənəvi baxım prosedurları üçün xüsusi dizayn. Turan İnşaat, Bakı.",
     keywords: "kese otağı Bakı, kəsə hamam, spa kese otağı, hamam bakı",
-    images: ["/assets/projects/myclass/turkhamami3.jpg"],
+    images: ["/assets/projects/myclass/turkhamami3.webp"],
   },
   {
     title: "Buzovna - Hovuz",
@@ -200,11 +200,11 @@ export const projects = [
     keywords:
       "Buzovna villa hovuzu, Abşeron hovuz tikintisi, açıq hovuz Bakı, dəniz kənarı hovuz",
     images: [
-      "/assets/projects/buzovna/hovuz.jpeg",
-      "/assets/projects/buzovna/hovuz2.jpeg",
-      "/assets/projects/buzovna/hovuz3.jpeg",
-      "/assets/projects/buzovna/hovuz4.jpeg",
-      "/assets/projects/buzovna/hovuz5.jpeg",
+      "/assets/projects/buzovna/hovuz.webp",
+      "/assets/projects/buzovna/hovuz2.webp",
+      "/assets/projects/buzovna/hovuz3.webp",
+      "/assets/projects/buzovna/hovuz4.webp",
+      "/assets/projects/buzovna/hovuz5.webp",
     ],
   },
   {
@@ -218,15 +218,15 @@ export const projects = [
       "Makfit hovuz, fitness klubu hovuzu, kommersiya hovuz Bakı, idman hovuzu tikintisi",
     images: [
       "/assets/projects/makfit/hovuzfinal.webp",
-      "/assets/projects/makfit/hovuz.jpeg",
-      "/assets/projects/makfit/hovuz2.jpeg",
-      "/assets/projects/makfit/hovuz3.jpeg",
-      "/assets/projects/makfit/hovuz4.jpeg",
-      "/assets/projects/makfit/hovuz5.jpeg",
-      "/assets/projects/makfit/hovuz6.jpeg",
-      "/assets/projects/makfit/hovuz7.jpeg",
-      "/assets/projects/makfit/hovuz8.jpeg",
-      "/assets/projects/makfit/hovuz9.jpeg",
+      "/assets/projects/makfit/hovuz.webp",
+      "/assets/projects/makfit/hovuz2.webp",
+      "/assets/projects/makfit/hovuz3.webp",
+      "/assets/projects/makfit/hovuz4.webp",
+      "/assets/projects/makfit/hovuz5.webp",
+      "/assets/projects/makfit/hovuz6.webp",
+      "/assets/projects/makfit/hovuz7.webp",
+      "/assets/projects/makfit/hovuz8.webp",
+      "/assets/projects/makfit/hovuz9.webp",
     ],
   },
   {
@@ -240,7 +240,7 @@ export const projects = [
       "Crown buxar otağı, Crown Bakı spa, buxar sistemi quraşdırma, steam room",
     images: [
       "/assets/projects/crown/buxar.webp",
-      "/assets/projects/crown/buxar2.jpeg",
+      "/assets/projects/crown/buxar2.webp",
     ],
   },
   {
@@ -264,7 +264,7 @@ export const projects = [
     keywords: "Crown kese otağı, kese Bakı, dəri baxımı spa, hamam kese",
     images: [
       "/assets/projects/crown/Kis.webp",
-      "/assets/projects/crown/kise2.jpeg",
+      "/assets/projects/crown/kise2.webp",
     ],
   },
   {
@@ -302,7 +302,7 @@ export const projects = [
       "/assets/projects/crown/Trkhamami2.webp",
       "/assets/projects/crown/Trkhamami3.webp",
       "/assets/projects/crown/Trkhamami4.webp",
-      "/assets/projects/crown/turkhamami5.jpeg",
+      "/assets/projects/crown/turkhamami5.webp",
     ],
   },
 ];

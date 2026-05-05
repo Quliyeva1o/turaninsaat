@@ -97,7 +97,7 @@ function ProductCard({ item, badge, brand }: { item: Product; badge: Badge; bran
         }}
       >
         <Image
-          src={`/assets/products/${item.img}.jpg`}
+          src={`/assets/products/${item.img}.webp`}
           alt={item.name}
           fill
           style={{

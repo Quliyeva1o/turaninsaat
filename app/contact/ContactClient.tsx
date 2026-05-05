@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 import Image from "next/image";
 import dynamic from "next/dynamic";
-import contactIllustration from "@/public/assets/images/contactus.jpg";
+import contactIllustration from "@/public/assets/images/contactus.webp";
 
 const HeroWrapper = dynamic(() => import("@/components/home/heroWrapper"));
 

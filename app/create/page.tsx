@@ -6,65 +6,65 @@ import { useState, useRef, useEffect } from "react";
 // =========================
 // ASSETS — same imports as before
 // =========================
-import img61 from "@/public/assets/hovuzlaar/img61.png";
-import img62 from "@/public/assets/hovuzlaar/img62.png";
-import img63 from "@/public/assets/hovuzlaar/img63.png";
-import img64 from "@/public/assets/hovuzlaar/img64.png";
-import img65 from "@/public/assets/hovuzlaar/img65.png";
-import img66 from "@/public/assets/hovuzlaar/img66.png";
-import img67 from "@/public/assets/hovuzlaar/img67.png";
-import img68 from "@/public/assets/hovuzlaar/img68.png";
-import img1088 from "@/public/assets/hovuzlaar/img10888.png";
-import logo from '@/public/assets/images/logoag.png'
+import img61 from "@/public/assets/hovuzlaar/img61.webp";
+import img62 from "@/public/assets/hovuzlaar/img62.webp";
+import img63 from "@/public/assets/hovuzlaar/img63.webp";
+import img64 from "@/public/assets/hovuzlaar/img64.webp";
+import img65 from "@/public/assets/hovuzlaar/img65.webp";
+import img66 from "@/public/assets/hovuzlaar/img66.webp";
+import img67 from "@/public/assets/hovuzlaar/img67.webp";
+import img68 from "@/public/assets/hovuzlaar/img68.webp";
+import img1088 from "@/public/assets/hovuzlaar/img10888.webp";
+import logo from '@/public/assets/images/logoag.webp'
 
 
 
 
 
-// import a151gece from "@/public/assets/hovuzlar/klassikcam/a151gece.png";
-// import a155 from "@/public/assets/hovuzlar/klassikcam/a155.png";
-// import a155gece from "@/public/assets/hovuzlar/klassikcam/a155gece.png";
-// import a158 from "@/public/assets/hovuzlar/klassikcam/a158.png"
-// import a158gece from "@/public/assets/hovuzlar/klassikcam/a158gece.png";
-// import a159 from "@/public/assets/hovuzlar/klassikcam/a159.png";
-// import a159gece from "@/public/assets/hovuzlar/klassikcam/a159gece.png";
-// import a161 from "@/public/assets/hovuzlar/klassikcam/a161.png";
-// import a161gece from "@/public/assets/hovuzlar/klassikcam/a161gece.png";
-// import a161l from "@/public/assets/hovuzlar/klassikcam/a161l.png";
-// import a161lgece from "@/public/assets/hovuzlar/klassikcam/a161lgece.png";
-// import a218 from "@/public/assets/hovuzlar/klassikcam/a218.png";
-// import a218gece from "@/public/assets/hovuzlar/klassikcam/a218gece.png";
-// import a231 from "@/public/assets/hovuzlar/klassikcam/a231.png";
-// import a231gece from "@/public/assets/hovuzlar/klassikcam/a231gece.png";
-// import a236 from "@/public/assets/hovuzlar/klassikcam/a236.png";
-// import a236gece from "@/public/assets/hovuzlar/klassikcam/a236gece.png";
-// import a276 from "@/public/assets/hovuzlar/klassikcam/a276.png";
-// import a276gece from "@/public/assets/hovuzlar/klassikcam/a276gece.png";
+// import a151gece from "@/public/assets/hovuzlar/klassikcam/a151gece.webp";
+// import a155 from "@/public/assets/hovuzlar/klassikcam/a155.webp";
+// import a155gece from "@/public/assets/hovuzlar/klassikcam/a155gece.webp";
+// import a158 from "@/public/assets/hovuzlar/klassikcam/a158.webp"
+// import a158gece from "@/public/assets/hovuzlar/klassikcam/a158gece.webp";
+// import a159 from "@/public/assets/hovuzlar/klassikcam/a159.webp";
+// import a159gece from "@/public/assets/hovuzlar/klassikcam/a159gece.webp";
+// import a161 from "@/public/assets/hovuzlar/klassikcam/a161.webp";
+// import a161gece from "@/public/assets/hovuzlar/klassikcam/a161gece.webp";
+// import a161l from "@/public/assets/hovuzlar/klassikcam/a161l.webp";
+// import a161lgece from "@/public/assets/hovuzlar/klassikcam/a161lgece.webp";
+// import a218 from "@/public/assets/hovuzlar/klassikcam/a218.webp";
+// import a218gece from "@/public/assets/hovuzlar/klassikcam/a218gece.webp";
+// import a231 from "@/public/assets/hovuzlar/klassikcam/a231.webp";
+// import a231gece from "@/public/assets/hovuzlar/klassikcam/a231gece.webp";
+// import a236 from "@/public/assets/hovuzlar/klassikcam/a236.webp";
+// import a236gece from "@/public/assets/hovuzlar/klassikcam/a236gece.webp";
+// import a276 from "@/public/assets/hovuzlar/klassikcam/a276.webp";
+// import a276gece from "@/public/assets/hovuzlar/klassikcam/a276gece.webp";
 
-// import bali from "@/public/assets/hovuzlar/kare/bali.png";
-// import baligece from "@/public/assets/hovuzlar/kare/baligece.png";
-// import floralblue from "@/public/assets/hovuzlar/kare/floralBlue.png";
-// import floralblueGece from "@/public/assets/hovuzlar/kare/floralBlueGece.png";
-// import floralgreen from "@/public/assets/hovuzlar/kare/floralGreen.png";
-// import floralgreenGece from "@/public/assets/hovuzlar/kare/floralGreenGece.png";
-// import judiGreyKare from "@/public/assets/hovuzlar/kare/judiGrey.png";
-// import judiGreyKareGece from "@/public/assets/hovuzlar/kare/judiGreyGece.png";
+// import bali from "@/public/assets/hovuzlar/kare/bali.webp";
+// import baligece from "@/public/assets/hovuzlar/kare/baligece.webp";
+// import floralblue from "@/public/assets/hovuzlar/kare/floralBlue.webp";
+// import floralblueGece from "@/public/assets/hovuzlar/kare/floralBlueGece.webp";
+// import floralgreen from "@/public/assets/hovuzlar/kare/floralGreen.webp";
+// import floralgreenGece from "@/public/assets/hovuzlar/kare/floralGreenGece.webp";
+// import judiGreyKare from "@/public/assets/hovuzlar/kare/judiGrey.webp";
+// import judiGreyKareGece from "@/public/assets/hovuzlar/kare/judiGreyGece.webp";
 
-// import light from "@/public/assets/kenarkafeller/light.png";
-// import lightGece from "@/public/assets/kenarkafeller/lightgece.png";
-import superstone from "@/public/assets/kenarkafeller/superstonegpt.png";
-import superstoneGece from "@/public/assets/kenarkafeller/superstonegptgece.png";
-// import judiGrey from "@/public/assets/kenarkafeller/judigrey.png";
-// import judiGreyGece from "@/public/assets/kenarkafeller/judigreygece.png";
-// import lucaGrey from "@/public/assets/kenarkafeller/lucaGrey.png";
-// import lucaGreyGece from "@/public/assets/kenarkafeller/lucaGreyGece.png";
+// import light from "@/public/assets/kenarkafeller/light.webp";
+// import lightGece from "@/public/assets/kenarkafeller/lightgece.webp";
+import superstone from "@/public/assets/kenarkafeller/superstonegpt.webp";
+import superstoneGece from "@/public/assets/kenarkafeller/superstonegptgece.webp";
+// import judiGrey from "@/public/assets/kenarkafeller/judigrey.webp";
+// import judiGreyGece from "@/public/assets/kenarkafeller/judigreygece.webp";
+// import lucaGrey from "@/public/assets/kenarkafeller/lucaGrey.webp";
+// import lucaGreyGece from "@/public/assets/kenarkafeller/lucaGreyGece.webp";
 
-// import lightorta from "@/public/assets/ortakafeller/lightorta.png";
-// import lightortaGece from "@/public/assets/ortakafeller/lightortaGece.png";
-// import judiGreyorta from "@/public/assets/ortakafeller/judiGreyorta.png";
-// import judiGreyortaGece from "@/public/assets/ortakafeller/judiGreyortaGece.png";
-// import lucaGreyOrta from "@/public/assets/ortakafeller/lucaGreyOrta.png";
-// import lucaGreyOrtaGece from "@/public/assets/ortakafeller/lucaGreyOrtaGece.png";
+// import lightorta from "@/public/assets/ortakafeller/lightorta.webp";
+// import lightortaGece from "@/public/assets/ortakafeller/lightortaGece.webp";
+// import judiGreyorta from "@/public/assets/ortakafeller/judiGreyorta.webp";
+// import judiGreyortaGece from "@/public/assets/ortakafeller/judiGreyortaGece.webp";
+// import lucaGreyOrta from "@/public/assets/ortakafeller/lucaGreyOrta.webp";
+// import lucaGreyOrtaGece from "@/public/assets/ortakafeller/lucaGreyOrtaGece.webp";
 
 // import terasLight from "@/public/assets/teraslar/villa3.webp";
 // import terasLightGece from "@/public/assets/teraslar/villa3gece.webp";
@@ -76,7 +76,7 @@ import superstoneGece from "@/public/assets/kenarkafeller/superstonegptgece.png"
 // import mavivillagece from "@/public/assets/teraslar/mavivillagece.webp";
 // import villa4 from "@/public/assets/teraslar/villa4.webp";
 
-import gpt from "@/public/assets/teraslar/esashovuz.png";
+import gpt from "@/public/assets/teraslar/esashovuz.webp";
 import gptgece from "@/public/assets/teraslar/mavihovuzgece.webp";
 import Link from "next/link";
 import { BiHome } from "react-icons/bi";

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     siteName: "Your Brand",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/og-image.webp",
         width: 1200,
         height: 630,
         alt: "Hovuz məhsulları kataloqu",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "2026 Hovuz Məhsulları",
     description: "Premium hovuz məhsulları kataloqu",
-    images: ["/og-image.jpg"],
+    images: ["/og-image.webp"],
   },
 };
 

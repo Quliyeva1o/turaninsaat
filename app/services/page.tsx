@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://www.turanprojects.az/assets/images/og-services.jpg",
+        url: "https://www.turanprojects.az/assets/images/og-services.webp",
         width: 1200,
         height: 630,
         alt: "Turan İnşaat — Hovuz və SPA Xidmətləri",
@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     title: "Hovuz, SPA, Sauna Tikintisi | Turan İnşaat Bakı",
     description:
       "Bakıda lisenziyalı hovuz tikintisi, SPA, türk hamamı, sauna, filtrasiya sistemləri.",
-    images: ["https://www.turanprojects.az/assets/images/og-services.jpg"],
+    images: ["https://www.turanprojects.az/assets/images/og-services.webp"],
   },
 };
 
@@ -96,9 +96,9 @@ export default function ServicesPage() {
     })),
   };
 
-  const webPageJsonLd = {
+  const webpageJsonLd = {
     "@context": "https://schema.org",
-    "@type": "WebPage",
+    "@type": ".webpage",
     "@id": "https://www.turanprojects.az/services",
     name: "Xidmətlərimiz",
     description:
@@ -118,7 +118,7 @@ export default function ServicesPage() {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(webPageJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webpageJsonLd) }}
       />
 
       <HeroWrapper />

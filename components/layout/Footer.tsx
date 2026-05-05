@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { memo } from "react";
 import { FaPhoneAlt, FaEnvelope, FaInstagram, FaWhatsapp } from "react-icons/fa";
-import logo from "@/public/assets/images/logo.png";
+import logo from "@/public/assets/images/logo.webp";
 import { servicesContent } from "@/utils";
 import { projects } from "@/components/home/ourProjects/projes";
 

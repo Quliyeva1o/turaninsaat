@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/assets/images/certificate.png",
+        url: "/assets/images/certificate.webp",
         width: 1200,
         height: 630,
         alt: "Turan İnşaat MMC – Lisenziya Sertifikatı",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: "Haqqımızda | Turan İnşaat MMC",
     description:
       "Azərbaycanda hovuz, sauna, türk hamamı və spa sahəsində lisenziyalı şirkət. 200+ tamamlanmış layihə.",
-    images: ["/assets/images/certificate.png"],
+    images: ["/assets/images/certificate.webp"],
   },
   alternates: {
     canonical: "https://www.turanprojects.az/about",

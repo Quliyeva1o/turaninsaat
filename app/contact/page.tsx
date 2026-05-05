@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/assets/images/contactus.jpg",
+        url: "/assets/images/contactus.webp",
         width: 1200,
         height: 630,
         alt: "Turan İnşaat – Bizimlə Əlaqə",
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     title: "Bizimlə Əlaqə | Turan İnşaat",
     description:
       "Hovuz, sauna, jacuzzi və hamam layihələri üçün peşəkar komandamızla əlaqə saxlayın. Bakı, Novxanı.",
-    images: ["/assets/images/contactus.jpg"],
+    images: ["/assets/images/contactus.webp"],
   },
   alternates: {
     canonical: "https://www.turanprojects.az/contact",

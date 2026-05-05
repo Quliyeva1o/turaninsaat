@@ -19,7 +19,7 @@ export default function ServiceCard({ service }: { service: Service }) {
         data-aos-offset="-300"
         className="relative overflow-hidden rounded-2xl cursor-pointer group shadow-lg transition-all duration-500 hover:shadow-2xl"
       >
-        {/* ✅ <img> → <Image> — LCP, lazy load, WebP avtomatik */}
+        {/* ✅ <img> → <Image> — LCP, lazy load, .webp avtomatik */}
         <div className="relative w-full h-52 md:h-72">
           <Image
             src={service.img}

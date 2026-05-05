@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Button from "@/components/common/Button";
-import certImg from "@/public/assets/images/certificate.png";
+import certImg from "@/public/assets/images/certificate.webp";
 import HeroWrapper from "@/components/home/heroWrapper";
 
 interface Props {

@@ -163,7 +163,7 @@ function ProductCard({ product }: { product: Product }) {
       <div style={styles.imgWrapper}>
         {product.img && product.img!==null && !imgError ? (
           <Image
-            src={`/assets/products/${product.img}.jpg`}
+            src={`/assets/products/${product.img}.webp`}
             alt={product.name}
             fill
             sizes="(max-width: 768px) 50vw, 25vw"

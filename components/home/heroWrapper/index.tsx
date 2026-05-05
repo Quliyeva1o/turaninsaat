@@ -3,10 +3,10 @@ import { useState, useEffect } from "react";
 import Hero from "../hero";
 import { usePathname } from "next/navigation";
 
-import aboutImg from '@/public/assets/images/aboutushero.png'
-import servicesImg from '@/public/assets/images/services.jpg'
-import projectsImg from '@/public/assets/images/projects.jpg'
-import contactImg from '@/public/assets/images/contact.jpg'
+import aboutImg from '@/public/assets/images/aboutushero.webp'
+import servicesImg from '@/public/assets/images/services.webp'
+import projectsImg from '@/public/assets/images/projects.webp'
+import contactImg from '@/public/assets/images/contact.webp'
 
 const heroContents: Record<string, any> = {
     "/": { isHome: true, video: "/assets/videos/2.mp4" },

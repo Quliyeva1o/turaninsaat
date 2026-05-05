@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: `${BASE_URL}/images/og-image.jpg`,
+        url: `${BASE_URL}/images/og-image.webp`,
         width: 1200,
         height: 630,
         alt: "Turan İnşaat — Hovuz və SPA Tikintisi",
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Turan İnşaat | Hovuz və SPA Tikintisi",
     description: "Bakıda peşəkar hovuz tikintisi və SPA həlləri.",
-    images: [`${BASE_URL}/images/og-image.jpg`],
+    images: [`${BASE_URL}/images/og-image.webp`],
   },
 
   robots: {

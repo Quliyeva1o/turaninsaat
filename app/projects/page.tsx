@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     locale: "az_AZ",
     images: [
       {
-        url: projects[0]?.images?.[0] ?? "/images/og-image.jpg",
+        url: projects[0]?.images?.[0] ?? "/images/og-image.webp",
         width: 1200,
         height: 630,
         alt: "Turan İnşaat – Bakıda Hovuz və SPA Tikintisi Layihələri",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     title: "Layihələrimiz | Turan İnşaat",
     description:
       "Tamamlanmış hovuz, SPA, sauna və hamam layihələri – Bakı, Azərbaycan.",
-    images: [projects[0]?.images?.[0] ?? "/images/og-image.jpg"],
+    images: [projects[0]?.images?.[0] ?? "/images/og-image.webp"],
   },
   robots: {
     index: true,

@@ -9,7 +9,7 @@ export default function SchemaOrg() {
         url: "https://www.turanprojects.az",
         logo: {
           "@type": "ImageObject",
-          url: "https://www.turanprojects.az/images/logo.png",
+          url: "https://www.turanprojects.az/images/logo.webp",
         },
         address: {
           "@type": "PostalAddress",

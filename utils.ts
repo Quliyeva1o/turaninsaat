@@ -28,16 +28,16 @@ export const servicesContent: any = {
     {
       title: "Hovuz Filtrasiya Sistemləri",
       slug: "hovuz-filtrasiya-sistemleri",
-      img: '/assets/images/poolFilter.png',
+      img: '/assets/images/poolFilter.webp',
       desc: "Skimmer, daşma, infinity hovuzlar üçün effektiv filtrasiya sistemləri. Hovuz suyunun dövriyyəsi və təmizliyi üçün peşəkar həllər.",
       sections: [
         {
           title: "Filtrasiya Növləri",
           items: [
-            { title: "Skimmer tipli hovuzlar – Su səviyyəsi kənardan bir qədər aşağı olur; sadə, effektiv və texniki baxımdan sərfəli sistem. Şəxsi bağ evləri üçün əla seçim.", img: "/assets/images/poolFilter.png" },
-            { title: "Daşma tipli hovuzlar (ızgaralı / gizli kanallı) – Su səviyyəsi hovuzun kənarı ilə eyni olur; suyun üst səthi həmişə təmiz qalır.", img: "/assets/images/poolFilter.png" },
-            { title: "Infinity hovuzlar (Sonsuzluq hovuzu) – Tək tərəfli daşma sistemi ilə dəniz mənzərəli ərazilərdə möhtəşəm görüntü yaradır.", img: "/assets/images/poolFilter.png" },
-            { title: "Daha yaxşı su dövriyyəsi – Su daim filtrasiya sisteminə ötürüldüyü üçün daha keyfiyyətli dövriyyə təmin edilir.", img: "/assets/images/poolFilter.png" },
+            { title: "Skimmer tipli hovuzlar – Su səviyyəsi kənardan bir qədər aşağı olur; sadə, effektiv və texniki baxımdan sərfəli sistem. Şəxsi bağ evləri üçün əla seçim.", img: "/assets/images/poolFilter.webp" },
+            { title: "Daşma tipli hovuzlar (ızgaralı / gizli kanallı) – Su səviyyəsi hovuzun kənarı ilə eyni olur; suyun üst səthi həmişə təmiz qalır.", img: "/assets/images/poolFilter.webp" },
+            { title: "Infinity hovuzlar (Sonsuzluq hovuzu) – Tək tərəfli daşma sistemi ilə dəniz mənzərəli ərazilərdə möhtəşəm görüntü yaradır.", img: "/assets/images/poolFilter.webp" },
+            { title: "Daha yaxşı su dövriyyəsi – Su daim filtrasiya sisteminə ötürüldüyü üçün daha keyfiyyətli dövriyyə təmin edilir.", img: "/assets/images/poolFilter.webp" },
           ]
         }
       ]
@@ -46,15 +46,15 @@ export const servicesContent: any = {
     {
       title: "Hovuz İsitmə və Soyutma Sistemləri",
       slug: "hovuz-istitme-soyutma",
-      img: '/assets/images/poolHeather.png',
+      img: '/assets/images/poolHeather.webp',
       desc: "Hovuz suyunu isitmək və soyutmaq üçün isitmə pompası, boru tipli və plaka tipli eşenjorlar. Xüsusilə təbii qaz olmayan ərazilər üçün ideal.",
       sections: [
         {
           title: "Avadanlıqlar",
           items: [
-            { title: "İsitmə pompası – Xüsusilə təbii qaz olmayan ərazilərdə hovuz suyunu həm qızdırmaq, həm soyutmaq üçün istifadə olunur.", img: "/assets/images/poolHeather.png" },
-            { title: "Boru tipli eşenjor – Isti su və ya buxarla hovuz suyunu effektiv şəkildə qızdıran, yüksək istilik ötürmə qabiliyyətinə malik istilik dəyişdiricisi.", img: "/assets/images/poolHeather.png" },
-            { title: "Plaka tipli eşenjor – Yüksək istilik ötürmə səthinə malik, isti və soyuq suyun nazik metal plakalardan keçərək istilik mübadiləsi apardığı effektiv sistem.", img: "/assets/images/poolHeather.png" },
+            { title: "İsitmə pompası – Xüsusilə təbii qaz olmayan ərazilərdə hovuz suyunu həm qızdırmaq, həm soyutmaq üçün istifadə olunur.", img: "/assets/images/poolHeather.webp" },
+            { title: "Boru tipli eşenjor – Isti su və ya buxarla hovuz suyunu effektiv şəkildə qızdıran, yüksək istilik ötürmə qabiliyyətinə malik istilik dəyişdiricisi.", img: "/assets/images/poolHeather.webp" },
+            { title: "Plaka tipli eşenjor – Yüksək istilik ötürmə səthinə malik, isti və soyuq suyun nazik metal plakalardan keçərək istilik mübadiləsi apardığı effektiv sistem.", img: "/assets/images/poolHeather.webp" },
           ]
         }
       ]
@@ -63,17 +63,17 @@ export const servicesContent: any = {
     {
       title: "Hovuz Təmizlik Texnologiyaları",
       slug: "hovuz-temizlik-texnologiyalari",
-      img: '/assets/images/poolCleaning.png',
+      img: '/assets/images/poolCleaning.webp',
       desc: "Robot təmizləyici, UV dezinfeksiya, duz elektroliz və kartric filtrasiya — hovuz suyunu avtomatik və ekoloji yollarla təmiz saxlayan müasir texnologiyalar.",
       sections: [
         {
           title: "Müasir Sistemlər",
           items: [
-            { title: "Avtomatik robot təmizləyicilər – Hovuzun dibini və divarlarını tam avtomatik təmizləyən ağıllı sistemlər. Enerjiyə qənaət edir, yüksək effektivlik təmin edir.", img: "/assets/images/poolCleaning.png" },
-            { title: "Ultrabənövşəyi (UV) dezinfeksiya sistemləri – Kimyəvi maddələrin istifadəsini minimuma endirərək hovuz suyunu bakteriya və viruslardan qoruyan müasir texnologiya.", img: "/assets/images/poolCleaning.png" },
-            { title: "Avtomatik kimyəvi dozaj sistemi – Hovuz suyunun pH və xlor səviyyəsini avtomatik balanslaşdıraraq optimal şərait yaradır.", img: "/assets/images/poolCleaning.png" },
-            { title: "Duz elektroliz sistemi – Duzdan təbii xlor istehsal edərək suyu dezinfeksiya edir; kimyəvi xlor ehtiyacını azaldır, suyu daha təbii saxlayır.", img: "/assets/images/poolCleaning.png" },
-            { title: "Kartricli filtrasiya sistemi – Borusuz, ekoloji təmiz hovuz təmizləmə texnologiyası.", img: "/assets/images/poolCleaning.png" },
+            { title: "Avtomatik robot təmizləyicilər – Hovuzun dibini və divarlarını tam avtomatik təmizləyən ağıllı sistemlər. Enerjiyə qənaət edir, yüksək effektivlik təmin edir.", img: "/assets/images/poolCleaning.webp" },
+            { title: "Ultrabənövşəyi (UV) dezinfeksiya sistemləri – Kimyəvi maddələrin istifadəsini minimuma endirərək hovuz suyunu bakteriya və viruslardan qoruyan müasir texnologiya.", img: "/assets/images/poolCleaning.webp" },
+            { title: "Avtomatik kimyəvi dozaj sistemi – Hovuz suyunun pH və xlor səviyyəsini avtomatik balanslaşdıraraq optimal şərait yaradır.", img: "/assets/images/poolCleaning.webp" },
+            { title: "Duz elektroliz sistemi – Duzdan təbii xlor istehsal edərək suyu dezinfeksiya edir; kimyəvi xlor ehtiyacını azaldır, suyu daha təbii saxlayır.", img: "/assets/images/poolCleaning.webp" },
+            { title: "Kartricli filtrasiya sistemi – Borusuz, ekoloji təmiz hovuz təmizləmə texnologiyası.", img: "/assets/images/poolCleaning.webp" },
           ]
         }
       ]
@@ -82,16 +82,16 @@ export const servicesContent: any = {
     {
       title: "Hovuz Əlavə Avadanlıqları",
       slug: "hovuz-elave-avadanliqlar",
-      img: '/assets/images/poolDetails.png',
+      img: '/assets/images/poolDetails.webp',
       desc: "Şəlalə qurğuları, dalğa sistemləri, aquapark slaydları, su tunelləri və distansion nəzarət sistemləri ilə hovuz təcrübənizi zənginləşdirin.",
       sections: [
         {
           title: "Funksional Sistemlər",
           items: [
-            { title: "Şəlalə qurğuları (divar tipi daxil) – Hovuzda estetik və vizual təsir yaratmaq üçün suyun yüksəkdən aşağıya axmasını təmin edən su axını sistemləri.", img: "/assets/images/poolDetails.png" },
-            { title: "Dalğa yaradan sistemlər – Hovuzda təbii dalğalar yaradaraq istifadəçilərə dənizdə üzmə təcrübəsi təqdim edən qurğular. Aquaparklarda geniş tətbiq olunur.", img: "/assets/images/poolDetails.png" },
-            { title: "Aquapark sistemləri – Sürüşən slaydlər, su tunelləri, köpük və su fısqırdıcıları, müxtəlif yaş qrupları üçün interaktiv su oyunları.", img: "/assets/images/poolDetails.png" },
-            { title: "Distansion (Smart) nəzarət sistemi – Suyun temperaturu, kimyəvi tərkibi, su səviyyəsi və təmizləmə sistemlərini uzaqdan izləyib tənzimləyən avtomatik idarəetmə sistemi.", img: "/assets/images/poolDetails.png" },
+            { title: "Şəlalə qurğuları (divar tipi daxil) – Hovuzda estetik və vizual təsir yaratmaq üçün suyun yüksəkdən aşağıya axmasını təmin edən su axını sistemləri.", img: "/assets/images/poolDetails.webp" },
+            { title: "Dalğa yaradan sistemlər – Hovuzda təbii dalğalar yaradaraq istifadəçilərə dənizdə üzmə təcrübəsi təqdim edən qurğular. Aquaparklarda geniş tətbiq olunur.", img: "/assets/images/poolDetails.webp" },
+            { title: "Aquapark sistemləri – Sürüşən slaydlər, su tunelləri, köpük və su fısqırdıcıları, müxtəlif yaş qrupları üçün interaktiv su oyunları.", img: "/assets/images/poolDetails.webp" },
+            { title: "Distansion (Smart) nəzarət sistemi – Suyun temperaturu, kimyəvi tərkibi, su səviyyəsi və təmizləmə sistemlərini uzaqdan izləyib tənzimləyən avtomatik idarəetmə sistemi.", img: "/assets/images/poolDetails.webp" },
           ]
         }
       ]
@@ -100,17 +100,17 @@ export const servicesContent: any = {
     {
       title: "Fontan və Şəlalə Sistemləri",
       slug: "fontan-selale-sistemleri",
-      img: '/assets/images/fountain.jpg',
+      img: '/assets/images/fountain.webp',
       desc: "Düz, köpüklü, rəngli LED, gizli fontanlar və təbii daş şəlalələr — hovuz, bağ və ictimai məkanlara estetik atmosfer qatan dekorativ su sistemləri.",
       sections: [
         {
           title: "Dekorativ Elementlər",
           items: [
-            { title: "Düz fontanlar – Suyun yerə düz bir şəkildə axdığı sadə, minimalist və müasir məkanlara gözəllik qatan fontanlar.", img: "/assets/images/fountain.jpg" },
-            { title: "Köpüklü fontanlar – Suyun hava ilə qarışaraq ağ və sıx axın yaratdığı, estetik və sakitləşdirici vizual effekt verən dekorativ su qurğuları.", img: "/assets/images/fountain.jpg" },
-            { title: "Müasir rəngli işıqlandırmalı fontanlar – Su axınının rəngini və formalarını idarə edən yüksək texnologiyalı, LED işıqlı fontanlar.", img: "/assets/images/fountain.jpg" },
-            { title: "Gizli fontanlar – Suyun yer səviyyəsindən püskürdüyü, görünən hovuz olmadan dizayn edilən müasir su qurğuları.", img: "/assets/images/fountain.jpg" },
-            { title: "Təbii şəlalələr – Orijinal qaya daşlarından hazırlanmış, təbii axın effekti yaradan, estetik və sakitləşdirici mühit formalaşdıran şəlalə sistemləri.", img: "/assets/images/fountain.jpg" },
+            { title: "Düz fontanlar – Suyun yerə düz bir şəkildə axdığı sadə, minimalist və müasir məkanlara gözəllik qatan fontanlar.", img: "/assets/images/fountain.webp" },
+            { title: "Köpüklü fontanlar – Suyun hava ilə qarışaraq ağ və sıx axın yaratdığı, estetik və sakitləşdirici vizual effekt verən dekorativ su qurğuları.", img: "/assets/images/fountain.webp" },
+            { title: "Müasir rəngli işıqlandırmalı fontanlar – Su axınının rəngini və formalarını idarə edən yüksək texnologiyalı, LED işıqlı fontanlar.", img: "/assets/images/fountain.webp" },
+            { title: "Gizli fontanlar – Suyun yer səviyyəsindən püskürdüyü, görünən hovuz olmadan dizayn edilən müasir su qurğuları.", img: "/assets/images/fountain.webp" },
+            { title: "Təbii şəlalələr – Orijinal qaya daşlarından hazırlanmış, təbii axın effekti yaradan, estetik və sakitləşdirici mühit formalaşdıran şəlalə sistemləri.", img: "/assets/images/fountain.webp" },
           ]
         }
       ]
@@ -119,16 +119,16 @@ export const servicesContent: any = {
     {
       title: "Hovuz Örtükləri",
       slug: "hovuz-ortukleri",
-      img: '/assets/images/poolCover.jpg',
+      img: '/assets/images/poolCover.webp',
       desc: "Avtomatik, mexaniki, rulo tipli və bank (Prestige) tipli hovuz örtükləri. Hovuzun təhlükəsizliyini, istiliyini və təmizliyini qoruyun.",
       sections: [
         {
           title: "Örtük Növləri",
           items: [
-            { title: "Avtomatik örtüklər – Uzaqdan idarə edilə bilər; hovuzun təhlükəsizliyini avtomatik təmin edir.", img: "/assets/images/poolCover.jpg" },
-            { title: "Mexaniki örtüklər – Əl ilə açılıb bağlana bilən, sərfəli və etibarlı örtük sistemi.", img: "/assets/images/poolCover.jpg" },
-            { title: "Rulo tipi hovuz örtüyü – PVC və ya polikarbonat materialdan hazırlanır; avtomatik və ya yarı-avtomatik şəkildə işləyir.", img: "/assets/images/poolCover.jpg" },
-            { title: "Bank tipi (Prestige) hovuz örtüyü – Örtük hovuzun kənarında (bank hissəsinde) gizlənmiş quraşdırılır; örtülmədikdə estetik element kimi görünür.", img: "/assets/images/poolCover.jpg" },
+            { title: "Avtomatik örtüklər – Uzaqdan idarə edilə bilər; hovuzun təhlükəsizliyini avtomatik təmin edir.", img: "/assets/images/poolCover.webp" },
+            { title: "Mexaniki örtüklər – Əl ilə açılıb bağlana bilən, sərfəli və etibarlı örtük sistemi.", img: "/assets/images/poolCover.webp" },
+            { title: "Rulo tipi hovuz örtüyü – PVC və ya polikarbonat materialdan hazırlanır; avtomatik və ya yarı-avtomatik şəkildə işləyir.", img: "/assets/images/poolCover.webp" },
+            { title: "Bank tipi (Prestige) hovuz örtüyü – Örtük hovuzun kənarında (bank hissəsinde) gizlənmiş quraşdırılır; örtülmədikdə estetik element kimi görünür.", img: "/assets/images/poolCover.webp" },
           ]
         }
       ]
@@ -208,16 +208,16 @@ export const servicesContent: any = {
 
     {
       title: "Əlavə SPA Avadanlıqları",
-      img: "/assets/images/sokdus.jpg",
+      img: "/assets/images/sokdus.webp",
       slug: "spa-avadanliqlari",
       desc: "Şok duş, şok vedrəsi, buz bulağı — SPA təcrübəsini tamamlayan kontrastlı temperatur terapiyası avadanlıqları.",
       sections: [
         {
           title: "Xüsusi Sistemlər",
           items: [
-            { title: "Şok duş (Shock Shower) / Tropik duş – Ani soyuq su axını ilə qan dövranını sürətləndirir, bədəni canlandırır; isti mühitdən sonra kontrast terapiyası üçün ideal.", img: "/assets/images/sokdus.jpg" },
-            { title: "Şok vedrəsi – Soyuq suyun dərhal bədənə axması ilə toksinləri atmağa kömək edir, immuniteti gücləndirir, bədəni canlandırır.", img: "/assets/images/sokdus.jpg" },
-            { title: "Buz bulağı (Kar Çeşməsi) – Spa mərkəzlərindəki bərpa terapiyaları üçün buz istehsal edən xüsusi avadanlıq.", img: "/assets/images/sokdus.jpg" },
+            { title: "Şok duş (Shock Shower) / Tropik duş – Ani soyuq su axını ilə qan dövranını sürətləndirir, bədəni canlandırır; isti mühitdən sonra kontrast terapiyası üçün ideal.", img: "/assets/images/sokdus.webp" },
+            { title: "Şok vedrəsi – Soyuq suyun dərhal bədənə axması ilə toksinləri atmağa kömək edir, immuniteti gücləndirir, bədəni canlandırır.", img: "/assets/images/sokdus.webp" },
+            { title: "Buz bulağı (Kar Çeşməsi) – Spa mərkəzlərindəki bərpa terapiyaları üçün buz istehsal edən xüsusi avadanlıq.", img: "/assets/images/sokdus.webp" },
           ]
         }
       ]
@@ -253,16 +253,16 @@ export const servicesContent: any = {
     {
       title: "Pool Filtration Systems",
       slug: "pool-filtration",
-      img: "/assets/images/poolFilter.png",
+      img: "/assets/images/poolFilter.webp",
       desc: "Skimmer, overflow, and infinity pool filtration systems ensuring clean, well-circulated pool water.",
       sections: [
         {
           title: "Types",
           items: [
-            { title: "Skimmer pools – Water level sits slightly below the pool edge; simple, effective, and cost-efficient. Ideal for private gardens.", img: "/assets/images/poolFilter.png" },
-            { title: "Overflow pools (grated / hidden channel) – Water level is flush with the pool edge; surface stays permanently clean.", img: "/assets/images/poolFilter.png" },
-            { title: "Infinity pools – One-sided overflow creates a breathtaking 'endless horizon' visual effect, especially in scenic locations.", img: "/assets/images/poolFilter.png" },
-            { title: "Superior water circulation – Continuous edge filtration ensures higher water quality and clarity.", img: "/assets/images/poolFilter.png" },
+            { title: "Skimmer pools – Water level sits slightly below the pool edge; simple, effective, and cost-efficient. Ideal for private gardens.", img: "/assets/images/poolFilter.webp" },
+            { title: "Overflow pools (grated / hidden channel) – Water level is flush with the pool edge; surface stays permanently clean.", img: "/assets/images/poolFilter.webp" },
+            { title: "Infinity pools – One-sided overflow creates a breathtaking 'endless horizon' visual effect, especially in scenic locations.", img: "/assets/images/poolFilter.webp" },
+            { title: "Superior water circulation – Continuous edge filtration ensures higher water quality and clarity.", img: "/assets/images/poolFilter.webp" },
           ]
         }
       ]
@@ -271,17 +271,17 @@ export const servicesContent: any = {
     {
       title: "Pool Cleaning Technologies",
       slug: "pool-cleaning",
-      img: "/assets/images/poolCleaning.png",
+      img: "/assets/images/poolCleaning.webp",
       desc: "Robotic cleaners, UV disinfection, salt electrolysis, and cartridge filtration — automatic and eco-friendly pool cleaning technologies.",
       sections: [
         {
           title: "Systems",
           items: [
-            { title: "Robotic cleaners – Fully automatic intelligent systems that clean pool floors and walls. Energy-efficient and highly effective.", img: "/assets/images/poolCleaning.png" },
-            { title: "UV (Ultraviolet) disinfection systems – Eliminates bacteria and viruses while minimizing chemical usage.", img: "/assets/images/poolCleaning.png" },
-            { title: "Automatic chemical dosing – Continuously balances pH and chlorine levels for optimal water quality.", img: "/assets/images/poolCleaning.png" },
-            { title: "Salt electrolysis systems – Produces natural chlorine from salt; reduces chemical chlorine needs and keeps water feeling more natural.", img: "/assets/images/poolCleaning.png" },
-            { title: "Cartridge filtration system – Pipe-free, eco-friendly pool cleaning technology.", img: "/assets/images/poolCleaning.png" },
+            { title: "Robotic cleaners – Fully automatic intelligent systems that clean pool floors and walls. Energy-efficient and highly effective.", img: "/assets/images/poolCleaning.webp" },
+            { title: "UV (Ultraviolet) disinfection systems – Eliminates bacteria and viruses while minimizing chemical usage.", img: "/assets/images/poolCleaning.webp" },
+            { title: "Automatic chemical dosing – Continuously balances pH and chlorine levels for optimal water quality.", img: "/assets/images/poolCleaning.webp" },
+            { title: "Salt electrolysis systems – Produces natural chlorine from salt; reduces chemical chlorine needs and keeps water feeling more natural.", img: "/assets/images/poolCleaning.webp" },
+            { title: "Cartridge filtration system – Pipe-free, eco-friendly pool cleaning technology.", img: "/assets/images/poolCleaning.webp" },
           ]
         }
       ]
@@ -290,15 +290,15 @@ export const servicesContent: any = {
     {
       title: "Heating & Cooling",
       slug: "pool-heating-cooling",
-      img: "/assets/images/poolHeather.png",
+      img: "/assets/images/poolHeather.webp",
       desc: "Heat pumps, tube heat exchangers, and plate heat exchangers for efficient pool water heating and cooling.",
       sections: [
         {
           title: "Equipment",
           items: [
-            { title: "Heat pump – Heats and cools pool water; ideal for locations without natural gas supply.", img: "/assets/images/poolHeather.png" },
-            { title: "Tube-type heat exchanger – High heat transfer capacity; efficiently heats pool water using hot water or steam.", img: "/assets/images/poolHeather.png" },
-            { title: "Plate-type heat exchanger – Large heat exchange surface with thin metal plates; efficient and compact design.", img: "/assets/images/poolHeather.png" },
+            { title: "Heat pump – Heats and cools pool water; ideal for locations without natural gas supply.", img: "/assets/images/poolHeather.webp" },
+            { title: "Tube-type heat exchanger – High heat transfer capacity; efficiently heats pool water using hot water or steam.", img: "/assets/images/poolHeather.webp" },
+            { title: "Plate-type heat exchanger – Large heat exchange surface with thin metal plates; efficient and compact design.", img: "/assets/images/poolHeather.webp" },
           ]
         }
       ]
@@ -307,16 +307,16 @@ export const servicesContent: any = {
     {
       title: "Additional Pool Equipment",
       slug: "pool-equipment",
-      img: "/assets/images/poolDetails.png",
+      img: "/assets/images/poolDetails.webp",
       desc: "Waterfalls, wave systems, aquapark slides and tunnels, and smart remote control systems to elevate your pool experience.",
       sections: [
         {
           title: "Systems",
           items: [
-            { title: "Waterfall features (including wall-mounted) – Aesthetic water flow systems creating visual and relaxing effects in your pool.", img: "/assets/images/poolDetails.png" },
-            { title: "Wave generating systems – Simulate natural ocean waves; widely used in aquaparks.", img: "/assets/images/poolDetails.png" },
-            { title: "Aquapark systems – Slides, water tunnels, foam and water jets, interactive water games for all age groups.", img: "/assets/images/poolDetails.png" },
-            { title: "Smart remote control system – Monitors and adjusts water temperature, chemistry, water level, and cleaning remotely with automatic alerts.", img: "/assets/images/poolDetails.png" },
+            { title: "Waterfall features (including wall-mounted) – Aesthetic water flow systems creating visual and relaxing effects in your pool.", img: "/assets/images/poolDetails.webp" },
+            { title: "Wave generating systems – Simulate natural ocean waves; widely used in aquaparks.", img: "/assets/images/poolDetails.webp" },
+            { title: "Aquapark systems – Slides, water tunnels, foam and water jets, interactive water games for all age groups.", img: "/assets/images/poolDetails.webp" },
+            { title: "Smart remote control system – Monitors and adjusts water temperature, chemistry, water level, and cleaning remotely with automatic alerts.", img: "/assets/images/poolDetails.webp" },
           ]
         }
       ]
@@ -325,16 +325,16 @@ export const servicesContent: any = {
     {
       title: "Pool Covers",
       slug: "pool-covers",
-      img: "/assets/images/poolCover.jpg",
+      img: "/assets/images/poolCover.webp",
       desc: "Automatic, manual, roll-type, and Prestige bench-type pool covers for safety, heat retention, and cleanliness.",
       sections: [
         {
           title: "Types",
           items: [
-            { title: "Automatic covers – Remotely operated; ensures pool safety and keeps water clean automatically.", img: "/assets/images/poolCover.jpg" },
-            { title: "Manual covers – Hand-operated; reliable and cost-effective protection.", img: "/assets/images/poolCover.jpg" },
-            { title: "Roll-type covers – Made from PVC or polycarbonate; available in automatic and semi-automatic operation.", img: "/assets/images/poolCover.jpg" },
-            { title: "Bench-type (Prestige) covers – Concealed in the pool edge; doubles as a sleek aesthetic feature when not in use.", img: "/assets/images/poolCover.jpg" },
+            { title: "Automatic covers – Remotely operated; ensures pool safety and keeps water clean automatically.", img: "/assets/images/poolCover.webp" },
+            { title: "Manual covers – Hand-operated; reliable and cost-effective protection.", img: "/assets/images/poolCover.webp" },
+            { title: "Roll-type covers – Made from PVC or polycarbonate; available in automatic and semi-automatic operation.", img: "/assets/images/poolCover.webp" },
+            { title: "Bench-type (Prestige) covers – Concealed in the pool edge; doubles as a sleek aesthetic feature when not in use.", img: "/assets/images/poolCover.webp" },
           ]
         }
       ]
@@ -343,17 +343,17 @@ export const servicesContent: any = {
     {
       title: "Fountains & Waterfalls",
       slug: "fountains-waterfalls",
-      img: "/assets/images/fountain.jpg",
+      img: "/assets/images/fountain.webp",
       desc: "Flat, foam, LED-lit, hidden fountains and natural stone waterfalls — decorative water elements for pools, gardens, and public spaces.",
       sections: [
         {
           title: "Decor",
           items: [
-            { title: "Flat fountains – Simple water-to-ground flow; adds minimalist elegance to modern spaces.", img: "/assets/images/fountain.jpg" },
-            { title: "Foam fountains – Water mixed with air creates a dense white flow; calming and visually striking.", img: "/assets/images/fountain.jpg" },
-            { title: "LED color-lit fountains – High-tech fountains with programmable colors and water shapes for spectacular visual effects.", img: "/assets/images/fountain.jpg" },
-            { title: "Dry (hidden) fountains – Water jets emerge from ground level with no visible basin; modern and elegant.", img: "/assets/images/fountain.jpg" },
-            { title: "Natural stone waterfalls – Original rock structures create a natural flow effect; aesthetic and soothing atmosphere.", img: "/assets/images/fountain.jpg" },
+            { title: "Flat fountains – Simple water-to-ground flow; adds minimalist elegance to modern spaces.", img: "/assets/images/fountain.webp" },
+            { title: "Foam fountains – Water mixed with air creates a dense white flow; calming and visually striking.", img: "/assets/images/fountain.webp" },
+            { title: "LED color-lit fountains – High-tech fountains with programmable colors and water shapes for spectacular visual effects.", img: "/assets/images/fountain.webp" },
+            { title: "Dry (hidden) fountains – Water jets emerge from ground level with no visible basin; modern and elegant.", img: "/assets/images/fountain.webp" },
+            { title: "Natural stone waterfalls – Original rock structures create a natural flow effect; aesthetic and soothing atmosphere.", img: "/assets/images/fountain.webp" },
           ]
         }
       ]
@@ -404,15 +404,15 @@ export const servicesContent: any = {
     {
       title: "SPA Equipment",
       slug: "spa-equipment",
-      img: "/assets/images/sokdus.jpg",
+      img: "/assets/images/sokdus.webp",
       desc: "Shock shower, cold bucket, and ice fountain — contrast temperature therapy equipment to complete your SPA experience.",
       sections: [
         {
           title: "Extras",
           items: [
-            { title: "Shock shower / Tropical shower – Instant cold water flow accelerates circulation, revitalizes the body; ideal contrast therapy after heat sessions.", img: "/assets/images/sokdus.jpg" },
-            { title: "Cold bucket (Shock bucket) – Sudden cold water immersion helps eliminate toxins, strengthens immunity, and invigorates the body.", img: "/assets/images/sokdus.jpg" },
-            { title: "Ice fountain (Snow fountain) – Produces ice for recovery therapies in spa centers.", img: "/assets/images/sokdus.jpg" },
+            { title: "Shock shower / Tropical shower – Instant cold water flow accelerates circulation, revitalizes the body; ideal contrast therapy after heat sessions.", img: "/assets/images/sokdus.webp" },
+            { title: "Cold bucket (Shock bucket) – Sudden cold water immersion helps eliminate toxins, strengthens immunity, and invigorates the body.", img: "/assets/images/sokdus.webp" },
+            { title: "Ice fountain (Snow fountain) – Produces ice for recovery therapies in spa centers.", img: "/assets/images/sokdus.webp" },
           ]
         }
       ]
