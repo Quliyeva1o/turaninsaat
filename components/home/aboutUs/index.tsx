@@ -11,7 +11,7 @@ const content = {
   az: {
     badge: "HAQQIMIZDA",
     title: "Su ilə rahatlığı birləşdirən peşəkar hovuz və spa həlləri",
-    desc: `Turan İnşaat MMC lisenziyalı tikinti şirkəti olaraq hovuz, spa və sauna sistemlərinin layihələndirilməsi, tikintisi və quraşdırılması sahəsində peşəkar xidmət göstərir. İllərin təcrübəsi və yenilikçi texnologiyalar ilə müasir, estetik və uzunömürlü istirahət məkanları yaradırıq.`,
+    desc: `Turan İnşaat MMC lisenziyalı tikinti şirkəti olaraq, su ilə rahatlığı birləşdirərək mükəmməl hovuz və spa həlləri təqdim edirik. İllərin təcrübəsi və yenilikçi texnologiyalarla hovuz, spa və sauna sistemlərinin layihələndirilməsi, tikintisi və quraşdırılması sahəsində peşəkar xidmət göstəririk. Keyfiyyətli materiallar, innovativ dizaynlar və müştəri məmnuniyyəti bizim üçün əsas prinsiplərdir.`,
     features: [
       "Fərdi hovuz və spa layihələndirilməsi",
       "İnnovativ texnologiyalar və keyfiyyətli materiallar",
@@ -23,7 +23,7 @@ const content = {
   en: {
     badge: "ABOUT US",
     title: "Professional pool and spa solutions combining comfort with water",
-    desc: `Turan Construction LLC is a licensed company providing professional services in the design, construction, and installation of pool, spa, and sauna systems. With years of experience and innovative technologies, we create modern, aesthetic, and long-lasting relaxation spaces.`,
+    desc: `As a licensed construction company, Turan İnşaat LLC combines water and relaxation to offer exceptional pool and spa solutions. With years of experience and innovative technologies, we provide professional services in the design, construction, and installation of pool, spa, and sauna systems. High-quality materials, innovative designs, and customer satisfaction are our core principles.`,
     features: [
       "Custom pool and spa design",
       "Innovative technologies and premium materials",
@@ -117,7 +117,7 @@ export default function AboutUs({ locale = "az" }: AboutProps) {
           <p
             data-aos="fade-left"
             className="text-[15px] sm:text-[16px] leading-relaxed mb-8"
-            style={{ color: "#0A1E30 " }}
+            style={{ color: "#0A1E30" }}
           >
             {t.desc}
           </p>
@@ -167,14 +167,13 @@ export default function AboutUs({ locale = "az" }: AboutProps) {
             <div className="flex flex-col gap-0.5">
               <span
                 className="uppercase tracking-widest"
-                style={{ 
-                  // color: "rgba(200,232,234,0.45)", 
-                  fontSize: 10, fontWeight: 600 }}
+                style={{ fontSize: 10, fontWeight: 600 }}
               >
                 {t.contactLabel}
               </span>
 
-              <a href="tel:+994503127657"
+              <a
+                href="tel:+994503127657"
                 className="font-bold text-[17px] hover:opacity-80 transition-opacity"
                 style={{ color: "#D4AF37", letterSpacing: "0.01em" }}
               >
