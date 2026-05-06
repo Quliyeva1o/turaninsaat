@@ -44,6 +44,11 @@ export const metadata: Metadata = {
       "Bakıda lisenziyalı hovuz tikintisi, SPA, türk hamamı, sauna, filtrasiya sistemləri.",
     images: ["https://www.turanprojects.az/assets/images/og-services.webp"],
   },
+  icons: {
+    icon: "https://www.turanprojects.az/assets/images/logo.webp",
+    shortcut: "https://www.turanprojects.az/assets/images/logo.webp",
+    apple: "https://www.turanprojects.az/assets/images/logo.webp",
+  },
 };
 
 export default function ServicesPage() {

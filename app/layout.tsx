@@ -77,7 +77,9 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-
+ icons:{ icon: "https://www.turanprojects.az/assets/images/logo.webp",
+    shortcut: "https://www.turanprojects.az/assets/images/logo.webp",
+    apple: "https://www.turanprojects.az/assets/images/logo.webp",}
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

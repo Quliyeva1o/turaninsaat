@@ -48,6 +48,11 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+    icons: {
+    icon: "https://www.turanprojects.az/assets/images/logo.webp",
+    shortcut: "https://www.turanprojects.az/assets/images/logo.webp",
+    apple: "https://www.turanprojects.az/assets/images/logo.webp",
+  },
 };
 
 const jsonLd = {
