@@ -5,10 +5,17 @@ import dynamic from "next/dynamic";
 
 export const metadata: Metadata = {
   title: "Hovuz və SPA Tikintisi Bakı",
+  
   description:
     "Bakıda peşəkar hovuz tikintisi, SPA mərkəzləri, filtrasiya və isitmə sistemləri. Yaşayış və kommersiya obyektlərinin layihələndirilməsi.",
   alternates: {
     canonical: "https://www.turanprojects.az",
+  },
+
+  icons: {
+    icon: "https://www.turanprojects.az/assets/images/logo.webp" ,
+    shortcut: "https://www.turanprojects.az/assets/images/logo.webp",
+    apple:  "https://www.turanprojects.az/assets/images/logo.webp", // iPhone üçün
   },
 };
 
