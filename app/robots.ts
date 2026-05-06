@@ -1,13 +1,23 @@
 import { MetadataRoute } from "next";
 
+const BASE_URL = "https://www.turanprojects.az";
+
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: [
       {
         userAgent: "*",
         allow: "/",
+
+        disallow: [
+          "/api/",        
+          "/_next/",     
+          "/admin/",      
+          "/*.json$",   
+        ],
       },
     ],
-    sitemap: "https://www.turanprojects.az/sitemap.xml",
+    sitemap: `${BASE_URL}/sitemap.xml`,
+    host: BASE_URL, // əlavə et (yaxşı siqnaldır)
   };
 }

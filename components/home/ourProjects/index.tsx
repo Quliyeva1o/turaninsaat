@@ -1,6 +1,7 @@
 import Button from "@/components/common/Button";
 import { projects } from "./projes";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function OurProjects() {
   return (
@@ -64,9 +65,12 @@ export default function OurProjects() {
               data-aos-delay={idx * 100}
               className="relative overflow-hidden rounded-2xl cursor-pointer group"
             >
-              <img
+
+              <Image
                 src={project.images[0]}
                 alt={project.title}
+                width={800}
+                height={320}
                 className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
               />
 
@@ -78,9 +82,9 @@ export default function OurProjects() {
                 <p className="text-[14px] mt-4 sm:text-[15px] text-white/80 leading-relaxed">
                   {project.description}
                 </p>
-            <Link href="/projects">
-                <span className="mt-4 inline-flex items-center gap-2 text-[#C49B63] text-[14px] font-medium tracking-wide">                  Ətraflı →
-                </span></Link>
+                <Link href="/projects">
+                  <span className="mt-4 inline-flex items-center gap-2 text-[#C49B63] text-[14px] font-medium tracking-wide">                  Ətraflı →
+                  </span></Link>
               </div>
             </article>
           ))}

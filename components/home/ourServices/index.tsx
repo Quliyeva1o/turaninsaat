@@ -5,6 +5,7 @@ import Button from '@/components/common/Button';
 import { useRouter } from 'next/navigation';
 import { servicesContent } from '@/utils';
 import { Autoplay, Pagination } from "swiper/modules";
+import Image from 'next/image';
 
 interface Props {
   locale?: 'az' | 'en';
@@ -65,7 +66,7 @@ export default function OurServices({ locale = 'az' }: Props) {
         </div>
 
         {/* ── Swiper ── */}
-     <div className="mt-20 swipperwrapper">
+        <div className="mt-20 swipperwrapper">
           <Swiper
             spaceBetween={20}
             slidesPerView={1}
@@ -83,17 +84,20 @@ export default function OurServices({ locale = 'az' }: Props) {
             {services.map((s: any, i: any) => (
               <SwiperSlide key={i}>
                 <div
-                data-aos="fade-up"
+                  data-aos="fade-up"
                   onClick={() => router.push(`/services/${s.slug}`)}
                   className="relative overflow-hidden rounded-2xl cursor-pointer group"
                 >
-                  <img
+
+                  <Image
                     src={s.img}
                     alt={s.title}
+                    width={600}
+                    height={224}
                     className="h-56 w-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-gradient-to-b from-transparent via-black/50 to-black rounded-2xl" />
-                  <div className="absolute bottom-0 left-4 right-4 p-4 z-20 transform md:translate-y-[60%] group-hover:translate-y-0 transition-transform duration-500">
+                  <div className="absolute bottom-0 left-4 right-4 p-4 z-20 transform md:translate-y-[65%] group-hover:translate-y-0 transition-transform duration-500">
                     <h3 className="text-lg font-bold font-[var(--font-manrope)]">{s.title}</h3>
                     <p className="text-sm mt-6 text-slate-200 font-[var(--font-dm-sans)]">{s.desc}</p>
                     <span className="mt-3 inline-flex items-center gap-2 text-[#C49B63] font-semibold">
