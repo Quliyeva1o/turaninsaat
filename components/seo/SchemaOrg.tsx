@@ -9,22 +9,34 @@ export default function SchemaOrg() {
         url: "https://www.turanprojects.az",
         logo: {
           "@type": "ImageObject",
-          url: "https://www.turanprojects.az/images/logo.webp",
+          url: "https://www.turanprojects.az/assets/images/logo.webp",
+          width: 512,
+          height: 512,
         },
+        image: "https://www.turanprojects.az/assets/images/logo.webp",
+
+        description:
+          "Bakıda hovuz tikintisi, SPA və hamam tikintisi üzrə peşəkar xidmətlər. Filtrasiya və isitmə sistemləri ilə fərdi layihələr.",
+
+        keywords:
+          "hovuz tikintisi, spa tikintisi, hamam tikintisi, sauna tikintisi, hovuz qurulması bakı",
+
         address: {
           "@type": "PostalAddress",
-          addressLocality: "Bakı",
+          addressLocality: "Baku",
           addressCountry: "AZ",
         },
-        telephone: "+994XXXXXXXXX", // ← öz nömrənizi yazın
+
+        telephone: "+994503127657",
         priceRange: "$$",
         openingHours: "Mo-Fr 09:00-18:00",
+
         sameAs: [
-          // hazır olduqda əlavə edin:
-          // "https://www.instagram.com/turaninsaat",
-          // "https://www.facebook.com/turaninsaat",
+          "https://www.instagram.com/turanprojects.az",
+          "https://www.tiktok.com/@turanprojects.az",
         ],
       },
+
       {
         "@type": "WebSite",
         "@id": "https://www.turanprojects.az/#website",

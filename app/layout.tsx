@@ -17,12 +17,12 @@ export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
 
   title: {
-    default: "Turan İnşaat | Hovuz və SPA Tikintisi Bakı",
+    default: "Turan İnşaat | Hovuz, SPA və Hamam Tikintisi Bakı",
     template: "%s | Turan İnşaat",
   },
 
   description:
-    "Bakıda peşəkar hovuz tikintisi, SPA mərkəzləri, filtrasiya və isitmə sistemləri. Yaşayış və kommersiya obyektlərinin fərdi layihələndirilməsi. Pulsuz konsultasiya üçün bizimlə əlaqə saxlayın.",
+    "Bakıda peşəkar hovuz tikintisi, SPA və hamam tikintisi üzrə peşəkar xidmətlər, filtrasiya və isitmə sistemləri. Yaşayış və kommersiya obyektlərinin fərdi layihələndirilməsi. Pulsuz konsultasiya üçün bizimlə əlaqə saxlayın.",
 
   keywords: [
     "hovuz tikintisi bakı",
@@ -32,6 +32,11 @@ export const metadata: Metadata = {
     "turan inşaat",
     "pool construction baku",
     "hovuz qurulması",
+    "hovuz tikintisi bakı",
+    "hamam tikintisi",
+    "sauna tikintisi",
+    "spa və wellness layihələri",
+    "hovuz dizaynı",
   ],
 
   authors: [{ name: "Turan İnşaat MMC" }],
