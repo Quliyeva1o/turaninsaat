@@ -58,12 +58,12 @@ export default function WhyChooseUs() {
             style={{ width: 48, height: 2, background: "linear-gradient(90deg, transparent, #C49B63, transparent)" }}
           />
 
-          <h1
+          <p
             data-aos="fade-up"
             className="text-[15px] text-gray-500 sm:text-[16px] leading-relaxed"
           >
             Hovuz, sauna və SPA layihələrində müasir yanaşma və uzunmüddətli keyfiyyət təqdim edirik.
-          </h1>
+          </p>
         </div>
 
         {/* Cards */}

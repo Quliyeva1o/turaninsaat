@@ -25,18 +25,154 @@ export const metadata: Metadata = {
     "Bakıda peşəkar hovuz tikintisi, SPA və hamam tikintisi üzrə peşəkar xidmətlər, filtrasiya və isitmə sistemləri. Yaşayış və kommersiya obyektlərinin fərdi layihələndirilməsi. Pulsuz konsultasiya üçün bizimlə əlaqə saxlayın.",
 
   keywords: [
-    "hovuz tikintisi bakı",
-    "spa mərkəzi bakı",
-    "filtrasiya sistemləri",
-    "inşaat şirkəti azərbaycan",
+    // ── Əsas brendlər / şirkət ──
     "turan inşaat",
-    "pool construction baku",
-    "hovuz qurulması",
+    "turan inşaat mmc",
+    "turanprojects",
+    "turanprojects.az",
+    "lisenziyalı inşaat şirkəti bakı",
+    "inşaat şirkəti azərbaycan",
+
+    // ── Hovuz tikintisi – ümumi ──
     "hovuz tikintisi bakı",
-    "hamam tikintisi",
-    "sauna tikintisi",
-    "spa və wellness layihələri",
+    "hovuz tikintisi azərbaycan",
+    "hovuz qurulması",
+    "hovuz layihələndirilməsi",
+    "hovuz quraşdırılması",
+    "pool construction baku",
+    "pool installation azerbaijan",
     "hovuz dizaynı",
+    "hovuz qiyməti bakı",
+    "hovuz tikintisi qiyməti",
+
+    // ── Hovuz növləri ──
+    "fərdi hovuz tikintisi",
+    "villa hovuzu bakı",
+    "bağ evi hovuzu",
+    "ictimai hovuz tikintisi",
+    "olimpiya hovuzu",
+    "yarı olimpiya hovuzu",
+    "uşaq hovuzu",
+    "infinity hovuz bakı",
+    "sonsuzluq hovuzu",
+    "daşma hovuz",
+    "skimmer hovuz",
+    "akrilik hovuz",
+    "şəffaf hovuz",
+    "təbii hovuz",
+    "ekoloji hovuz",
+    "şok hovuz",
+    "soyuq hovuz spa",
+    "dalgıc hovuzu",
+    "diving pool baku",
+    "hidromassajlı hovuz",
+    "cakuzi quraşdırılması",
+    "jet stream hovuz",
+    "axınlı hovuz",
+
+    // ── Filtrasiya və su təmizləmə ──
+    "hovuz filtrasiya sistemi",
+    "skimmer filtrasiya",
+    "duz elektroliz sistemi hovuz",
+    "uv dezinfeksiya sistemi",
+    "avtomatik kimyəvi dozaj sistemi",
+    "kartricli filtrasiya sistemi",
+    "hovuz su təmizləmə",
+    "hovuz ph balansı",
+    "hovuz xlor sistemi",
+
+    // ── İsitmə və soyutma ──
+    "hovuz isitmə sistemi",
+    "isitmə pompası hovuz",
+    "heat pump hovuz bakı",
+    "hovuz eşenjoru",
+    "boru tipli eşenjor",
+    "plaka tipli eşenjor",
+    "hovuz suyu qızdırılması",
+
+    // ── Hovuz avadanlıqları ──
+    "avtomatik robot təmizləyici hovuz",
+    "hovuz robotu",
+    "şəlalə qurğusu hovuz",
+    "dalğa yaradan qurğu",
+    "aquapark sistemi",
+    "hovuz slayd",
+    "distansiyon nəzarət hovuz",
+    "smart hovuz idarəetmə",
+
+    // ── SPA mərkəzi ──
+    "spa mərkəzi bakı",
+    "spa tikintisi bakı",
+    "spa kompleksi quraşdırılması",
+    "wellness mərkəzi bakı",
+    "spa layihələndirilməsi",
+    "spa construction baku",
+
+    // ── Türk hamamı ──
+    "türk hamamı tikintisi bakı",
+    "hamam tikintisi",
+    "türk hamamı quraşdırılması",
+    "hammam construction baku",
+    "mərmər hamam",
+    "hamam dizaynı",
+    "hamam qiyməti bakı",
+
+    // ── Rus hamamı ──
+    "rus hamamı tikintisi",
+    "banya tikintisi bakı",
+    "rus hamamı quraşdırılması",
+    "buxar otağı",
+    "süpürgə terapiyası",
+
+    // ── Sauna ──
+    "sauna tikintisi bakı",
+    "sauna quraşdırılması",
+    "finlandiya saunası",
+    "sauna ağacı",
+    "lipa sauna",
+    "abaş ağacı sauna",
+    "sauna construction baku",
+    "sauna qiyməti bakı",
+
+    // ── Digər SPA otaqları ──
+    "sulu par otağı",
+    "buxar otağı tikintisi",
+    "duz otağı bakı",
+    "haloterapiya otağı",
+    "halotherapy room baku",
+    "kisə otağı",
+    "masaj otağı tikintisi",
+    "buz otağı ice room",
+    "şok duş",
+    "tropik duş",
+    "aromaterapiya otağı",
+    "infraqırmızı sauna",
+    "infrared sauna baku",
+
+    // ── SPA avadanlıqları ──
+    "şok vedrəsi spa",
+    "buz bulağı spa",
+    "kar çeşməsi spa",
+    "kontrast terapiyası avadanlığı",
+
+    // ── Coğrafi hədəflər ──
+    "hovuz tikintisi abşeron",
+    "hovuz tikintisi sumqayıt",
+    "hovuz tikintisi gəncə",
+    "hovuz tikintisi lənkəran",
+    "hovuz tikintisi novxanı",
+    "hovuz tikintisi bilgəh",
+    "hovuz tikintisi badamdar",
+    "hovuz tikintisi nardaran",
+    "hovuz tikintisi mərdəkan",
+    "hovuz tikintisi buzovna",
+
+    // ── Kommersiya / otel ──
+    "otel hovuzu tikintisi",
+    "otel spa tikintisi",
+    "idman kompleksi hovuzu",
+    "aquapark tikintisi azərbaycan",
+    "kommersiya hovuzu bakı",
   ],
 
   authors: [{ name: "Turan İnşaat MMC" }],
@@ -77,9 +213,12 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
- icons:{ icon: "https://www.turanprojects.az/assets/images/logo.webp",
+
+  icons: {
+    icon: "https://www.turanprojects.az/assets/images/logo.webp",
     shortcut: "https://www.turanprojects.az/assets/images/logo.webp",
-    apple: "https://www.turanprojects.az/assets/images/logo.webp",}
+    apple: "https://www.turanprojects.az/assets/images/logo.webp",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
