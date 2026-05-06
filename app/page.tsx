@@ -14,9 +14,9 @@ export const metadata: Metadata = {
   },
 
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
-    apple: "/apple-touch-icon.png",
+    icon: "https://www.turanprojects.az/assets/images/logo.webp",
+    shortcut: "https://www.turanprojects.az/assets/images/logo.webp",
+    apple: "https://www.turanprojects.az/assets/images/logo.webp",
   },
 };
 
