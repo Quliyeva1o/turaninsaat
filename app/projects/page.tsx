@@ -2,6 +2,7 @@ import { projects } from "@/components/home/ourProjects/projes";
 import type { Metadata } from "next";
 import HeroWrapper from "@/components/home/heroWrapper";
 import ProjectsGrid from "@/components/projects/ProjectGrid";
+import Link from "next/link";
 
 const BASE_URL = "https://www.turanprojects.az";
 
@@ -45,7 +46,7 @@ export const metadata: Metadata = {
   },
 };
 
-// JSON-LD Structured Data – ItemList of projects
+// JSON-LD – ItemList of projects
 function ProjectsStructuredData() {
   const jsonLd = {
     "@context": "https://schema.org",
@@ -125,15 +126,17 @@ export default function ProjectsPage() {
       <ProjectsStructuredData />
       <BusinessStructuredData />
       <HeroWrapper />
+
       <section className="py-16 bg-white text-gray-900">
         <div className="max-w-[1300px] mx-auto px-6 md:px-10">
           <h1 className="text-3xl font-bold mb-2">Layihələrimiz</h1>
           <p className="text-gray-500 mb-8 max-w-2xl">
             Turan İnşaat MMC tərəfindən tamamlanmış hovuz, SPA, sauna, türk
             hamamı və infinity hovuz layihələri – Bakı və Azərbaycan üzrə.
+            Hər bir layihə dizayndən anahtar təhvilə qədər tam icra olunur.
           </p>
 
-          {/* Static card list – SSR rendered, Google indexes */}
+          {/* ─── Project cards: SSR-rendered, Google indexes ─── */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
             {projects.map((project) => (
               <article
@@ -142,21 +145,67 @@ export default function ProjectsPage() {
                 itemScope
                 itemType="https://schema.org/CreativeWork"
               >
+                {/* Visual card (client interactions handled inside ProjectsGrid) */}
                 <ProjectsGrid project={project} />
-                <h2
-                  className="mt-4 text-xl font-bold"
-                  itemProp="name"
-                >
-                  {project.title}
-                </h2>
-                <p
-                  className="text-gray-500 text-sm mt-2"
-                  itemProp="description"
-                >
-                  {project.description}
-                </p>
+
+                {/* ── SEO-rich text block – fully SSR, zero JS required ── */}
+                <div className="mt-4">
+                  <h2
+                    className="text-xl font-bold"
+                    itemProp="name"
+                  >
+                    {project.title}
+                  </h2>
+
+                  <p
+                    className="text-gray-500 text-sm mt-2 leading-relaxed"
+                    itemProp="description"
+                  >
+                    {project.seoDescription ?? project.description}
+                  </p>
+
+                  {/* Features list – each project has up to 6; adds keyword-rich text */}
+                  {project.features && project.features.length > 0 && (
+                    <ul className="mt-3 space-y-1">
+                      {project.features.map((feature, i) => (
+                        <li
+                          key={i}
+                          className="flex items-start gap-2 text-sm text-gray-600"
+                        >
+                          <span className="mt-0.5 text-yellow-500 flex-shrink-0" aria-hidden="true">✓</span>
+                          <span>{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+
+                  <Link
+                    href={`/projects/${project.slug}`}
+                    className="inline-block mt-4 text-sm font-medium text-yellow-600 hover:text-yellow-700 transition-colors"
+                    aria-label={`${project.title} haqqında ətraflı məlumat`}
+                  >
+                    Ətraflı bax →
+                  </Link>
+                </div>
               </article>
             ))}
+          </div>
+
+          {/* ─── Bottom keyword-rich summary paragraph ─── */}
+          <div className="mt-20 border-t border-gray-100 pt-12">
+            <h2 className="text-2xl font-bold mb-4">
+              Bakıda Hovuz, SPA və Sauna Tikintisi – Turan İnşaat MMC
+            </h2>
+            <p className="text-gray-600 max-w-3xl leading-relaxed">
+              Turan İnşaat MMC olaraq Bakı və Azərbaycan ərazisində fərdi
+              villa hovuzları, kommersiya hovuzları, infinity (daşma) hovuzlar,
+              SPA mərkəzləri, fin saunaları, türk hamamları, buxar otaqları,
+              duz otaqları, cakuzi sistemləri və masaj otaqları tikir və
+              quraşdırırıq. Hər layihə dizayn mərhələsindən başlayaraq
+              anahtar təhvilə qədər tam şəkildə idarə olunur. Hyatt Regency,
+              My Class, Makfit, Crown kimi tanınmış adlar bizim müştərilərimiz
+              arasındadır.
+            </p>
           </div>
         </div>
       </section>
