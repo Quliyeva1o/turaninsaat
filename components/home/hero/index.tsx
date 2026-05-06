@@ -85,9 +85,8 @@ export default function Hero({
             loop
             playsInline
             preload="none"
-            poster="/assets/videos/video.webp"
+            poster="/assets/images/hero-poster.webp"
           >
-            <source src={video.replace(".mp4", ".webm")} type="video/webm" />
             <source src={video} type="video/mp4" />
           </video>
         )}
