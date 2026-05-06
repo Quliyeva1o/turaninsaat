@@ -1,3 +1,4 @@
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
     formats: ["image/avif", "image/webp"],
@@ -18,34 +19,14 @@ const nextConfig = {
     ],
   },
 
-  // SEO + routing fix
   trailingSlash: false,
 
-  async redirects() {
-    return [
-      {
-        source: "/(.*)",
-        has: [
-          {
-            type: "host",
-            value: "turanprojects.az",
-          },
-        ],
-        destination: "https://www.turanprojects.az/:path*",
-        permanent: true,
-      },
-    ];
-  },
 
   async headers() {
     return [
       {
         source: "/(.*)",
         headers: [
-          {
-            key: "X-Robots-Tag",
-            value: "index, follow",
-          },
           {
             key: "X-Content-Type-Options",
             value: "nosniff",
