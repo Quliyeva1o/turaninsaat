@@ -113,7 +113,7 @@ export default function Header({ locale = "az" }: any) {
                 <ul className="dropdown">
                   {projects.map((proje) => (
                     <li key={proje.slug}>
-                      <Link href={`/projects?${proje.slug}`} prefetch={false}>
+                      <Link href={`/projects/${proje.slug}`} prefetch={false}>
                         {proje.title}
                       </Link>
                     </li>
