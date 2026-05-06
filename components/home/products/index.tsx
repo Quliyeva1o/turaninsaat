@@ -199,7 +199,7 @@ function ProductCard({ product }: { product: Product }) {
         <div>
           <span style={styles.priceFrom}>Başlayan qiymət</span>
           <span style={styles.price}>
-            {Number(product.price).toLocaleString("az-AZ")} ₼
+            {product.price} ₼
           </span>
         </div>
         <span style={styles.moreLink}>Ətraflı →</span>

@@ -1,3 +1,5 @@
+'use client'
+
 import Button from "@/components/common/Button";
 import { projects } from "./projes";
 import Link from "next/link";
@@ -18,7 +20,7 @@ export default function OurProjects() {
         {/* ── Section header ── */}
         <div className="text-center max-w-3xl mx-auto mb-16 lg:mb-20">
           <p
-            data-aos="fade-up"
+            // data-aos="fade-up"
             className="inline-flex items-center gap-2 uppercase font-bold tracking-[0.28em] mb-5"
             style={{
               // color: "#00A8B5", 
@@ -31,7 +33,7 @@ export default function OurProjects() {
           </p>
 
           <h2
-            data-aos="fade-up"
+            // data-aos="fade-up"
             className="font-extrabold leading-[1.1] tracking-tight mb-6"
             style={{
               // color: "#FAF6EC",
@@ -42,13 +44,13 @@ export default function OurProjects() {
           </h2>
 
           <div
-            data-aos="fade-up"
+            // data-aos="fade-up"
             className="mx-auto mb-6"
             style={{ width: 48, height: 2, background: "linear-gradient(90deg, transparent, #00A8B5, transparent)" }}
           />
 
           <p
-            data-aos="fade-up"
+            // data-aos="fade-up"
             className="text-[15px] text-gray-500 sm:text-[16px] leading-relaxed"
           // style={{ color: "rgba(200,232,234,0.65)" }}
           >
@@ -61,7 +63,7 @@ export default function OurProjects() {
           {projects.slice(3, 6).map((project, idx) => (
             <article
               key={project.title}
-              data-aos="fade-up"
+              // data-aos="fade-up"
               data-aos-delay={idx * 100}
               className="relative overflow-hidden rounded-2xl cursor-pointer group"
             >
@@ -91,7 +93,9 @@ export default function OurProjects() {
         </div>
 
         {/* ── CTA ── */}
-        <div data-aos="fade-up" className="mt-14 flex justify-center">
+        <div
+          //  data-aos="fade-up"
+          className="mt-14 flex justify-center">
           <Button text="Bütün Layihələr" link="/projects" type={2} />
         </div>
 

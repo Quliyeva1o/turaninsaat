@@ -1,18 +1,25 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import AOS from "aos";
-// import "aos/dist/aos.css";
 
 export default function AOSProvider() {
+  const [mounted, setMounted] = useState(false);
+
   useEffect(() => {
-    AOS.init({
-      duration: 600,
-      easing: "ease-out-cubic",
-      once: false,
-      offset: 70,
-    });
+    setMounted(true);
   }, []);
+
+  useEffect(() => {
+    if (mounted) {
+      AOS.init({
+        duration: 600,
+        easing: "ease-out-cubic",
+        once: false,
+        offset: 70,
+      });
+    }
+  }, [mounted]);
 
   return null;
 }

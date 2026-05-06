@@ -51,10 +51,19 @@ export default function Hero({
   useEffect(() => {
     const videoEl = videoRef.current;
     if (!videoEl) return;
-    const playVideo = () => { videoEl.play().catch(() => { }); };
-    playVideo();
-    document.addEventListener("touchstart", playVideo, { once: true });
-    return () => { document.removeEventListener("touchstart", playVideo); };
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          videoEl.play().catch(() => { });
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    observer.observe(videoEl);
+    return () => observer.disconnect();
   }, []);
 
   return (
@@ -66,35 +75,38 @@ export default function Hero({
         }`}
     >
       <div className="flex items-center text-white h-full overflow-hidden">
+
         {/* VIDEO */}
         {video && (
           <video
             ref={videoRef}
             className="absolute inset-0 w-full h-full object-cover"
-            autoPlay
             muted
             loop
             playsInline
+            preload="none"
+            poster="/assets/videos/video.webp"
           >
+            <source src={video.replace(".mp4", ".webm")} type="video/webm" />
             <source src={video} type="video/mp4" />
           </video>
         )}
 
-        {/* IMAGE */}
+        {/* IMAGE — video olmayan səhifələr üçün */}
         {img && !video && (
           <Image
             src={img}
             alt="Turan İnşaat hovuz və spa layihəsi"
             fill
             priority
-            quality={100}
+            quality={85}
             className="object-cover"
           />
         )}
 
-        {/* OVERLAY — daha dərin, layered gradient */}
+        {/* OVERLAY */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/70" />
-        {/* subtle teal glow at bottom center */}
+        {/* Teal glow */}
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[200px] bg-[#007A85]/10 blur-3xl rounded-full pointer-events-none" />
 
         {/* CONTENT */}
@@ -113,17 +125,11 @@ export default function Hero({
           {/* TITLE */}
           <h4
             className={`
-    ${isHome
-                ? "text-[clamp(28px,5vw,72px)]"
-                : "text-[clamp(18px,3vw,48px)]"}
-    font-extrabold 
-    leading-[1.05] 
-    tracking-tight 
-    mb-6 
-    text-white 
-    drop-shadow-sm
-  `}
-          >            {isHome ? content.title : text}
+              ${isHome ? "text-[clamp(28px,5vw,72px)]" : "text-[clamp(18px,3vw,48px)]"}
+              font-extrabold leading-[1.05] tracking-tight mb-6 text-white drop-shadow-sm
+            `}
+          >
+            {isHome ? content.title : text}
           </h4>
 
           {/* DIVIDER */}
@@ -144,14 +150,13 @@ export default function Hero({
           {/* CTA */}
           {isHome && (
             <div className="flex justify-center gap-3 sm:gap-4 flex-wrap">
-              <Button text={content.cta1} target='blank' link="/create" type={1} />
-              {/* <Button text={content.cta1 +' New'} target='blank' link="https://design-turanprojects.vercel.app/" type={1} /> */}
+              <Button text={content.cta1} target="blank" link="/create" type={1} />
               <Button text={content.cta2} link="/projects" type={4} />
             </div>
           )}
         </div>
 
-        {/* scroll indicator — only on home */}
+        {/* Scroll indicator */}
         {isHome && (
           <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex flex-col items-center gap-1 opacity-60">
             <div className="w-[1px] h-10 bg-gradient-to-b from-transparent to-[#C8E8EA] animate-pulse" />

@@ -82,6 +82,7 @@ export default function Header({ locale = "az" }: any) {
                 src={logo}
                 alt="Turan İnşaat Logo"
                 width={100}
+                fetchPriority="high"
                 height={40}
                 priority
               />
