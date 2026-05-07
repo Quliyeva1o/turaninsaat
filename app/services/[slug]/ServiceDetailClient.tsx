@@ -65,6 +65,7 @@ export default function ServiceDetail({ service }: { service: Service }) {
           alt={`${service.title} — Turan İnşaat MMC Bakı`}
           width={1200}
           height={600}
+          quality={85}
           priority
           className="w-full h-64 md:h-96 object-cover rounded-2xl mb-14"
         />
@@ -88,6 +89,7 @@ export default function ServiceDetail({ service }: { service: Service }) {
                       alt={`${item.title.split("–")[0].trim()} — ${service.title}`}
                       width={400}
                       height={300}
+                      quality={85}
                       className="w-full h-40 object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     <div className="p-4 flex gap-2">

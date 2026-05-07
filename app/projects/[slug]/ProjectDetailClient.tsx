@@ -50,6 +50,7 @@ export default function ProjectDetailClient() {
               alt={`${project.title} – Turan İnşaat tərəfindən icra edilmiş layihə, şəkil ${activeIndex + 1}`}
               width={1200}
               height={700}
+              quality={85}
               className="w-full h-[500px] object-contain rounded-xl bg-black"
               priority={activeIndex === 0}
             />
@@ -94,8 +95,8 @@ export default function ProjectDetailClient() {
               role="listitem"
               onClick={() => setActiveIndex(i)}
               className={`w-20 h-20 flex-shrink-0 cursor-pointer border-2 rounded-lg overflow-hidden transition-all ${i === activeIndex
-                  ? "border-yellow-500 scale-105"
-                  : "border-gray-200 hover:border-gray-400"
+                ? "border-yellow-500 scale-105"
+                : "border-gray-200 hover:border-gray-400"
                 }`}
               aria-label={`Şəkil ${i + 1}: ${project.title}`}
               aria-current={i === activeIndex ? "true" : undefined}
@@ -113,6 +114,7 @@ export default function ProjectDetailClient() {
                   alt={`${project.title} – kiçik şəkil ${i + 1}`}
                   width={100}
                   height={100}
+                  quality={85}
                   className="w-full h-full object-cover"
                 />
               )}

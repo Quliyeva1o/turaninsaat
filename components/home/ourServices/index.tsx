@@ -93,6 +93,7 @@ export default function OurServices({ locale = 'az' }: Props) {
                     src={s.img}
                     alt={s.title}
                     width={600}
+                    quality={85}
                     height={224}
                     className="h-56 w-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />

@@ -100,6 +100,7 @@ function ProductCard({ item, badge, brand }: { item: Product; badge: Badge; bran
           src={`/assets/products/${item.img}.webp`}
           alt={item.name}
           fill
+          quality={85}
           style={{
             objectFit: "contain",
             // padding: 12,

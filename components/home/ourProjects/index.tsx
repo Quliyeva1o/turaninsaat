@@ -72,6 +72,7 @@ export default function OurProjects() {
                 src={project.images[0]}
                 alt={project.title}
                 width={800}
+                quality={85}
                 height={320}
                 className="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
               />

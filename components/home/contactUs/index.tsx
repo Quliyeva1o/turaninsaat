@@ -85,11 +85,13 @@ export const ContactSection = () => {
             >
               Qiymət sorğuları, əməkdaşlıq və layihə detalları üçün bizimlə rahat şəkildə əlaqə saxlayın.
             </p>
-            <div className="mt-auto w-full rounded-2xl overflow-hidden shadow-2xl" data-aos="fade-right">              <Image
-              src={contactIllustration}
-              alt="Turan İnşaat Əlaqə"
-              className="w-full h-full object-cover hover:scale-105 transition duration-700"
-            />
+            <div className="mt-auto w-full rounded-2xl overflow-hidden shadow-2xl" data-aos="fade-right">
+              <Image
+                src={contactIllustration}
+                quality={85}
+                alt="Turan İnşaat Əlaqə"
+                className="w-full h-full object-cover hover:scale-105 transition duration-700"
+              />
             </div>
 
           </div>

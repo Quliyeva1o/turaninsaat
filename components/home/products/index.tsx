@@ -166,6 +166,7 @@ function ProductCard({ product }: { product: Product }) {
             src={`/assets/products/${product.img}.webp`}
             alt={product.name}
             fill
+            quality={85}
             sizes="(max-width: 768px) 50vw, 25vw"
             style={{ objectFit: "cover", borderRadius: 8 }}
             onError={() => setImgError(true)}

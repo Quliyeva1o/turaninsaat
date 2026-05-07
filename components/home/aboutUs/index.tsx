@@ -40,7 +40,7 @@ export default function AboutUs({ locale = "az" }: AboutProps) {
   return (
     <section
       aria-label="About Turan İnşaat"
-      // style={{ background: "#0A1E30" }}
+    // style={{ background: "#0A1E30" }}
     >
       {/* subtle teal top border */}
       <div style={{ height: "1px", background: "linear-gradient(90deg, transparent, #00A8B5, transparent)" }} />
@@ -58,7 +58,7 @@ export default function AboutUs({ locale = "az" }: AboutProps) {
               src={imgSrc}
               alt="Turan İnşaat hovuz və spa layihəsi"
               fill
-              quality={100}
+              quality={85}
               className="object-cover hover:scale-105 transition-transform duration-700"
             />
             {/* teal vignette overlay */}

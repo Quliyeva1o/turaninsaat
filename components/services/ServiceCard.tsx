@@ -24,6 +24,7 @@ export default function ServiceCard({ service }: { service: Service }) {
             src={service.img}
             alt={service.title}
             fill
+            quality={85}
             className="object-cover transition-transform duration-500 group-hover:scale-110"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
