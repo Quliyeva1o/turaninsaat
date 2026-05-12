@@ -36,9 +36,9 @@ export const metadata: Metadata = {
     images: ["/og-image.webp"],
   },
     icons: {
-    icon: "https://www.turanprojects.az/assets/images/logo.webp",
-    shortcut: "https://www.turanprojects.az/assets/images/logo.webp",
-    apple: "https://www.turanprojects.az/assets/images/logo.webp",
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
   },
 };
 

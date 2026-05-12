@@ -9,11 +9,11 @@ export default function SchemaOrg() {
         url: "https://www.turanprojects.az",
         logo: {
           "@type": "ImageObject",
-          url: "https://www.turanprojects.az/assets/images/logo.webp",
+          url: "/favicon.ico",
           width: 512,
           height: 512,
         },
-        image: "https://www.turanprojects.az/assets/images/logo.webp",
+        image: "/favicon.ico",
 
         description:
           "Bakıda hovuz tikintisi, SPA və hamam tikintisi üzrə peşəkar xidmətlər. Filtrasiya və isitmə sistemləri ilə fərdi layihələr.",
