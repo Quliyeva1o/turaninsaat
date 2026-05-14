@@ -39,7 +39,7 @@ const heroContents: Record<string, HeroContent> = {
         text: "Hovuz, SPA və Hamam Xidmətləri",
         img: servicesImg,
         subTitle:
-            "Fərdi və ictimai hovuz, türk hamamı, sauna və SPA xidmətləri.",
+            "Turan İnşaat MMC Bakıda və Azərbaycanın müxtəlif bölgələrində  fərdi hovuz, ictimai hovuz, olimpiya hovuzu, daşma və skimmer tipli hovuzların layihələndirilməsi, tikintisi və quraşdırılmasıüzrə peşəkar xidmət göstərir",
     },
 
     "/products": {

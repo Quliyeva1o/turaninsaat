@@ -161,7 +161,7 @@ export default function ServicesPage() {
       <HeroWrapper />
 
       <section className="max-w-[1400px] mx-auto px-6 md:px-10 py-20">
-        <header className="max-w-4xl mx-auto text-center mb-14">
+        {/* <header className="max-w-4xl mx-auto text-center mb-14">
           <h1 className="text-3xl md:text-5xl font-extrabold text-[#0A1E30] mb-6">
             Hovuz, SPA və Hamam Xidmətləri
           </h1>
@@ -179,15 +179,10 @@ export default function ServicesPage() {
             örtükləri, şəlalə qurğuları, aquapark sistemləri, türk hamamı, rus
             hamamı, sauna, duz otağı və SPA avadanlıqları daxildir.
           </p>
-        </header>
+        </header> */}
 
         <section aria-labelledby="services-list-title">
-          <h2
-            id="services-list-title"
-            className="text-2xl md:text-3xl font-bold text-[#0A1E30] mb-8"
-          >
-            Xidmət istiqamətlərimiz
-          </h2>
+     
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {services.map((service: any) => (
@@ -224,6 +219,7 @@ export default function ServicesPage() {
               görünüş əsas götürülür.
             </p>
           </article>
+
         </section>
 
         <section className="mt-16 rounded-2xl bg-[#0A1E30] text-white p-8 md:p-10">
@@ -237,7 +233,13 @@ export default function ServicesPage() {
             əvvəlcədən hesablanmalıdır. Turan İnşaat MMC komandası layihənizin
             ölçüsünə, büdcəsinə və məkanın texniki şərtlərinə uyğun optimal
             həll hazırlayır.
+
           </p>
+          <p className="leading-8 text-white/80">
+            Xidmətlərimizə hovuz filtrasiya sistemləri, UV dezinfeksiya, duz
+            elektroliz, avtomatik dozaj, isitmə və soyutma sistemləri, hovuz
+            örtükləri, şəlalə qurğuları, aquapark sistemləri, türk hamamı, rus
+            hamamı, sauna, duz otağı və SPA avadanlıqları daxildir.</p>
         </section>
       </section>
     </main>
