@@ -80,7 +80,7 @@ const Footer = () => {
             <ul className="space-y-2.5 text-sm text-gray-500">
               {projects.slice(0, 5).map((proje) => (
                 <li key={proje.slug}>
-                  <Link href={`/projects?${proje.slug}`} className="hover:text-[#2A69AC] transition-colors">{proje.title}</Link>
+                  <Link href={`/projects/${proje.slug}`} className="hover:text-[#2A69AC] transition-colors">{proje.title}</Link>
                 </li>
               ))}
               <li>

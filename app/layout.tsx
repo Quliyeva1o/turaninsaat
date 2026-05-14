@@ -6,10 +6,29 @@ import LayoutClient from "./LayoutClient";
 import SchemaOrg from "@/components/seo/SchemaOrg";
 import Script from "next/script";
 
-const manrope = Manrope({ variable: "--font-manrope", subsets: ["latin", "cyrillic"] });
-const dmSans = DM_Sans({ variable: "--font-dm-sans", subsets: ["latin"] });
-const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"], display: "swap" });
-const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"], display: "swap" });
+const manrope = Manrope({
+  variable: "--font-manrope",
+  subsets: ["latin", "cyrillic"],
+  display: "swap",
+});
+
+const dmSans = DM_Sans({
+  variable: "--font-dm-sans",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 const BASE_URL = "https://www.turanprojects.az";
 
@@ -17,173 +36,29 @@ export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
 
   title: {
-    default: "Turan İnşaat | Hovuz, SPA və Hamam Tikintisi Bakı",
+    default: "Turan İnşaat | Hovuz və SPA Tikintisi",
     template: "%s | Turan İnşaat",
   },
 
   description:
-    "Bakıda peşəkar hovuz tikintisi, SPA və hamam tikintisi üzrə peşəkar xidmətlər, filtrasiya və isitmə sistemləri. Yaşayış və kommersiya obyektlərinin fərdi layihələndirilməsi. Pulsuz konsultasiya üçün bizimlə əlaqə saxlayın.",
+    "Bakıda hovuz tikintisi, SPA, türk hamamı, rus hamamı, sauna, duz otağı, filtrasiya və isitmə sistemləri üzrə peşəkar xidmətlər.",
 
-  keywords: [
-    // ── Əsas brendlər / şirkət ──
-    "turan inşaat",
-    "turan inşaat mmc",
-    "turanprojects",
-    "turanprojects.az",
-    "lisenziyalı inşaat şirkəti bakı",
-    "inşaat şirkəti azərbaycan",
-
-    // ── Hovuz tikintisi – ümumi ──
-    "hovuz tikintisi bakı",
-    "hovuz tikintisi azərbaycan",
-    "hovuz qurulması",
-    "hovuz layihələndirilməsi",
-    "hovuz quraşdırılması",
-    "pool construction baku",
-    "pool installation azerbaijan",
-    "hovuz dizaynı",
-    "hovuz qiyməti bakı",
-    "hovuz tikintisi qiyməti",
-
-    // ── Hovuz növləri ──
-    "fərdi hovuz tikintisi",
-    "villa hovuzu bakı",
-    "bağ evi hovuzu",
-    "ictimai hovuz tikintisi",
-    "olimpiya hovuzu",
-    "yarı olimpiya hovuzu",
-    "uşaq hovuzu",
-    "infinity hovuz bakı",
-    "sonsuzluq hovuzu",
-    "daşma hovuz",
-    "skimmer hovuz",
-    "akrilik hovuz",
-    "şəffaf hovuz",
-    "təbii hovuz",
-    "ekoloji hovuz",
-    "şok hovuz",
-    "soyuq hovuz spa",
-    "dalgıc hovuzu",
-    "diving pool baku",
-    "hidromassajlı hovuz",
-    "cakuzi quraşdırılması",
-    "jet stream hovuz",
-    "axınlı hovuz",
-
-    // ── Filtrasiya və su təmizləmə ──
-    "hovuz filtrasiya sistemi",
-    "skimmer filtrasiya",
-    "duz elektroliz sistemi hovuz",
-    "uv dezinfeksiya sistemi",
-    "avtomatik kimyəvi dozaj sistemi",
-    "kartricli filtrasiya sistemi",
-    "hovuz su təmizləmə",
-    "hovuz ph balansı",
-    "hovuz xlor sistemi",
-
-    // ── İsitmə və soyutma ──
-    "hovuz isitmə sistemi",
-    "isitmə pompası hovuz",
-    "heat pump hovuz bakı",
-    "hovuz eşenjoru",
-    "boru tipli eşenjor",
-    "plaka tipli eşenjor",
-    "hovuz suyu qızdırılması",
-
-    // ── Hovuz avadanlıqları ──
-    "avtomatik robot təmizləyici hovuz",
-    "hovuz robotu",
-    "şəlalə qurğusu hovuz",
-    "dalğa yaradan qurğu",
-    "aquapark sistemi",
-    "hovuz slayd",
-    "distansiyon nəzarət hovuz",
-    "smart hovuz idarəetmə",
-
-    // ── SPA mərkəzi ──
-    "spa mərkəzi bakı",
-    "spa tikintisi bakı",
-    "spa kompleksi quraşdırılması",
-    "wellness mərkəzi bakı",
-    "spa layihələndirilməsi",
-    "spa construction baku",
-
-    // ── Türk hamamı ──
-    "türk hamamı tikintisi bakı",
-    "hamam tikintisi",
-    "türk hamamı quraşdırılması",
-    "hammam construction baku",
-    "mərmər hamam",
-    "hamam dizaynı",
-    "hamam qiyməti bakı",
-
-    // ── Rus hamamı ──
-    "rus hamamı tikintisi",
-    "banya tikintisi bakı",
-    "rus hamamı quraşdırılması",
-    "buxar otağı",
-    "süpürgə terapiyası",
-
-    // ── Sauna ──
-    "sauna tikintisi bakı",
-    "sauna quraşdırılması",
-    "finlandiya saunası",
-    "sauna ağacı",
-    "lipa sauna",
-    "abaş ağacı sauna",
-    "sauna construction baku",
-    "sauna qiyməti bakı",
-
-    // ── Digər SPA otaqları ──
-    "sulu par otağı",
-    "buxar otağı tikintisi",
-    "duz otağı bakı",
-    "haloterapiya otağı",
-    "halotherapy room baku",
-    "kisə otağı",
-    "masaj otağı tikintisi",
-    "buz otağı ice room",
-    "şok duş",
-    "tropik duş",
-    "aromaterapiya otağı",
-    "infraqırmızı sauna",
-    "infrared sauna baku",
-
-    // ── SPA avadanlıqları ──
-    "şok vedrəsi spa",
-    "buz bulağı spa",
-    "kar çeşməsi spa",
-    "kontrast terapiyası avadanlığı",
-
-    // ── Coğrafi hədəflər ──
-    "hovuz tikintisi abşeron",
-    "hovuz tikintisi sumqayıt",
-    "hovuz tikintisi gəncə",
-    "hovuz tikintisi lənkəran",
-    "hovuz tikintisi novxanı",
-    "hovuz tikintisi bilgəh",
-    "hovuz tikintisi badamdar",
-    "hovuz tikintisi nardaran",
-    "hovuz tikintisi mərdəkan",
-    "hovuz tikintisi buzovna",
-
-    // ── Kommersiya / otel ──
-    "otel hovuzu tikintisi",
-    "otel spa tikintisi",
-    "idman kompleksi hovuzu",
-    "aquapark tikintisi azərbaycan",
-    "kommersiya hovuzu bakı",
-  ],
+  alternates: {
+    canonical: BASE_URL,
+    languages: {
+      "az-AZ": BASE_URL,
+    },
+  },
 
   authors: [{ name: "Turan İnşaat MMC" }],
   creator: "Turan İnşaat MMC",
 
   openGraph: {
-    title: "Turan İnşaat | Hovuz və SPA Tikintisi Bakı",
+    title: "Turan İnşaat | Hovuz və SPA Tikintisi",
     description:
-      "Bakıda peşəkar hovuz tikintisi, SPA mərkəzləri, filtrasiya və isitmə sistemləri. Yaşayış və kommersiya obyektlərinin fərdi layihələndirilməsi. Pulsuz konsultasiya üçün bizimlə əlaqə saxlayın.",
+      "Bakıda hovuz, SPA, hamam, sauna və su sistemləri üzrə peşəkar layihələndirmə və tikinti xidmətləri.",
     url: BASE_URL,
-    siteName: "Turan İnşaat",
+    siteName: "Turan İnşaat MMC",
     locale: "az_AZ",
     type: "website",
     images: [
@@ -191,7 +66,7 @@ export const metadata: Metadata = {
         url: `${BASE_URL}/assets/images/logo.webp`,
         width: 1200,
         height: 630,
-        alt: "Turan İnşaat — Hovuz və SPA Tikintisi",
+        alt: "Turan İnşaat MMC — Hovuz və SPA Tikintisi",
       },
     ],
   },
@@ -199,7 +74,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Turan İnşaat | Hovuz və SPA Tikintisi",
-    description: "Bakıda peşəkar hovuz tikintisi və SPA həlləri.",
+    description:
+      "Bakıda hovuz tikintisi, SPA, hamam, sauna və su sistemləri üzrə peşəkar xidmətlər.",
     images: [`${BASE_URL}/assets/images/logo.webp`],
   },
 
@@ -211,6 +87,7 @@ export const metadata: Metadata = {
       follow: true,
       "max-image-preview": "large",
       "max-snippet": -1,
+      "max-video-preview": -1,
     },
   },
 
@@ -221,7 +98,11 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="az">
       <head>
@@ -231,14 +112,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
         <Script id="google-analytics" strategy="afterInteractive">
           {`
-             window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-WVLCWTLX4T');
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-WVLCWTLX4T');
           `}
         </Script>
       </head>
+
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${manrope.variable} ${dmSans.variable} antialiased`}
       >

@@ -1,65 +1,56 @@
-import { MetadataRoute } from "next";
+import type { MetadataRoute } from "next";
 import { projects } from "@/components/home/ourProjects/projes";
 import { servicesContent } from "@/utils";
 
 const BASE_URL = "https://www.turanprojects.az";
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const lastModified = new Date();
+type ChangeFrequency =
+  | "always"
+  | "hourly"
+  | "daily"
+  | "weekly"
+  | "monthly"
+  | "yearly"
+  | "never";
 
+function makePage(
+  path: string,
+  priority: number,
+  changeFrequency: ChangeFrequency
+): MetadataRoute.Sitemap[number] {
+  const url = `${BASE_URL}${path}`;
+
+  return {
+    url,
+    lastModified: new Date(),
+    changeFrequency,
+    priority,
+    alternates: {
+      languages: {
+        "az-AZ": url,
+      },
+    },
+  };
+}
+
+export default function sitemap(): MetadataRoute.Sitemap {
   const staticPages: MetadataRoute.Sitemap = [
-    {
-      url: `${BASE_URL}/`,
-      lastModified,
-      changeFrequency: "weekly",
-      priority: 1,
-    },
-    {
-      url: `${BASE_URL}/services`,
-      lastModified,
-      changeFrequency: "weekly", // dəyişdik
-      priority: 0.9,
-    },
-    {
-      url: `${BASE_URL}/projects`,
-      lastModified,
-      changeFrequency: "weekly",
-      priority: 0.85,
-    },
-    {
-      url: `${BASE_URL}/about`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.65,
-    },
-    {
-      url: `${BASE_URL}/contact`,
-      lastModified,
-      changeFrequency: "yearly",
-      priority: 0.55,
-    },
+    makePage("/", 1, "weekly"),
+    makePage("/services", 0.95, "weekly"),
+    makePage("/projects", 0.85, "weekly"),
+    makePage("/about", 0.7, "monthly"),
+    makePage("/contact", 0.65, "monthly"),
   ];
 
-  const projectPages: MetadataRoute.Sitemap = projects.map((p) => ({
-    url: `${BASE_URL}/projects/${p.slug}`,
-    lastModified,
-    changeFrequency: "monthly",
-    priority: 0.75,
-  }));
-  const servicesPages: MetadataRoute.Sitemap = [
-    ...servicesContent.az.map((p: any) => ({
-      url: `${BASE_URL}/az/services/${p.slug}`,
-      lastModified,
-      changeFrequency: "weekly",
-      priority: 0.85,
-    })),
+  const servicePages: MetadataRoute.Sitemap = servicesContent.az.map(
+    (service: { slug: string }) =>
+      makePage(`/services/${service.slug}`, 0.85, "weekly")
+  );
 
-    ...servicesContent.en.map((p: any) => ({
-      url: `${BASE_URL}/en/services/${p.slug}`,
-      lastModified,
-      changeFrequency: "weekly",
-      priority: 0.8,
-    })),
-  ];  
-  return [...staticPages, ...projectPages, ...servicesPages];
+  const projectPages: MetadataRoute.Sitemap = projects.map(
+    (project: { slug: string }) =>
+      makePage(`/projects/${project.slug}`, 0.75, "monthly")
+  );
+
+  return [...staticPages, ...servicePages, ...projectPages];
 }

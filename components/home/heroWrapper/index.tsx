@@ -1,88 +1,116 @@
 "use client";
-import { useState, useEffect } from "react";
+
 import Hero from "../hero";
 import { usePathname } from "next/navigation";
 
-import aboutImg from '@/public/assets/images/aboutushero.webp'
-import servicesImg from '@/public/assets/images/services.webp'
-import projectsImg from '@/public/assets/images/projects.webp'
-import contactImg from '@/public/assets/images/contact.webp'
+import aboutImg from "@/public/assets/images/aboutushero.webp";
+import servicesImg from "@/public/assets/images/services.webp";
+import projectsImg from "@/public/assets/images/projects.webp";
+import contactImg from "@/public/assets/images/contact.webp";
 
-const heroContents: Record<string, any> = {
-    "/": { isHome: true, video: "/assets/videos/2.mp4" },
+type HeroContent = {
+    isHome?: boolean;
+    text?: string;
+    img?: any;
+    video?: string;
+    subTitle?: string;
+};
+
+const heroContents: Record<string, HeroContent> = {
+    "/": {
+        isHome: true,
+        video: "/assets/videos/2.mp4",
+    },
+
     "/about": {
         text: "Haqqımızda",
         img: aboutImg,
-        subTitle: "Turan İnşaat hovuz, türk hamamı, sauna və spa layihələrində uzunmüddətli keyfiyyət və estetik dizayn təmin edir."
+        subTitle:
+            "Turan İnşaat hovuz, türk hamamı, sauna və spa layihələrində uzunmüddətli keyfiyyət və estetik dizayn təmin edir.",
     },
+
     "/contact": {
         text: "Bizimlə əlaqə",
         img: contactImg,
-        subTitle: "Suallarınız və əməkdaşlıq üçün bizimlə əlaqə saxlayın."
+        subTitle: "Suallarınız və əməkdaşlıq üçün bizimlə əlaqə saxlayın.",
     },
+
     "/services": {
         text: "Hovuz, SPA və Hamam Xidmətləri",
         img: servicesImg,
-        subTitle: "Fərdi və ictimai hovuz, türk hamamı və SPA xidmətləri."
+        subTitle:
+            "Fərdi və ictimai hovuz, türk hamamı, sauna və SPA xidmətləri.",
     },
+
     "/products": {
         text: "Məhsullarımız",
         img: servicesImg,
-        subTitle: "Hovuz və SPA üçün geniş məhsul çeşidimizlə tanış olun."
+        subTitle: "Hovuz və SPA üçün geniş məhsul çeşidimizlə tanış olun.",
     },
+
     "/projects": {
         text: "Layihələrimiz",
         img: projectsImg,
-        subTitle: "Real layihələrimiz ilə estetik və funksional dizayn."
+        subTitle: "Real layihələrimiz ilə estetik və funksional dizayn.",
     },
 };
 
-// 🔥 services slug-ları üçün ayrıca map
-const serviceHeroMap: Record<string, any> = {
+const serviceHeroMap: Record<string, HeroContent> = {
     "pool-types": {
         text: "Hovuz Növləri",
         img: servicesImg,
-        subTitle: "Fərdi, ictimai və olimpiya hovuzları daxil olmaqla bütün hovuz növləri haqqında məlumat."
+        subTitle:
+            "Fərdi, ictimai, olimpiya, uşaq, hidromasajlı və infinity hovuz növləri haqqında ətraflı məlumat.",
     },
+
     "pool-filtration": {
         text: "Hovuz Təmizləmə Sistemləri",
         img: servicesImg,
-        subTitle: "Skimmer, daşma və müasir filtrasiya texnologiyaları."
+        subTitle:
+            "Skimmer, daşma, UV dezinfeksiya, duz elektroliz və avtomatik dozaj sistemləri.",
     },
+
     "pool-heating-cooling": {
-        text: "İsitmə və Soyutma Sistemləri",
+        text: "Hovuz İsitmə və Soyutma Sistemləri",
         img: servicesImg,
-        subTitle: "Hovuz suyu üçün effektiv istilik və soyutma həlləri."
+        subTitle:
+            "Hovuz suyu üçün isitmə pompası, boru tipli və plaka tipli eşenjor həlləri.",
     },
+
     "turkish-bath-spa": {
         text: "Türk Hamamı və SPA",
         img: servicesImg,
-        subTitle: "Rahatlıq, sağlamlıq və lüks SPA həlləri."
+        subTitle:
+            "Türk hamamı, sauna, sulu par otağı, duz otağı və SPA layihələri üçün peşəkar həllər.",
     },
 };
 
+function normalizePath(pathname: string) {
+    if (pathname === "/") return "/";
+
+    const withoutTrailingSlash = pathname.replace(/\/$/, "");
+
+    // Gələcəkdə /en/about, /en/services kimi route istifadə etsən,
+    // hero yenə əsas AZ route-a görə tapılacaq.
+    return withoutTrailingSlash.replace(/^\/en(?=\/|$)/, "") || "/";
+}
+
 export default function HeroWrapper() {
     const pathname = usePathname();
+    const cleanPath = normalizePath(pathname);
 
-    const hero = (() => {
-        const cleanPath = pathname.replace(/\/$/, "");
+    let hero: HeroContent;
 
-        if (heroContents[cleanPath]) {
-            return heroContents[cleanPath];
-        }
-
-        if (cleanPath.startsWith("/services/")) {
-            const slug = cleanPath.split("/")[2];
-            return serviceHeroMap[slug] || heroContents["/services"];
-        }
-
-        if (cleanPath.startsWith("/projects/")) {
-            const slug = cleanPath.split("/")[2];
-            return heroContents["/projects"];
-        }
-
-        return heroContents["/"];
-    })();
+    if (heroContents[cleanPath]) {
+        hero = heroContents[cleanPath];
+    } else if (cleanPath.startsWith("/services/")) {
+        const slug = cleanPath.split("/")[2];
+        hero = serviceHeroMap[slug] || heroContents["/services"];
+    } else if (cleanPath.startsWith("/projects/")) {
+        hero = heroContents["/projects"];
+    } else {
+        hero = heroContents["/"];
+    }
 
     return (
         <Hero

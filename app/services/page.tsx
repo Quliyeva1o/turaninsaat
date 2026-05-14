@@ -333,8 +333,13 @@ export default function ServicesPage() {
           Hovuz, SPA, Türk Hamamı, Rus Hamamı, Sauna, Duz Otağı, Filtrasiya və İsitmə Sistemi Tikintisi — Turan İnşaat MMC, Bakı
         </h1>
 
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {services.map((service: any) => (
+            <ServiceCard key={service.slug} service={service} />
+          ))}
+        </div>
         {/* Hidden SEO content block */}
-        <div style={{ position: "absolute", width: 1, height: 1, overflow: "hidden", opacity: 0, pointerEvents: "none", zIndex: -1 }}>
+        <div className="mt-10">
           <h2>Hovuz Tikintisi Xidmətləri – Fərdi, İctimai, Olimpiya, Infinity</h2>
           <p>
             Turan İnşaat MMC Bakıda fərdi villa hovuzları, ictimai hovuzlar, olimpiya və yarı olimpiya
@@ -390,11 +395,6 @@ export default function ServicesPage() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          {services.map((service: any) => (
-            <ServiceCard key={service.slug} service={service} />
-          ))}
-        </div>
       </section>
     </main>
   );
