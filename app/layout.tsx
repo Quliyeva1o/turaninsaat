@@ -43,12 +43,12 @@ export const metadata: Metadata = {
   description:
     "Bakıda hovuz tikintisi, SPA, türk hamamı, rus hamamı, sauna, duz otağı, filtrasiya və isitmə sistemləri üzrə peşəkar xidmətlər.",
 
-  alternates: {
-    canonical: BASE_URL,
-    languages: {
-      "az-AZ": BASE_URL,
-    },
-  },
+  // alternates: {
+  //   canonical: BASE_URL,
+  //   languages: {
+  //     "az-AZ": BASE_URL,
+  //   },
+  // },
 
   authors: [{ name: "Turan İnşaat MMC" }],
   creator: "Turan İnşaat MMC",

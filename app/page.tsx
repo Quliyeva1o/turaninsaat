@@ -67,13 +67,18 @@ export const metadata: Metadata = {
   ],
 
   // ── Canonical & hreflang ───────────────────────────────────────────────
-  alternates: {
-    canonical: "https://www.turanprojects.az",
-    languages: {
-      "az-AZ": "https://www.turanprojects.az",
-    },
-  },
-
+  // alternates: {
+  //   canonical: "https://www.turanprojects.az",
+  //   languages: {
+  //     "az-AZ": "https://www.turanprojects.az",
+  //   },
+  // },
+  //  alternates: {
+  //     canonical: "/",
+  //     languages: {
+  //       "az-AZ": "/",
+  //     },
+  //   },
   // ── Open Graph ─────────────────────────────────────────────────────────
   openGraph: {
     title:
@@ -133,6 +138,7 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
 
+
   // ── Sitemap & manifest ─────────────────────────────────────────────────
   // manifest: "/site.webmanifest",  // aktivləşdir əgər varsa
 
@@ -188,7 +194,7 @@ const jsonLd = {
         "@type": "GeoCoordinates",
         latitude: 40.530605974607575,
         longitude: 49.78602313347508,
-      
+
       },
       openingHoursSpecification: [
         {
@@ -261,7 +267,7 @@ const jsonLd = {
       url: "https://www.turanprojects.az",
       name: "Turan İnşaat MMC",
       publisher: { "@id": "https://www.turanprojects.az/#business" },
-      inLanguage: "az-AZ",
+      // inLanguage: "az-AZ",
     },
 
     // ── 2c. FAQ  (Google FAQ rich result) ────────────────────────────────

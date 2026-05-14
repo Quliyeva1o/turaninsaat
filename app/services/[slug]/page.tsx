@@ -106,12 +106,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
     description,
 
-    alternates: {
-      canonical: canonicalUrl,
-      languages: {
-        "az-AZ": canonicalUrl,
-      },
-    },
+    // alternates: {
+    //   canonical: canonicalUrl,
+    //   languages: {
+    //     "az-AZ": canonicalUrl,
+    //   },
+    // },
 
     openGraph: {
       title: `${pageTitle} | Turan İnşaat`,
@@ -233,7 +233,7 @@ export default async function ServicePage({ params }: Props) {
         url: pageUrl,
         name: pageTitle,
         description: service.desc,
-        inLanguage: "az-AZ",
+        // inLanguage: "az-AZ",
         isPartOf: {
           "@type": "WebSite",
           "@id": `${BASE_URL}/#website`,

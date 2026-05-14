@@ -25,11 +25,11 @@ function makePage(
     lastModified: new Date(),
     changeFrequency,
     priority,
-    alternates: {
-      languages: {
-        "az-AZ": url,
-      },
-    },
+    // alternates: {
+    //   languages: {
+    //     "az-AZ": url,
+    //   },
+    // },
   };
 }
 
