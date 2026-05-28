@@ -15,6 +15,14 @@ import img66 from "@/public/assets/hovuzlaar/img66.webp";
 import img67 from "@/public/assets/hovuzlaar/img67.webp";
 import img68 from "@/public/assets/hovuzlaar/img68.webp";
 import img1088 from "@/public/assets/hovuzlaar/img10888.webp";
+import img207 from "@/public/assets/hovuzlaar/img207.webp";
+import img208 from "@/public/assets/hovuzlaar/img208.webp";
+import img209 from "@/public/assets/hovuzlaar/img209.webp";
+import img210 from "@/public/assets/hovuzlaar/img210.webp";
+import img211 from "@/public/assets/hovuzlaar/img211.webp";
+import img212 from "@/public/assets/hovuzlaar/img212.webp";
+import img213 from "@/public/assets/hovuzlaar/img213.webp";
+import img226 from "@/public/assets/hovuzlaar/img226.webp";
 
 
 
@@ -215,7 +223,7 @@ function TileCard({
           whiteSpace: "nowrap",
           overflow: "hidden",
           textOverflow: "ellipsis",
-          maxWidth:'70px'
+          maxWidth: '70px'
         }}
       >
         {option.label}
@@ -603,6 +611,14 @@ export default function Create() {
     { key: "a66", label: "Volcanic Lava Out (Mat)", gunduz: img66, gece: img66 },
     { key: "a67", label: "a67", gunduz: img67, gece: img67 },
     { key: "a668", label: "a68", gunduz: img68, gece: img68 },
+    { key: "207", label: "BP-252", gunduz: img207, gece: img207 },
+    { key: "208", label: "BP-507", gunduz: img208, gece: img208 },
+    { key: "209", label: "BP-591", gunduz: img209, gece: img209 },
+    { key: "210", label: "BP-501", gunduz: img210, gece: img210 },
+    { key: "211", label: "BP-502", gunduz: img211, gece: img211 },
+    { key: "212", label: "BP-502", gunduz: img212, gece: img212 },
+    { key: "213", label: "BP-502", gunduz: img213, gece: img213 },
+    { key: "226", label: "Identity Oranda", gunduz: img226, gece: img226 },
     { key: "a1011", label: "a1011", gunduz: img1088, gece: img1088 },
 
 
