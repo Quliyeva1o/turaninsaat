@@ -617,7 +617,7 @@ export default function Create() {
     { key: "210", label: "BP-501", gunduz: img210, gece: img210 },
     { key: "211", label: "BP-502", gunduz: img211, gece: img211 },
     { key: "212", label: "BP-502", gunduz: img212, gece: img212 },
-    { key: "213", label: "BP-502", gunduz: img213, gece: img213 },
+    { key: "213", label: "BP-502", gunduz: img213, gece: img213 }, 
     { key: "226", label: "Identity Oranda", gunduz: img226, gece: img226 },
     { key: "a1011", label: "a1011", gunduz: img1088, gece: img1088 },
 
