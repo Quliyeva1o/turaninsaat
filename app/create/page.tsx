@@ -23,6 +23,18 @@ import img211 from "@/public/assets/hovuzlaar/img211.webp";
 import img212 from "@/public/assets/hovuzlaar/img212.webp";
 import img213 from "@/public/assets/hovuzlaar/img213.webp";
 import img226 from "@/public/assets/hovuzlaar/img226.webp";
+import img238 from "@/public/assets/hovuzlaar/img238.webp";
+import img240 from "@/public/assets/hovuzlaar/img240.webp";
+import img243 from "@/public/assets/hovuzlaar/img243.webp";
+import img245 from "@/public/assets/hovuzlaar/img245.webp";
+import img248 from "@/public/assets/hovuzlaar/img248.webp";
+import img251 from "@/public/assets/hovuzlaar/img251.webp";
+import img253 from "@/public/assets/hovuzlaar/img253.webp";
+import img255 from "@/public/assets/hovuzlaar/img255.webp";
+import img256 from "@/public/assets/hovuzlaar/img256.webp";
+import img257 from "@/public/assets/hovuzlaar/img257.webp";
+import img258 from "@/public/assets/hovuzlaar/img258.webp";
+
 
 
 
@@ -619,6 +631,17 @@ export default function Create() {
     { key: "212", label: "BP-502", gunduz: img212, gece: img212 },
     { key: "213", label: "BP-502", gunduz: img213, gece: img213 }, 
     { key: "226", label: "Identity Oranda", gunduz: img226, gece: img226 },
+    { key: "238", label: "Identity Oranda", gunduz: img238, gece: img238 },
+    { key: "240", label: "Identity Oranda", gunduz: img240, gece: img240 },
+    { key: "243", label: "Identity Oranda", gunduz: img243, gece: img243 },
+    { key: "245", label: "Identity Oranda", gunduz: img245, gece: img245 },
+    { key: "248", label: "Identity Oranda", gunduz: img248, gece: img248 },
+    { key: "251", label: "Identity Oranda", gunduz: img251, gece: img251 },
+    { key: "253", label: "Identity Oranda", gunduz: img253, gece: img253 },
+    { key: "255", label: "Identity Oranda", gunduz: img255, gece: img255 },
+    { key: "256", label: "Identity Oranda", gunduz: img256, gece: img256 },
+    { key: "257", label: "Identity Oranda", gunduz: img257, gece: img257 },
+    { key: "258", label: "Identity Oranda", gunduz: img258, gece: img258 },
     { key: "a1011", label: "a1011", gunduz: img1088, gece: img1088 },
 
 
