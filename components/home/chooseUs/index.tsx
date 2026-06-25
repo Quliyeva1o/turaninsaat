@@ -1,4 +1,7 @@
+"use client";
+
 import { FaLightbulb, FaUserTie, FaBuilding } from "react-icons/fa";
+import CountUp from "react-countup";
 
 export default function WhyChooseUs() {
   const features = [
@@ -90,17 +93,23 @@ export default function WhyChooseUs() {
         </div>
 
         {/* Stats row */}
-        <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-8 text-center" data-aos="fade-down">
+        <div className="mt-16 grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
           <div>
-            <div className="text-4xl font-extrabold text-[#C49B63]">120+</div>
+            <div className="text-4xl font-extrabold text-[#C49B63]">
+              <CountUp end={120} suffix="+" enableScrollSpy scrollSpyOnce />
+            </div>
             <p className="text-gray-500 text-sm mt-2">Uğurla tamamlanmış layihə</p>
           </div>
           <div>
-            <div className="text-4xl font-extrabold text-[#C49B63]">12+</div>
+            <div className="text-4xl font-extrabold text-[#C49B63]">
+              <CountUp end={12} suffix="+" enableScrollSpy scrollSpyOnce />
+            </div>
             <p className="text-gray-500 text-sm mt-2">İllik təcrübə</p>
           </div>
           <div>
-            <div className="text-4xl font-extrabold text-[#C49B63]">100%</div>
+            <div className="text-4xl font-extrabold text-[#C49B63]">
+              <CountUp end={100} suffix="%" enableScrollSpy scrollSpyOnce />
+            </div>
             <p className="text-gray-500 text-sm mt-2">Müştəri məmnuniyyəti</p>
           </div>
         </div>

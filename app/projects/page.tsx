@@ -1,8 +1,7 @@
 import { projects } from "@/components/home/ourProjects/projes";
 import type { Metadata } from "next";
 import HeroWrapper from "@/components/home/heroWrapper";
-import ProjectsGrid from "@/components/projects/ProjectGrid";
-import Link from "next/link";
+import FilteredProjects from "@/components/projects/FilteredProjects";
 
 const BASE_URL = "https://www.turanprojects.az";
 
@@ -141,60 +140,7 @@ export default function ProjectsPage() {
             Hər bir layihə dizayndən anahtar təhvilə qədər tam icra olunur.
           </p>
 
-          {/* ─── Project cards: SSR-rendered, Google indexes ─── */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-            {projects.map((project) => (
-              <article
-                key={project.slug}
-                className="group"
-                itemScope
-                itemType="https://schema.org/CreativeWork"
-              >
-                {/* Visual card (client interactions handled inside ProjectsGrid) */}
-                <ProjectsGrid project={project} />
-
-                {/* ── SEO-rich text block – fully SSR, zero JS required ── */}
-                <div className="mt-4">
-                  <h2
-                    className="text-xl font-bold"
-                    itemProp="name"
-                  >
-                    {project.title}
-                  </h2>
-
-                  <p
-                    className="text-gray-500 text-sm mt-2 leading-relaxed"
-                    itemProp="description"
-                  >
-                    {project.seoDescription ?? project.description}
-                  </p>
-
-                  {/* Features list – each project has up to 6; adds keyword-rich text */}
-                  {project.features && project.features.length > 0 && (
-                    <ul className="mt-3 space-y-1">
-                      {project.features.map((feature, i) => (
-                        <li
-                          key={i}
-                          className="flex items-start gap-2 text-sm text-gray-600"
-                        >
-                          <span className="mt-0.5 text-yellow-500 flex-shrink-0" aria-hidden="true">✓</span>
-                          <span>{feature}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-
-                  <Link
-                    href={`/projects/${project.slug}`}
-                    className="inline-block mt-4 text-sm font-medium text-yellow-600 hover:text-yellow-700 transition-colors"
-                    aria-label={`${project.title} haqqında ətraflı məlumat`}
-                  >
-                    Ətraflı bax →
-                  </Link>
-                </div>
-              </article>
-            ))}
-          </div>
+          <FilteredProjects initialProjects={projects} />
 
           {/* ─── Bottom keyword-rich summary paragraph ─── */}
           <div className="mt-20 border-t border-gray-100 pt-12">
